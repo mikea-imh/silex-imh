@@ -1,3 +1,10 @@
 body {
+    background: #fcfcfc;
     padding-top: 60px;
+}
+.tools-technology {
+    background: url(../../img/pattern.gif) repeat left top;
+}
+.getting-traffic {
+    background: url(../../img/traffic.png) no-repeat left center;
 }
