@@ -1,10 +1,40 @@
 body {
-    background: #fcfcfc;
-    padding-top: 60px;
+  background: #fcfcfc;
+  padding-top: 60px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.emisor, .emisor > span {
+  display: block;
+}
+.island {
+  border: 1px solid #ccc;
+}
+.island > * {
+  padding: inherit 27px;
+}
+.island:first-child {
+  padding-top: 27px;
+}
+.island:last-child {
+  margin-bottom: 0;
+  padding-bottom: 27px;
+}
+.muted {
+  color: #888;
 }
 .tools-technology {
-    background: url(../../img/pattern.gif) repeat left top;
+  background: url(../../img/pattern.gif) repeat left top;
 }
-.getting-traffic {
-    background: url(../../img/traffic.png) no-repeat left center;
+.quoted {
+  background-color: #eee;
+}
+.vibrant {
+  color: #c52127;
+}
+.wrap {
+  margin: 0;
+  padding: 20px;
 }
