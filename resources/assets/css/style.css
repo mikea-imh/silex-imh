@@ -3,7 +3,6 @@ blockquote {
 }
 body {
   background: #fcfcfc;
-  padding-top: 60px;
 }
 img {
   height: auto;
@@ -11,6 +10,9 @@ img {
 }
 .emisor, .emisor > span {
   display: block;
+}
+.gutterless {
+  margin-left: 0;
 }
 .island {
   outline: 1px solid #ccc;
@@ -25,14 +27,36 @@ img {
   margin-bottom: 0;
   padding-bottom: 27px;
 }
+.island-small > * {
+  padding: 0 20px;
+}
+.island-small > *:first-child {
+  padding-top: 20px;
+}
+.island-small > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+}
 .muted {
   color: #888;
 }
-.tools-technology {
+.pattern {
   background: url(../../img/pattern.gif) repeat left top;
+}
+.raised {
+  background-color: #fff;
 }
 .sunken {
   background-color: #eee;
+}
+.three-tiered-rostrum {
+  position: relative;
+}
+.tiered-item {
+  position: absolute;
+}
+.tiered-item-one {
+  width: 300px;
 }
 .quoted:before {
   content: "\201C";
