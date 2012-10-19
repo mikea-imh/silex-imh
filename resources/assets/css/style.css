@@ -1,3 +1,49 @@
+blockquote {
+  border: none;
+}
 body {
-    padding-top: 60px;
+  background: #fcfcfc;
+  padding-top: 60px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+.emisor, .emisor > span {
+  display: block;
+}
+.island {
+  outline: 1px solid #ccc;
+}
+.island > * {
+  padding: 0 27px;
+}
+.island > *:first-child {
+  padding-top: 27px;
+}
+.island > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 27px;
+}
+.muted {
+  color: #888;
+}
+.tools-technology {
+  background: url(../../img/pattern.gif) repeat left top;
+}
+.sunken {
+  background-color: #eee;
+}
+.quoted:before {
+  content: "\201C";
+  color: #c52127;
+  display: block;
+  font-size: 600%;
+  margin-top: 27px;
+}
+.vibrant {
+  color: #c52127;
+}
+.wrap {
+  padding: 36px 0;
 }
