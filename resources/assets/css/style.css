@@ -1,3 +1,58 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............The section your currently reading
+ *
+ * CODING STANDARDS....READ BEFORE editing any CSS file
+ *
+ * MIXINS..............Super-simple Sass stuff
+ * RESET...............Set some defaults
+ * CLEARFIX............
+ * SHARED..............Shared declarations
+ */
+
+/*------------------------------------*\
+    $CODING STANDARDS
+\*------------------------------------*/
+/**
+ * Read, learn, utilize for a consistent, reusable, understandable all around
+ * better experience when writing quality CSS in a collaborative environment
+ *
+ * Most suggestions are taken from Google HTML/CSS Style Guide
+ * Please read each topic entry listed below at its corresponding link
+ */
+
+    /**
+     * General Formating Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#General_Formatting_Rules
+     *
+     * Note: When writing HTML or PHP use PEAR Standards for indentation
+     * http://pear.php.net/manual/en/standards.indenting.php
+     */
+
+    /**
+     * CSS Formating Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Formatting_Rules
+     *
+     * Declaration order
+     * Declaration stops
+     * Property name stops
+     *
+     */
+
+    /**
+     * CSS Style Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
+     *
+     * Shorthand properties
+     * 0 and units
+     * Leading 0s
+     * Hexadecimal notation
+     * ID and class name delimiters
+     * Type selectors
+     */
+
 blockquote {
   border: none;
 }
@@ -11,22 +66,59 @@ img {
 .emisor, .emisor > span {
   display: block;
 }
+/**
+ * Remove the gutter of the element
+ */
 .gutterless {
   margin-left: 0;
 }
+
+/*------------------------------------*\
+    $ISLAND
+\*------------------------------------*/
+/**
+ * Simple, boxed off content, as per: csswizardry.com/2011/10/the-island-object
+ */
 .island {
   outline: 1px solid #ccc;
 }
-.island > * {
-  padding: 0 27px;
+  .island > * {
+    padding: 0 27px;
+  }
+  .island > *:first-child {
+    padding-top: 27px;
+  }
+  .island > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 27px;
+  }
+
+/*------------------------------------*\
+    $ROSTRUM
+\*------------------------------------*/
+/**
+ * Like what Olympic winners stand on during medal ceremony
+ * Use for presenting a grouping of 3 items necessitating a visual indicator
+ * of 'importance' or 'winner' like displaying hosting plans
+ *
+ * First place is visual center with second place left of center and
+ * third place right of center
+ */
+
+.rostrum {
+  position: relative;
 }
-.island > *:first-child {
-  padding-top: 27px;
-}
-.island > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 27px;
-}
+  .rosturm-tiered-item {
+    position: absolute;
+  }
+  .rostrum-tiered-item-first {
+    width: 300px;
+    margin-left: 0;
+  }
+  .rostrum-tiered-item-second {
+    margin-left: 0;
+  }
+
 .island-small > * {
   padding: 0 20px;
 }
@@ -40,24 +132,27 @@ img {
 .muted {
   color: #888;
 }
+/**
+ * Apply the crosshatch pattern to element
+ */
 .pattern {
   background: url(../../img/pattern.gif) repeat left top;
 }
+/**
+ * Apply white background to element
+ */
 .raised {
-  background-color: #fff;
+  background: #fff;
 }
+/**
+ * Apply light grey background to element
+ */
 .sunken {
-  background-color: #eee;
+  background: #eee;
 }
-.three-tiered-rostrum {
-  position: relative;
-}
-.tiered-item {
-  position: absolute;
-}
-.tiered-item-one {
-  width: 300px;
-}
+/**
+ * Apply red opening double quote above element
+ */
 .quoted:before {
   content: "\201C";
   color: #c52127;
@@ -68,6 +163,9 @@ img {
 .vibrant {
   color: #c52127;
 }
+/**
+ * Apply top and bottom padding to element
+ */
 .wrap {
   padding: 36px 0;
 }
