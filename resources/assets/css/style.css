@@ -56,21 +56,33 @@
 blockquote {
   border: none;
 }
+
 body {
   background: #fcfcfc;
 }
+
 img {
   height: auto;
   max-width: 100%;
 }
-.emisor, .emisor > span {
+
+.emisor,
+.emisor > span {
   display: block;
 }
+
 /**
  * Remove the gutter of the element
  */
-.gutterless {
+.gutter-remove {
   margin-left: 0;
+}
+
+/**
+ * Remove the gutter of the element
+ */
+.gutter-spillover {
+  padding-right: 20px;
 }
 
 /*------------------------------------*\
@@ -81,17 +93,8 @@ img {
  */
 .island {
   outline: 1px solid #ccc;
+  padding: 20px;
 }
-  .island > * {
-    padding: 0 27px;
-  }
-  .island > *:first-child {
-    padding-top: 27px;
-  }
-  .island > *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 27px;
-  }
 
 /*------------------------------------*\
     $ROSTRUM
@@ -104,68 +107,143 @@ img {
  * First place is visual center with second place left of center and
  * third place right of center
  */
-
 .rostrum {
+  margin-top: -20px;
   position: relative;
 }
-  .rosturm-tiered-item {
-    position: absolute;
+
+  .rostrum-tiered-item {
+    position: relative;
+    text-align: center;
   }
+/*
+  .island.rostrum-tiered-item > * {
+    padding: 0 20px;
+  }
+
+  .island.rostrum-tiered-item > *:first-child {
+    margin-top: 20px;
+  }
+
+  .island.rostrum-tiered-item > *:last-child {
+    margin-bottom: 0;
+    padding-bottom: 20px;
+  }*/
+
   .rostrum-tiered-item-first {
-    width: 300px;
-    margin-left: 0;
+    margin: -20px 0 0 0;
+    width: 340px;
+    z-index: 5;
   }
-  .rostrum-tiered-item-second {
+
+  .rostrum-tiered-item-third {
     margin-left: 0;
   }
 
-.island-small > * {
-  padding: 0 20px;
+/*------------------------------------*\
+    $SPLIT CENTER
+\*------------------------------------*/
+/**
+ * Display group of two elements one after the other with the text centered
+ * Makes it appear as if it were one element that is text aligned center
+ * 
+ */
+.split-center {
+  padding: 0 10px;
 }
-.island-small > *:first-child {
-  padding-top: 20px;
+
+  .split-center-title,
+  .split-center-value {
+    display: inline-block;
+    margin-left: 0;
+  }
+
+  .split-center-value + .split-center-title::before {
+    content: ".";
+    display: block;
+    line-height: .75em;
+    color: transparent;
+    width: 8em;
+  }
+
+.icon {
+  background: #fff;
+  width: 33%;
 }
-.island-small > *:last-child {
-  margin-bottom: 0;
-  padding-bottom: 20px;
-}
+
 .muted {
   color: #888;
 }
+
 /**
  * Apply the crosshatch pattern to element
  */
 .pattern {
-  background: url(../../img/pattern.gif) repeat left top;
+  background: url(../../img/pattern.gif) repeat 0 0;
 }
+
 /**
  * Apply white background to element
  */
 .raised {
   background: #fff;
 }
+
 /**
  * Apply light grey background to element
  */
 .sunken {
   background: #eee;
 }
+
+/**
+ * Apply blue background with noise to element
+ */
+.intro {
+  background: url(../../img/bluenoise.png) repeat 0 0;
+}
+
 /**
  * Apply red opening double quote above element
  */
 .quoted:before {
-  content: "\201C";
   color: #c52127;
+  content: "\201C";
   display: block;
   font-size: 600%;
-  margin-top: 27px;
+  margin-top: 20px;
 }
+
 .vibrant {
   color: #c52127;
 }
+
+.hosting-plan-details > .navbar-inner,
+.hosting-plan-details .nav-tabs {
+  background: #232323;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.hosting-plan-details > .navbar-inner > .container .nav > .active > a {
+  background: #c52127;
+}
+
+.nav > li > a:hover {
+  border: none;
+}
+
+
 /**
  * Apply top and bottom padding to element
  */
 .wrap {
   padding: 36px 0;
 }
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .rostrum-tiered-item-first {
+    width: 268px;
+  }
