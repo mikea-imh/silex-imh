@@ -116,19 +116,6 @@ img {
     position: relative;
     text-align: center;
   }
-/*
-  .island.rostrum-tiered-item > * {
-    padding: 0 20px;
-  }
-
-  .island.rostrum-tiered-item > *:first-child {
-    margin-top: 20px;
-  }
-
-  .island.rostrum-tiered-item > *:last-child {
-    margin-bottom: 0;
-    padding-bottom: 20px;
-  }*/
 
   .rostrum-tiered-item-first {
     margin: -20px 0 0 0;
@@ -218,23 +205,6 @@ img {
   color: #c52127;
 }
 
-.hosting-plan-details > .navbar-inner,
-.hosting-plan-details .nav-tabs {
-  background: #232323;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.hosting-plan-details > .navbar-inner > .container .nav > .active > a {
-  background: #c52127;
-}
-
-.nav > li > a:hover {
-  border: none;
-}
-
-
 /**
  * Apply top and bottom padding to element
  */
@@ -247,3 +217,4 @@ img {
   .rostrum-tiered-item-first {
     width: 268px;
   }
+}
