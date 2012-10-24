@@ -201,10 +201,6 @@ img {
   margin-top: 20px;
 }
 
-.vibrant {
-  color: #c52127;
-}
-
 /**
  * Apply top and bottom padding to element
  */
@@ -212,9 +208,32 @@ img {
   padding: 36px 0;
 }
 
+
+.matrix > li {
+  border-bottom: 1px solid #ccc;
+  border-collapse: collapse;
+  border-right: 1px solid #ccc;
+  margin-left: 0;
+  padding: 27px 70px;
+}
+
+.matrix > li:nth-child(even) {
+  border-right: none;
+}
+
+.matrix-two-column > li {
+  float: left;
+  width: 35%;
+}
+
 @media (min-width: 768px) and (max-width: 979px) {
 
   .rostrum-tiered-item-first {
     width: 268px;
   }
+
+  .matrix-two-column > li {
+    width: 30%;
+  }
+
 }
