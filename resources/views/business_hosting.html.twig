@@ -19,7 +19,7 @@
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-second">
                     <div class="island raised">
                         <h3 class="">Launch</h3>
-                        <p class="">Small Business Starter</p>
+                        <p class="package-subtitle">Small Business Starter</p>
                         <dl class="split-center">
                             <dt class="split-center-title">Sites on Account:</dt>
                             <dd class="split-center-value">2</dd>
@@ -39,7 +39,7 @@
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-first">
                     <div class="island raised">
                         <h3>Power</h3>
-                        <p>Top Choice for Small Business</p>
+                        <p class="package-subtitle">Top Choice for Small Business</p>
                         <dl class="split-center">
                             <dt class="split-center-title">Sites on Account:</dt>
                             <dd class="split-center-value">6</dd>
@@ -109,8 +109,8 @@
                 <h1>something</h1>
                 <table class="table table-striped">
                     <caption>Listing of Business Hosting Plan Specifications and Pricing</caption>
-                    <colgroup span="1"></colgroup>
-                    <colgroup span="1"></colgroup>
+                    <colgroup span="1" class="plan-specification-listing"></colgroup>
+                    <colgroup span="1" class="plan-specification-example"></colgroup>
                     <colgroup span="1"></colgroup>
                     <colgroup span="1" class="plan-specification-featured"></colgroup>
                     <colgroup span="1"></colgroup>
@@ -230,11 +230,33 @@
     </div>
     <div class="wrap raised">
         <div class="container">
-            <h3>Contact our Business Hosting Experts</h3>
-            <p>Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
-            <div class="row-fluid">
+            <div class="row">
+                <h3 class="span8">Contact our Business Hosting Experts</h3>
+                <p class="span8">Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
+            </div>
+            <div class="container">
                 <div class="well well-deep">
-                    
+                    <form class="row-fluid">
+                        <div class="span4">
+                            <label class="a11y" for="fullName">Full Name</label>
+                            <input id="fullName" type="text" placeholder="Full Name" class="span11" />
+                            <label class="a11y" for="desiredUrl">Website URL Desired</label>
+                            <input id="desiredUrl" type="text" placeholder="Website URL Desired" class="span11" />
+                            <label class="a11y" for="phoneNumber" class="span11">Your Phone #</label>
+                            <input id="phoneNumber" type="text" placeholder="Your Phone #" class="span11" />
+                        </div>
+                        <div class="span4">
+                            <label>Currently an InMotion Hosting CUstomer?</label>
+                            <label class="a11y" for="postalCode">Zip Code</label>
+                            <input id="postalCode" type="text" placeholder="Zip Code" class="span11" />
+                            <label class="a11y" for="whereIMH">Your Phone #</label>
+                            <input id="whereIMH" type="text" placeholder="Where'd  you hear about us" class="span11" />
+                        </div>
+                        <div class="span4">
+                            <label for="siteGoals">What are your goals for this site</label>
+                            <textarea id="siteGoals" rows="3" class="span11"></textarea>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
