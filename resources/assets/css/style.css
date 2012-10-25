@@ -208,6 +208,26 @@ img {
   padding: 36px 0;
 }
 
+.table-striped thead th.table-col-4,
+.table-striped tfoot td.table-col-4,
+.table-striped tbody td.table-col-4 {
+  background-color: rgba(77, 160, 225, 0.15);
+}
+.table tbody td,
+.table tfoot td {
+  text-align: center;
+}
+
+.table tbody th {
+  border-right: 1px solid #ccc;
+  text-align: left;
+}
+
+.plan-specification-featured {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
 
 .matrix > li {
   border-bottom: 1px solid #ccc;

@@ -4,5 +4,11 @@
           e.preventDefault();
           $(this).tab('show');
         })
+        
+        // Apply classes to each table cell indicating column
+        var numCols = $('colgroup').length;
+        $('td, th').each(function(i) {
+            $(this).addClass('table-col-' + ((i % numCols) + 1));
+        });
     });
 })(jQuery);

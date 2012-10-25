@@ -23,7 +23,7 @@ $app['assetic.path_to_web']         = __DIR__ . '/../../web/assets';
 $app['assetic.input.path_to_assets']    = __DIR__ . '/../assets/';
 $app['assetic.input.path_to_css']       = array(
     $app['assetic.input.path_to_assets'] . 'css/bootstrap.css',
-    $app['assetic.input.path_to_assets'] . 'css/bootstrap-responsive.css',
+    // $app['assetic.input.path_to_assets'] . 'css/bootstrap-responsive.css',
     $app['assetic.input.path_to_assets'] . 'css/style.css',
 );
 $app['assetic.output.path_to_css']      = 'css/styles.css';
