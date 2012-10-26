@@ -215,9 +215,9 @@ img {
   padding: 36px 0;
 }
 
-.table-striped thead th.table-col-4,
-.table-striped tfoot td.table-col-4,
-.table-striped tbody td.table-col-4 {
+.business-specification .table-striped thead th.table-col-4,
+.business-specification .table-striped tfoot td.table-col-4,
+.business-specification .table-striped tbody td.table-col-4 {
   background-color: rgba(77, 160, 225, 0.15);
 }
 
@@ -241,29 +241,42 @@ img {
   width: 33%;
 }
 
-thead .table-col-1,
-thead .table-col-2,
-tfoot .table-col-1,
-tfoot .table-col-2 {
+.business-specification thead .table-col-1,
+.business-specification tfoot .table-col-1,
+.business-specification tfoot .table-col-2 {
   border-width: 1px;
   border-style: solid;
   border-color: transparent;
 }
 
-thead td {
+.business-specification thead td {
   border-left-color: #fcfcfc;
 }
 
-tfoot .table-col-1,
-tfoot .table-col-2 {
+.business-specificaiton tfoot .table-col-1,
+.business-specification tfoot .table-col-2 {
   border-left-color: #fff;
 }
 
-tfoot .table-col-2 {
+.business-specification tfoot .table-col-2 {
   border-right: 1px solid #ccc;
 }
-tfoot {
+.business-specification tfoot {
   border-bottom: 2px solid #888;
+}
+.table tbody {
+  border-top: 1px solid #ccc;
+}
+
+.compare .table tbody td,
+.compare .table thead th {
+  border-left: 1px solid #ccc;
+}
+.compare .table thead td + th {
+  border-left: none;
+}
+.compare .table tbody th {
+  width: 40%;
 }
 
 
@@ -272,7 +285,7 @@ tfoot {
   border-collapse: collapse;
   border-right: 1px solid #ccc;
   margin-left: 0;
-  padding: 27px 70px;
+  padding: 10px 70px;
 }
 
 .matrix > li:nth-child(even) {
@@ -282,6 +295,9 @@ tfoot {
 .matrix-two-column > li {
   float: left;
   width: 35%;
+}
+.matrix > .matrix-last {
+  border-bottom: none;
 }
 
 .well {
@@ -323,6 +339,68 @@ tfoot {
   position: absolute;
   top: auto;
   width: 1px;
+}
+
+.ir { /* image replacement */
+  font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+.table .ir {
+  display: block;
+  height: 18px;
+  margin: 0 auto;
+  width: 18px;
+  background: transparent no-repeat 0 0;
+}
+
+.ideal,
+.table .ideal {
+  background-image: url(../../img/ideal.png);
+}
+
+.less-ideal,
+.table .less-ideal {
+  background-image: url(../../img/less-ideal.png);
+}
+
+.unacceptable,
+.table .unacceptable {
+  background-image: url(../../img/unacceptable.png);
+}
+
+.well-small {
+  background-color: #ededed;
+  box-shadow: none;
+  border: none;
+}
+
+.compare .nav-pills > li {
+  margin: 0 20px 0 0;
+}
+.compare .nav-pills > li:first-child {
+  margin-left: 30px;
+}
+
+.compare .nav-pills .ideal,
+.compare .nav-pills .less-ideal,
+.compare .nav-pills .unacceptable {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+
+.suggestion {
+  margin: 36px auto;
+}
+.suggestion h3 {
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /*background: url(../../img/bolt.png) no-repeat left center;*/
+}
+.suggestion img {
+  margin-right: .5em;
 }
 
 textarea,
