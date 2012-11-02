@@ -1,4 +1,4 @@
-{% use 'webhosting_plan.html.twig' %}
+{% extends 'webhosting_plan.html.twig' %}
 {% set active = 'business_hosting' %}
 
 {# title #}
@@ -21,8 +21,8 @@
     </div>
 {% endblock %}
 
-{# second-place-plan #}
-{% block second-place-plan %}
+{# secondplaceplan #}
+{% block secondplaceplan %}
     <h3 class="">Launch</h3>
     <p class="package-subtitle">Small Business Starter</p>
     <dl class="split-center">
@@ -42,8 +42,8 @@
 {% endblock %}
 
 
-{# first-place-plan #}
-{% block first-place-plan %}
+{# firstplaceplan #}
+{% block firstplaceplan %}
     <h3>Power</h3>
     <p class="package-subtitle">Top Choice for Small Business</p>
     <dl class="split-center">
@@ -63,8 +63,8 @@
 {% endblock %}
 
 
-{# third-place-plan #}
-{% block third-place-plan %}
+{# thirdplaceplan #}
+{% block thirdplaceplan %}
 <h3 class="icon package-title">fjwow</h3>
 <p class="package-subtitle">Host 25 sites on 1 account</p>
 <dl class="split-center">
@@ -84,16 +84,16 @@
 {% endblock %}
 
 
-{# webhosting-tabbed-nav #}
-{% block webhosting-tabbed-nav %}
+{# webhostingtabbednav #}
+{% block webhostingtabbednav %}
 <li class="active"><a href="#specifications" data-toggle="tab">Specifications<div class="arrow"></div></a></li>
 <li><a href="#features" data-toggle="tab">Standard Features</a></li>
 <li><a href="#compare" data-toggle="tab">Compare Us</a></li>
 {% endblock %}
 
 
-{# webhosting-tabbed-content #}
-{% block webhosting-tabbed-content %}
+{# webhostingtabbedcontent #}
+{% block webhostingtabbedcontent %}
 <div class="tab-pane active business-specification" id="specifications">
     <h1>something</h1>
     <table class="table table-striped">
