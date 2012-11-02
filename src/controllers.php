@@ -17,7 +17,7 @@ $app->match('/', function() use ($app) {
 
 $app->match('/business-hosting', function() use ($app) {
     return $app['twig']->render(
-        'business_hosting.html.twig');
+        'webhosting_plan.html.twig');
 })->bind('business_hosting');
 
 $app->match('/vps-hosting', function() use ($app) {

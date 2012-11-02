@@ -68,13 +68,20 @@
     </nav>
 
     <div id="main" role="main">
-        {% block intro %}
-        <div class="wrap intro">
-        <div class="container">
-        {% endblock %}
-        {% block content %}
+        <div class="wrap intro {{ active|e }}">
+            <div class="container">
 
+                {# intro #}
+                {% block intro %}
+                {% endblock %}
+
+            </div>
+        </div><!-- /.intro -->
+
+        {# content #}
+        {% block content %}
         {% endblock %}
+
     </div><!-- /#main -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
