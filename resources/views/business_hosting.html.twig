@@ -2,24 +2,33 @@
 {% set active = 'business_hosting' %}
 
 {% block content %}
+    <div class="leader-biz">
+        <div class="leader-biz-robotics">
     <div class="wrap intro">
         <div class="container">
-            <div class="span9">
-                <h1>Business Hosting</h1>
-                <p>In addition to award winning technical support and 99.9% uptime, InMotion Hosting’s exclusive Speed Zone technology helps keep your website and email fast by locating your data as close to you as possible.</p>
+            <div class="leader-biz-cta-place">
+                <div class="span3">
+                <span class="cta">order now</span>
             </div>
-            <div class="span3">
-                stuff
+        </div>
+            <div class="span7 white">
+                <h1>Business Hosting</h1>
+                <p class="span5 blanky">In addition to award winning technical support and 99.9% uptime, InMotion Hosting’s exclusive Speed Zone technology helps keep your website and email fast by locating your data as close to you as possible.</p>
             </div>
         </div>
     </div><!-- /.intro -->
+</div><!-- /.leader-biz-robotics -->
+</div><!-- /.leader-biz -->
     <div class="pattern">
         <div class="container">
             <div class="row rostrum">
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-second">
                     <div class="island raised">
-                        <h3 class="">Launch</h3>
+                        <h3 class="blanky package-title">
+                            <img src="http://www.managedinternetpresence.com/cam/test/package-icon-tier1.png" class="tier-space">
+                            Launch</h3>
                         <p class="package-subtitle">Small Business Starter</p>
+                        <div class="pricebox"><sup>$</sup>5<sup>95</sup><sub>/mo.<sub></div>
                         <dl class="split-center">
                             <dt class="split-center-title">Sites on Account:</dt>
                             <dd class="split-center-value">2</dd>
@@ -35,12 +44,16 @@
                             <dd class="split-center-value">1,000</dd>
                         </dl>
                     </div><!-- /.rostrum-tiered-item-second -->
+                    <div class="cta-overlap"><a href="#" class="cta">order now</a></div>
                 </div>
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-first">
                     <div class="island raised">
-                        <h3>Power</h3>
+                        <h3 class="blanky package-title">
+                            <img src="http://www.managedinternetpresence.com/cam/test/package-icon-tier2.png" class="tier-space">
+                            Power</h3>
                         <p class="package-subtitle">Top Choice for Small Business</p>
-                        <dl class="split-center">
+                        <div class="pricebox"><sup>$</sup>7<sup>95</sup><sub>/mo.<sub></div>
+                        <dl class="split-center-mid">
                             <dt class="split-center-title">Sites on Account:</dt>
                             <dd class="split-center-value">6</dd>
                             <dt class="split-center-title">Domains Supported:</dt>
@@ -55,11 +68,17 @@
                             <dd class="split-center-value">2,000</dd>
                         </dl>
                     </div><!-- /.rostrum-tiered-item-first -->
+                    <div class="cta-overlap">
+                        <a href="#" class="cta">order now</a>
+                    </div>
                 </div>
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-third">
                     <div class="island raised">
-                        <h3 class="icon package-title">fjwow</h3>
+                        <h3 class="blanky package-title">
+                            <img src="http://www.managedinternetpresence.com/cam/test/package-icon-tier3.png" class="tier-space">
+                            PRO</h3>
                         <p class="package-subtitle">Host 25 sites on 1 account</p>
+                        <div class="pricebox"><sup>$</sup>13<sup>95</sup><sub>/mo.<sub></div>
                         <dl class="split-center">
                             <dt class="split-center-title">Sites on Account:</dt>
                             <dd class="split-center-value">25</dd>
@@ -75,18 +94,19 @@
                             <dd class="split-center-value">Unlimited</dd>
                         </dl>
                     </div><!-- /.rostrum-tiered-item-third -->
+                    <div class="cta-overlap"><a href="#" class="cta">order now</a>
+                    </div>
                 </div>
             </div><!-- /.rostrum -->
-            <div class="wrap row trust-building">
+            <div class="jutwrap row trust-building">
                 <div class="span12">
-                    <div class="pull-left raised icon icon-90">
-                        <p>All business plans come with an Industry Leading 90-Day Money Back Guarantee</p>
+                    <div class="island pull-left raised adtwo">
+                        <img src="http://www.managedinternetpresence.com/cam/test/90day.png" class="iconleft">
+                        <p>All business plans come with an Industry Leading <a href="#">90-Day Money Back Guarantee</a></p>
                     </div>
-                    <div class="pull-left raised icon icon-90">
-                        <p>All business plans come with an Industry Leading 90-Day Money Back Guarantee</p>
-                    </div>
-                    <div class="pull-left raised icon icon-90">
-                        <p>All business plans come with an Industry Leading 90-Day Money Back Guarantee</p>
+                    <div class="island pull-left raised span10 adtwo">
+                        <img src="http://www.managedinternetpresence.com/cam/test/spedometer.png" class="iconleft">
+                        <p><a href="#">Max Speed Zone Enabled.</a> Multiple data centers means you can get the fastest connection on either coast.</p>
                     </div>
                 </div>
             </div>
@@ -104,9 +124,9 @@
         </div>
     </div>
     <div class="container">
-        <div class="tab-content">
+        <div class="tab-content wrap">
             <div class="tab-pane active business-specification" id="specifications">
-                <h1>something</h1>
+                
                 <table class="table table-striped">
                     <caption class="a11y">Listing of Business Hosting Plan Specifications and Pricing</caption>
                     <colgroup span="1" class="plan-specification-listing"></colgroup>
@@ -118,9 +138,9 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <th scope="col">Launch</th>
-                            <th scope="col">Power</th>
-                            <th scope="col">Pro</th>
+                            <th scope="col"><h4 class="blanky">Launch</h4></th>
+                            <th scope="col"><h4 class="blanky">Power</h4></th>
+                            <th scope="col"><h4 class="blanky">Pro</h4></th>
                         </tr>
                     </thead>
                     <tfoot>
@@ -145,35 +165,70 @@
                             <td>Parked Domains</td>
                             <td>6</td>
                             <td>26</td>
-                            <td>Unlimited</td>
+                            <td>UNLIMITED</td>
                         </tr>
                         <tr>
-                            <th scope="row">Sites on 1 Account</th>
-                            <td>Multiple sites, no hidden fees!</td>
-                            <td>2</td>
-                            <td>6</td>
+                            <th scope="row">Additional Sub Domains</th>
+                            <td>For example: mobile.domain.com</td>
                             <td>25</td>
+                            <td>100</td>
+                            <td>UNLIMITED</td>
                         </tr>
                         <tr>
-                            <th scope="row">Domain Supported</th>
-                            <td>Parked Domains</td>
-                            <td>6</td>
-                            <td>26</td>
-                            <td>Unlimited</td>
+                            <th scope="row">Easy Control Panel</th>
+                            <td><a href="#">Try Control Panel</a></td>
+                            <td><span class="ir checkmark"></span></td>
+                            <td><span class="ir checkmark"></span></td>
+                            <td><span class="ir checkmark"></span></td>
                         </tr>
                         <tr>
-                            <th scope="row">Sites on 1 Account</th>
-                            <td>Multiple sites, no hidden fees!</td>
-                            <td>2</td>
-                            <td>6</td>
-                            <td>25</td>
+                            <th scope="row">Data Backup</th>
+                            <td>Weekly</td>
+                            <td>INCLUDED</td>
+                            <td>INCLUDED</td>
+                            <td>INCLUDED</td>
                         </tr>
                         <tr>
-                            <th scope="row">Domain Supported</th>
-                            <td>Parked Domains</td>
-                            <td>6</td>
-                            <td>26</td>
-                            <td>Unlimited</td>
+                            <th scope="row">Free Google AdWords Credits</th>
+                            <td>Drive traffic with Ads</td>
+                            <td>$75</td>
+                            <td>$100</td>
+                            <td>$100</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Disk Space (GB)</th>
+                            <td>All expandable</td>
+                            <td>UNLIMITED</td>
+                            <td>UNLIMITED</td>
+                            <td>UNLIMITED</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Monthly Transfer Included (GB)</th>
+                            <td>Industry-Leading</td>
+                            <td>UNLIMITED</td>
+                            <td>UNLIMITED</td>
+                            <td>UNLIMITED</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">SPAM Safe Email</th>
+                            <td>With Real-time Filtering</td>
+                            <td><span class="ir checkmark"></span></td>
+                            <td><span class="ir checkmark"></span></td>
+                            <td><span class="ir checkmark"></span></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Max Speed Zone Enabled</th>
+                            <td><a href="#">Find My Zone</a></td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Premium Website Builder</th>
+                            <td><a href="#">Launch Builder</a></td>
+                            <td><span class="ir checkmark"></span></td>
+                            <td><span class="ir checkmark"></span></td>
+                            <td><span class="ir checkmark"></span></td>
                         </tr>
                     </tbody>
                 </table>                    

@@ -108,7 +108,7 @@ img {
  * third place right of center
  */
 .rostrum {
-  margin-top: -20px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -153,7 +153,7 @@ img {
   .split-center-value + .split-center-title::before {
     content: ".";
     display: block;
-    line-height: .75em;
+    line-height: .35em;
     color: transparent;
     width: 8em;
   }
@@ -193,8 +193,8 @@ img {
 /**
  * Apply blue background with noise to element
  */
-.intro {
-  background: url(../../img/bluenoise.png) repeat 0 0;
+.intro { /* --- WE'LL BE CHANGING THIS TO ANOTHER COLOR ---*/
+  /*background: url(../../img/bluenoise.png) repeat 0 0;*/
 }
 
 /**
@@ -212,7 +212,10 @@ img {
  * Apply top and bottom padding to element
  */
 .wrap {
-  padding: 36px 0;
+  padding: 40px 0;
+}
+.jutwrap {
+  padding: 30px 0 40px;
 }
 
 .business-specification .table-striped thead th.table-col-4,
@@ -244,7 +247,7 @@ img {
 .business-specification thead .table-col-1,
 .business-specification tfoot .table-col-1,
 .business-specification tfoot .table-col-2 {
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
   border-color: transparent;
 }
@@ -434,36 +437,10 @@ textarea::-webkit-input-placeholder {
 
 .package-subtitle {
   border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
 }
 
-.rostrum-tiered-item-first h3::before {
-  content: " ";
-  display: block;
-  width:10px; 
-  height: 17px;
-  background-color: #eee; 
-  float: left;
-  border-left: 6px solid #3f89c2;
-  border-right: 6px solid #3f89c2;
-  /*background-image: -webkit-linear-gradient(0deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);*/
-  background: -webkit-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -moz-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -o-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -ms-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  margin-right: 12px;
-}
 
-.rostrum-tiered-item-first h3::after {
-  content: " ";
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: #eee;
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
 
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -476,3 +453,116 @@ textarea::-webkit-input-placeholder {
   }
 
 }
+
+
+
+
+/*------- ALEX CSS ------------------------*/
+
+
+.white {
+  color: #ffffff;
+}
+.blanky {
+  margin: 0px; padding: 0px;
+}
+.leader-biz {
+    height: 253px; background: url(http://www.managedinternetpresence.com/cam/test/leader-bg-biz.jpg) 0 0 repeat-x;
+}
+.leader-biz-robotics {
+    background: url(http://www.managedinternetpresence.com/cam/test/leader-biz-robotics.png) top center no-repeat;
+    height: 253px;
+}
+.package-title {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.leader-biz-cta-place {
+  float: right;
+  margin: 57px 119px 0px 0px;
+}
+.tier-space {
+    margin: -4px 0px 0px 0px;
+}
+.pricebox {
+    margin: 30px auto; 
+    padding: 0px 38px 0px 0px;
+    color: #c52228; 
+    font-size: 52px;
+}
+.pricebox sup {
+    font-size: 28px;
+    margin: -10px 0px 0px 5px;
+}
+.pricebox sub {
+    font-size: 20px;
+    margin: 0px 0px 0px -32px;
+}
+
+.checkmark,
+.table .checkmark {
+  background-image: url(../../img/ideal.png);
+}
+.split-center-mid {
+  padding: 0 40px;
+}
+.adtwo {
+  width: 418px;
+  padding: 20px; line-height: 18px;
+}
+.iconleft {
+    float: left; margin: 0px 12px 10px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*------- BLUE CTA BUTTON -------*/
+.cta {
+  background-color: #4BA0E1; font-family: "adelle-sans", sans-serif;
+  text-align: center;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 0px 3px 0px #3f89c2;
+  margin-bottom: 1px;
+  padding: 4px 12px 3px;
+  text-transform: uppercase; 
+  font-size: 12px;
+  position: relative;
+  z-index: 9000;
+  vertical-align: bottom;
+}
+.cta:hover {
+  background-color: #3f89c2;
+  box-shadow: 0px 3px 0px #2D658E;
+  cursor: pointer; 
+  color: white;
+  text-decoration: none;
+}
+.cta:active {
+  background-color: #3f89c2; margin:1px 0px 0px;
+  box-shadow: 0px 2px 0px #2D658E;
+}
+.cta-overlap {
+    display: block;
+    height: 16px;
+}
+.cta-overlap > .cta {
+    top: -16px;
+}
+.cta-overlap > .cta:active {
+    top: -16px;
+}
+/*------- END ALEX CSS -------*/
