@@ -1,9 +1,28 @@
 {% extends 'layout.html.twig' %}
 {% set active = 'business_hosting' %}
 
-{% block content %}
+{# --- [ SEO AREA ] --- #}
+
+{# title #}
+{% block title %}This is a super optimized title element to which the system concatenates &#39; | InMotion Hosting&#39;{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# --- end SEO AREA --- #}
+
+{# --- INTRO AREA --- #}
+
+
+
+{# --- INTRO AREA --- #}
+
     <div class="wrap intro">
         <div class="container">
+            {% block intro %}
             <div class="span9">
                 <h1>Business Hosting</h1>
                 <p>In addition to award winning technical support and 99.9% uptime, InMotion Hosting’s exclusive Speed Zone technology helps keep your website and email fast by locating your data as close to you as possible.</p>
@@ -11,8 +30,16 @@
             <div class="span3">
                 stuff
             </div>
+            {% endblock %}
         </div>
     </div><!-- /.intro -->
+
+
+
+{# --- end INTRO AREA --- #}
+
+{# --- CONTENT ---#}
+{% block content %}
     <div class="pattern">
         <div class="container">
             <div class="row rostrum">

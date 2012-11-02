@@ -30,11 +30,6 @@ $app->match('/dedicated-servers', function() use ($app) {
         'dedicated_servers.html.twig');
 })->bind('dedicated_servers');
 
-$app->match('/dedicated-servers', function() use ($app) {
-    return $app['twig']->render(
-        'dedicated_servers.html.twig');
-})->bind('dedicated_servers');
-
 $app->match('/domains', function() use ($app) {
     return $app['twig']->render(
         'domains.html.twig');
@@ -59,6 +54,12 @@ $app->match('/support', function() use ($app) {
     return $app['twig']->render(
         'support.html.twig');
 })->bind('support');
+
+$app->match('/{category}/articles/{title}', function($category, $title) use ($app) {
+    return $app['twig']->render(
+        '/longtail.html.twig');
+})->bind('longtail');
+
 
 $app->match('/form', function() use ($app) {
 

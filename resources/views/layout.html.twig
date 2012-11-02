@@ -7,10 +7,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <title>{{ 'Homepage'|trans }}</title>
+    <title>{% block title %}{% endblock %} | InMotion Hosting</title>
 
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{% block description %}{% endblock %}" />
+    <meta name="keywords" content="{% block keywords %}{% endblock %}" />
+    <meta name="author" content="" />
 
     <meta name="viewport" content="width=device-width">
 
@@ -67,7 +68,12 @@
     </nav>
 
     <div id="main" role="main">
+        {% block intro %}
+        <div class="wrap intro">
+        <div class="container">
+        {% endblock %}
         {% block content %}
+
         {% endblock %}
     </div><!-- /#main -->
 
