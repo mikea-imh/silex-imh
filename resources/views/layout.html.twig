@@ -38,12 +38,14 @@
         <a href="#nav">Skip to Navigation</a>
     </div>
     <header role="banner">
-        <a href="{{ path('homepage') }}"><img src="#" /></a>
-        <ul class="nav nav-pills">
-            <li><a href="#">Live Chat</a></li>
-            <li>888.321.HOST</li>
-            <li><a href="">AMP Login</a></li>
-        </ul>
+        <div class="container">
+            <a href="{{ path('homepage') }}"><img src="{{ app.request.basepath }}/img/logo-imh.png" alt="InMotion Hosting" /></a>
+            <ul class="nav nav-pills">
+                <li><a href="#">Live Chat</a></li>
+                <li>888.321.HOST</li>
+                <li><a href="">AMP Login</a></li>
+            </ul>
+        </div>
     </header>
     <nav id="nav" class="navbar navbar-static-top">
         <div class="navbar-inner">
@@ -127,16 +129,16 @@
                 <li><a href="#">We're Hiring</a></li>
                 <li><a href="#">Site Map</a></li>
             </ul>
-            <div>
+            <div class="span3">
                 <p>Stay in touch on</p>
                 <div itemscope itemtype="schema.org/LocalBusiness">
                     <h5 itemprop="name">InMotion Hosting</h5>
                     <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="streetAddress">6100 Center Drive, Suite 1190</span>
-                        <span itemprop="addressLocality">Los Angeles</span>, <span itemprop="addressRegion">CA</span> <span itemprop="postalCode">90045</span>
+                        <span itemprop="addressLocality" class="city">Los Angeles</span>, <span itemprop="addressRegion" class="state">CA</span> <span itemprop="postalCode" class="postalcode">90045</span>
                         <span itemprop="telephone">888-321-HOST(4678)</span>
                         <span>&copy; 2012 All Rights Reserved</span>
-                    </ul>
+                    </p>
                 </div>
             </div>
         </div>

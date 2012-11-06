@@ -40,5 +40,5 @@ $app['db.options'] = array(
     'host'     => 'localhost',
     'dbname'   => 'silex_kitchen',
     'user'     => 'silex_kitchen',
-    'password' => 'Up&4jje',
+    'password' => 'xFfT5mW9d9hjedSA',
 );
