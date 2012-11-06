@@ -25,7 +25,7 @@
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-second">
                     <div class="island raised">
                         <h3 class="blanky package-title">
-                            <img src="http://www.managedinternetpresence.com/cam/test/package-icon-tier1.png" class="tier-space">
+                            <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Launch Business Package" class="tier-space">
                             Launch</h3>
                         <p class="package-subtitle">Small Business Starter</p>
                         <div class="pricebox"><sup>$</sup>5<sup>95</sup><sub>/mo.<sub></div>
@@ -49,7 +49,7 @@
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-first">
                     <div class="island raised">
                         <h3 class="blanky package-title">
-                            <img src="http://www.managedinternetpresence.com/cam/test/package-icon-tier2.png" class="tier-space">
+                            <img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Power Business Package" class="tier-space">
                             Power</h3>
                         <p class="package-subtitle">Top Choice for Small Business</p>
                         <div class="pricebox"><sup>$</sup>7<sup>95</sup><sub>/mo.<sub></div>
@@ -75,7 +75,7 @@
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-third">
                     <div class="island raised">
                         <h3 class="blanky package-title">
-                            <img src="http://www.managedinternetpresence.com/cam/test/package-icon-tier3.png" class="tier-space">
+                            <img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">
                             PRO</h3>
                         <p class="package-subtitle">Host 25 sites on 1 account</p>
                         <div class="pricebox"><sup>$</sup>13<sup>95</sup><sub>/mo.<sub></div>
@@ -98,17 +98,24 @@
                     </div>
                 </div>
             </div><!-- /.rostrum -->
-            <div class="jutwrap row trust-building">
+            <div class="jutwrap3 row trust-building">
                 <div class="span12">
                     <div class="island pull-left raised adtwo">
-                        <img src="http://www.managedinternetpresence.com/cam/test/90day.png" class="iconleft">
+                        <img src="{{ app.request.basepath }}/img/90day.png" alt="90 Day Garauntee icon" class="iconleft">
                         <p>All business plans come with an Industry Leading <a href="#">90-Day Money Back Guarantee</a></p>
                     </div>
                     <div class="island pull-left raised span10 adtwo">
-                        <img src="http://www.managedinternetpresence.com/cam/test/spedometer.png" class="iconleft">
+                        <img src="{{ app.request.basepath }}/img/spedometer.png" alt="Max Speed Zone icon" class="iconleft">
                         <p><a href="#">Max Speed Zone Enabled.</a> Multiple data centers means you can get the fastest connection on either coast.</p>
                     </div>
                 </div>
+                <div class=" span4 pull-left trust">
+                    <span class="ln">Our Trusted Partners</span>
+                    <a href="#"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" border="0" /></a></div>
+                <div class=" span4 pull-left trust"><span class="ln">Security</span>
+                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" border="0" /></a></div>
+                <div class=" span4 pull-left trust"><span class="ln">Our Awards</span>
+                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" border="0" /></a></div>
             </div>
         </div>
     </div><!-- /.pattern -->
@@ -124,7 +131,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="tab-content wrap">
+        <div class="tab-content wrap-emp">
             <div class="tab-pane active business-specification" id="specifications">
                 
                 <table class="table table-striped">
@@ -231,59 +238,65 @@
                             <td><span class="ir checkmark"></span></td>
                         </tr>
                     </tbody>
-                </table>                    
+                </table>  
+                <a href="#" class="cta-viewmore">VIEW MORE SPECS</a>                  
             </div><!-- /#specifications -->
             <div class="tab-pane" id="features">
-                <div class="wrap">
-                    <p>All InMotion Hosting packages include the following:</p>
+                <div class="jutwrap4">
+                    <p class="centered">
+                        All InMotion Hosting packages include the following:</p>
+                        <br clear="all">
                     <ul class="nav nav-stacked matrix matrix-two-column">
                         <li>
+                            <img src="{{ app.request.basepath }}/img/icon-mail.png" class="mx-icon" alt="email icon" />
                             <h4>Hosting Email Features</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Our roubust email is compatible with all desktop clients including Outlook and Apple Mail. On the go? Our email runs on any iPhone, Blackberry or Android powered device. Block annoying SPAM using <a href="#">Spam Assasin</a> - included for free! </p>
                         </li>
                         <li>
-                            <h4>Web Design and Blog Hosting</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="{{ app.request.basepath }}/img/icon-palette.png" class="mx-icon" alt="web design icon" />
+                            <h4>Web Design Hosting</h4>
+                            <p>We include two easy to use "WYSIWYG" <a href="#">web builders</a> and are fully compatibile with the web's most popular design platforms including Adobe Dreamweaver, Microsoft Front Page and iWeb.</p>
                         </li>
                         <li>
-                            <h4>E-Commerce Hosting</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <img src="{{ app.request.basepath }}/img/icon-ftp.png" class="mx-icon" alt="blog icon" />
+                            <h4>Blog Hosting</h4>
+                            <p>We proudly support <a href="#">WordPress</a>, <a href="#">Drupal</a>, <a href="#">Joomla</a> and many other powerful blogging tools. In fact, you can install each of these CMS systems with just one click from your control panel.</p>
                         </li>
                         <li>
+                            <img src="{{ app.request.basepath }}/img/icon-puzzle.png" class="mx-icon" alt="plugins icon" />
                             <h4>Website Plugins</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Easy to use web calendars, forum software, wikis and more are all just a click away from our simple software installer, <a href="#">Softaculous</a>, that comes included with all web hosting accounts.</p>
+                        </li>
+                          <li>
+                            <img src="{{ app.request.basepath }}/img/icon-note.png" class="mx-icon" alt="streaming media icon" />
+                            <h4>Sreaming & Interactive Media</h4>
+                            <p>Our shared web hosting plans include support for streaming video, audio and Adobe Flash.</p>
                         </li>
                         <li>
+                            <img src="{{ app.request.basepath }}/img/icon-tag.png" class="mx-icon" alt="e-commerce icon" />
+                            <h4>E-Commerce Hosting</h4>
+                            <p>Looking to sell goods or services online? Our one click software installer, Softaculous, comes with multiple options including <a href="#">PrestaCart</a>, <a href="#">OpenCart</a>, Magento, OS Commerce and more!</p>
+                        </li>
+                        <li class="matrix-last">
+                            <img src="{{ app.request.basepath }}/img/icon-ekg.png" class="mx-icon" alt="dynamic hosting icon" />
                             <h4>Dynamic Hosting Support</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Code your website using the latest languages including PHP 4 or 5, PERL 5, Python, MySQL 4 or 5, PHPMyAdmin and more.</p>
                         </li>
-                        <li>
-                            <h4>FTP Features</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </li>
+                      
                         <li class="matrix-last">
-                            <h4>Streaming and Interactive Media</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </li>
-                        <li class="matrix-last">
+                            <img src="{{ app.request.basepath }}/img/icon-switches.png" class="mx-icon" alt="other hosting icon" />
                             <h4>Other Hosting Features</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                            <p>Collaborate using multiple FTP accounts or check out your website stats with AWStats or your raw log files. All are easily accessible from your included license of <a href="#">cPanel</a>.</p>
                         </li>
                     </ul>
                 </div>
             </div><!-- /#features -->
             <div class="tab-pane compare" id="compare">
-                <div class="wrap row">
+                <div class="jutwrap4 row">
                     <div class="span6">
-                        <h1>The InMotion Advantage</h1>
+                        <img src="{{ app.request.basepath }}/img/icon-trophy.png"  class="oth-icon" alt="The InMotion Hosting Advantage" />
+                        <h2>The InMotion Advantage</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a lectus ac urna rhoncus mattis eu eu magna.</p>
                     </div>
                     <div class="span5 offset1">
                         <ul class="nav nav-pills well well-small">
@@ -390,16 +403,17 @@
                         </tr>
                     </tbody>
                 </table>
+                <a href="#" class="cta-viewmore">VIEW MORE SPECS</a>
             </div><!-- /#compare -->
         </div><!-- /.tab-content -->
         <div class="row-fluid suggestion">
-            <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="" />Need More Hosting Power? Learn about our VPS and Dedicated Servers.</h3>
+            <h3 class="island30 raised"><img src="./img/bolt.png" width="12" height="24" alt="" />Need More Hosting Power? Learn about our <a href="#">VPS</a> and <a href="#">Dedicated Servers</a>.</h3>
         </div>
     </div>
     <div class="wrap raised">
         <div class="container">
             <div class="row">
-                <h3 class="span8">Contact our Business Hosting Experts</h3>
+                <h2 class="span8">Contact our Business Hosting Experts</h2>
                 <p class="span8">Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
             </div>
             <div class="container">
@@ -414,7 +428,7 @@
                             <input id="phoneNumber" type="text" placeholder="Your Phone #" class="span11" />
                         </div>
                         <div class="span4">
-                            <label>Currently an InMotion Hosting CUstomer?</label>
+                            <label>Currently an InMotion Hosting Customer?</label>
                             <label class="a11y" for="postalCode">Zip Code</label>
                             <input id="postalCode" type="text" placeholder="Zip Code" class="span11" />
                             <label class="a11y" for="whereIMH">Your Phone #</label>
@@ -427,7 +441,21 @@
                     </form>
                 </div>
             </div>
+
+       <div class="row wrap">
+        <div class="dc span3">
+            <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" >
+            <br>
+    Moving domains can be messy. We'll handle the dirty work. <br>
+    <a href="#">Learn More</a></div>
+        <div class="row span8 island sunken">
+                <blockquote class="quoted">I just wanted to let you know how absolutely pleased I am with InMotion Hosting. You’re always up, your support is excellent and I have NEVER had a problem with uptime or connections. Not to mention that your rates are very reasonable.”</blockquote>
+                <span class="emisor vibrant">
+                    <span class="quotename">Ajay Narain</span>
+                    <span class="muted quotefrom">Sunnyvale, CA</span></span>
+            </div>
         </div>
+             </div>
     </div>
 
 
