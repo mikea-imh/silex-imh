@@ -1,8 +1,34 @@
 {% extends 'layout.html.twig' %}
 {% set active = 'webdesign' %}
 
-{% block content %}
+{# title #}
+{% block title %}{% endblock %}
 
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+<div class="span8">
     <h1>Web Design</h1>
+    <p>Engage your customers. InMotion Hosting provides high-quality web design services in a wide range of customizable packages. Whether you are a small to medium business or you desire a robust eCommerce storefront, InMotion can get your business online in no time. Ask us about our Search Engine Optimization and Social Media options.</p>
+</div>
+{% endblock %}
+
+{# content #}
+{% block content %}
+<div class="wrap pattern">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+            </div>
+            <div class="span8">
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}

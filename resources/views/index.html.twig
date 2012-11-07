@@ -1,7 +1,48 @@
 {% extends 'layout.html.twig' %}
 {% set active = 'homepage' %}
 
+{# title #}
+{% block title %}This is a super optimized title element to which the system concatenates &#39; | InMotion Hosting&#39;{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# intro #}
+{% block intro %}
+    <div class="span9">
+        <h1>Build your business online in no time.</h1>
+        <p>Thousands of customers know us to be the fastest, easiest and most reliable way to get online.</p>
+    </div>
+    <div class="span3">
+    </div>
+{% endblock %}
+
+{# content #}
 {% block content %}
+    <div class="{{active|e}} intro-foot">
+        <div class="container">
+            <div class="well well-small well-inverted clearfix">
+                <div class="row">
+                    <p class="span2">Choose a plan to learn more</p>
+                    <div class="span3 well well-small raised">
+                        <h3>Business Hosting</h3>
+                        <p>Basic websites, start-ups and personalzied email.</p>
+                    </div>
+                    <div class="span3 well well-small raised">
+                        <h3>VPS Hosting</h3>
+                        <p>High-growth businesses &amp; moderate web traffic</p>
+                    </div>
+                    <div class="span3 well well-small raised">
+                        <h3>Dedicated Hosting</h3>
+                        <p>Big projects, high traffic websites and root access</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrap pattern">
         <div class="container">
             <div class="row">
