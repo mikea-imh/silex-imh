@@ -16,59 +16,67 @@
 
     <link rel="stylesheet" href="{{ app.request.basepath }}/assets/css/styles.css">
 
+    <script type="text/javascript">
+      (function() {
+        var config = {
+          kitId: 'tkh8ukm',
+          scriptTimeout: 3000
+        };
+        var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/(\s|^)wf-loading(\s|$)/g," ");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script"),d=false;tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(d||a&&a!="complete"&&a!="loaded")return;d=true;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+      })();
+    </script>
+
     <script src="{{ app.request.basepath }}/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     {% set active = active|default(null) %}
-    <div class="navbar navbar-fixed-top">
+    <div id="skip">
+        <a href="#main">Skip to Main Content</a>
+        <a href="#nav">Skip to Navigation</a>
+    </div>
+    <header role="banner">
+        <a href="{{ path('homepage') }}"><img src="#" /></a>
+        <ul class="nav nav-pills">
+            <li><a href="#">Live Chat</a></li>
+            <li>888.321.HOST</li>
+            <li><a href="">AMP Login</a></li>
+        </ul>
+    </header>
+    <nav id="nav" class="navbar navbar-static-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="{{ path('homepage') }}">{{ 'Silex Kitchen Sink Edition'|trans }}</a>
-                <div class="nav-collapse">
-                    <ul class="nav">
-                        <li {% if 'homepage' == active %}class="active"{% endif %}><a href="{{ path('homepage') }}">{{ 'Homepage'|trans }}</a></li>
-                        <li {% if 'page_with_cache' == active %}class="active"{% endif %}><a href="{{ path('page_with_cache') }}">Cache sample</a></li>
-                        <li {% if 'form' == active %}class="active"{% endif %}><a href="{{ path('form') }}">Form sample</a></li>
-                        <li {% if 'doctrine' == active %}class="active"{% endif %}><a href="{{ path('doctrine') }}">Doctrine</a></li>
-                        <li class="dropdown{% if 'account' == active %} active{% endif %}">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                Account <b class="caret"></b>
-                            </a>
-                            <ul class="dropdown-menu">
-                                {% if app.session.get('user') %}
-                                    <li><a href="{{ path('logout') }}">{{ 'Logout'|trans }}</a></li>
-                                {% else %}
-                                    <li><a href="{{ path('login') }}">{{ 'Login'|trans }}</a></li>
-                                    <li><a href="#">{{ 'Register'|trans }}</a></li>
-                                {% endif %}
-                            </ul>
-                        </li>
-                    </ul>
-                </div><!--/.nav-collapse -->
+                <ul class="nav">
+                    <li class="dropdown{% if 'account' == active %} active{% endif %}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Hosting</a>
+                        <ul class="dropdown-menu">
+                            <li {% if 'business_hosting' == active %}class="active"{% endif %}><a href="{{ path('business_hosting') }}">Business Hosting</a></li>
+                            <li {% if 'vps_hosting' == active %}class="active"{% endif %}><a href="{{ path('vps_hosting') }}">VPS Hosting</a></li>
+                            <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Dedicated Servers</a></li>
+                        </ul>
+                    </li><!-- /.dropdown -->
+                    <li {% if 'domains' == active %}class="active"{% endif %}><a href="{{ path('domains') }}">Domains</a></li>
+                    <li {% if 'webdesign' == active %}class="active"{% endif %}><a href="{{ path('webdesign') }}">Web Design</a></li>
+                    <li {% if 'site_hosting_tools' == active %}class="active"{% endif %}><a href="{{ path('site_hosting_tools') }}">Site Hosting Tools</a></li>
+                    <li {% if 'why_us' == active %}class="active"{% endif %}><a href="{{ path('why_us') }}">Why Us?</a></li>
+                    <li {% if 'support' == active %}class="active"{% endif %}><a href="{{ path('support') }}">Support Center</a></li>
+                </ul><!-- /.nav -->
             </div>
         </div>
-    </div>
+    </nav>
 
-    <div class="container">
-        <div id="main" role="main" class="container">
-            {% set alertTypeAvaillable = [ 'info', 'success', 'warning', 'error'] %}
-            {% for alert in alertTypeAvaillable %}
-                {% if app.session.hasFlash(alert) %}
-                        <div class="alert alert-{{ alert }}" >
-                            <button class="close" data-dismiss="alert">×</button>
-                            {{ app.session.flash(alert)|trans }}
-                        </div>
-                {% endif %}
-            {% endfor %}
-            {% block content %}
-            {% endblock %}
-        </div>
-    </div>
+    <div id="main" role="main">
+        {% block content %}
+        {% endblock %}
+    </div><!-- /#main -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="{{ app.request.basepath }}/assets/js/scripts.js"></script>
+    <footer role="contentinfo" class="wrap">
+        <div class="container">
+        </div>
+    </footer>
 </body>
 </html>

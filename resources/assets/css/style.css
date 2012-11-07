@@ -1,3 +1,658 @@
-body {
-    padding-top: 60px;
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............The section your currently reading
+ *
+ * CODING STANDARDS....READ BEFORE editing any CSS file
+ *
+ * MIXINS..............Super-simple Sass stuff
+ * RESET...............Set some defaults
+ * CLEARFIX............
+ * SHARED..............Shared declarations
+ */
+
+/*------------------------------------*\
+    $CODING STANDARDS
+\*------------------------------------*/
+/**
+ * Read, learn, utilize for a consistent, reusable, understandable all around
+ * better experience when writing quality CSS in a collaborative environment
+ *
+ * Most suggestions are taken from Google HTML/CSS Style Guide
+ * Please read each topic entry listed below at its corresponding link
+ */
+
+    /**
+     * General Formating Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#General_Formatting_Rules
+     *
+     * Note: When writing HTML or PHP use PEAR Standards for indentation
+     * http://pear.php.net/manual/en/standards.indenting.php
+     */
+
+    /**
+     * CSS Formating Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Formatting_Rules
+     *
+     * Declaration order
+     * Declaration stops
+     * Property name stops
+     *
+     */
+
+    /**
+     * CSS Style Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
+     *
+     * Shorthand properties
+     * 0 and units
+     * Leading 0s
+     * Hexadecimal notation
+     * ID and class name delimiters
+     * Type selectors
+     */
+
+blockquote {
+  border: none;
 }
+
+body {
+  background: #fcfcfc;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.emisor,
+.emisor > span {
+  display: block;
+  margin-left: 24px;
+}
+
+/**
+ * Remove the gutter of the element
+ */
+.gutter-remove {
+  margin-left: 0;
+}
+
+/**
+ * Remove the gutter of the element
+ */
+.gutter-spillover {
+  padding-right: 20px;
+}
+
+/*------------------------------------*\
+    $ISLAND
+\*------------------------------------*/
+/**
+ * Simple, boxed off content, as per: csswizardry.com/2011/10/the-island-object
+ */
+.island {
+  outline: 1px solid #ccc;
+  padding: 20px;
+}
+
+/*------------------------------------*\
+    $ROSTRUM
+\*------------------------------------*/
+/**
+ * Like what Olympic winners stand on during medal ceremony
+ * Use for presenting a grouping of 3 items necessitating a visual indicator
+ * of 'importance' or 'winner' like displaying hosting plans
+ *
+ * First place is visual center with second place left of center and
+ * third place right of center
+ */
+.rostrum {
+  margin-top: 50px;
+  position: relative;
+}
+
+  .rostrum-tiered-item {
+    position: relative;
+    text-align: center;
+  }
+
+  .rostrum-tiered-item-first {
+    margin: -20px 0 0 0;
+    width: 340px;
+    z-index: 5;
+  }
+
+  .rostrum-tiered-item-third {
+    margin-left: 0;
+  }
+
+/*------------------------------------*\
+    $SPLIT CENTER
+\*------------------------------------*/
+/**
+ * Display group of two elements one after the other with the text centered
+ * Makes it appear as if it were one element that is text aligned center
+ * 
+ */
+.split-center {
+  padding: 0 20px;
+}
+
+  .split-center-title {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 0;
+  }
+
+  .split-center-value {
+    display: inline;
+    margin: 0;
+  }
+
+  .split-center-value + .split-center-title::before {
+    content: ".";
+    display: block;
+    line-height: .35em;
+    color: transparent;
+    width: 8em;
+  }
+
+.icon {
+  background: #fff;
+  width: 33%;
+}
+
+
+
+.muted {
+  color: #888;
+}
+
+/**
+ * Apply the crosshatch pattern to element
+ */
+.pattern {
+  background: url(../../img/pattern.gif) repeat 0 0;
+}
+
+/**
+ * Apply white background to element
+ */
+.raised {
+  background: #fff;
+}
+
+/**
+ * Apply light grey background to element
+ */
+.sunken {
+  background: #eee;
+}
+
+/**
+ * Apply blue background with noise to element
+ */
+.intro { /* --- WE'LL BE CHANGING THIS TO ANOTHER COLOR ---*/
+  /*background: url(../../img/bluenoise.png) repeat 0 0;*/
+}
+
+/**
+ * Apply red opening double quote above element
+ */
+.quoted:before {
+  color: #c52127;
+  content: "\201C"; float: left;
+  display: block;
+  font-size: 700%;
+  margin: 30px 20px 0px 0px;
+}
+
+/**
+ * Apply top and bottom padding to element
+ */
+.wrap {
+  padding: 40px 0;
+}
+
+.business-specification .table-striped thead th.table-col-4,
+.business-specification .table-striped tfoot td.table-col-4,
+.business-specification .table-striped tbody td.table-col-4 {
+  background-color: rgba(77, 160, 225, 0.15);
+}
+
+.table tbody td,
+.table tfoot td {
+  text-align: center;
+}
+
+.table tbody th {
+  text-align: left;
+}
+
+.plan-specification-featured,
+.plan-specification-example {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.plan-specification-listing,
+.plan-specification-example {
+  width: 33%;
+}
+
+.business-specification thead .table-col-1,
+.business-specification tfoot .table-col-1,
+.business-specification tfoot .table-col-2 {
+  border-width: 0px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.business-specification thead td {
+  border-left-color: #fcfcfc;
+}
+
+.business-specificaiton tfoot .table-col-1,
+.business-specification tfoot .table-col-2 {
+  border-left-color: #fff;
+}
+
+.business-specification tfoot .table-col-2 {
+  border-right: 1px solid #ccc;
+}
+.business-specification tfoot {
+  border-bottom: 2px solid #888;
+}
+.table tbody {
+  border-top: 1px solid #ccc;
+}
+
+.compare .table tbody td,
+.compare .table thead th {
+  border-left: 1px solid #ccc;
+}
+.compare .table thead td + th {
+  border-left: none;
+}
+.compare .table tbody th {
+  width: 40%;
+}
+
+
+.matrix > li {
+  border-bottom: 1px solid #ccc;
+  border-collapse: collapse;
+  border-right: 1px solid #ccc;
+  margin-left: 0;
+  padding: 20px 30px 20px 70px; height: 140px;
+}
+
+.matrix > li:nth-child(even) {
+  border-right: none;
+}
+
+.matrix-two-column > li {
+  float: left;
+  width: 38%;
+}
+.matrix > .matrix-last {
+  border-bottom: none;
+}
+
+.well {
+  background-color: #cfcfcf;
+  margin: 26px auto 20px;
+}
+
+.well .row-fluid .span4 {
+  position: relative;
+  border-right: 1px solid #b4b4b4;
+}
+.well .row-fluid .span4:last-child {
+  border-right: none;
+}
+
+.well form {
+  margin-bottom: 0;
+}
+
+.well .row-fluid .span4:nth-child(even):before,
+.well .row-fluid .span4:first-child:after {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-color: transparent;
+  border-left-color: #b4b4b4;
+  border-style: solid;
+  border-width: 10px;
+  content: ' ';
+}
+
+.a11y { /* screen readers */
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.ir { /* image replacement */
+  font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+.table .ir {
+  display: block;
+  height: 18px;
+  margin: 0 auto;
+  width: 18px;
+  background: transparent no-repeat 0 0;
+}
+
+.ideal,
+.table .ideal {
+  background-image: url(../../img/ideal.png);
+}
+
+.less-ideal,
+.table .less-ideal {
+  background-image: url(../../img/less-ideal.png);
+}
+
+.unacceptable,
+.table .unacceptable {
+  background-image: url(../../img/unacceptable.png);
+}
+
+.well-small {
+  background-color: #ededed;
+  box-shadow: none;
+  border: none;
+}
+
+.compare .nav-pills > li {
+  margin: 0 20px 0 0;
+}
+.compare .nav-pills > li:first-child {
+  margin-left: 30px;
+}
+
+.compare .nav-pills .ideal,
+.compare .nav-pills .less-ideal,
+.compare .nav-pills .unacceptable {
+  padding-left: 20px;
+  background-repeat: no-repeat;
+}
+
+.suggestion {
+  margin: 30px auto 40px;
+}
+.suggestion h3 {
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /*background: url(../../img/bolt.png) no-repeat left center;*/
+}
+.suggestion img {
+  margin-right: .5em;
+}
+
+textarea,
+input[type="text"] {
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #b2b2b2;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #232323;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #232323;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #232323;
+}
+
+.rostrum-tiered-item h3 {
+  position: relative;
+  text-align: center;
+  width: 6em;
+  margin-right: 0 auto;
+  background-repeat: no-repeat;
+}
+
+.package-subtitle {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 8px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .rostrum-tiered-item-first {
+    width: 268px;
+  }
+
+  .matrix-two-column > li {
+    width: 30%;
+  }
+
+}
+
+
+
+
+/*------- ALEX CSS ------------------------*/
+
+
+.white {
+  color: #ffffff;
+}
+.blanky {
+  margin: 0px; padding: 0px;
+}
+.leader-biz {
+    height: 253px; background: url(../../img/leader-bg-biz.jpg) 0 0 repeat-x;
+}
+.leader-biz-robotics {
+    background: url(../../img/leader-biz-robotics.png) top center no-repeat;
+    height: 253px;
+}
+.package-title {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+}
+.leader-biz-cta-place {
+  float: right;
+  margin: 57px 119px 0px 0px;
+}
+.tier-space {
+    margin: -4px 0px 0px 0px;
+}
+.pricebox {
+    margin: 30px auto; 
+    padding: 0px 38px 0px 0px;
+    color: #c52228; 
+    font-size: 52px;
+    font-family: adelle; font-weight: 400;
+}
+.pricebox sup {
+    font-size: 28px;
+    margin: -10px 0px 0px 5px;
+}
+.pricebox sub {
+    font-size: 20px;
+    margin: 0px 0px 0px -32px;
+}
+.checkmark,
+.table .checkmark {
+  background-image: url(../../img/ideal.png);
+}
+.split-center-mid {
+  padding: 0 40px;
+}
+.adtwo {
+  width: 419px;
+  padding: 20px; line-height: 18px;
+}
+.iconleft {
+    float: left; margin: 0px 12px 10px 0px;
+}
+.quotename {
+  color: #c52228;
+  font-family: adelle;
+  font-size: 18px; font-weight: 600;
+}
+.quotefrom {
+  margin-top: -3px;
+  font-family: adelle;
+}
+.thick {
+  padding: 30px;
+}
+.jutwrap {
+  padding: 30px 0 40px;
+}
+.jutwrap2 {
+  padding: 40px 0 30px;
+}
+.jutwrap3 {
+  padding: 30px 0;
+}
+.jutwrap4 {
+  padding: 0px 0px 30px; display: block;
+}
+.wrap-emp {
+  padding: 40px 0px 0px;
+}
+.island30 {
+  outline: 1px solid #ccc;
+  padding: 30px;
+}
+.dc {
+    float: right;
+    display: block;
+    text-align: center;
+}
+.trust {
+  text-align: center; 
+  margin-top: 30px;
+  font-family: adelle;
+  font-size: 16px; font-weight: 600;
+  color: #888888;
+}
+.ln {
+  border-bottom: #ccc dotted 1px;
+  padding-bottom: 3px;
+  width: 100%; display: block;
+  margin: 0px 0px 10px 0px;
+}
+.centered {
+  text-align: center;
+}
+.mx-icon {
+  display: block;
+  float: left;
+  margin: 10px 12px 0px -38px;
+}
+.oth-icon {
+  float: left;
+  margin: 12px 12px 0px 0px;
+}
+.inp-fatty {
+  height: 36px;
+  display: block;
+}
+
+
+
+
+
+
+
+
+/*------- BLUE CTA BUTTON -------*/
+.cta {
+  background-color: #4BA0E1; font-family: "adelle-sans", sans-serif;
+  text-align: center;
+  display: inline-block;
+  color: #FFF;
+  text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 0px 3px 0px #3f89c2;
+  margin-bottom: 1px;
+  padding: 4px 12px 3px;
+  text-transform: uppercase; 
+  font-size: 12px;
+  position: relative;
+  z-index: 9000;
+  vertical-align: bottom;
+}
+.cta:hover {
+  background-color: #3f89c2;
+  box-shadow: 0px 3px 0px #2D658E;
+  cursor: pointer; 
+  color: white;
+  text-decoration: none;
+}
+.cta:active {
+  background-color: #3f89c2; margin:1px 0px 0px;
+  box-shadow: 0px 2px 0px #2D658E;
+}
+.cta-overlap {
+    display: block;
+    height: 16px;
+}
+.cta-overlap > .cta {
+    top: -16px;
+}
+.cta-overlap > .cta:active {
+    top: -16px;
+}
+/*------- END BLUE CTA CSS -------*/
+
+
+/*------- GRAY VIEW MORE SPECS CTA BUTTON -------*/
+.cta-viewmore {
+  background-color: #888888; font-family: "adelle-sans", sans-serif;
+  text-align: center;
+  display: block;
+  color: #FFF; width: 280px;
+  text-decoration: none;
+  border-radius: 0px 0px 3px 3px; 
+  box-shadow: 0px 3px 0px #646464;
+  margin: -1px auto 10px;
+  padding: 1px 12px;
+  text-transform: uppercase; 
+  font-size: 12px;
+  position: relative;
+}
+.cta-viewmore:hover {
+  background-color: #757575;
+  box-shadow: 0px 3px 0px #515151;
+  cursor: pointer; 
+  color: white;
+  text-decoration: none;
+}
+.cta-viewmore:active {
+     margin: 0px auto 9px;
+   box-shadow: 0px 2px 0px #515151;
+}
+/*------- END GRAY CTA CSS -------*/
