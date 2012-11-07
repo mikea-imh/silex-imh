@@ -17,17 +17,17 @@ $app->match('/', function() use ($app) {
 
 $app->match('/business-hosting', function() use ($app) {
     return $app['twig']->render(
-        'business_hosting.html.twig');
+        'webhosting_plan\business_hosting.html.twig');
 })->bind('business_hosting');
 
 $app->match('/vps-hosting', function() use ($app) {
     return $app['twig']->render(
-        'vps_hosting.html.twig');
+        'webhosting_plan\vps_hosting.html.twig');
 })->bind('vps_hosting');
 
 $app->match('/dedicated-servers', function() use ($app) {
     return $app['twig']->render(
-        'dedicated_servers.html.twig');
+        'webhosting_plan\dedicated_servers.html.twig');
 })->bind('dedicated_servers');
 
 $app->match('/domains', function() use ($app) {
