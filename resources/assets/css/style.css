@@ -152,10 +152,10 @@ img {
   }
 
   .split-center-value + .split-center-title::before {
+    color: transparent;
     content: ".";
     display: block;
     line-height: .35em;
-    color: transparent;
     width: 8em;
   }
 
@@ -203,8 +203,9 @@ img {
  */
 .quoted:before {
   color: #c52127;
-  content: "\201C"; float: left;
+  content: "\201C"; 
   display: block;
+  float: left;
   font-size: 700%;
   margin: 30px 20px 0px 0px;
 }
@@ -320,18 +321,18 @@ img {
 
 .well .row-fluid .span4:nth-child(even):before,
 .well .row-fluid .span4:first-child:after {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: -10px;
   border-color: transparent;
   border-left-color: #b4b4b4;
   border-style: solid;
   border-width: 10px;
   content: ' ';
+  display: inline-block;
+  height: 0;
+  margin-left: -10px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 0;
 }
 
 .a11y { /* screen readers */
@@ -345,16 +346,16 @@ img {
 
 .ir { /* image replacement */
   font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+  text-shadow: none;
+  color: transparent;
 }
 
 .table .ir {
+  background: transparent no-repeat 0 0;
   display: block;
   height: 18px;
   margin: 0 auto;
   width: 18px;
-  background: transparent no-repeat 0 0;
 }
 
 .ideal,
@@ -374,8 +375,8 @@ img {
 
 .well-small {
   background-color: #ededed;
-  box-shadow: none;
   border: none;
+  box-shadow: none;
 }
 
 .compare .nav-pills > li {
@@ -388,15 +389,15 @@ img {
 .compare .nav-pills .ideal,
 .compare .nav-pills .less-ideal,
 .compare .nav-pills .unacceptable {
-  padding-left: 20px;
   background-repeat: no-repeat;
+  padding-left: 20px;
 }
 
 .suggestion {
   margin: 30px auto 40px;
 }
 .suggestion h3 {
-  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-family: 'adelle-sans', Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
   /*background: url(../../img/bolt.png) no-repeat left center;*/
@@ -427,11 +428,11 @@ textarea::-webkit-input-placeholder {
 }
 
 .rostrum-tiered-item h3 {
+  background-repeat: no-repeat;
+  margin-right: 0 auto;
   position: relative;
   text-align: center;
   width: 6em;
-  margin-right: 0 auto;
-  background-repeat: no-repeat;
 }
 
 .package-subtitle {
@@ -460,24 +461,26 @@ textarea::-webkit-input-placeholder {
 
 
 .white {
-  color: #ffffff;
+  color: #fff;
 }
 .blanky {
-  margin: 0px; padding: 0px;
+  margin: 0px; 
+  padding: 0px;
 }
 .leader-biz {
-    height: 253px; background: url(../../img/leader-bg-biz.jpg) 0 0 repeat-x;
+    background: url(../../img/leader-bg-biz.jpg) 0 0 repeat-x;
+    height: 253px; 
 }
 .leader-biz-robotics {
     background: url(../../img/leader-biz-robotics.png) top center no-repeat;
     height: 253px;
 }
 .package-title {
-  text-align: center;
   margin: 0 auto;
-  width: 200px;
   padding-bottom: 8px;
+  text-align: center;
   text-transform: uppercase;
+  width: 200px;
 }
 .leader-biz-cta-place {
   float: right;
@@ -487,17 +490,20 @@ textarea::-webkit-input-placeholder {
     margin: -4px 0px 0px 0px;
 }
 .pricebox {
+    color: #c52228;
+    font-family: 'adelle'; 
+    font-size: 52px;
+    font-weight: 400;
     margin: 30px auto; 
     padding: 0px 38px 0px 0px;
-    color: #c52228; 
-    font-size: 52px;
-    font-family: adelle; font-weight: 400;
 }
-.pricebox sup {
+.pricebox 
+sup {
     font-size: 28px;
     margin: -10px 0px 0px 5px;
 }
-.pricebox sub {
+.pricebox 
+sub {
     font-size: 20px;
     margin: 0px 0px 0px -32px;
 }
@@ -509,20 +515,23 @@ textarea::-webkit-input-placeholder {
   padding: 0 40px;
 }
 .adtwo {
+  line-height: 18px;
+  padding: 20px; 
   width: 419px;
-  padding: 20px; line-height: 18px;
 }
 .iconleft {
-    float: left; margin: 0px 12px 10px 0px;
+    float: left; 
+    margin: 0px 12px 10px 0px;
 }
 .quotename {
   color: #c52228;
-  font-family: adelle;
-  font-size: 18px; font-weight: 600;
+  font-family: 'adelle';
+  font-size: 18px; 
+  font-weight: 600;
 }
 .quotefrom {
+  font-family: 'adelle';
   margin-top: -3px;
-  font-family: adelle;
 }
 .thick {
   padding: 30px;
@@ -537,7 +546,8 @@ textarea::-webkit-input-placeholder {
   padding: 30px 0;
 }
 .jutwrap4 {
-  padding: 0px 0px 30px; display: block;
+  display: block;
+  padding: 0px 0px 30px; 
 }
 .wrap-emp {
   padding: 40px 0px 0px;
@@ -547,22 +557,24 @@ textarea::-webkit-input-placeholder {
   padding: 30px;
 }
 .dc {
-    float: right;
-    display: block;
-    text-align: center;
+  display: block;
+  float: right;
+  text-align: center;
 }
 .trust {
-  text-align: center; 
+  color: #888;
+  font-family: 'adelle';
+  font-size: 16px; 
+  font-weight: 600;
   margin-top: 30px;
-  font-family: adelle;
-  font-size: 16px; font-weight: 600;
-  color: #888888;
+  text-align: center; 
 }
 .ln {
   border-bottom: #ccc dotted 1px;
-  padding-bottom: 3px;
-  width: 100%; display: block;
+  display: block;
   margin: 0px 0px 10px 0px;
+  padding-bottom: 3px;
+  width: 100%; 
 }
 .centered {
   text-align: center;
@@ -577,8 +589,8 @@ textarea::-webkit-input-placeholder {
   margin: 12px 12px 0px 0px;
 }
 .inp-fatty {
-  height: 36px;
   display: block;
+  height: 36px;
 }
 
 
@@ -590,69 +602,66 @@ textarea::-webkit-input-placeholder {
 
 /*------- BLUE CTA BUTTON -------*/
 .cta {
-  background-color: #4BA0E1; font-family: "adelle-sans", sans-serif;
-  text-align: center;
-  display: inline-block;
-  color: #FFF;
-  text-decoration: none;
+  background-color: #4BA0E1; 
   border-radius: 3px;
   box-shadow: 0px 3px 0px #3f89c2;
+  display: inline-block;
   margin-bottom: 1px;
   padding: 4px 12px 3px;
-  text-transform: uppercase; 
-  font-size: 12px;
-  position: relative;
-  z-index: 9000;
   vertical-align: bottom;
+  z-index: 9000;
 }
 .cta:hover {
   background-color: #3f89c2;
   box-shadow: 0px 3px 0px #2D658E;
   cursor: pointer; 
-  color: white;
-  text-decoration: none;
 }
 .cta:active {
-  background-color: #3f89c2; margin:1px 0px 0px;
   box-shadow: 0px 2px 0px #2D658E;
+  margin:1px 0px 0px;
 }
 .cta-overlap {
-    display: block;
-    height: 16px;
+  display: block;
+  height: 16px;
 }
 .cta-overlap > .cta {
-    top: -16px;
+  top: -16px;
 }
 .cta-overlap > .cta:active {
-    top: -16px;
+  top: -16px;
 }
 /*------- END BLUE CTA CSS -------*/
 
+/*------- SHARED BUTTON ATTRIBUTES -------*/
+.btn {
+  color: #fff;
+  font-family: 'adelle-sans', sans-serif;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+/*------- END SHARED -------*/
 
 /*------- GRAY VIEW MORE SPECS CTA BUTTON -------*/
 .cta-viewmore {
-  background-color: #888888; font-family: "adelle-sans", sans-serif;
-  text-align: center;
-  display: block;
-  color: #FFF; width: 280px;
-  text-decoration: none;
+  background-color: #888; 
   border-radius: 0px 0px 3px 3px; 
   box-shadow: 0px 3px 0px #646464;
+  display: block;
   margin: -1px auto 10px;
   padding: 1px 12px;
-  text-transform: uppercase; 
-  font-size: 12px;
-  position: relative;
+  width: 280px;
 }
 .cta-viewmore:hover {
   background-color: #757575;
-  box-shadow: 0px 3px 0px #515151;
-  cursor: pointer; 
-  color: white;
+  box-shadow: 0px 3px 0px #515151; 
+  cursor: pointer;
   text-decoration: none;
 }
 .cta-viewmore:active {
-     margin: 0px auto 9px;
-   box-shadow: 0px 2px 0px #515151;
+  box-shadow: 0px 2px 0px #515151;
+  margin: 0px auto 9px;
 }
 /*------- END GRAY CTA CSS -------*/
