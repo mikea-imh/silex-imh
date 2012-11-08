@@ -151,10 +151,10 @@ img {
   }
 
   .split-center-value + .split-center-title::before {
+    color: transparent;
     content: ".";
     display: block;
     line-height: .75em;
-    color: transparent;
     width: 8em;
   }
 
@@ -209,6 +209,7 @@ img {
   content: "\201C";
   display: block;
   font-size: 600%;
+  font-family: Helvetica, Arial, sans-serif;
   margin-top: 20px;
 }
 
@@ -276,9 +277,11 @@ img {
 .compare .table thead th {
   border-left: 1px solid #ccc;
 }
+
 .compare .table thead td + th {
   border-left: none;
 }
+
 .compare .table tbody th {
   width: 40%;
 }
@@ -312,6 +315,7 @@ img {
   position: relative;
   border-right: 1px solid #b4b4b4;
 }
+
 .well .row-fluid .span4:last-child {
   border-right: none;
 }
@@ -335,6 +339,7 @@ img {
   border-width: 10px;
   content: ' ';
 }
+
 .well-inverted {
   background: #232323;
 }
@@ -360,6 +365,26 @@ img {
   margin: 0 auto;
   width: 18px;
   background: transparent no-repeat 0 0;
+}
+
+/**
+ * Skip links for a11y and keyboard navigation
+ */
+#skip {
+  background: #232323;
+}
+#skip a {
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+#skip a:focus {
+  position: static;
+  height: auto;
+  width: auto;
 }
 
 .ideal,
