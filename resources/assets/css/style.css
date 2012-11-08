@@ -65,6 +65,9 @@ img {
   height: auto;
   max-width: 100%;
 }
+header {
+  padding: 18px 0;
+}
 
 .emisor,
 .emisor > span {
@@ -163,6 +166,39 @@ img {
   width: 33%;
 }
 
+/**
+ * Apply chat bubble icon
+ */
+header .nav-pills-contact,
+header .nav-pills-contact a {
+  color: #232323;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+header .nav-pills-contact a.btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-pills-no-link {
+  line-height: 39px;
+}
+
+.nav-pills-contact i {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 3px;
+  width: 18px;
+}
+
+.icon-chat {
+  background: url(../../img/icon-chat.gif) no-repeat 0 0;
+}
+.icon-phone {
+  background: url(../../img/icon-phone.gif) no-repeat 0 0;
+  padding-bottom: 1px;
+}
 
 
 .muted {
