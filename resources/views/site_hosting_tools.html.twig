@@ -1,8 +1,45 @@
 {% extends 'layout.html.twig' %}
 {% set active = 'site_hosting_tools' %}
 
-{% block content %}
+{# title #}
+{% block title %}{% endblock %}
 
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+<div class="span8">
     <h1>Site Hosting Tools</h1>
+    <p>All InMotion Hosting site hosting accounts offer a wide range of software and features to help your site stand above the rest. We offer the most popular blogging and CMS software like Wordpress, Joomla, and Drupal. Installing these features are quick and painless thanks to the Softaculous one-click installation script which is accessed within cPanel. InMotion Hosting supports the most popular PHP and MySQL software and offers tutorials and EDU channels in our Support Center.</p>
+</div>
+{% endblock %}
 
+{# content #}
+{% block content %}
+<div class="wrap">
+    <div class="container">
+        <div class="row">
+            {% set io = 0 %}
+            {% for io in range(0,5) %}
+                <div class="span6">
+                    <h2>Free stuff</h2>
+                    {% set i = 0 %}
+                    {% for i in range(0, 2) %}
+                        <div class="media site-hosting-tool">
+                            <a href="#" class="pull-left sunken"><img class="media-object" src="http://placehold.it/80x80" alt="" /></a>
+                            <div class="media-body raised">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 {% endblock %}
