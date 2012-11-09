@@ -443,6 +443,35 @@ textarea::-webkit-input-placeholder {
   border-bottom: 1px solid #ccc;
 }
 
+/**
+ * Use in addition with media component
+ */
+.site-hosting-tool {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.span6:nth-child(odd) > .site-hosting-tool {
+  margin-right: 10px;
+}
+
+.span6:nth-child(even) > .site-hosting-tool,
+.span6:nth-child(even) > h2 {
+  margin-left: 10px;
+}
+
+.site-hosting-tool > .pull-left {
+  background-color: #eee;
+  display: block;
+  margin-right: 0;
+  padding: 18px;
+}
+
+.site-hosting-tool > .media-body {
+  border-left: 1px solid #ccc;
+  padding: 18px 28px;
+}
+
 .rostrum-tiered-item-first h3::before {
   content: " ";
   display: block;
