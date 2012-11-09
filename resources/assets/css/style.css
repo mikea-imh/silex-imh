@@ -65,6 +65,9 @@ img {
   height: auto;
   max-width: 100%;
 }
+header {
+  padding: 18px 0;
+}
 
 .emisor,
 .emisor > span {
@@ -151,10 +154,10 @@ img {
   }
 
   .split-center-value + .split-center-title::before {
+    color: transparent;
     content: ".";
     display: block;
     line-height: .75em;
-    color: transparent;
     width: 8em;
   }
 
@@ -163,6 +166,39 @@ img {
   width: 33%;
 }
 
+/**
+ * Apply chat bubble icon
+ */
+header .nav-pills-contact,
+header .nav-pills-contact a {
+  color: #232323;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+header .nav-pills-contact a.btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-pills-no-link {
+  line-height: 39px;
+}
+
+.nav-pills-contact i {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 3px;
+  width: 18px;
+}
+
+.icon-chat {
+  background: url(../../img/icon-chat.gif) no-repeat 0 0;
+}
+.icon-phone {
+  background: url(../../img/icon-phone.gif) no-repeat 0 0;
+  padding-bottom: 1px;
+}
 
 
 .muted {
@@ -210,6 +246,7 @@ img {
   content: "\201C";
   display: block;
   font-size: 600%;
+  font-family: Helvetica, Arial, sans-serif;
   margin-top: 20px;
 }
 
@@ -277,9 +314,11 @@ img {
 .compare .table thead th {
   border-left: 1px solid #ccc;
 }
+
 .compare .table thead td + th {
   border-left: none;
 }
+
 .compare .table tbody th {
   width: 40%;
 }
@@ -313,6 +352,7 @@ img {
   position: relative;
   border-right: 1px solid #b4b4b4;
 }
+
 .well .row-fluid .span4:last-child {
   border-right: none;
 }
@@ -336,6 +376,7 @@ img {
   border-width: 10px;
   content: ' ';
 }
+
 .well-inverted {
   background: #232323;
 }
@@ -363,6 +404,26 @@ img {
   background: transparent no-repeat 0 0;
 }
 
+/**
+ * Skip links for a11y and keyboard navigation
+ */
+#skip {
+  background: #232323;
+}
+#skip a {
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+#skip a:focus {
+  position: static;
+  height: auto;
+  width: auto;
+}
+
 .ideal,
 .table .ideal {
   background-image: url(../../img/ideal.png);
@@ -379,9 +440,8 @@ img {
 }
 
 .well-small {
-  /*background-color: #ededed;*/
-  box-shadow: none;
   border: none;
+  box-shadow: none;
 }
 
 .compare .nav-pills > li {
@@ -394,8 +454,8 @@ img {
 .compare .nav-pills .ideal,
 .compare .nav-pills .less-ideal,
 .compare .nav-pills .unacceptable {
-  padding-left: 20px;
   background-repeat: no-repeat;
+  padding-left: 20px;
 }
 
 .suggestion {
