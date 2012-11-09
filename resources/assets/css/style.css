@@ -195,6 +195,7 @@ img {
  */
 .intro {
   background: url(../../img/bluenoise.png) repeat 0 0;
+  border-top: 2px solid #232323;
 }
 .intro-foot {
   background: #333;
@@ -472,33 +473,16 @@ textarea::-webkit-input-placeholder {
   padding: 18px 28px;
 }
 
-.rostrum-tiered-item-first h3::before {
-  content: " ";
-  display: block;
-  width:10px; 
-  height: 17px;
-  background-color: #eee; 
-  float: left;
-  border-left: 6px solid #3f89c2;
-  border-right: 6px solid #3f89c2;
-  /*background-image: -webkit-linear-gradient(0deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);*/
-  background: -webkit-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -moz-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -o-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -ms-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  margin-right: 12px;
+/**
++ * Apply gears to pre-footer sales area
++ */
+.wrap.pre-footer {
+  padding-bottom: 0;
 }
 
-.rostrum-tiered-item-first h3::after {
-  content: " ";
-  display: block;
-  width: 6px;
-  height: 6px;
-  background-color: #eee;
-  position: absolute;
-  top: 0;
-  left: 16px;
+.pre-footer > .container {
+  background: url(../../img/pre-footer-gears.png) no-repeat right bottom;
+  padding-bottom: 72px;
 }
 
 footer {
