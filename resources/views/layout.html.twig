@@ -39,12 +39,16 @@
     </div>
     <header role="banner">
         <div class="container">
-            <a href="{{ path('homepage') }}"><img src="{{ app.request.basepath }}/img/logo-imh.png" alt="InMotion Hosting" /></a>
-            <ul class="nav nav-pills">
-                <li><a href="#">Live Chat</a></li>
-                <li>888.321.HOST</li>
-                <li><a href="">AMP Login</a></li>
-            </ul>
+            <div class="row">
+                <a href="{{ path('homepage') }}" class="span3"><img src="{{ app.request.basepath }}/img/logo-imh.png" alt="InMotion Hosting" /></a>
+                <div class="span5 offset4">
+                    <ul class="nav nav-pills nav-pills-contact">
+                        <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+                        <li class="nav-pills-no-link"><i class="icon-phone"></i> 888.321.HOST</li>
+                        <li><a href="#" class="btn btn-primary">AMP Login</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <nav id="nav" class="navbar navbar-static-top">

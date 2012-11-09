@@ -65,6 +65,9 @@ img {
   height: auto;
   max-width: 100%;
 }
+header {
+  padding: 18px 0;
+}
 
 .emisor,
 .emisor > span {
@@ -151,10 +154,10 @@ img {
   }
 
   .split-center-value + .split-center-title::before {
+    color: transparent;
     content: ".";
     display: block;
     line-height: .75em;
-    color: transparent;
     width: 8em;
   }
 
@@ -163,6 +166,39 @@ img {
   width: 33%;
 }
 
+/**
+ * Apply chat bubble icon
+ */
+header .nav-pills-contact,
+header .nav-pills-contact a {
+  color: #232323;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+header .nav-pills-contact a.btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-pills-no-link {
+  line-height: 39px;
+}
+
+.nav-pills-contact i {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 3px;
+  width: 18px;
+}
+
+.icon-chat {
+  background: url(../../img/icon-chat.gif) no-repeat 0 0;
+}
+.icon-phone {
+  background: url(../../img/icon-phone.gif) no-repeat 0 0;
+  padding-bottom: 1px;
+}
 
 
 .muted {
@@ -195,6 +231,7 @@ img {
  */
 .intro {
   background: url(../../img/bluenoise.png) repeat 0 0;
+  border-top: 2px solid #232323;
 }
 .intro-foot {
   background: #333;
@@ -209,6 +246,7 @@ img {
   content: "\201C";
   display: block;
   font-size: 600%;
+  font-family: Helvetica, Arial, sans-serif;
   margin-top: 20px;
 }
 
@@ -276,9 +314,11 @@ img {
 .compare .table thead th {
   border-left: 1px solid #ccc;
 }
+
 .compare .table thead td + th {
   border-left: none;
 }
+
 .compare .table tbody th {
   width: 40%;
 }
@@ -312,6 +352,7 @@ img {
   position: relative;
   border-right: 1px solid #b4b4b4;
 }
+
 .well .row-fluid .span4:last-child {
   border-right: none;
 }
@@ -335,6 +376,7 @@ img {
   border-width: 10px;
   content: ' ';
 }
+
 .well-inverted {
   background: #232323;
 }
@@ -362,6 +404,26 @@ img {
   background: transparent no-repeat 0 0;
 }
 
+/**
+ * Skip links for a11y and keyboard navigation
+ */
+#skip {
+  background: #232323;
+}
+#skip a {
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+#skip a:focus {
+  position: static;
+  height: auto;
+  width: auto;
+}
+
 .ideal,
 .table .ideal {
   background-image: url(../../img/ideal.png);
@@ -378,9 +440,8 @@ img {
 }
 
 .well-small {
-  /*background-color: #ededed;*/
-  box-shadow: none;
   border: none;
+  box-shadow: none;
 }
 
 .compare .nav-pills > li {
@@ -393,8 +454,8 @@ img {
 .compare .nav-pills .ideal,
 .compare .nav-pills .less-ideal,
 .compare .nav-pills .unacceptable {
-  padding-left: 20px;
   background-repeat: no-repeat;
+  padding-left: 20px;
 }
 
 .suggestion {
@@ -443,33 +504,45 @@ textarea::-webkit-input-placeholder {
   border-bottom: 1px solid #ccc;
 }
 
-.rostrum-tiered-item-first h3::before {
-  content: " ";
-  display: block;
-  width:10px; 
-  height: 17px;
-  background-color: #eee; 
-  float: left;
-  border-left: 6px solid #3f89c2;
-  border-right: 6px solid #3f89c2;
-  /*background-image: -webkit-linear-gradient(0deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);*/
-  background: -webkit-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -moz-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -o-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: -ms-linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  background: linear-gradient(90deg, #eee 20%, #3f89c2 20%, #3f89c2 80%, #eee 80%);
-  margin-right: 12px;
+/**
+ * Use in addition with media component
+ */
+.site-hosting-tool {
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-.rostrum-tiered-item-first h3::after {
-  content: " ";
-  display: block;
-  width: 6px;
-  height: 6px;
+.span6:nth-child(odd) > .site-hosting-tool {
+  margin-right: 10px;
+}
+
+.span6:nth-child(even) > .site-hosting-tool,
+.span6:nth-child(even) > h2 {
+  margin-left: 10px;
+}
+
+.site-hosting-tool > .pull-left {
   background-color: #eee;
-  position: absolute;
-  top: 0;
-  left: 16px;
+  display: block;
+  margin-right: 0;
+  padding: 18px;
+}
+
+.site-hosting-tool > .media-body {
+  border-left: 1px solid #ccc;
+  padding: 18px 28px;
+}
+
+/**
++ * Apply gears to pre-footer sales area
++ */
+.wrap.pre-footer {
+  padding-bottom: 0;
+}
+
+.pre-footer > .container {
+  background: url(../../img/pre-footer-gears.png) no-repeat right bottom;
+  padding-bottom: 72px;
 }
 
 footer {
