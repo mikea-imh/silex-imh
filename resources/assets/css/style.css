@@ -6,10 +6,7 @@
  *
  * CODING STANDARDS....READ BEFORE editing any CSS file
  *
- * MIXINS..............Super-simple Sass stuff
- * RESET...............Set some defaults
- * CLEARFIX............
- * SHARED..............Shared declarations
+ * COMPONENTS..........Simple, extendable, content containers
  */
 
 /*------------------------------------*\
@@ -423,7 +420,6 @@ img {
   border-right: 1px solid #ccc;
 }
 
-}
 .business-specification thead td,
 .business-specification .table-col-2 {
   border-left-color: #fcfcfc;
@@ -481,8 +477,8 @@ img {
 }
 
 .well .row-fluid .span4 {
-  position: relative;
   border-right: 1px solid #b4b4b4;
+  position: relative;
 }
 
 .well .row-fluid .span4:last-child {
@@ -542,6 +538,7 @@ img {
 #skip {
   background: #232323;
 }
+
 #skip a {
   height: 1px;
   left: 0;
@@ -550,11 +547,16 @@ img {
   top: -500px;
   width: 1px;
 }
+
 #skip a:focus {
   position: static;
   height: auto;
   width: auto;
 }
+
+/**
+ * Plan comparison icons
+ */
 
 .ideal,
 .table .ideal {
@@ -701,6 +703,178 @@ footer h5 {
 
 footer a {
   color: #888;
+}
+
+/**
+ * Meet Us customizations for .media component
+ */
+.meet_us > .media {
+  margin: 24px 0 0 30px;
+}
+
+.meet_us > .media > .media-body {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 24px;
+}
+
+.meet_us > .media:last-child .media-body {
+  border-bottom: none;
+}
+
+.meet_us > .media h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 0;
+  padding-bottom: 11px;
+  text-transform: uppercase;
+}
+
+.meet_us > .media > .media-object {
+  margin-left: 20px;
+  text-align: center;
+  width: 140px;
+}
+
+.media-object-empty {
+  height: 3em;
+}
+
+.meet_us .media-object img + img {
+  padding: 30px;
+}
+
+.meet_us.nav-tabs.nav-stacked > li > a {
+  background: #eee;
+  border-top: none;
+  color: #888;
+  font-family: "adelle", sans-serif;
+  font-size: 22px;
+  line-height: 42px;
+  position: relative;
+}
+
+.meet_us.nav-tabs.nav-stacked > li > a:hover,
+.meet_us.nav-tabs.nav-stacked > li > a:focus {
+  color: #232323;
+}
+
+.meet_us.nav-tabs.nav-stacked > li:first-child > a {
+  border-top: 1px solid #ddd;
+}
+
+.meet_us.nav-tabs.nav-stacked.overview > li > a.overview,
+.meet_us.nav-tabs.nav-stacked.support > li > a.support,
+.meet_us.nav-tabs.nav-stacked.technology > li > a.technology,
+.meet_us.nav-tabs.nav-stacked.reliability > li > a.reliability,
+.meet_us.nav-tabs.nav-stacked.guarantee > li > a.guarantee,
+.meet_us.nav-tabs.nav-stacked.software > li > a.software,
+.meet_us.nav-tabs.nav-stacked.gogreen > li > a.gogreen {
+  background: #ddd;
+  color: #232323;
+}
+
+.meet_us.nav-tabs.nav-stacked.overview > li > a.overview:after,
+.meet_us.nav-tabs.nav-stacked.support > li > a.support:after,
+.meet_us.nav-tabs.nav-stacked.technology > li > a.technology:after,
+.meet_us.nav-tabs.nav-stacked.reliability > li > a.reliability:after,
+.meet_us.nav-tabs.nav-stacked.guarantee > li > a.guarantee:after,
+.meet_us.nav-tabs.nav-stacked.software > li > a.software:after,
+.meet_us.nav-tabs.nav-stacked.gogreen > li > a.gogreen:after {
+  border-color: transparent;
+  border-style: solid;
+  border-left-color: #ddd;
+  border-width: 10px;
+  border-right-width: 0;
+  content: ' ';
+  display: inline-block;
+  height: 0;
+  right: -10px;
+  margin-top: -10px;
+  position: absolute;
+  top: 50%;
+  width: 0;
+}
+
+/**
+ * Meet Us customizations for [class^="icon-"]
+ */
+.meet_us a > i {
+  background-position: 0 0;
+  height: 24px;
+  margin-right: 10px;
+  width: 24px;
+}
+
+.icon-overview {
+  background-image: url(../../img/icon-overview.gif);
+}
+
+.icon-support {
+  background-image: url(../../img/icon-support.png);
+}
+
+.icon-technology {
+  background-image: url(../../img/icon-technology.gif);
+}
+
+.icon-reliability {
+  background-image: url(../../img/icon-reliability.png);
+}
+
+.icon-guarantee {
+  background-image: url(../../img/icon-guarantee.gif);
+}
+
+.icon-software {
+  background-image: url(../../img/icon-software.gif);
+}
+
+.icon-gogreen {
+  background-image: url(../../img/icon-gogreen.gif);
+}
+
+/**
+ * Meet Us active states for icons
+ */
+.overview .overview > .icon-overview,
+.overview:hover > .icon-overview,
+.overview:focus > .icon-overview {
+  background-image: url(../../img/icon-overview-active.gif);
+}
+.support .support > .icon-support,
+.support:hover > .icon-support,
+.support:focus > .icon-support {
+  background-image: url(../../img/icon-support-active.gif);
+}
+
+.technology .technology > .icon-technology,
+.technology:hover > .icon-technology,
+.technology:focus > .icon-technology {
+  background-image: url(../../img/icon-technology-active.gif);
+}
+
+.reliability .reliability > .icon-reliability,
+.reliability:hover > .icon-reliability,
+.reliability:focus > .icon-reliability {
+  background-image: url(../../img/icon-reliability-active.gif);
+}
+
+.guarantee .guarantee > .icon-guarantee,
+.guarantee:hover > .icon-guarantee,
+.guarantee:focus > .icon-guarantee {
+  background-image: url(../../img/icon-guarantee-active.gif);
+}
+
+.software .software > .icon-software,
+.software:hover > .icon-software,
+.software:focus > .icon-software {
+  background-image: url(../../img/icon-software-active.png);
+}
+
+.gogreen .gogreen > .icon-gogreen,
+.gogreen:hover > .icon-gogreen,
+.gogreen:focus > .icon-gogreen {
+  background-image: url(../../img/icon-gogreen-active.gif);
 }
 
 

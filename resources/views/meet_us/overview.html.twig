@@ -1,0 +1,43 @@
+{% extends 'meet_us.html.twig' %}
+{% set tab_active = 'overview' %}
+
+{# title #}
+{% block title %}{{ parent() }}{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# meet_us_section #}
+{% block meet_us_section %}
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-logo-cnet.png" alt="cnet" />
+        <p>3/3 stars since 2003</p>
+    </div>
+    <div class="media-body">
+        <h3>We Understand Business</h3>
+        <p>We have stood by this statement since our incetption in 2001. Because of this, we have been rewarded by a loyal customer base that includes over 200,000 domains and counting.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-logo-bbb.gif" alt="Better Business Bureau" />
+        <p>A+ since &hellip;</p>
+    </div>
+    <div class="media-body">
+        <h3>Fast, Reliable, Affordable</h3>
+        <p>Ever heard of the phrase, "you get what you pay for?" Here at InMotion Hosting, we offer affordable web hosting - we may not be the cheapest out there, but we bundle in high quality US based <a href="{{ path('meet_us_support') }}">support</a>, a transparent server <a href="http://status.inmotionhosting.com">status</a> page, and one of the fastest and most reliable <a href="{{ path('meet_us_reliability') }}">networks</a> in the world. We feel that our customers really say it best as we average over 12 customer "<a href="#">kudos</a>" per hour.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right media-object-empty">
+    </div>
+    <div class="media-body">
+        <h3>100% Satisfaction Guarantee</h3>
+        <p>We put our money where our mouth is. Not satisfied in any way? Our customer care department will <a href="#">refund</a> you your money upto 90 days after you start to use your shared web hosting account. Seriously.</p>
+    </div>
+</div>
+{% endblock %}

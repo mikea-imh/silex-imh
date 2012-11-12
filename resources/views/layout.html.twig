@@ -55,8 +55,8 @@
         <div class="navbar-inner">
             <div class="container">
                 <ul class="nav">
-                    <li class="dropdown{% if 'account' == active %} active{% endif %}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Hosting</a>
+                    <li class="dropdown{% if (active in ['business_hosting', 'dedicated_servers', 'vps_hosting', 'cheap_hosting']) %} active{% endif %}">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Hosting</a>
                         <ul class="dropdown-menu">
                         <li {% if 'business_hosting' == active %}class="active"{% endif %}><a href="{{ path('business_hosting') }}">Business Hosting</a></li>
                         <li {% if 'vps_hosting' == active %}class="active"{% endif %}><a href="{{ path('vps_hosting') }}">VPS Hosting</a></li>
@@ -69,15 +69,15 @@
                     <li class="dropdown{% if 'account' == active %} active{% endif %}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meet Us</a>
                         <ul class="dropdown-menu">
-                        <li {% if 'business_hosting' == active %}class="active"{% endif %}><a href="{{ path('business_hosting') }}">Meet Us</a></li>
-                        <li {% if 'vps_hosting' == active %}class="active"{% endif %}><a href="{{ path('vps_hosting') }}">About Us</a></li>
-                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Awards &amp; Partners</a></li>
-                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Blog</a></li>
-                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">We're Hiring</a></li>
-                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Contact Us</a></li>
+                        <li {% if 'meet_us' == active %}class="active"{% endif %}><a href="{{ path('meet_us') }}">Meet Us</a></li>
+                        <li {% if 'about_us' == active %}class="active"{% endif %}><a href="{{ path('about_us') }}">About Us</a></li>
+                        <li><a href="#">Awards &amp; Partners</a></li>
+                        <li><a href="http://www.inmotionhosting.com/blog">Blog</a></li>
+                        <li><a href="http://www.inmotionhosting.com/employment">We're Hiring</a></li>
+                        <li {% if 'contact' == active %}class="active"{% endif %}><a href="{{ path('contact') }}">Contact Us</a></li>
                         </ul>
                     </li><!-- /.dropdown -->
-                    <li {% if 'support' == active %}class="active"{% endif %}><a href="{{ path('support') }}">Support Center</a></li>
+                    <li><a href="http://www.inmotionhosting.com/support">Support Center</a></li>
                 </ul><!-- /.nav -->
             </div>
         </div>

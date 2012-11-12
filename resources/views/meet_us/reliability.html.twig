@@ -1,0 +1,64 @@
+{% extends 'meet_us.html.twig' %}
+{% set tab_active = 'reliability' %}
+
+{# title #}
+{% block title %}{{ parent() }} - Reliability{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# meet_us_section #}
+{% block meet_us_section %}
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-reliability-large.png" alt="" />
+    </div>
+    <div class="media-body">
+        <h3>99.9% Uptime is the Reliability You Need</h3>
+        <p>Here at InMotion Hosting we believe in offering you not only the most reliable network possible, but also the fastest. This is why we have our exclusive <a href="#">Max Speed Zones</a>, which include a choice of data centers for our <a href="{{ path('business_hosting') }}">Business Hosting</a> and <a href="{{ path('business_hosting') }}">VPS</a> solutions.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right media-object-empty">
+    </div>
+    <div class="media-body">
+        <h3>West Coast</h3>
+        <p>Our west coast data center in Los Angeles is connected through One Wilshire, also known as the "<a href="http://www.wired.com/techbiz/it/multimedia/2008/03/gallery_one_wilshire/">most connected building</a>" in the world according to <i>Wired</i> magazine. InMotion Hosting is also connected to four tier-1 ISP's via BGP. We also have a BGP route optimizer to ensure only the fastest routes are used for your data. Other features include:</p>
+        <ul>
+            <li>Peering <a href="#">partners</a> including Level 3, Corporate Colocation, Hurricane Electric, nLayer and TeliaSonera</li>
+            <li>20GB of connectivity over 10GM Ethernet</li>
+            <li>Carrier-grade network core from Brocade</li>
+            <li>Multiple layers of redundancy:
+                <ul>
+                    <li>Provider redundancy via BGP multi-homing</li>
+                    <li>LAN redundancy via layer two and layer three redundancy protocols, such as 802.3ad and VRRP</li>
+                </ul>
+            </li>
+            <li>Dedicated management network to allow quick response to network incidents</li>
+        </ul>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right media-object-empty">
+    </div>
+    <div class="media-body">
+        <h3>East Coast</h3>
+        <p>Our Herndon, Virginia data center includes two tier-1 ISP's via BGP, route optimization and a carrier-grade network core. Other features include:</p>
+        <ul>
+            <li>Peering partners Level 3 and nLayer</li>
+            <li>20GB of connectivity over 10GM Ethernet</li>
+            <li>Carrier-grade network core from Brocade</li>
+            <li>Multiple layers of redundancy:
+                <ul>
+                    <li>Provider redundancy via BGP multi-homing</li>
+                    <li>LAN redundancy via layer two and layer three redundancy protocols, such as 802.3ad and VRRP</li>
+                    <li>Dedicated management network to allow quick response to network incidents</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+{% set active = 'meet_us' %}
+
+{# title #}
+{% block title %}Overview{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+<div class="span9">
+    <h1>We’re Excited to Meet You.</h1>
+    <p>We have spent years building a reputation based upon treating others how we would want to be treated, just like your mother told you. Our mantra is to exceed your expectations - whether that be with our reliable <a href="{{ path('meet_us_reliability') }}">network</a>, <a href="#">award-winning</a> support staff, our our industry leading <a href="{{ path('meet_us_guarantee') }}">money back guarantee</a>, we mean it when we say we love our customers.</p>
+</div>
+{% endblock %}
+
+{# content #}
+{% block content %}
+<div class="wrap">
+    <div class="container">
+        <div class="row">
+            <div class="span3">
+                <ul class="nav nav-tabs nav-stacked {{ active|e }} {{ tab_active|e }}">
+                    <li><a href="{{ path('meet_us') }}" class="overview"><i class="icon-overview"></i> Overview</a></li>
+                    <li><a href="{{ path('meet_us_support') }}" class="support"><i class="icon-support"></i> Support</a></li>
+                    <li><a href="{{ path('meet_us_technology') }}" class="technology"><i class="icon-technology"></i> Technology</a></li>
+                    <li><a href="{{ path('meet_us_reliability') }}" class="reliability"><i class="icon-reliability"></i> Reliability</a></li>
+                    <li><a href="{{ path('meet_us_guarantee') }}" class="guarantee"><i class="icon-guarantee"></i> Guarantee</a></li>
+                    <li><a href="{{ path('meet_us_software') }}" class="software"><i class="icon-software"></i> Software</a></li>
+                    <li><a href="{{ path('meet_us_gogreen') }}" class="gogreen"><i class="icon-gogreen"></i> Go Green</a></li>
+                </ul>
+            </div>
+            <div class="span9 {{ active|e }}">
+                
+                {# meet_us_section #}
+                {% block meet_us_section %}
+                {% endblock %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

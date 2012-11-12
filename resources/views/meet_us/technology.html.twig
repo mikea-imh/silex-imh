@@ -1,0 +1,34 @@
+{% extends 'meet_us.html.twig' %}
+{% set tab_active = 'technology' %}
+
+{# title #}
+{% block title %}{{ parent() }} - Technology{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# meet_us_section #}
+{% block meet_us_section %}
+<div class="media">
+    <div class="media-object pull-right">
+        <img class="clearfix" src="{{ app.request.basepath }}/img/icon-logo-dell.png" alt="Dell" />
+        <img src="{{ app.request.basepath }}/img/icon-logo-intel.png" alt="Intel" />
+    </div>
+    <div class="media-body">
+        <h3>Fast, Reliable, Affordable</h3>
+        <p>We deliver great web hosting by keeping things simple. Our data centers use high-performance servers with a single operating system - an enterprise-class version of Linux. You get a super-fast and stable hosting platform. If you have a question, our support teams really know hour our specific platform handles <a href="{{ app.request.basepath }}/wordpress-hosting.html">WordPress hosting</a>, MySQL, <a href="{{ app.request.basepath }}/drupal-hosting.html">Drupal hosting</a>, <a href="{{ app.request.basepath }}/joomla-hosting.html">Joomla hosting</a>, cPanel, WHM and more.</p>
+        <p>Because we have standardized high-performance hardware with reliable open-source software solutions, if you move between our Business Hosting, VPS and Dedicated web hosting services, things remain predictable and reliable.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right media-object-empty">
+    </div>
+    <div class="media-body">
+        <h3>State-of-the-Art Technology</h3>
+        <p>Many web hosting companies decide to piece together their own web servers using the cheapest parts avaialble, thus hardware crashes can be common and incredibly frustrating for you. At InMotion Hosting, we purchase top of the line servers from <a href="#">Dell</a>. Dell tests their servers multiple times before they are even shipped to us - these tests can provide you piece of mind that your data is in good hands. Similarly, we have name-brand, carrier grade hardware that compliments our servers such as routers from Brocade and Cisco Systems. We believe that in order to truly provide great service, you have to have a strong backbone. This is why we invest millions annually on hardware to meet and beat your expectations.</p>
+    </div>
+</div>
+{% endblock %}

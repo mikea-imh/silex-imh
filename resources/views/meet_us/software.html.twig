@@ -1,0 +1,60 @@
+{% extends 'meet_us.html.twig' %}
+{% set tab_active = 'software' %}
+
+{# title #}
+{% block title %}{{ parent() }} - Software{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# meet_us_section #}
+{% block meet_us_section %}
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-software-large.png" alt="" />
+    </div>
+    <div class="media-body">
+        <h3>InMotion covers all the bases</h3>
+        <p>InMotion Hosting includes <a href="{{ app.request.basepath }}/softaculous/available-softaculous-applications.html">250+ applications</a> that you can install with just one click. On top of that, our servers are capable of supporting hundreds of additional applications. No matter what your needs, InMotion Hosting has a solution for you.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-logo-wordpress.png" alt="WordPress" />
+    </div>
+    <div class="media-body">
+        <h3>WordPress Web Hosting</h3>
+        <p>InMotion Hosting's <a href="{{ app.request.basepath }}/wordpress-hosting.html">WordPress hosting</a> is optimized for the active blogger. Our exclusive <a href="#">Speed Zone</a> technology, top of the line security features and business class servers ensure your WordPress will run smoothly and securely.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-logo-joomla.png" alt="Joomla" />
+    </div>
+    <div class="media-body">
+        <h3>Joomla Hosting</h3>
+        <p>Our advanced web hosting service includes blazing-fast hard drives, the enhanced security of suPHP and a Support Center that is second to none. A painless one-click install allows you to setup your <a href="{{ app.request.basepath }}/joomla-hosting.html">Joomla web hosting</a> site in no time.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-logo-drupal.gif" alt="Drupal" />
+    </div>
+    <div class="media-body">
+        <h3>Drupal Web Hosting</h3>
+        <p>InMotion Hosting is a proud Drupal Organization Member and sponsor. We have worked with Drupal to ensure we provide suPHP for enhanced security and that our <a href="http://www.inmotionhosting.com/support/website/drupal">Drupal Support Center</a> is the place to go for all Drupal related questions.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-logo-prestashop.png" alt="PrestaShop" />
+    </div>
+    <div class="media-body">
+        <h3>PrestaShop Hosting</h3>
+        <p>Our servers run the latest Apache, MySQL and PHP versions to ensure a perfect environment for <a href="{{ app.request.basepath }}/prestashop-hosting.html">PrestaShop hosting</a> and success for your online marketplace. Download Prestashop and over 250 other applications with just one clickusing our easy to use software installer, <a href="{{ app.request.basepath }}/softaculous/available-softaculous-applications.html">Softaculous</a>.</p>
+    </div>
+</div>
+{% endblock %}

@@ -88,10 +88,40 @@ $app->match('/site-hosting-tools', function() use ($app) {
         'site_hosting_tools.html.twig');
 })->bind('site_hosting_tools');
 
-$app->match('/why-us', function() use ($app) {
+$app->match('/meet-us', function() use ($app) {
     return $app['twig']->render(
-        'why_us.html.twig');
-})->bind('why_us');
+        'meet_us\overview.html.twig');
+})->bind('meet_us');
+
+$app->match('/meet-us/go-green', function() use ($app) {
+    return $app['twig']->render(
+        'meet_us\gogreen.html.twig');
+})->bind('meet_us_gogreen');
+
+$app->match('/meet-us/technology', function() use ($app) {
+    return $app['twig']->render(
+        'meet_us\technology.html.twig');
+})->bind('meet_us_technology');
+
+$app->match('/meet-us/support', function() use ($app) {
+    return $app['twig']->render(
+        'meet_us\support.html.twig');
+})->bind('meet_us_support');
+
+$app->match('/meet-us/reliability', function() use ($app) {
+    return $app['twig']->render(
+        'meet_us\reliability.html.twig');
+})->bind('meet_us_reliability');
+
+$app->match('/meet-us/guarantee', function() use ($app) {
+    return $app['twig']->render(
+        'meet_us\guarantee.html.twig');
+})->bind('meet_us_guarantee');
+
+$app->match('/meet-us/software', function() use ($app) {
+    return $app['twig']->render(
+        'meet_us\software.html.twig');
+})->bind('meet_us_software');
 
 $app->match('/support', function() use ($app) {
     return $app['twig']->render(

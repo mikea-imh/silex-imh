@@ -1,0 +1,34 @@
+{% extends 'meet_us.html.twig' %}
+{% set tab_active = 'guarantee' %}
+
+{# title #}
+{% block title %}{{ parent() }} - Guarantee{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# meet_us_section #}
+{% block meet_us_section %}
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-guarantee-large.gif" alt="" />
+    </div>
+    <div class="media-body">
+        <h3>100% satisfaction guarantee</h3>
+        <p>We stand behind what our website and staff tell you over the phone at all times. In fact, we <a href="{{ path('guarantee') }}">guarantee</a> that you will always get reliable hosting, competent support and professional service - or we will issue you a refund.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-10years.png" alt="" />
+    </div>
+    <div class="media-body">
+        <h3>Exceeding your customer support needs</h3>
+        <p> InMotion Hosting is an employee owned and operated company. Our employees average over 4 tyears of hosting experience and are backed by senior staff with over 10 years of experience. We have broken and fixed just about everything website hosting related that can be broken and fixed. Combining this knoweledge with friendly staff and responsive management yields our <a href="#">top rated</a> tech support team.</p>
+        <p>Rest assured, we will always be here to answer your question - no matter what.</p>
+    </div>
+</div>
+{% endblock %}

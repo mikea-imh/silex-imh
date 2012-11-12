@@ -1,0 +1,33 @@
+{% extends 'meet_us.html.twig' %}
+{% set tab_active = 'support' %}
+
+{# title #}
+{% block title %}{{ parent() }} - Support{% endblock %}
+
+{# keywords #}
+{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+
+{# description #}
+{% block description %}more optimized stuff in this description{% endblock %}
+
+{# meet_us_section #}
+{% block meet_us_section %}
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-chat-large.gif" alt="" />
+    </div>
+    <div class="media-body">
+        <h3>24/7 Live Support</h3>
+        <p>InMotion Hosting is commited to helping make your online projects successful - no matter what time of the day or what day of the year you need help. We have an extensive online knowledge base and 100% U.S.-based live support. You choose how you want to <a href="{{ path('contact') }}">get a hold</a> of us - email, live chat or by phone. Most of our calls are answered within 90 seconds or less.</p>
+    </div>
+</div>
+<div class="media">
+    <div class="media-object pull-right">
+        <img src="{{ app.request.basepath }}/img/icon-book.png" alt="" />
+    </div>
+    <div class="media-body">
+        <h3>Do-it-yourself</h3>
+        <p>We have hundreds of online tutorials and <a href="http://www.inmotionhosting.com/support/edu">Education Channels</a> to help you get started whether you are on a <a href="{{ path('business_hosting') }}">shared server</a>, <a href="{{ path('vps_hosting') }}">VPS hosting</a> or a <a href="{{ path('dedicated_servers') }}">dedicated server</a>. Our online <a href="http://www.inmotionhosting.com/support">Support Center</a> offers 3,000+ articles with information to help you with email setup, domain names, website questions and more. We also have an interactive community that you can pose questions to in order to get answers quickly.</p>
+    </div>
+</div>
+{% endblock %}
