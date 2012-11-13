@@ -228,11 +228,11 @@ header .nav-pills-contact a.btn {
 
 /**
  * Apply blue background with noise to element
- */
+
 .intro {
   background: url(../../img/bluenoise.png) repeat 0 0;
   border-top: 2px solid #232323;
-}
+} */
 .intro-foot {
   background: #333;
   padding-top: 10px;
@@ -567,4 +567,140 @@ footer a {
     width: 30%;
   }
 
+}
+
+
+
+
+/*------------------------------*/
+
+
+.white {
+  color: #fff;
+}
+.blanky {
+  margin: 0px; 
+  padding: 0px;
+}
+.intro.business_hosting {
+    background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0;
+    height: 253px; 
+}
+
+.package-title {
+  margin: 0 auto;
+  padding-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+}
+.leader-biz-cta-place {
+  float: right;
+  margin: 57px 119px 0px 0px;
+}
+.tier-space {
+    margin: -4px 6px 0px 0px;
+}
+.pricebox {
+    color: #c52228;
+    font-family: 'adelle'; 
+    font-size: 52px;
+    font-weight: 400;
+    margin: 30px auto; 
+    padding: 0px 38px 0px 0px;
+}
+.pricebox 
+sup {
+    font-size: 28px;
+    margin: -10px 0px 0px 5px;
+}
+.pricebox 
+sub {
+    font-size: 20px;
+    margin: 0px 0px 0px -32px;
+}
+.checkmark,
+.table .checkmark {
+  background-image: url(../../img/ideal.png);
+}
+.split-center-mid {
+  padding: 0 40px;
+}
+.adtwo {
+  line-height: 18px;
+  padding: 20px; 
+  width: 419px;
+}
+.iconleft {
+    float: left; 
+    margin: 0px 12px 10px 0px;
+}
+.quotename {
+  color: #c52228;
+  font-family: 'adelle';
+  font-size: 18px; 
+  font-weight: 600;
+}
+.quotefrom {
+  font-family: 'adelle';
+  margin-top: -3px;
+}
+.thick {
+  padding: 30px;
+}
+.jutwrap {
+  padding: 30px 0 40px;
+}
+.jutwrap2 {
+  padding: 40px 0 30px;
+}
+.jutwrap3 {
+  padding: 30px 0;
+}
+.jutwrap4 {
+  display: block;
+  padding: 0px 0px 30px; 
+}
+.wrap-emp {
+  padding: 40px 0px 0px;
+}
+.island30 {
+  outline: 1px solid #ccc;
+  padding: 30px;
+}
+.dc {
+  display: block;
+  float: right;
+  text-align: center;
+}
+.trust {
+  color: #888;
+  font-family: 'adelle';
+  font-size: 16px; 
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center; 
+}
+.ln {
+  border-bottom: #ccc dotted 1px;
+  display: block;
+  margin: 0px 0px 10px 0px;
+  padding-bottom: 3px;
+  width: 100%; 
+}
+.centered {
+  text-align: center;
+}
+.mx-icon {
+  display: block;
+  float: left;
+  margin: 10px 12px 0px -38px;
+}
+.oth-icon {
+  float: left;
+  margin: 12px 12px 0px 0px;
+}
+.inp-fatty {
+  display: block;
+  height: 36px;
 }

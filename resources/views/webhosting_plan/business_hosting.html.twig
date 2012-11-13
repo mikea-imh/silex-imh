@@ -12,19 +12,22 @@
 
 {# intro #}
 {% block intro %}
-    <div class="span9">
+
+    <div class="span5 white">
         <h1>Business Hosting</h1>
         <p>In addition to award winning technical support and 99.9% uptime, InMotion Hosting’s exclusive Speed Zone technology helps keep your website and email fast by locating your data as close to you as possible.</p>
     </div>
-    <div class="span3">
-        stuff
-    </div>
+    <div class="leader-biz-cta-place">
+     <div class="span3"><span class="btn btn-primary">order now</span></div>
+ </div>
 {% endblock %}
 
 {# secondplaceplan #}
 {% block secondplaceplan %}
-    <h3 class="">Launch</h3>
+    <h3 class="blanky package-title">
+        <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Launch Business Package" class="tier-space">Launch</h3>
     <p class="package-subtitle">Small Business Starter</p>
+    <div class="pricebox"><sup>$</sup>5<sup>95</sup><sub>/mo.<sub></div>
     <dl class="split-center">
         <dt class="split-center-title">Sites on Account:</dt>
         <dd class="split-center-value">2</dd>
@@ -39,14 +42,16 @@
         <dt class="split-center-title">FTP Accounts:</dt>
         <dd class="split-center-value">1,000</dd>
     </dl>
+     <div class="cta-overlap"><a href="#" class="btn btn-primary">order now</a></div>
 {% endblock %}
 
 
 {# firstplaceplan #}
 {% block firstplaceplan %}
-    <h3>Power</h3>
+    <h3 class="blanky package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Power Business Package" class="tier-space">Power</h3>
     <p class="package-subtitle">Top Choice for Small Business</p>
-    <dl class="split-center">
+    <div class="pricebox"><sup>$</sup>7<sup>95</sup><sub>/mo.<sub></div>
+    <dl class="split-center-mid">
         <dt class="split-center-title">Sites on Account:</dt>
         <dd class="split-center-value">6</dd>
         <dt class="split-center-title">Domains Supported:</dt>
@@ -60,13 +65,18 @@
         <dt class="split-center-title">FTP Accounts:</dt>
         <dd class="split-center-value">2,000</dd>
     </dl>
+     <div class="cta-overlap">
+          <a href="#" class="btn btn-primary">order now</a>
+    </div>
 {% endblock %}
 
 
 {# thirdplaceplan #}
 {% block thirdplaceplan %}
-<h3 class="icon package-title">fjwow</h3>
+<h3 class="icon package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">PRO</h3>
 <p class="package-subtitle">Host 25 sites on 1 account</p>
+<div class="pricebox"><sup>$</sup>13<sup>95</sup><sub>/mo.<sub>
+</div>
 <dl class="split-center">
     <dt class="split-center-title">Sites on Account:</dt>
     <dd class="split-center-value">25</dd>
@@ -81,6 +91,9 @@
     <dt class="split-center-title">FTP Accounts:</dt>
     <dd class="split-center-value">Unlimited</dd>
 </dl>
+ <div class="cta-overlap">
+    <a href="#" class="btn btn-primary">order now</a>
+</div>
 {% endblock %}
 
 
