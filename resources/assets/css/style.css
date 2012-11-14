@@ -55,6 +55,7 @@
 
 blockquote {
   border: none;
+  margin: 0; padding: 0 0 16px 30px;
 }
 
 body {
@@ -286,9 +287,7 @@ header .nav-pills-contact a.btn {
 .business-specification thead .table-col-1,
 .business-specification tfoot .table-col-1,
 .business-specification tfoot .table-col-2 {
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
+
 }
 
 .business-specification thead td {
@@ -330,6 +329,7 @@ header .nav-pills-contact a.btn {
   border-right: 1px solid #ccc;
   margin-left: 0;
   padding: 10px 70px;
+  height: 150px;
 }
 
 .matrix > li:nth-child(even) {
@@ -475,6 +475,7 @@ textarea,
 input[type="text"] {
   border-radius: 3px;
   box-shadow: 0 3px 0 #b2b2b2;
+  padding: 18px 12px;
 }
 
 input:-moz-placeholder,
@@ -572,9 +573,23 @@ footer a {
 
 
 
+
+
+
+
+
+
+
+
 /*------------------------------*/
 
-
+.table {
+  margin-bottom: 0px;
+}
+.tb-title {
+  font-size: 16px;
+  font-weight: 500;
+}
 .white {
   color: #fff;
 }
@@ -583,10 +598,13 @@ footer a {
   padding: 0px;
 }
 .intro.business_hosting {
-    background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0;
-    height: 253px; 
+    background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+    height: 253px;
+    display: block;
 }
-
+.tabbg {
+  background-color: #f5f5f5;
+}
 .package-title {
   margin: 0 auto;
   padding-bottom: 8px;
@@ -596,7 +614,7 @@ footer a {
 }
 .leader-biz-cta-place {
   float: right;
-  margin: 57px 119px 0px 0px;
+  margin: 60px 121px 0px 0px;
 }
 .tier-space {
     margin: -4px 6px 0px 0px;
@@ -630,6 +648,7 @@ sub {
   line-height: 18px;
   padding: 20px; 
   width: 419px;
+  height: 36px;
 }
 .iconleft {
     float: left; 
@@ -704,3 +723,14 @@ sub {
   display: block;
   height: 36px;
 }
+
+.over, .over:hover {
+  margin: 4px auto 0px;
+  position: absolute;
+}
+.over:active {
+  margin: 5px auto -1px;
+}
+
+
+

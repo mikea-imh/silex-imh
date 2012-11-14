@@ -42,7 +42,7 @@
         <dt class="split-center-title">FTP Accounts:</dt>
         <dd class="split-center-value">1,000</dd>
     </dl>
-     <div class="cta-overlap"><a href="#" class="btn btn-primary">order now</a></div>
+     <a href="#" class="btn btn-primary over">order now</a>
 {% endblock %}
 
 
@@ -65,9 +65,7 @@
         <dt class="split-center-title">FTP Accounts:</dt>
         <dd class="split-center-value">2,000</dd>
     </dl>
-     <div class="cta-overlap">
-          <a href="#" class="btn btn-primary">order now</a>
-    </div>
+          <a href="#" class="btn btn-primary over">order now</a>
 {% endblock %}
 
 
@@ -91,9 +89,7 @@
     <dt class="split-center-title">FTP Accounts:</dt>
     <dd class="split-center-value">Unlimited</dd>
 </dl>
- <div class="cta-overlap">
-    <a href="#" class="btn btn-primary">order now</a>
-</div>
+    <a href="#" class="btn btn-primary over">order now</a>
 {% endblock %}
 
 
@@ -108,7 +104,7 @@
 {# webhostingtabbedcontent #}
 {% block webhostingtabbedcontent %}
 <div class="tab-pane active business-specification" id="specifications">
-    <h1>something</h1>
+    
     <table class="table table-striped">
         <caption class="a11y">Listing of Business Hosting Plan Specifications and Pricing</caption>
         <colgroup span="1" class="plan-specification-listing"></colgroup>
@@ -120,9 +116,9 @@
             <tr>
                 <td></td>
                 <td></td>
-                <th scope="col">Launch</th>
-                <th scope="col">Power</th>
-                <th scope="col">Pro</th>
+                <th scope="col" class="tb-title">Launch</th>
+                <th scope="col" class="tb-title">Power</th>
+                <th scope="col" class="tb-title">Pro</th>
             </tr>
         </thead>
         <tfoot>
@@ -147,91 +143,131 @@
                 <td>Parked Domains</td>
                 <td>6</td>
                 <td>26</td>
-                <td>Unlimited</td>
+                <td>UNLMITED</td>
             </tr>
             <tr>
-                <th scope="row">Sites on 1 Account</th>
-                <td>Multiple sites, no hidden fees!</td>
-                <td>2</td>
-                <td>6</td>
+                <th scope="row">Additional Sub Domains</th>
+                <td>For example: mobile.domain.com</td>
                 <td>25</td>
+                <td>100</td>
+                <td>UNLIMITED</td>
             </tr>
             <tr>
-                <th scope="row">Domain Supported</th>
-                <td>Parked Domains</td>
-                <td>6</td>
-                <td>26</td>
-                <td>Unlimited</td>
+                 <th scope="row">Easy Control Panel</th>
+                <td><a href="#">Try Control Panel</a></td>
+                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir checkmark"></span></td>
             </tr>
             <tr>
-                <th scope="row">Sites on 1 Account</th>
-                <td>Multiple sites, no hidden fees!</td>
-                <td>2</td>
-                <td>6</td>
-                <td>25</td>
+                <th scope="row">Data Backup</th>
+                <td>Weekly</td>
+                <td>INCLUDED</td>
+                <td>INCLUDED</td>
+                <td>INCLUDED</td>
             </tr>
             <tr>
-                <th scope="row">Domain Supported</th>
-                <td>Parked Domains</td>
-                <td>6</td>
-                <td>26</td>
-                <td>Unlimited</td>
+                <th scope="row">Free Google AdWords Credits</th>
+                <td>Drive traffic with Ads</td>
+                <td>$75</td>
+                <td>$100</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                 <th scope="row">Disk Space (GB)</th>
+                <td>All expandable</td>
+                <td>UNLIMITED</td>
+                <td>UNLIMITED</td>
+                <td>UNLIMITED</td>
+            </tr>
+            <tr>
+                <th scope="row">Monthly Transfer Included (GB)</th>
+                <td>Industry-Leading</td>
+                <td>UNLIMITED</td>
+                <td>UNLIMITED</td>
+                <td>UNLIMITED</td>
+            </tr>
+            <tr>
+                <th scope="row">SPAM Safe Email</th>
+                <td>With Real-time Filtering</td>
+                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir checkmark"></span></td>
+            </tr>
+            <tr>
+                <th scope="row">Max Speed Zone Enabled</th>
+                <td><a href="#">Find My Zone</a></td>
+                <td>--</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+            <tr>
+                <th scope="row">Premium Website Builder</th>
+                <td><a href="#">Launch Builder</a></td>
+                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir checkmark"></span></td>
             </tr>
         </tbody>
-    </table>                    
+    </table>  
+    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>                  
 </div><!-- /#specifications -->
 <div class="tab-pane" id="features">
-    <div class="wrap">
-        <p>All InMotion Hosting packages include the following:</p>
+    <div class="jutwrap4">
+        <p class="centered">All InMotion Hosting packages include the following:</p>
+        <br clear="all">
         <ul class="nav nav-stacked matrix matrix-two-column">
-            <li>
-                <h4>Hosting Email Features</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Web Design and Blog Hosting</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>E-Commerce Hosting</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Website Plugins</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Dynamic Hosting Support</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>FTP Features</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="matrix-last">
-                <h4>Streaming and Interactive Media</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="matrix-last">
-                <h4>Other Hosting Features</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-        </ul>
+                        <li>
+                            <img src="{{ app.request.basepath }}/img/icon-mail.png" class="mx-icon" alt="email icon" />
+                            <h4>Hosting Email Features</h4>
+                            <p>Our robust email is compatible with all desktop clients including Outlook and Apple Mail and runs on any iPhone, Blackberry or Android device. Block annoying SPAM using <a href="#">Spam Assasin</a> - included for free! </p>
+                        </li>
+                        <li>
+                            <img src="{{ app.request.basepath }}/img/icon-palette.png" class="mx-icon" alt="web design icon" />
+                            <h4>Web Design Hosting</h4>
+                            <p>We include two easy to use "WYSIWYG" <a href="#">web builders</a> and are fully compatibile with the web's most popular design platforms including Adobe Dreamweaver, Microsoft Front Page and iWeb.</p>
+                        </li>
+                        <li>
+                            <img src="{{ app.request.basepath }}/img/icon-ftp.png" class="mx-icon" alt="blog icon" />
+                            <h4>Blog Hosting</h4>
+                            <p>We proudly support <a href="#">WordPress</a>, <a href="#">Drupal</a>, <a href="#">Joomla</a> and many other powerful blogging tools. In fact, you can install each of these CMS systems with just one click from your control panel.</p>
+                        </li>
+                        <li>
+                            <img src="{{ app.request.basepath }}/img/icon-puzzle.png" class="mx-icon" alt="plugins icon" />
+                            <h4>Website Plugins</h4>
+                            <p>Easy to use web calendars, forum software, wikis and more are all just a click away from our simple software installer, <a href="#">Softaculous</a>, that comes included with all web hosting accounts.</p>
+                        </li>
+                          <li>
+                            <img src="{{ app.request.basepath }}/img/icon-note.png" class="mx-icon" alt="streaming media icon" />
+                            <h4>Sreaming & Interactive Media</h4>
+                            <p>Our shared web hosting plans include support for streaming video, audio and Adobe Flash.</p>
+                        </li>
+                        <li>
+                            <img src="{{ app.request.basepath }}/img/icon-tag.png" class="mx-icon" alt="e-commerce icon" />
+                            <h4>E-Commerce Hosting</h4>
+                            <p>Looking to sell goods or services online? Our one click software installer, Softaculous, comes with multiple options including <a href="#">PrestaCart</a>, <a href="#">OpenCart</a>, Magento, OS Commerce and more!</p>
+                        </li>
+                        <li class="matrix-last">
+                            <img src="{{ app.request.basepath }}/img/icon-ekg.png" class="mx-icon" alt="dynamic hosting icon" />
+                            <h4>Dynamic Hosting Support</h4>
+                            <p>Code your website using the latest languages including PHP 4 or 5, PERL 5, Python, MySQL 4 or 5, PHPMyAdmin and more.</p>
+                        </li>
+                      
+                        <li class="matrix-last">
+                            <img src="{{ app.request.basepath }}/img/icon-switches.png" class="mx-icon" alt="other hosting icon" />
+                            <h4>Other Hosting Features</h4>
+                            <p>Collaborate using multiple FTP accounts or check out your website stats with AWStats or your raw log files. All are easily accessible from your included license of <a href="#">cPanel</a>.</p>
+                        </li>
+                    </ul>
     </div>
 </div><!-- /#features -->
 <div class="tab-pane compare" id="compare">
-    <div class="wrap row">
+    <div class="jutwrap4 row">
         <div class="span6">
-            <h1>The InMotion Advantage</h1>
-        </div>
+            <img src="{{ app.request.basepath }}/img/icon-trophy.png"  class="oth-icon" alt="The InMotion Hosting Advantage" />
+            <h2>The InMotion Advantage</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a lectus ac urna rhoncus mattis eu eu magna.</p>
+                    </div>
         <div class="span5 offset1">
             <ul class="nav nav-pills well well-small">
                 <li><span class="ideal">Ideal</li>
@@ -245,11 +281,11 @@
         <thead>
             <tr>
                 <td></td>
-                <th scope="col">InMotion Hosting</th>
-                <th scope="col">JustHost</th>
-                <th scope="col">BlueHost</th>
-                <th scope="col">FatCow</th>
-                <th scope="col">Host Monster</th>
+                <th scope="col" class="tb-title">InMotion Hosting</th>
+                <th scope="col" class="tb-title">JustHost</th>
+                <th scope="col" class="tb-title">BlueHost</th>
+                <th scope="col" class="tb-title">FatCow</th>
+                <th scope="col" class="tb-title">Host Monster</th>
             </tr>
         </thead>
         <tfoot>
@@ -337,5 +373,6 @@
             </tr>
         </tbody>
     </table>
+     <a href="#" class="btn btn-info">VIEW MORE</a>
 </div><!-- /#compare -->
 {% endblock %}
