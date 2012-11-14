@@ -11,17 +11,21 @@ $app['translator.messages'] = array(
 $app['cache.path'] = __DIR__ . '/../cache';
 
 // Http cache
-$app['http_cache.cache_dir'] = $app['cache.path'] . '/http';
+// $app['http_cache.cache_dir'] = $app['cache.path'] . '/http';
 
 // Twig cache
-$app['twig.options.cache'] = $app['cache.path'] . '/twig';
+// $app['twig.options.cache'] = $app['cache.path'] . '/twig';
 
 // Assetic
 $app['assetic.enabled'] = true;
 $app['assetic.path_to_cache']       = $app['cache.path'] . '/assetic' ;
 $app['assetic.path_to_web']         = __DIR__ . '/../../web/assets';
 $app['assetic.input.path_to_assets']    = __DIR__ . '/../assets/';
-$app['assetic.input.path_to_css']       = $app['assetic.input.path_to_assets'] . 'css/*.css';
+$app['assetic.input.path_to_css']       = array(
+    $app['assetic.input.path_to_assets'] . 'css/bootstrap.css',
+    // $app['assetic.input.path_to_assets'] . 'css/bootstrap-responsive.css',
+    $app['assetic.input.path_to_assets'] . 'css/style.css',
+);
 $app['assetic.output.path_to_css']      = 'css/styles.css';
 $app['assetic.input.path_to_js']        = array(
     $app['assetic.input.path_to_assets'] . 'js/bootstrap.min.js',
@@ -35,6 +39,6 @@ $app['db.options'] = array(
     'driver'   => 'pdo_mysql',
     'host'     => 'localhost',
     'dbname'   => 'silex_kitchen',
-    'user'     => 'root',
+    'user'     => 'silex_kitchen',
     'password' => '',
 );

@@ -1,3 +1,570 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............The section your currently reading
+ *
+ * CODING STANDARDS....READ BEFORE editing any CSS file
+ *
+ * MIXINS..............Super-simple Sass stuff
+ * RESET...............Set some defaults
+ * CLEARFIX............
+ * SHARED..............Shared declarations
+ */
+
+/*------------------------------------*\
+    $CODING STANDARDS
+\*------------------------------------*/
+/**
+ * Read, learn, utilize for a consistent, reusable, understandable all around
+ * better experience when writing quality CSS in a collaborative environment
+ *
+ * Most suggestions are taken from Google HTML/CSS Style Guide
+ * Please read each topic entry listed below at its corresponding link
+ */
+
+    /**
+     * General Formating Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#General_Formatting_Rules
+     *
+     * Note: When writing HTML or PHP use PEAR Standards for indentation
+     * http://pear.php.net/manual/en/standards.indenting.php
+     */
+
+    /**
+     * CSS Formating Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Formatting_Rules
+     *
+     * Declaration order
+     * Declaration stops
+     * Property name stops
+     *
+     */
+
+    /**
+     * CSS Style Rules
+     * https://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#CSS_Style_Rules
+     *
+     * Shorthand properties
+     * 0 and units
+     * Leading 0s
+     * Hexadecimal notation
+     * ID and class name delimiters
+     * Type selectors
+     */
+
+blockquote {
+  border: none;
+}
+
 body {
-    padding-top: 60px;
+  background: #fcfcfc;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+header {
+  padding: 18px 0;
+}
+
+.emisor,
+.emisor > span {
+  display: block;
+}
+
+/**
+ * Remove the gutter of the element
+ */
+.gutter-remove {
+  margin-left: 0;
+}
+
+/**
+ * Remove the gutter of the element
+ */
+.gutter-spillover {
+  padding-right: 20px;
+}
+
+/*------------------------------------*\
+    $ISLAND
+\*------------------------------------*/
+/**
+ * Simple, boxed off content, as per: csswizardry.com/2011/10/the-island-object
+ */
+.island {
+  outline: 1px solid #ccc;
+  padding: 20px;
+}
+
+/*------------------------------------*\
+    $ROSTRUM
+\*------------------------------------*/
+/**
+ * Like what Olympic winners stand on during medal ceremony
+ * Use for presenting a grouping of 3 items necessitating a visual indicator
+ * of 'importance' or 'winner' like displaying hosting plans
+ *
+ * First place is visual center with second place left of center and
+ * third place right of center
+ */
+.rostrum {
+  margin-top: -20px;
+  position: relative;
+}
+
+  .rostrum-tiered-item {
+    position: relative;
+    text-align: center;
+  }
+
+  .rostrum-tiered-item-first {
+    margin: -20px 0 0 0;
+    width: 340px;
+    z-index: 5;
+  }
+
+  .rostrum-tiered-item-third {
+    margin-left: 0;
+  }
+
+/*------------------------------------*\
+    $SPLIT CENTER
+\*------------------------------------*/
+/**
+ * Display group of two elements one after the other with the text centered
+ * Makes it appear as if it were one element that is text aligned center
+ * 
+ */
+.split-center {
+  padding: 0 20px;
+}
+
+  .split-center-title {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 0;
+  }
+
+  .split-center-value {
+    display: inline;
+    margin: 0;
+  }
+
+  .split-center-value + .split-center-title::before {
+    color: transparent;
+    content: ".";
+    display: block;
+    line-height: .75em;
+    width: 8em;
+  }
+
+.icon {
+  background: #fff;
+  width: 33%;
+}
+
+/**
+ * Apply chat bubble icon
+ */
+header .nav-pills-contact,
+header .nav-pills-contact a {
+  color: #232323;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+header .nav-pills-contact a.btn {
+  color: #fff;
+  font-size: 14px;
+}
+
+.nav-pills-no-link {
+  line-height: 39px;
+}
+
+.nav-pills-contact i {
+  height: 16px;
+  line-height: 16px;
+  margin-top: 3px;
+  width: 18px;
+}
+
+.icon-chat {
+  background: url(../../img/icon-chat.gif) no-repeat 0 0;
+}
+.icon-phone {
+  background: url(../../img/icon-phone.gif) no-repeat 0 0;
+  padding-bottom: 1px;
+}
+
+
+.muted {
+  color: #888;
+}
+
+/**
+ * Apply the crosshatch pattern to element
+ */
+.pattern {
+  background: url(../../img/pattern.gif) repeat 0 0;
+}
+
+/**
+ * Apply white background to element
+ */
+.raised {
+  background: #fff;
+}
+
+/**
+ * Apply light grey background to element
+ */
+.sunken {
+  background: #eee;
+}
+
+/**
+ * Apply blue background with noise to element
+ */
+.intro {
+  background: url(../../img/bluenoise.png) repeat 0 0;
+  border-top: 2px solid #232323;
+}
+.intro-foot {
+  background: #333;
+  padding-top: 10px;
+}
+
+/**
+ * Apply red opening double quote above element
+ */
+.quoted:before {
+  color: #c52127;
+  content: "\201C";
+  display: block;
+  font-size: 600%;
+  font-family: Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+}
+
+/**
+ * Apply top and bottom padding to element
+ */
+.wrap {
+  padding: 36px 0;
+}
+
+.business-specification .table-striped thead th.table-col-4,
+.business-specification .table-striped tfoot td.table-col-4,
+.business-specification .table-striped tbody td.table-col-4 {
+  background-color: rgba(77, 160, 225, 0.15);
+}
+
+.table tbody td,
+.table tfoot td {
+  text-align: center;
+}
+
+.table tbody th {
+  text-align: left;
+}
+
+.plan-specification-featured,
+.plan-specification-example {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.plan-specification-listing,
+.plan-specification-example {
+  width: 33%;
+}
+
+.business-specification thead .table-col-1,
+.business-specification tfoot .table-col-1,
+.business-specification tfoot .table-col-2 {
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.business-specification thead td {
+  border-left-color: #fcfcfc;
+}
+
+.business-specificaiton tfoot .table-col-1,
+.business-specification tfoot .table-col-2 {
+  border-left-color: #fff;
+}
+
+.business-specification tfoot .table-col-2 {
+  border-right: 1px solid #ccc;
+}
+.business-specification tfoot {
+  border-bottom: 2px solid #888;
+}
+.table tbody {
+  border-top: 1px solid #ccc;
+}
+
+.compare .table tbody td,
+.compare .table thead th {
+  border-left: 1px solid #ccc;
+}
+
+.compare .table thead td + th {
+  border-left: none;
+}
+
+.compare .table tbody th {
+  width: 40%;
+}
+
+
+.matrix > li {
+  border-bottom: 1px solid #ccc;
+  border-collapse: collapse;
+  border-right: 1px solid #ccc;
+  margin-left: 0;
+  padding: 10px 70px;
+}
+
+.matrix > li:nth-child(even) {
+  border-right: none;
+}
+
+.matrix-two-column > li {
+  float: left;
+  width: 35%;
+}
+.matrix > .matrix-last {
+  border-bottom: none;
+}
+
+.well {
+  background-color: #cfcfcf;
+}
+
+.well .row-fluid .span4 {
+  position: relative;
+  border-right: 1px solid #b4b4b4;
+}
+
+.well .row-fluid .span4:last-child {
+  border-right: none;
+}
+
+.well form {
+  margin-bottom: 0;
+}
+
+.well .row-fluid .span4:nth-child(even):before,
+.well .row-fluid .span4:first-child:after {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: -10px;
+  border-color: transparent;
+  border-left-color: #b4b4b4;
+  border-style: solid;
+  border-width: 10px;
+  content: ' ';
+}
+
+.well-inverted {
+  background: #232323;
+}
+
+.a11y { /* screen readers */
+  height: 1px;
+  left: -10000px;
+  overflow: hidden;
+  position: absolute;
+  top: auto;
+  width: 1px;
+}
+
+.ir { /* image replacement */
+  font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+}
+
+.table .ir {
+  display: block;
+  height: 18px;
+  margin: 0 auto;
+  width: 18px;
+  background: transparent no-repeat 0 0;
+}
+
+/**
+ * Skip links for a11y and keyboard navigation
+ */
+#skip {
+  background: #232323;
+}
+#skip a {
+  height: 1px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: -500px;
+  width: 1px;
+}
+#skip a:focus {
+  position: static;
+  height: auto;
+  width: auto;
+}
+
+.ideal,
+.table .ideal {
+  background-image: url(../../img/ideal.png);
+}
+
+.less-ideal,
+.table .less-ideal {
+  background-image: url(../../img/less-ideal.png);
+}
+
+.unacceptable,
+.table .unacceptable {
+  background-image: url(../../img/unacceptable.png);
+}
+
+.well-small {
+  border: none;
+  box-shadow: none;
+}
+
+.compare .nav-pills > li {
+  margin: 0 20px 0 0;
+}
+.compare .nav-pills > li:first-child {
+  margin-left: 30px;
+}
+
+.compare .nav-pills .ideal,
+.compare .nav-pills .less-ideal,
+.compare .nav-pills .unacceptable {
+  background-repeat: no-repeat;
+  padding-left: 20px;
+}
+
+.suggestion {
+  margin: 36px auto;
+}
+.suggestion h3 {
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: center;
+  /*background: url(../../img/bolt.png) no-repeat left center;*/
+}
+.suggestion img {
+  margin-right: .5em;
+}
+
+textarea,
+input[type="text"] {
+  border-radius: 3px;
+  box-shadow: 0 3px 0 #b2b2b2;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #232323;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #232323;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #232323;
+}
+
+.rostrum-tiered-item h3 {
+  position: relative;
+  text-align: center;
+  width: 6em;
+  margin-right: 0 auto;
+  background-repeat: no-repeat;
+}
+
+.package-subtitle {
+  border-bottom: 1px solid #ccc;
+}
+
+/**
+ * Use in addition with media component
+ */
+.site-hosting-tool {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.span6:nth-child(odd) > .site-hosting-tool {
+  margin-right: 10px;
+}
+
+.span6:nth-child(even) > .site-hosting-tool,
+.span6:nth-child(even) > h2 {
+  margin-left: 10px;
+}
+
+.site-hosting-tool > .pull-left {
+  background-color: #eee;
+  display: block;
+  margin-right: 0;
+  padding: 18px;
+}
+
+.site-hosting-tool > .media-body {
+  border-left: 1px solid #ccc;
+  padding: 18px 28px;
+}
+
+/**
++ * Apply gears to pre-footer sales area
++ */
+.wrap.pre-footer {
+  padding-bottom: 0;
+}
+
+.pre-footer > .container {
+  background: url(../../img/pre-footer-gears.png) no-repeat right bottom;
+  padding-bottom: 72px;
+}
+
+footer {
+  background: #232323;
+  color: #888;
+}
+footer p,
+footer h5 {
+  text-align: right;
+}
+footer a {
+  color: #888;
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+
+  .rostrum-tiered-item-first {
+    width: 268px;
+  }
+
+  .matrix-two-column > li {
+    width: 30%;
+  }
+
 }

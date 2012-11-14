@@ -15,58 +15,51 @@ $app->match('/', function() use ($app) {
     return $app['twig']->render('index.html.twig');
 })->bind('homepage');
 
-$app->match('/login', function() use ($app) {
-
-    $form = $app['form.factory']->createBuilder('form')
-        ->add('email', 'email', array(
-            'label'       => 'Email',
-            'constraints' => array(
-                new Assert\NotBlank(),
-                new Assert\Email(),
-            ),
-        ))
-        ->add('password', 'password', array(
-            'label'       => 'Password',
-            'constraints' => array(
-                new Assert\NotBlank(),
-            ),
-        ))
-        ->getForm()
-    ;
-
-    if ('POST' === $app['request']->getMethod()) {
-        $form->bindRequest($app['request']);
-
-        if ($form->isValid()) {
-
-            $email    = $form->get('email')->getData();
-            $password = $form->get('password')->getData();
-
-            if ('email@example.com' == $email && 'password' == $password) {
-                $app['session']->set('user', array(
-                    'email' => $email,
-                ));
-
-                $app['session']->setFlash('notice', 'You are now connected');
-
-                return $app->redirect($app['url_generator']->generate('homepage'));
-            }
-
-            $form->addError(new FormError('Email / password does not match (email@example.com / password)'));
-        }
-    }
-
-    return $app['twig']->render('login.html.twig', array('form' => $form->createView()));
-})->bind('login');
-
-$app->match('/doctrine', function() use ($app) {
+$app->match('/business-hosting', function() use ($app) {
     return $app['twig']->render(
-        'doctrine.html.twig',
-        array(
-            'posts' => $app['db']->fetchAll('SELECT * FROM post')
-        )
-    );
-})->bind('doctrine');
+        'webhosting_plan\business_hosting.html.twig');
+})->bind('business_hosting');
+
+$app->match('/vps-hosting', function() use ($app) {
+    return $app['twig']->render(
+        'webhosting_plan\vps_hosting.html.twig');
+})->bind('vps_hosting');
+
+$app->match('/dedicated-servers', function() use ($app) {
+    return $app['twig']->render(
+        'webhosting_plan\dedicated_servers.html.twig');
+})->bind('dedicated_servers');
+
+$app->match('/domains', function() use ($app) {
+    return $app['twig']->render(
+        'domains.html.twig');
+})->bind('domains');
+
+$app->match('/webdesign', function() use ($app) {
+    return $app['twig']->render(
+        'webdesign.html.twig');
+})->bind('webdesign');
+
+$app->match('/site-hosting-tools', function() use ($app) {
+    return $app['twig']->render(
+        'site_hosting_tools.html.twig');
+})->bind('site_hosting_tools');
+
+$app->match('/why-us', function() use ($app) {
+    return $app['twig']->render(
+        'why_us.html.twig');
+})->bind('why_us');
+
+$app->match('/support', function() use ($app) {
+    return $app['twig']->render(
+        'support.html.twig');
+})->bind('support');
+
+$app->match('/{category}/articles/{title}', function($category, $title) use ($app) {
+    return $app['twig']->render(
+        '/longtail.html.twig');
+})->bind('longtail');
+
 
 $app->match('/form', function() use ($app) {
 
@@ -168,7 +161,7 @@ $app->get('/page-with-cache', function() use ($app) {
 
     return $response;
 })->bind('page_with_cache');
-
+/*
 $app->error(function (\Exception $e, $code) use ($app) {
     if ($app['debug']) {
         return;
@@ -184,5 +177,6 @@ $app->error(function (\Exception $e, $code) use ($app) {
 
     return new Response($message, $code);
 });
+*/
 
 return $app;
