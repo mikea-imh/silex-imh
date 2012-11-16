@@ -60,6 +60,61 @@ $app->match('/{category}/articles/{title}', function($category, $title) use ($ap
         '/longtail.html.twig');
 })->bind('longtail');
 
+// cpanel controller pages
+$app->match('/cpanel-hosting', function() use ($app) {
+    return $app['twig']->render(
+        'site_hosting_tools.html.twig');
+})->bind('site_hosting_tools');
+
+$app->match('/cpanel-hosting/cpanel-features.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-features.html.twig');
+})->bind('longtail_cpanel_features');
+
+$app->match('/cpanel-hosting/cpanel-domain-management-feature.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-domain-management-feature.html.twig');
+})->bind('longtail_cpanel_domain_management_feature');
+
+$app->match('/cpanel-hosting/cpanel-file-management-feature.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-file-management-feature.html.twig');
+})->bind('longtail_cpanel_file_management_feature');
+
+$app->match('/cpanel-hosting/cpanel-email-feature.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-email-feature.html.twig');
+})->bind('longtail_cpanel_email_feature');
+
+$app->match('/cpanel-hosting/cpanel-security-feature.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-security-feature.html.twig');
+})->bind('longtail_cpanel_security_feature');
+
+$app->match('/cpanel-hosting/cpanel-web-hosting.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-web-hosting.html.twig');
+})->bind('longtail_cpanel_web_hosting');
+
+$app->match('/cpanel-hosting/free-cpanel-hosting.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/free-cpanel-hosting.html.twig');
+})->bind('longtail_free_cpanel_hosting');
+
+$app->match('/cpanel-hosting/reseller-hosting-with-cpanel.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/reseller-hosting-with-cpanel.html.twig');
+})->bind('longtail_reseller_hosting_with_cpanel');
+
+$app->match('/cpanel-hosting/vps-with-cpanel.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/vps-with-cpanel.html.twig');
+})->bind('longtail');
+
+$app->match('/cpanel-hosting/cpanel-backup-feature.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/cpanel-backup-feature.html.twig');
+})->bind('longtail_cpanel_backup_feature');
 
 $app->match('/form', function() use ($app) {
 
