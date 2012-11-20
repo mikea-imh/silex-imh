@@ -61,6 +61,11 @@ $app->match('/{category}/articles/{title}', function($category, $title) use ($ap
 })->bind('longtail');
 
 // cpanel controller pages
+$app->match('/host-with-cpanel.html', function() use ($app) {
+    return $app['twig']->render(
+        'cpanel-hosting/host-with-cpanel.html.twig');
+})->bind('longtail_host_with_cpanel');
+
 $app->match('/cpanel-hosting', function() use ($app) {
     return $app['twig']->render(
         'site_hosting_tools.html.twig');
