@@ -50,6 +50,7 @@
 
 {# firstplaceplan #}
 {% block firstplaceplan %}
+<span class="badge"><p>BEST<br/>VALUE</p></span>
     <h3 class="blanky package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Power Business Package" class="tier-space">Power</h3>
     <p class="package-subtitle">Top Choice for Small Business</p>
     <div class="pricebox offs"><sup>$</sup>7<sup>95</sup><sub>/mo.<sub></div>
@@ -161,9 +162,9 @@
             <tr>
                  <th scope="row">Easy Control Panel</th>
                 <td><a href="#">Try Control Panel</a></td>
-                <td><span class="ir checkmark"></span></td>
-                <td><span class="ir checkmark"></span></td>
-                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
             </tr>
             <tr>
                 <th scope="row">Data Backup</th>
@@ -196,9 +197,9 @@
             <tr>
                 <th scope="row">SPAM Safe Email</th>
                 <td>With Real-time Filtering</td>
-                <td><span class="ir checkmark"></span></td>
-                <td><span class="ir checkmark"></span></td>
-                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
             </tr>
             <tr>
                 <th scope="row">Max Speed Zone Enabled</th>
@@ -210,9 +211,9 @@
             <tr>
                 <th scope="row">Premium Website Builder</th>
                 <td><a href="#">Launch Builder</a></td>
-                <td><span class="ir checkmark"></span></td>
-                <td><span class="ir checkmark"></span></td>
-                <td><span class="ir checkmark"></span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
             </tr>
         </tbody>
     </table>  
@@ -220,8 +221,7 @@
 </div><!-- /#specifications -->
 <div class="tab-pane" id="features">
     <div class="jutwrap4">
-        <p class="centered">All InMotion Hosting packages include the following:</p>
-        <br clear="all">
+        <p class="centered jutwrap4">All InMotion Hosting packages include the following:</p>
         <ul class="nav nav-stacked matrix matrix-two-column">
                         <li>
                             <img src="{{ app.request.basepath }}/img/icon-mail.png" class="mx-icon" alt="email icon" />
@@ -381,4 +381,16 @@
     </table>
      <a href="#" class="btn btn-info">VIEW MORE</a>
 </div><!-- /#compare -->
+{% endblock %}
+
+{# testimonial #}
+{% block testimonial %}
+        <div class="row span8 island sunken">
+                <blockquote class="quoted bq-horiz">InMotion has given my growing company the reliability, flexibility and consistency that I have been looking for. Their customer service and technical support have always been fast and efficient. I have never waited on hold and have always had my requests handled promptly and professionally. I wish all my vendors were as effective as InMotion."
+                    </blockquote>
+               <span class="emisor vibrant indentit">
+                    <span class="quotename">Ajay Narain</span>
+                    <span class="muted quotefrom">Sunnyvale, CA</span>
+                </span>
+            </div>
 {% endblock %}

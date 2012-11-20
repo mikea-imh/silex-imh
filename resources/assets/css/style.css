@@ -55,7 +55,6 @@
 
 blockquote {
   border: none;
-  margin: 0; padding: 0 0 16px 30px;
 }
 
 body {
@@ -254,7 +253,7 @@ header .nav-pills-contact a.btn {
   font-size: 600%;
   font-family: Helvetica, Arial, sans-serif;
   float: left;
-  margin: 20px 20px 20px -30px;
+  margin: 20px 20px 20px -15px;
 }
 
 /**
@@ -328,7 +327,6 @@ header .nav-pills-contact a.btn {
 .compare .table tbody th {
   width: 40%;
 }
-
 
 .matrix > li {
   border-bottom: 1px solid #ccc;
@@ -501,11 +499,11 @@ textarea::-webkit-input-placeholder {
 }
 
 .rostrum-tiered-item h3 {
+  background-repeat: no-repeat;
+  margin-right: 0 auto;
   position: relative;
   text-align: center;
   width: 6em;
-  margin-right: 0 auto;
-  background-repeat: no-repeat;
 }
 
 .package-subtitle {
@@ -516,8 +514,8 @@ textarea::-webkit-input-placeholder {
  * Use in addition with media component
  */
 .site-hosting-tool {
-  border-radius: 4px;
   border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .span6:nth-child(odd) > .site-hosting-tool {
@@ -589,8 +587,13 @@ footer a {
 
 
 /*------------------------------*/
+.bq-horiz {
+  margin: 0; 
+  padding: 0 0 66px 30px;
+}
+
 .legend {
-    background-color: #ededed;
+  background-color: #ededed;
   margin-top: 30px;
 }
 
@@ -777,7 +780,8 @@ sub {
   height: 36px;
 }
 
-.over, .over:hover {
+.over, 
+.over:hover {
   color: #fff;
   margin: 0 auto 0;
   position: relative;
@@ -817,4 +821,30 @@ sub {
 
 .header_space {
   margin-right: 11px;
+}
+
+.badge { 
+  background: none;
+  border-top: 40px solid #c52228;
+  border-right: 40px solid #c52228; 
+  border-bottom: 40px solid transparent; 
+  border-left: 40px solid transparent;
+  border-radius: 0;
+  height: 0;
+  padding: 0;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 0; 
+} 
+
+.badge
+p {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: -40px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  padding: 0;
+  text-shadow: none; 
 }
