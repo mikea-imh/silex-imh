@@ -172,7 +172,8 @@ header {
 header .nav-pills-contact,
 header .nav-pills-contact a {
   color: #232323;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 header .nav-pills-contact,
@@ -185,8 +186,9 @@ header .nav-pills-contact a.btn {
 }
 
 .nav-pills-no-link {
-  line-height: 39px;
+  line-height: 36px;
   color: #232323;
+  margin-right: 12px;
 }
 
 .nav-pills-contact i {
@@ -791,35 +793,50 @@ sub {
   margin: 1px auto -1px;
 }
 
-.ft_logo_block {
-  margin-left: 65px;
+.ft-logo {
+  border: 0;
+  display: block;
+  height: 41px;
+  margin-left: 85px;
   margin-bottom: 8px;
   width: 155px;
 }
 
-.socialmediabox {
+.ft-iconlist {
   border-bottom: 1px solid #333;
-  float: left;
-  margin: 4px 0 12px;
-  padding-bottom: 8px;
-  width: 220px;
+  float: right; 
+  height: 31px; 
+  margin-bottom: 12px;
+  margin-right: -20px;
+  padding-bottom: 12px;
+  width: 205px;
 }
-.socialmedia-icons {
-  float: right;
+
+.ft-iconlist 
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.ft-iconlist 
+li:first-child {
+  float: left;
+  margin: 6px 9px 0 0;
+}
+
+.ft-iconlist 
+li 
+img {
+  border: 0;
   height: 31px;
-  margin: 0 2px;
   width: 31px;
 }
-.stayintouch {
-  float: right;
-  margin-top: 8px;
-  margin-right: 10px;
-}
+
 .indentit {
   margin-left: 44px;
 }
 
-.header_space {
+.hspace {
   margin-right: 11px;
 }
 
@@ -843,8 +860,10 @@ p {
   font-size: 11px;
   font-weight: 400;
   margin-top: -40px;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
   padding: 0;
   text-shadow: none; 
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
