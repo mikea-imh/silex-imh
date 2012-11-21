@@ -6,6 +6,9 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Form\FormError;
 
+// vps provider
+
+
 $app->match('/', function() use ($app) {
     $app['session']->setFlash('warning', 'Warning flash message');
     $app['session']->setFlash('info', 'Info flash message');
@@ -60,6 +63,15 @@ $app->match('/{category}/articles/{title}', function($category, $title) use ($ap
         '/longtail.html.twig');
 })->bind('longtail');
 
+// new coding line
+$app->match('/vps_hosting/articles/cheap-vps.html', function() use ($app) {
+    return $app['twig']->render(
+        '/../vps_hosting/articles/cheap-vps.html.twig');
+})->bind('longtail_cheap_vps_test');
+
+// end new code line
+
+
 // cpanel controller pages
 $app->match('/host-with-cpanel.html', function() use ($app) {
     return $app['twig']->render(
@@ -68,7 +80,7 @@ $app->match('/host-with-cpanel.html', function() use ($app) {
 
 $app->match('/cpanel-hosting', function() use ($app) {
     return $app['twig']->render(
-        'site_hosting_tools.html.twig');
+        'cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('site_hosting_tools');
 
 $app->match('/cpanel-hosting/cpanel-features.html', function() use ($app) {

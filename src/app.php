@@ -9,6 +9,7 @@ use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\ValidatorServiceProvider;
 
+
 use Symfony\Component\Translation\Loader\YamlFileLoader;
 
 use SilexAssetic\AsseticExtension;
@@ -19,6 +20,7 @@ $app->register(new SessionServiceProvider());
 $app->register(new ValidatorServiceProvider());
 $app->register(new FormServiceProvider());
 $app->register(new UrlGeneratorServiceProvider());
+
 
 $app->register(new TranslationServiceProvider(), array(
     'locale' => $app['locale'],
@@ -39,14 +41,23 @@ $app->register(new MonologServiceProvider(), array(
     'monolog.level'   => 300 // = Logger::WARNING
 ));
 
+
+
 $app->register(new TwigServiceProvider(), array(
     'twig.options'        => array(
         'cache'            => isset($app['twig.options.cache']) ? $app['twig.options.cache'] : false,
         'strict_variables' => true
     ),
     'twig.form.templates' => array('form_div_layout.html.twig', 'common/form_div_layout.html.twig'),
-    'twig.path'           => array(__DIR__ . '/../resources/views')
+    //'twig.path'           => array(__DIR__ . '/../resources/views')
+    'twig.path'           => array(
+        __DIR__ . '/../resources/views/',
+        __DIR__ . '/../resources/vps_hosting/articles/'
+    ),
 ));
+
+
+
 
 if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {
     $app->register(new AsseticExtension(), array(
