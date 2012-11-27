@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}VPS Features for All Plans | InMotion Hosting{% endblock %}
+{% block title %}VPS Features for All Plans{% endblock %}
 
 {# keywords #}
 {% block keywords %}vps plan features, vps features, features of vps plans{% endblock %}
@@ -12,38 +12,43 @@
 
 {# intro #}
 {% block intro %}
-<h1>See What InMotion VPS Has to Offer</h1>
-<p>InMotion VPS plans and features are some the most competitve in the industry. Each plan comes with sizeable amounts of RAM, disk space, and data transfer limits to cover your hosting needs.</p>
+    <div class="span9">
+        <h1>See What InMotion VPS Has to Offer</h1>
+    </div>
+    <div class="span3">
 
-<p>What about the other features that comes with each hosting plan?</p>
-<p>InMotion VPS plans all come with features to keep you covered for almost any situation.</p>
-
-<h2>Unlimited Features</h2>
-<p>There are a set of features that are limitless. These include:</p>
+    </div>
 {% endblock %}
 
 {% block content %}
-<ul>
-    <li>Domains</li>
-    <li>Websites allowed per VPS</li>
-    <li>MYSQL databases</li>
-    <li>FTP accounts</li>
-    <li>Individual cPanel sub-accounts</li>
-    <li>Email accounts</li>
-</ul>
+    <p>InMotion VPS plans and features are some the most competitve in the industry. Each plan comes with sizeable amounts of RAM, disk space, and data transfer limits to cover your hosting needs.</p>
 
-<h3>Domains &amp; Websites per VPS</h3>
-<p>With unlimited domains, you are free have as many addon domains you want. Also, if you purchase the right size VPS plan, you can host as many of these sites as you want. Of course, staying within your technical specifications.</p>
+    <p>What about the other features that comes with each hosting plan?</p>
+    <p>InMotion VPS plans all come with features to keep you covered for almost any situation.</p>
 
-<h3>MYSQL Databases</h3>
-<p>A lot of what you might be doing could involve a CMS platform or other type of online application. If this is the case, then MYSQL databases are a much needed feature to keep your data organized and your applications functioning. With unlimited databases, you are free to create as many applications, install as many blogs, or any other platform you can think of.</p>
+    <h2>Unlimited Features</h2>
+    <p>There are a set of features that are limitless. These include:</p>
+    <ul>
+        <li>Domains</li>
+        <li>Websites allowed per VPS</li>
+        <li>MYSQL databases</li>
+        <li>FTP accounts</li>
+        <li>Individual cPanel sub-accounts</li>
+        <li>Email accounts</li>
+    </ul>
 
-<h3>FTP Accounts</h3>
-<p>Have lots of users working for you? Or are a hosting reseller? Then being able to create FTP accounts with different levels of access is what you need to allow your customers access to their files.</p>
+    <h3>Domains &amp; Websites per VPS</h3>
+    <p>With unlimited domains, you are free have as many addon domains you want. Also, if you purchase the right size VPS plan, you can host as many of these sites as you want. Of course, staying within your technical specifications.</p>
 
-<h3>Individual cPanel Sub-Accounts</h3>
-<p>This is a must if you plan on resellling hosting. With unlimited cPanel accounts, you are free to sell as much hosting as you please. This way you can let your customers manage their own emails, domains, and ftp accounts!</p>
+    <h3>MYSQL Databases</h3>
+    <p>A lot of what you might be doing could involve a CMS platform or other type of online application. If this is the case, then MYSQL databases are a much needed feature to keep your data organized and your applications functioning. With unlimited databases, you are free to create as many applications, install as many blogs, or any other platform you can think of.</p>
 
-<h3>Email Accounts</h3>
-<p>Need lots of email addresses? Each VPS package lets you create an unlimited amount of email addresses to meet your needs. Create <em>info</em>, <em>admin</em>, <em>webmaster</em>, or <em>help</em> accounts to keep your incoming messages organized.</p>
+    <h3>FTP Accounts</h3>
+    <p>Have lots of users working for you? Or are a hosting reseller? Then being able to create FTP accounts with different levels of access is what you need to allow your customers access to their files.</p>
+
+    <h3>Individual cPanel Sub-Accounts</h3>
+    <p>This is a must if you plan on resellling hosting. With unlimited cPanel accounts, you are free to sell as much hosting as you please. This way you can let your customers manage their own emails, domains, and ftp accounts!</p>
+
+    <h3>Email Accounts</h3>
+    <p>Need lots of email addresses? Each VPS package lets you create an unlimited amount of email addresses to meet your needs. Create <em>info</em>, <em>admin</em>, <em>webmaster</em>, or <em>help</em> accounts to keep your incoming messages organized.</p>
 {% endblock %}

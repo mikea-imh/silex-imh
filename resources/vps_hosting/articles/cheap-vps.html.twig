@@ -1,4 +1,4 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
@@ -12,12 +12,18 @@
 
 {# intro #}
 {% block intro %}
-<h1>Affordably Cheap VPS Hosting</h1>
-<p>InMotion offers affordably cheap VPS servers. We only use 100% Dell servers, multiple internet providers, and proven software. This ensures that you remain online regardless of any external factors that may influence our data centers. Also, our team of system administrators are the experts at providing solutions to any issues.</p>
-<p>You can read more about what you get with our VPS plans <a href="http://www.inmotionhosting.com/vps_hosting/articles/vps-price.html">here</a>.
+    <div class="span9">
+        <h1>Affordably Cheap VPS Hosting</h1>
+    </div>
+    <div class="span3">
+
+    </div>
 {% endblock %}
 
 {% block content %}
+<p>InMotion offers affordably cheap VPS servers. We only use 100% Dell servers, multiple internet providers, and proven software. This ensures that you remain online regardless of any external factors that may influence our data centers. Also, our team of system administrators are the experts at providing solutions to any issues.</p>
+<p>You can read more about what you get with our VPS plans <a href="http://www.inmotionhosting.com/vps_hosting/articles/vps-price.html">here</a>.
+
 <h3>100% Dell</h3>
 <p>We believe in giving quality to our customers. That is why we use Dell servers which are known to be able to stand up to the most demanding of tasks. Each server is thoroughly tested at Dell then shipped to us ready to use.</p>
 

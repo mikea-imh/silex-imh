@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Unmetered VPS Hosting | InMotion Hosting{% endblock %}
+{% block title %}Unmetered VPS Hosting{% endblock %}
 
 {# keywords #}
 {% block keywords %}unmetered vps hosting, unmetered virtual private servers, unlimited hosting{% endblock %}
@@ -12,25 +12,36 @@
 
 {# intro #}
 {% block intro %}
-<h1>Learn Why Unmetered VPS Hosting Is Not What It Seems</h1>
-<p>Unmetered virtual private servers means that your data transfer usage isn't tracked or followed. In other words, you are not getting charged for a specific amount of data that goes to-and-from your server.</p>
+    <div class="span9">
+        <h1>Learn Why Unmetered VPS Hosting Is Not What It Seems</h1>
+    </div>
+    <div class="span3">
 
-<h3>How is unmetered VPS possible?</h3>
-
-<p>First of all, it should be understood that there are limitations that are set by the hosting company as well as outside variables that keeps a user from using an 'all you can use buffett of data.' The biggest limitating factor is port speed. This restricts how fast data flows from the server.</p>
+    </div>
 {% endblock %}
 
 {% block content %}
-<p>From a business standpoint, data transfer costs a hosting company a specified amount from their internet service provider. If they go over this, then they will incur an overage charge. So if a hosting company is limited by their provider, how can they offer unlimited data transfer? They are betting against the user that they won't go over a specific limit. Which, as mentioned above, can be set by restricting the port speed.</p>
+    <p>Unmetered virtual private servers means that your data transfer usage isn't tracked or followed. In other words, you are not getting charged for a specific amount of data that goes to-and-from your server.</p>
 
-<h3>So Why Bother Calling it Unmetered?</h3>
-<p>Saying that you are given unmetered data transfer is a ploy to oversell what they might be able to offer. If are a few users who use more data than others, the hosting company should still be in good shape since it is most likely that not everyone is nearing or going over their unmetered data &ldquo;cap limit.&rdquo;</p>
+    <h3>How is unmetered VPS possible?</h3>
 
-<p>However, if everyone is at or above their data limit, then there is a good chance that port speed may be decreased overall to ensure that a data overage doesn't happen.</p>
+    <p>First of all, it should be understood that there are limitations that are set by the hosting company as well as outside variables that keeps a user from using an 'all you can use buffett of data.' The biggest limitating factor is port speed. This restricts how fast data flows from the server.</p>
 
-<p>This is the problem with unmetered. They are overselling their customers on the idea of unmetered data.</p>
-<h3>Anything Unmetered?</h3>
-<p>While we do not offer anything that is &ldquo;unmetered&rdquo;, our VPS plans do include an unlimited set of features to make managing your server easier. <a href="http://www.inmotionhosting.com/vps_hosting/articles/unlimited-vps.html">Click here</a>to read more.</p>
-<h3>Looking for a VPS?</h3>
-<p>If you are wondering how you can go about getting a VPS, read <a href="http://www.inmotionhosting.com/vps_hosting/articles/how-to-get-vps.html">this</a> article.</p>
+    <p>From a business standpoint, data transfer costs a hosting company a specified amount from their internet service provider. If they go over this, then they will incur an overage charge. So if a hosting company is limited by their provider, how can they offer unlimited data transfer? They are betting against the user that they won't go over a specific limit. Which, as mentioned above, can be set by restricting the port speed.</p>
+
+    <h3>So Why Bother Calling it Unmetered?</h3>
+    
+    <p>Saying that you are given unmetered data transfer is a ploy to oversell what they might be able to offer. If are a few users who use more data than others, the hosting company should still be in good shape since it is most likely that not everyone is nearing or going over their unmetered data &ldquo;cap limit.&rdquo;</p>
+
+    <p>However, if everyone is at or above their data limit, then there is a good chance that port speed may be decreased overall to ensure that a data overage doesn't happen.</p>
+
+    <p>This is the problem with unmetered. They are overselling their customers on the idea of unmetered data.</p>
+    
+    <h3>Anything Unmetered?</h3>
+
+    <p>While we do not offer anything that is &ldquo;unmetered&rdquo;, our VPS plans do include an unlimited set of features to make managing your server easier. <a href="http://www.inmotionhosting.com/vps_hosting/articles/unlimited-vps.html">Click here</a>to read more.</p>
+
+    <h3>Looking for a VPS?</h3>
+
+    <p>If you are wondering how you can go about getting a VPS, read <a href="http://www.inmotionhosting.com/vps_hosting/articles/how-to-get-vps.html">this</a> article.</p>
 {% endblock %}

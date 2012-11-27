@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Buying a VPS | InMotion Hosting{% endblock %}
+{% block title %}Buying a VPS{% endblock %}
 
 {# keywords #}
 {% block keywords %}buy vps hosting, buy virtual private server, buying from InMotion{% endblock %}
@@ -12,31 +12,40 @@
 
 {# intro #}
 {% block intro %}
-<h1>Why You Should Buy a VPS From InMotion</h1>
-<p>Purchase a VPS from InMotion Hosting and get the features you need to create and maintain an online presence. Whether you are creating a personal projcet for yourself, managing multiple domains, or reselling hosting, InMotion has you covered.</p>
+    <div class="span9">
+        <h1>Why You Should Buy a VPS From InMotion</h1>
+    </div>
+    <div class="span3">
 
-<h2>VPS Features</h2>
-
-<ul>
-    <li>Award-winning customer service</li>
-    <li>Reliable hardward</li>
-    <li>Two data center locations</li>
-    <li>Network reliability</li>
-</ul>
+    </div>
 {% endblock %}
 
 {% block content %}
-<h3>Award-Winning Customer Service</h3>
-<p>At InMotion, we believe our customers deserve the best experience. Our technical support team is here to answer your question and resolve any server issues in a friendly, curteous manner.</p>
+    <p>Purchase a VPS from InMotion Hosting and get the features you need to create and maintain an online presence. Whether you are creating a personal projcet for yourself, managing multiple domains, or reselling hosting, InMotion has you covered.</p>
 
-<p>Our team is also available 24 hours a day, 7 days a week, and on holidays. We are committed to keeping our customers online.</p>
+    <h2>VPS Features</h2>
 
-<h3>Reliable Hardware</h3>
-<p>When it comes to hardware selection, we use nothing but Dell. That means each part is specifically chosen to work within the machine. From hard drives to the sticks of RAM used, quality parts equals a quality machine. Each server is factory built and tested before we get it from Dell.</p>
+    <ul>
+        <li>Award-winning customer service</li>
+        <li>Reliable hardward</li>
+        <li>Two data center locations</li>
+        <li>Network reliability</li>
+    </ul>
+    <h3>Award-Winning Customer Service</h3>
 
-<h3>Two Data Centers</h3>
-<p>To increase performance and load times of your website, the location of your server plays an important role. We have two data centers for our customers to select from. With one located on each coast, we give you the option to place your VPS near to where your customers are.</p>
+    <p>At InMotion, we believe our customers deserve the best experience. Our technical support team is here to answer your question and resolve any server issues in a friendly, curteous manner.</p>
 
-<h3>Network Reliability</h3>
-<p>Each of our data centers have multiple ISP connections. This ensure you VPS stays up if one ISP suddenly increases in latency drops altogether. We also utilize commercial-grade equipment from our hardware partners like Dell and Cisco.</p>
+    <p>Our team is also available 24 hours a day, 7 days a week, and on holidays. We are committed to keeping our customers online.</p>
+
+    <h3>Reliable Hardware</h3>
+
+    <p>When it comes to hardware selection, we use nothing but Dell. That means each part is specifically chosen to work within the machine. From hard drives to the sticks of RAM used, quality parts equals a quality machine. Each server is factory built and tested before we get it from Dell.</p>
+
+    <h3>Two Data Centers</h3>
+
+    <p>To increase performance and load times of your website, the location of your server plays an important role. We have two data centers for our customers to select from. With one located on each coast, we give you the option to place your VPS near to where your customers are.</p>
+
+    <h3>Network Reliability</h3>
+    
+    <p>Each of our data centers have multiple ISP connections. This ensure you VPS stays up if one ISP suddenly increases in latency drops altogether. We also utilize commercial-grade equipment from our hardware partners like Dell and Cisco.</p>
 {% endblock %}

@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Reliable VPS Hosting is Our Goal | InMotion Hosting{% endblock %}
+{% block title %}Reliable VPS Hosting is Our Goal{% endblock %}
 
 {# keywords #}
 {% block keywords %}reliable vps hosting, quality servers{% endblock %}
@@ -12,28 +12,32 @@
 
 {# intro #}
 {% block intro %}
-<h1>Reliable VPS Hosting is What InMotion Strives For</h1>
+    <div class="span9">
+        <h1>Reliable VPS Hosting is What InMotion Strives For</h1>
+    </div>
+    <div class="span3">
 
-<p>In order to keep your VPS online at all hours of the day, InMotion uses a top rated hardware and a technical support team that is able to handle the most demanding of issues.</p>
-
-<p>There are many issues that can sprout up out of nowhere and unexpectedly  your server to go down. From hardware failure to resource limitations, here is how InMotion deals with some of those issues.</p>
+    </div>
 {% endblock %}
 
 {% block content %}
-<h2>Hardware Failure</h2>
-<p>InMotion buys only the best hardware from Dell. When we buy servers, they are built by Dell, tested, and then shipped to us ready to go. We do not play around with the components or use off-the-shelf parts to build our servers. This would degrade the quality of each server, and create a possible point-of-failure.</p>
+    <p>In order to keep your VPS online at all hours of the day, InMotion uses a top rated hardware and a technical support team that is able to handle the most demanding of issues.</p>
 
-<h2>Resource Usage</h2>
-<p>With a VPS, resources are shared with other users. RAM and CPU gets split up for each user based on the plan type they have. Our staff is trained to watch for resource usage and streamline each VPS to make them as effecient as possible. An example of this is putting high resource users with users who use less. This means that each VPS remains balanced and that a few high usage users won't slow down your site.</p>
+    <p>There are many issues that can sprout up out of nowhere and unexpectedly  your server to go down. From hardware failure to resource limitations, here is how InMotion deals with some of those issues.</p>
+    <h2>Hardware Failure</h2>
+    <p>InMotion buys only the best hardware from Dell. When we buy servers, they are built by Dell, tested, and then shipped to us ready to go. We do not play around with the components or use off-the-shelf parts to build our servers. This would degrade the quality of each server, and create a possible point-of-failure.</p>
 
-<p>So how does this benefit you if you are a high resource user?</p>
+    <h2>Resource Usage</h2>
+    <p>With a VPS, resources are shared with other users. RAM and CPU gets split up for each user based on the plan type they have. Our staff is trained to watch for resource usage and streamline each VPS to make them as effecient as possible. An example of this is putting high resource users with users who use less. This means that each VPS remains balanced and that a few high usage users won't slow down your site.</p>
 
-<p>When you are placed on a VPS with less users or less resource intensive users, then more RAM can be made available to you. Each of our VPS plans have burstable RAM. This gives you an added performance boost if you find your server getting hit with unexpected traffic.</p>
+    <p>So how does this benefit you if you are a high resource user?</p>
 
-<p>What about the users who use less resources?</p>
+    <p>When you are placed on a VPS with less users or less resource intensive users, then more RAM can be made available to you. Each of our VPS plans have burstable RAM. This gives you an added performance boost if you find your server getting hit with unexpected traffic.</p>
 
-<p>Our support team balances the servers to ensure they are not placed on a server with a lot of high resource users. Also, low resource usage users also have burstable RAM at their disposal if needed.</p>
+    <p>What about the users who use less resources?</p>
 
-<h2>Periodic Backups</h2>
-<p>Keeping your data safe and secure is very important. But what if your data becomes lost or corrupt? InMotion provides VPS backups for servers up to 10GB in size for free. If you have more than 10GB, InMotion can backup your extra space for a small additional fee. Call us to find out more. (888) 321-4678.</p>
+    <p>Our support team balances the servers to ensure they are not placed on a server with a lot of high resource users. Also, low resource usage users also have burstable RAM at their disposal if needed.</p>
+
+    <h2>Periodic Backups</h2>
+    <p>Keeping your data safe and secure is very important. But what if your data becomes lost or corrupt? InMotion provides VPS backups for servers up to 10GB in size for free. If you have more than 10GB, InMotion can backup your extra space for a small additional fee. Call us to find out more. (888) 321-4678.</p>
 {% endblock %}
