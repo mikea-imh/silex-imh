@@ -186,62 +186,62 @@ $vps->match('/vps_hosting/articles/vps-vs-dedicated.html', function() use ($vps)
 // cpanel controller pages
 $cpanel->match('/host-with-cpanel.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/host-with-cpanel.html.twig');
+        '/../cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('longtail_host_with_cpanel');
 
 $cpanel->match('/cpanel-hosting', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/host-with-cpanel.html.twig');
+        '/../cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('site_hosting_tools');
 
 $cpanel->match('/cpanel-hosting/cpanel-features.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-features.html.twig');
+        '/../cpanel-hosting/cpanel-features.html.twig');
 })->bind('longtail_cpanel_features');
 
 $cpanel->match('/cpanel-hosting/cpanel-domain-management-feature.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-domain-management-feature.html.twig');
+        '/../cpanel-hosting/cpanel-domain-management-feature.html.twig');
 })->bind('longtail_cpanel_domain_management_feature');
 
 $cpanel->match('/cpanel-hosting/cpanel-file-management-feature.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-file-management-feature.html.twig');
+        '/../cpanel-hosting/cpanel-file-management-feature.html.twig');
 })->bind('longtail_cpanel_file_management_feature');
 
 $cpanel->match('/cpanel-hosting/cpanel-email-feature.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-email-feature.html.twig');
+        '/../cpanel-hosting/cpanel-email-feature.html.twig');
 })->bind('longtail_cpanel_email_feature');
 
 $cpanel->match('/cpanel-hosting/cpanel-security-feature.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-security-feature.html.twig');
+        '/../cpanel-hosting/cpanel-security-feature.html.twig');
 })->bind('longtail_cpanel_security_feature');
 
 $cpanel->match('/cpanel-hosting/cpanel-web-hosting.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-web-hosting.html.twig');
+        '/../cpanel-hosting/cpanel-web-hosting.html.twig');
 })->bind('longtail_cpanel_web_hosting');
 
 $cpanel->match('/cpanel-hosting/free-cpanel-hosting.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/free-cpanel-hosting.html.twig');
+        '/../cpanel-hosting/free-cpanel-hosting.html.twig');
 })->bind('longtail_free_cpanel_hosting');
 
 $cpanel->match('/cpanel-hosting/reseller-hosting-with-cpanel.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/reseller-hosting-with-cpanel.html.twig');
+        '/../cpanel-hosting/reseller-hosting-with-cpanel.html.twig');
 })->bind('longtail_reseller_hosting_with_cpanel');
 
 $cpanel->match('/cpanel-hosting/vps-with-cpanel.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/vps-with-cpanel.html.twig');
+        '/../cpanel-hosting/vps-with-cpanel.html.twig');
 })->bind('longtail');
 
 $cpanel->match('/cpanel-hosting/cpanel-backup-feature.html', function() use ($cpanel) {
     return $cpanel['twig']->render(
-        'cpanel-hosting/cpanel-backup-feature.html.twig');
+        '/../cpanel-hosting/cpanel-backup-feature.html.twig');
 })->bind('longtail_cpanel_backup_feature');
 // end cpanel controller
 
