@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Shared vs VPS Hosting | InMotion Hosting{% endblock %}
+{% block title %}Shared vs VPS Hosting{% endblock %}
 
 {# keywords #}
 {% block keywords %}share versus vps hosting, shared hosting vs vps comparison{% endblock %}
@@ -12,58 +12,63 @@
 
 {# intro #}
 {% block intro %}
-<h1>Shared or VPS Hosting? Which is Right For You?</h1>
-<p>When looking for hosting, finding the right solution for you can be difficult. Looking at server specs, features, and pricing can be a bit overwhelming. Below are lists of the pros and cons of shared and VPS hosting.</p>
+    <div class="span9">
+        <h1>Shared or VPS Hosting? Which is Right For You?</h1>
+    </div>
+    <div class="span3">
+
+    </div>
 {% endblock %}
 
 {% block content %}
-<h3>The Pros &amp; Cons of Shared Hosting</h3>
-<table class="article">
-    <tr>
-        <th width="50%">
-            Pro
-        </th width="50%">
-        <th>
-            Con
-        </th>
-    </tr>
-    <tr>
-        <td>
-            <li><p>Cheaper</p></li>
-            <li><p>Fully managed</p></li>
-            <li><p>Requires less knowledge about hosting</p></li>
-        </td>
-        <td>
-            <li><p>Limited access to the server.</p></li>
-            <li><p>Cannot customize the server match needs.</p></li>
-            <li><p>Normally, hardware specs are slower. Abuse by one user can greatly affect performance on other users.</p></li>
-            <li><p>Limited set of features such as total number of databases, number of ftp accounts, and how many sites can be hosted.</p></li>
-        </td>
-    </tr>
-</table>
+    <p>When looking for hosting, finding the right solution for you can be difficult. Looking at server specs, features, and pricing can be a bit overwhelming. Below are lists of the pros and cons of shared and VPS hosting.</p>
+    <h3>The Pros &amp; Cons of Shared Hosting</h3>
+    <table class="article">
+        <tr>
+            <th width="50%">
+                Pro
+            </th width="50%">
+            <th>
+                Con
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <li><p>Cheaper</p></li>
+                <li><p>Fully managed</p></li>
+                <li><p>Requires less knowledge about hosting</p></li>
+            </td>
+            <td>
+                <li><p>Limited access to the server.</p></li>
+                <li><p>Cannot customize the server match needs.</p></li>
+                <li><p>Normally, hardware specs are slower. Abuse by one user can greatly affect performance on other users.</p></li>
+                <li><p>Limited set of features such as total number of databases, number of ftp accounts, and how many sites can be hosted.</p></li>
+            </td>
+        </tr>
+    </table>
 
-<h3>The Pros &amp; Cons of VPS Hosting</h3>
-<table class="article">
-    <tr>
-        <th width="50%">
-            Pro
-        </th width="50%">
-        <th>
-            Con
-        </th>
-    </tr>
-    <tr>
-        <td>
-            <li><p>You can fully manage your server. This means customizing it to your needs.</p></li>
-            <li><p>VPS's are generally placed on faster, higher end machines. More RAM and CPU power gives your websites or applications a fast and stable environment to live.</p></li>
-            <li><p>Unlimited number of databases, FTP account, and even cPanel accounts for your customers.</p></li>
-        </td>
-        <td>
-            <li>
-                <p>More expensive than shared hosting.</p>
-            </li>
-            <li><p>Although the server specs are increased, you are still sharing a machine with other accounts. As with shared hosting, abuse by one customer can affect all the others on the machine as well.</p></li>
-        </td>
-    </tr>
-</table>
+    <h3>The Pros &amp; Cons of VPS Hosting</h3>
+    <table class="article">
+        <tr>
+            <th width="50%">
+                Pro
+            </th width="50%">
+            <th>
+                Con
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <li><p>You can fully manage your server. This means customizing it to your needs.</p></li>
+                <li><p>VPS's are generally placed on faster, higher end machines. More RAM and CPU power gives your websites or applications a fast and stable environment to live.</p></li>
+                <li><p>Unlimited number of databases, FTP account, and even cPanel accounts for your customers.</p></li>
+            </td>
+            <td>
+                <li>
+                    <p>More expensive than shared hosting.</p>
+                </li>
+                <li><p>Although the server specs are increased, you are still sharing a machine with other accounts. As with shared hosting, abuse by one customer can affect all the others on the machine as well.</p></li>
+            </td>
+        </tr>
+    </table>
 {% endblock %}

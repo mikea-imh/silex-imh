@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Fast VPS Servers | InMotion Hosting{% endblock %}
+{% block title %}Fast VPS Servers{% endblock %}
 
 {# keywords #}
 {% block keywords %}fast vps, fast network, multiple connections, multiple data centers{% endblock %}
@@ -12,19 +12,24 @@
 
 {# intro #}
 {% block intro %}
-<h1>Looking for a fast VPS hosting solution? InMotion Has the Servers You Need.</h1>
-<p>When it comes to optimizing VPS servers for performance, InMotion knows what it takes. We do this by providing the having technical expertise, a speedy network, and multiple data center locations.</p>
+    <div class="span9">
+        <h1>Looking for a fast VPS hosting solution? InMotion Has the Servers You Need.</h1>
+    </div>
+    <div class="span3">
+
+    </div>
 {% endblock %}
 
 {% block content %}
-<h2>Technical Expertise</h2>
-<p>InMotion's technical support team is comprised of those who know hosting. From modifying server files, to helping our customers troubleshoot their installed platform such as Wordpress, Joomla, or Drupal. We monitor and offer advice to help you come up with a solution.</p>
+    <p>When it comes to optimizing VPS servers for performance, InMotion knows what it takes. We do this by providing the having technical expertise, a speedy network, and multiple data center locations.</p>
+    <h2>Technical Expertise</h2>
+    <p>InMotion's technical support team is comprised of those who know hosting. From modifying server files, to helping our customers troubleshoot their installed platform such as Wordpress, Joomla, or Drupal. We monitor and offer advice to help you come up with a solution.</p>
 
-<h2>Speedy Network</h2>
-<p>The network at InMotion utilizes BGP4 Smart Routing technology. This allows our servers to switch from one of our bandwidth providers to another should the primary provider experience unexpected downtime or latency.</p>
+    <h2>Speedy Network</h2>
+    <p>The network at InMotion utilizes BGP4 Smart Routing technology. This allows our servers to switch from one of our bandwidth providers to another should the primary provider experience unexpected downtime or latency.</p>
 
-<p>InMotion also utilizes Direct-Peering Connections to ensure your application or website has fewer hops between your server and your customers. This means your files have less transit time, which which as a result, means improved performance.</p>
+    <p>InMotion also utilizes Direct-Peering Connections to ensure your application or website has fewer hops between your server and your customers. This means your files have less transit time, which which as a result, means improved performance.</p>
 
-<h2>Multiple Data Centers</h2>
-<p>To decrease website load times, and increase performance of your server, InMotion has two data centers. With one located on each coast of the United States, you can select which data center is closer to you and your customers.</p>
+    <h2>Multiple Data Centers</h2>
+    <p>To decrease website load times, and increase performance of your server, InMotion has two data centers. With one located on each coast of the United States, you can select which data center is closer to you and your customers.</p>
 {% endblock %}

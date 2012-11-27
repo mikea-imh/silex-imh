@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Best VPS Offerings | InMotion Hosting{% endblock %}
+{% block title %}Best VPS Offerings{% endblock %}
 
 {# keywords #}
 {% block keywords %}best vps, best virtual private server{% endblock %}
@@ -12,16 +12,21 @@
 
 {# intro #}
 {% block intro %}
-    <h1>InMotion Provides the Best Virtual Private Server Hosting</h1>
-        <p>Being the best takes time and effort. InMotion has been in the hosting industry for over 10 years. This experience has given us a little perspective on what it takes to be the best. So what exactly does it take?</p>
+    <div class="span9">
+        <h1>InMotion Provides the Best Virtual Private Server Hosting</h1>
+    </div>
+    <div class="span3">
+
+    </div>
+{% endblock %}
+
+{% block content %}
+    <p>Being the best takes time and effort. InMotion has been in the hosting industry for over 10 years. This experience has given us a little perspective on what it takes to be the best. So what exactly does it take?</p>
     <ul>
         <li>Providing the best features</li>
         <li>Giving you the tools to stay online</li>
         <li>Understanding your needs</li>
     </ul>
-{% endblock %}
-
-{% block content %}
     <h3>Features</h3>
         <p>What makes our features so great? That's simple, they are all geared to keeping you online and making your VPS management easier. We provide free automatic VPS data backups for accounts under 10GB, multiple ISP coverage, and 24/7 managed support. All of this works together to <a href="http://www.inmotionhosting.com/vps_hosting/articles/reliable-vps.html">keep you online</a>.</p>
     <h3>The Best VPS Tools</h3>

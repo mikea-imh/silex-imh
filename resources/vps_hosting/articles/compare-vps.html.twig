@@ -1,8 +1,8 @@
-{% extends 'layout.html.twig' %}
+{% extends '/../views/layout.html.twig' %}
 {% set active = 'longtail' %}
 
 {# title #}
-{% block title %}Compare VPS | InMotion Hosting{% endblock %}
+{% block title %}Compare VPS{% endblock %}
 
 {# keywords #}
 {% block keywords %}compare vps, vps plan comparisons, comparing vps{% endblock %}
@@ -12,39 +12,45 @@
 
 {# intro #}
 {% block intro %}
-<h1>Comparing VPS Hosting Plans by InMotion</h1>
-<p>A VPS gives you the ability to run your websites and applications without slowdown or interruption due to slow performance.</p>
+    <div class="span9">
+        <h1>Comparing VPS Hosting Plans by InMotion</h1>
+    </div>
+    <div class="span3">
 
-<p>VPS plans by InMotion give incremental increases in performance as the plan levels go up. Take a look below at the plans offered by InMotion.</p>
+    </div>
+
 {% endblock %}
 
 {% block content %}
-<table class="article">
-    <tr>
-        <th class="33">
-            VPS-1000
-        </th>
-        <th class="33">
-            VPS-2000
-        </th>
-        <th class="33">
-            VPS-3000
-        </th>
-    </tr>
-    <tr>
-        <td>
-            <p>The lowest VPS plan that InMotion offers. The VPS-1000 is a good solution for those are looking to upgrade from a shared hosting account, or who wants to learn about hosting.</p>
-            <p>The VPS-1000 plan comes with a base 512MB of RAM, 40GB of disk space, 750GB data transfer per month, and 2 dedicated IP addresses.</p>
-        </td>
-        <td>
-            <p>Our VPS-2000 packages comes with double the features offered by the VPS-1000. The increase bump in hardware specs greatly adds to the performance of any application or website you are running.</p>
-            <p>Also our most popular plan, the VPS-2000 plan comes with 1GB of memory, 80GB disk space, 1.5GB of data transfer per month, and 5 dedicated IP addresses.</p>
-            <p>This plan lets you run some of the most demanding programs such as shopping carts, or blogging platforms where a lot of traffic is expected.</p>
-        </td>
-        <td>
-            <p>Our top-tiered VPS-3000 line give has the most performance increases you need. The performance of this line can to toe-to-toe with some of the baseline dedicated servers on the market.</p>
-            <p>A VPS-3000 plan comes with 2GB of RAM, 160GB disk space, 2.5GB of data transfer per month, and 10 dedicated IP addresses.</p>
-        </td>
-    </tr>
-</table>
+    <p>A VPS gives you the ability to run your websites and applications without slowdown or interruption due to slow performance.</p>
+
+    <p>VPS plans by InMotion give incremental increases in performance as the plan levels go up. Take a look below at the plans offered by InMotion.</p>
+    <table class="article">
+        <tr>
+            <th class="33">
+                VPS-1000
+            </th>
+            <th class="33">
+                VPS-2000
+            </th>
+            <th class="33">
+                VPS-3000
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <p>The lowest VPS plan that InMotion offers. The VPS-1000 is a good solution for those are looking to upgrade from a shared hosting account, or who wants to learn about hosting.</p>
+                <p>The VPS-1000 plan comes with a base 512MB of RAM, 40GB of disk space, 750GB data transfer per month, and 2 dedicated IP addresses.</p>
+            </td>
+            <td>
+                <p>Our VPS-2000 packages comes with double the features offered by the VPS-1000. The increase bump in hardware specs greatly adds to the performance of any application or website you are running.</p>
+                <p>Also our most popular plan, the VPS-2000 plan comes with 1GB of memory, 80GB disk space, 1.5GB of data transfer per month, and 5 dedicated IP addresses.</p>
+                <p>This plan lets you run some of the most demanding programs such as shopping carts, or blogging platforms where a lot of traffic is expected.</p>
+            </td>
+            <td>
+                <p>Our top-tiered VPS-3000 line give has the most performance increases you need. The performance of this line can to toe-to-toe with some of the baseline dedicated servers on the market.</p>
+                <p>A VPS-3000 plan comes with 2GB of RAM, 160GB disk space, 2.5GB of data transfer per month, and 10 dedicated IP addresses.</p>
+            </td>
+        </tr>
+    </table>
 {% endblock %}
