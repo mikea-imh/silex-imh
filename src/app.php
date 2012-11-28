@@ -51,8 +51,9 @@ $app->register(new TwigServiceProvider(), array(
     'twig.form.templates' => array('form_div_layout.html.twig', 'common/form_div_layout.html.twig'),
     'twig.path'           => array(
         __DIR__ . '/../resources/views/',
-        __DIR__ . '/../resources/vps_hosting/articles/',
-        __DIR__ . '/../resources/cpanel-hosting/',
+        __DIR__ . '/../resources/vps_hosting/articles/', // vps longtail pages
+        __DIR__ . '/../resources/dedicated_servers/articles', // dedicated longtail pages
+        __DIR__ . '/../resources/cpanel-hosting/', // cpanel longtail pages
     ),
 ));
 
