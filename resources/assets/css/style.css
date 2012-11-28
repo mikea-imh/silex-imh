@@ -62,6 +62,7 @@ body {
 }
 
 img {
+  border: 0;
   height: auto;
   max-width: 100%;
 }
@@ -157,7 +158,7 @@ header {
     color: transparent;
     content: ".";
     display: block;
-    line-height: .75em;
+    line-height: .50em;
     width: 8em;
   }
 
@@ -172,17 +173,23 @@ header {
 header .nav-pills-contact,
 header .nav-pills-contact a {
   color: #232323;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 500;
   text-transform: uppercase;
 }
-
+header .nav-pills-contact,
+header .nav-pills-contact a:hover {
+  color: #888;
+}
 header .nav-pills-contact a.btn {
   color: #fff;
   font-size: 14px;
 }
 
 .nav-pills-no-link {
-  line-height: 39px;
+  line-height: 36px;
+  color: #232323;
+  margin-right: 12px;
 }
 
 .nav-pills-contact i {
@@ -194,6 +201,7 @@ header .nav-pills-contact a.btn {
 
 .icon-chat {
   background: url(../../img/icon-chat.gif) no-repeat 0 0;
+  margin-right: 10px;
 }
 .icon-phone {
   background: url(../../img/icon-phone.gif) no-repeat 0 0;
@@ -228,11 +236,11 @@ header .nav-pills-contact a.btn {
 
 /**
  * Apply blue background with noise to element
- */
+
 .intro {
   background: url(../../img/bluenoise.png) repeat 0 0;
   border-top: 2px solid #232323;
-}
+} */
 .intro-foot {
   background: #333;
   padding-top: 10px;
@@ -247,7 +255,8 @@ header .nav-pills-contact a.btn {
   display: block;
   font-size: 600%;
   font-family: Helvetica, Arial, sans-serif;
-  margin-top: 20px;
+  float: left;
+  margin: 20px 20px 20px -15px;
 }
 
 /**
@@ -266,6 +275,7 @@ header .nav-pills-contact a.btn {
 .table tbody td,
 .table tfoot td {
   text-align: center;
+  border-left: 1px solid #ccc;
 }
 
 .table tbody th {
@@ -286,9 +296,7 @@ header .nav-pills-contact a.btn {
 .business-specification thead .table-col-1,
 .business-specification tfoot .table-col-1,
 .business-specification tfoot .table-col-2 {
-  border-width: 1px;
-  border-style: solid;
-  border-color: transparent;
+
 }
 
 .business-specification thead td {
@@ -323,13 +331,13 @@ header .nav-pills-contact a.btn {
   width: 40%;
 }
 
-
 .matrix > li {
   border-bottom: 1px solid #ccc;
   border-collapse: collapse;
   border-right: 1px solid #ccc;
   margin-left: 0;
   padding: 10px 70px;
+  height: 150px;
 }
 
 .matrix > li:nth-child(even) {
@@ -475,6 +483,7 @@ textarea,
 input[type="text"] {
   border-radius: 3px;
   box-shadow: 0 3px 0 #b2b2b2;
+  padding: 18px 12px;
 }
 
 input:-moz-placeholder,
@@ -493,11 +502,11 @@ textarea::-webkit-input-placeholder {
 }
 
 .rostrum-tiered-item h3 {
+  background-repeat: no-repeat;
+  margin-right: 0 auto;
   position: relative;
   text-align: center;
   width: 6em;
-  margin-right: 0 auto;
-  background-repeat: no-repeat;
 }
 
 .package-subtitle {
@@ -508,8 +517,8 @@ textarea::-webkit-input-placeholder {
  * Use in addition with media component
  */
 .site-hosting-tool {
-  border-radius: 4px;
   border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
 .span6:nth-child(odd) > .site-hosting-tool {
@@ -567,4 +576,289 @@ footer a {
     width: 30%;
   }
 
+}
+
+
+
+
+
+
+/*------------------------------*/
+.bq-horiz {
+  margin: 0;
+  padding: 0 0 66px 30px;
+}
+
+.legend {
+  background-color: #ededed;
+  margin-top: 30px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.tb-title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.white {
+  color: #fff;
+}
+
+.blanky {
+  margin: 0;
+  padding: 0;
+}
+
+.mid {
+  left: 0;
+  margin: 6px auto 0;
+  position: absolute;
+  width: 100%
+}
+
+.intro.business_hosting {
+  background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 253px;
+}
+
+.tabbg {
+  background-color: #f5f5f5;
+}
+
+.package-title {
+  margin: 0 auto;
+  padding-bottom: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 200px;
+}
+
+.leader-biz-cta-place {
+  float: right;
+  margin: 60px 121px 0 0;
+}
+
+.tier-space {
+    margin: -4px 6px 0 0;
+}
+
+.pricebox {
+  color: #c52228;
+  font-family: 'adelle';
+  font-size: 52px;
+  font-weight: 400;
+  margin: 30px auto 26px;
+  padding: 0 0px 0 0;
+}
+
+.pricebox 
+sup {
+  font-size: 28px;
+  margin: -10px 0 0 5px;
+}
+
+.pricebox 
+sub {
+  font-size: 20px;
+  margin: 0 0 0 -32px;
+}
+
+.offs {
+  margin-right: 38px;
+}
+
+.checkmark,
+.table .checkmark {
+  background-image: url(../../img/ideal.png);
+}
+
+.split-center-mid {
+  padding: 0 40px;
+}
+
+.adtwo {
+  height: 36px;
+  line-height: 18px;
+  padding: 20px;
+  width: 419px;
+}
+
+.iconleft {
+  float: left;
+  margin: 0 12px 10px 0;
+}
+
+.quotename {
+  color: #c52228;
+  font-family: 'adelle';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.quotefrom {
+  font-family: 'adelle';
+  font-size: 11px;
+  margin-top: -3px;
+}
+
+.thick {
+  padding: 30px;
+}
+
+.jutwrap {
+  padding: 30px 0 40px;
+}
+
+.jutwrap2 {
+  padding: 40px 0 30px;
+}
+
+.jutwrap3 {
+  padding: 30px 0;
+}
+
+.jutwrap4 {
+  display: block;
+  padding: 0 0 30px;
+}
+
+.wrap-emp {
+  padding: 40px 0 0;
+}
+
+.island30 {
+  outline: 1px solid #ccc;
+  padding: 30px;
+}
+
+.dc {
+  display: block;
+  float: right;
+  text-align: center;
+}
+
+.trust {
+  color: #888;
+  font-family: 'adelle';
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ln {
+  border-bottom: #ccc dotted 1px;
+  display: block;
+  margin: 0 0 10px 0;
+  padding-bottom: 3px;
+  width: 100%;
+}
+.centered {
+  text-align: center;
+}
+
+.mx-icon {
+  display: block;
+  float: left;
+  margin: 10px 12px 0 -38px;
+}
+
+.oth-icon {
+  float: left;
+  margin: 12px 12px 0 0;
+}
+
+.inp-fatty {
+  display: block;
+  height: 36px;
+}
+
+.over, 
+.over:hover {
+  color: #fff;
+  margin: 0 auto 0;
+  position: relative;
+}
+
+.over:active {
+  margin: 1px auto -1px;
+}
+
+.ft-logo {
+  border: 0;
+  display: block;
+  height: 41px;
+  margin-left: 85px;
+  margin-bottom: 8px;
+  width: 155px;
+}
+
+.ft-iconlist {
+  border-bottom: 1px solid #333;
+  float: right;
+  height: 31px;
+  margin-bottom: 12px;
+  margin-right: -20px;
+  padding-bottom: 12px;
+  width: 205px;
+}
+
+.ft-iconlist 
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.ft-iconlist 
+li:first-child {
+  float: left;
+  margin: 6px 9px 0 0;
+}
+
+.ft-iconlist 
+li 
+img {
+  border: 0;
+  height: 31px;
+  width: 31px;
+}
+
+.indentit {
+  margin-left: 44px;
+}
+
+.hspace {
+  margin-right: 11px;
+}
+
+.badge { 
+  background: none;
+  border-top: 40px solid #c52228;
+  border-right: 40px solid #c52228;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  border-radius: 0;
+  height: 0;
+  padding: 0;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  width: 0;
+} 
+
+.badge
+p {
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: -40px;
+  padding: 0;
+  text-shadow: none;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
 }
