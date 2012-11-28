@@ -54,6 +54,7 @@ $app->register(new TwigServiceProvider(), array(
         __DIR__ . '/../resources/vps_hosting/articles/', // vps longtail pages
         __DIR__ . '/../resources/dedicated_servers/articles', // dedicated longtail pages
         __DIR__ . '/../resources/cpanel-hosting/', // cpanel longtail pages
+        __DIR__ . '/../resources/opencart/', // opencart longtail
     ),
 ));
 
