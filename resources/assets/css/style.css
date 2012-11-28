@@ -583,15 +583,9 @@ footer a {
 
 
 
-
-
-
-
-
-
 /*------------------------------*/
 .bq-horiz {
-  margin: 0; 
+  margin: 0;
   padding: 0 0 66px 30px;
 }
 
@@ -614,7 +608,7 @@ footer a {
 }
 
 .blanky {
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -654,10 +648,10 @@ footer a {
 
 .pricebox {
   color: #c52228;
-  font-family: 'adelle'; 
+  font-family: 'adelle';
   font-size: 52px;
   font-weight: 400;
-  margin: 30px auto 26px; 
+  margin: 30px auto 26px;
   padding: 0 0px 0 0;
 }
 
@@ -689,19 +683,19 @@ sub {
 .adtwo {
   height: 36px;
   line-height: 18px;
-  padding: 20px; 
+  padding: 20px;
   width: 419px;
 }
 
 .iconleft {
-  float: left; 
-  margin: 0 12px 10px 0px;
+  float: left;
+  margin: 0 12px 10px 0;
 }
 
 .quotename {
   color: #c52228;
   font-family: 'adelle';
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -729,7 +723,7 @@ sub {
 
 .jutwrap4 {
   display: block;
-  padding: 0 0 30px; 
+  padding: 0 0 30px;
 }
 
 .wrap-emp {
@@ -750,10 +744,10 @@ sub {
 .trust {
   color: #888;
   font-family: 'adelle';
-  font-size: 16px; 
+  font-size: 16px;
   font-weight: 600;
   margin-top: 30px;
-  text-align: center; 
+  text-align: center;
 }
 
 .ln {
@@ -761,7 +755,7 @@ sub {
   display: block;
   margin: 0 0 10px 0;
   padding-bottom: 3px;
-  width: 100%; 
+  width: 100%;
 }
 .centered {
   text-align: center;
@@ -805,8 +799,8 @@ sub {
 
 .ft-iconlist {
   border-bottom: 1px solid #333;
-  float: right; 
-  height: 31px; 
+  float: right;
+  height: 31px;
   margin-bottom: 12px;
   margin-right: -20px;
   padding-bottom: 12px;
@@ -844,8 +838,8 @@ img {
 .badge { 
   background: none;
   border-top: 40px solid #c52228;
-  border-right: 40px solid #c52228; 
-  border-bottom: 40px solid transparent; 
+  border-right: 40px solid #c52228;
+  border-bottom: 40px solid transparent;
   border-left: 40px solid transparent;
   border-radius: 0;
   height: 0;
@@ -853,7 +847,7 @@ img {
   position: absolute;
   right: -1px;
   top: -1px;
-  width: 0; 
+  width: 0;
 } 
 
 .badge
@@ -862,7 +856,7 @@ p {
   font-weight: 400;
   margin-top: -40px;
   padding: 0;
-  text-shadow: none; 
+  text-shadow: none;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
