@@ -24,7 +24,6 @@
                         {# secondplaceplan #}
                         {% block secondplaceplan %}
                         {% endblock %}
-
                     </div><!-- /.rostrum-tiered-item-second -->
                 </div>
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-first">
@@ -46,8 +45,7 @@
                     </div><!-- /.rostrum-tiered-item-third -->
                 </div>
             </div><!-- /.rostrum -->
-            <br clear="all">
-            <div class="jutwrap3 row trust-building">
+            <div class="jutwrap2 row trust-building">
                 <div class="span12">
                     <div class="island pull-left raised adtwo">
                         <img src="{{ app.request.basepath }}/img/90day.png" alt="90 Day Garauntee icon" class="iconleft">
@@ -60,28 +58,28 @@
                 </div>
                 <div class=" span4 pull-left trust">
                     <span class="ln">Our Trusted Partners</span>
-                    <a href="#"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" border="0" /></a></div>
+                    <a href="#"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" /></a></div>
                 <div class=" span4 pull-left trust"><span class="ln">Security</span>
-                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" border="0" /></a></div>
+                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" /></a></div>
                 <div class=" span4 pull-left trust"><span class="ln">Our Awards</span>
-                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" border="0" /></a></div>
+                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" /></a></div>
             </div>
     </div>
- <div class="tabbg">
-    <div class="navbar-inverse nav-static-top hosting-plan-details">
-        <div class="navbar-inner">
-            <div class="container"> 
-                <ul class="nav nav-tabs">
+    <div class="tabbg">
+        <div class="navbar-inverse nav-static-top hosting-plan-details">
+            <div class="navbar-inner">
+                <div class="container"> 
+                    <ul class="nav nav-tabs">
 
                     {# webhostingtabbednav #}
                     {% block webhostingtabbednav %}
                     {% endblock %}
 
-                </ul>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-   <div class="container"><!-- MAKE WRAP AND APPLY COLOR -->
+        <div class="container">
         <div class="tab-content">
 
             {# webhostingtabbedcontent #}
@@ -92,7 +90,8 @@
         <div class="row-fluid suggestion">
             <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="" />Need More Hosting Power? Learn about our <a href="#">VPS</a> and <a href="#">Dedicated Servers.</a></h3>
         </div>
-    </div></div>
+        </div>
+    </div>
     <div class="wrap raised">
         <div class="container">
             <div class="row">
@@ -107,8 +106,8 @@
                             <input id="fullName" type="text" placeholder="Full Name" class="span11" />
                             <label class="a11y" for="desiredUrl">Website URL Desired</label>
                             <input id="desiredUrl" type="text" placeholder="Website URL Desired" class="span11" />
-                            <label class="a11y" for="phoneNumber" class="span11">Your Phone #</label>
-                            <input id="phoneNumber" type="text" placeholder="Your Phone #" class="span11" />
+                            <label class="a11y span11" for="phoneNumber">Your Phone #</label>
+                            <input id="phoneNumber span11" type="text" placeholder="Your Phone #" />
                         </div>
                         <div class="span4">
                             <label>Currently an InMotion Hosting Customer?</label>
@@ -124,27 +123,19 @@
                     </form>
                 </div>
             </div>
-            
-
              <div class="row wrap">
-        <div class="dc span3">
-            <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" >
-            <br>
-    Moving domains can be messy. We'll handle the dirty work. <br>
-    <a href="#">Learn More</a></div>
-        <div class="row span8 island sunken">
-                <blockquote class="quoted">I just wanted to let you know how absolutely pleased I am with InMotion Hosting. You’re always up, your support is excellent and I have NEVER had a problem with uptime or connections. Not to mention that your rates are very reasonable.”
+                <div class="dc span3">
+                    <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" >Moving domains can be messy. We'll handle the dirty work.<a href="#">Learn More</a>
+                </div>
+                <div class="row span8 island sunken">
+                    <blockquote class="quoted">I just wanted to let you know how absolutely pleased I am with InMotion Hosting. You’re always up, your support is excellent and I have NEVER had a problem with uptime or connections. Not to mention that your rates are very reasonable.”
                     </blockquote>
-               <span class="emisor vibrant indentit">
-                    <span class="quotename">Ajay Narain</span>
-                    <span class="muted quotefrom">Sunnyvale, CA</span>
-                </span>
-
-
+                    <span class="emisor vibrant indentit">
+                        <span class="quotename">Ajay Narain</span>
+                        <span class="muted quotefrom">Sunnyvale, CA</span>
+                    </span>
+                </div>
             </div>
-        </div>
-
-
         </div>
     </div>
 
