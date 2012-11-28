@@ -62,19 +62,19 @@ $app->match('/support', function() use ($app) {
 })->bind('support');
 
 // dedi/vps longtail controller $articles
-$articles->get('/{product}/articles/{page}', function($product, $page) use ($articles){
-    return $articles['twig']->render('/../'.$product.'/articles/'.$page.'.twig');
-})
-->bind('longtail_dedi_vps');
-
-    // redirects longtail to main landing page
 $articles->get('/{product}/articles/', function($product) use ($articles){
     return $articles['twig']->render('webhosting_plan/'.$product.'.html.twig');
 })
 ->bind('redirect');
 
+$articles->get('/{product}/articles/{page}', function($product, $page) use ($articles){
+    return $articles['twig']->render('/../'.$product.'/articles/'.$page.'.twig');
+})
+->bind('longtail_dedi_vps');
+
+
 // cpanel controller $cpanel
-$cpanel->match('/cpanel-hosting', function() use ($cpanel) {
+$cpanel->match('/cpanel-hosting/', function() use ($cpanel) {
     return $cpanel['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('site_hosting_tools');
 
@@ -86,6 +86,22 @@ $cpanel->get('/cpanel-hosting/{page}', function($page) use ($cpanel){
     return $cpanel['twig']->render('/../cpanel-hosting/'.$page.'.twig');
 })
 ->bind('longtail_cpanel');
+
+//opencart controller
+$opencart->match('/opencart/', function() use ($opencart){
+    return $opencart['twig']->render('/../opencart/opencart-hosting.html.twig');
+})
+->bind('longtail_opencart_landng');
+
+$opencart->match('/opencart-hosting.html', function() use ($opencart){
+    return $opencart['twig']->render('/../opencart/opencart-hosting.html.twig');
+})
+->bind('longtail_opencart');
+
+$opencart->match('/opencart/opencart-templates.html', function() use ($opencart){
+    return $opencart['twig']->render('/../opencart/opencart-templates.html.twig');
+})
+->bind('longtail_opencart_templates');
 
 // form controller
 $app->match('/form', function() use ($app) {
