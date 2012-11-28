@@ -33,129 +33,122 @@
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
 
     {% set active = active|default(null) %}
-    <div id="skip">
-        <a href="#main">Skip to Main Content</a>
-        <a href="#nav">Skip to Navigation</a>
+<div id="skip">
+    <a href="#main">Skip to Main Content</a>
+    <a href="#nav">Skip to Navigation</a>
+</div>
+<header role="banner">
+    <div class="container">
+        <div class="row">
+            <a href="{{ path('homepage') }}" class="span3"><img src="{{ app.request.basepath }}/img/logo-imh.png" alt="InMotion Hosting" /></a>
+            <div class="span5 offset4">
+                <ul class="nav nav-pills nav-pills-contact">
+                    <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
+                    <li class="nav-pills-no-link"><i class="icon-phone"></i> 888.321.HOST</li>
+                    <li><a href="#" class="btn btn-primary">AMP Login</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <header role="banner">
+</header>
+<nav id="nav" class="navbar navbar-static-top">
+    <div class="navbar-inner">
         <div class="container">
-            <div class="row">
-                <a href="{{ path('homepage') }}" class="span3"><img src="{{ app.request.basepath }}/img/logo-imh.png" alt="InMotion Hosting" /></a>
-                <div class="span5 offset4">
-                    <ul class="nav nav-pills nav-pills-contact">
-                        <li><a href="#"><i class="icon-chat"></i> Live Chat</a></li>
-                        <li class="nav-pills-no-link"><i class="icon-phone"></i> 888.321.HOST</li>
-                        <li><a href="#" class="btn btn-primary">AMP Login</a></li>
+            <ul class="nav">
+                <li class="dropdown{% if 'account' == active %} active{% endif %}">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Hosting</a>
+                    <ul class="dropdown-menu">
+                    <li {% if 'business_hosting' == active %}class="active"{% endif %}><a href="{{ path('business_hosting') }}">Business Hosting</a></li>
+                    <li {% if 'vps_hosting' == active %}class="active"{% endif %}><a href="{{ path('vps_hosting') }}">VPS Hosting</a></li>
+                    <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Dedicated Servers</a></li>
                     </ul>
-                </div>
-            </div>
+                </li><!-- /.dropdown -->
+                <li {% if 'domains' == active %}class="active"{% endif %}><a href="{{ path('domains') }}">Domains</a></li>
+                <li {% if 'webdesign' == active %}class="active"{% endif %}><a href="{{ path('webdesign') }}">Web Design</a></li>
+                <li {% if 'site_hosting_tools' == active %}class="active"{% endif %}><a href="{{ path('site_hosting_tools') }}">Site Hosting Tools</a></li>
+                <li {% if 'why_us' == active %}class="active"{% endif %}><a href="{{ path('why_us') }}">Why Us?</a></li>
+                <li {% if 'support' == active %}class="active"{% endif %}><a href="{{ path('support') }}">Support Center</a></li>
+            </ul><!-- /.nav -->
         </div>
-    </header>
-    <nav id="nav" class="navbar navbar-static-top">
-        <div class="navbar-inner">
-            <div class="container">
-                <ul class="nav">
-                    <li class="dropdown{% if 'account' == active %} active{% endif %}">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Web Hosting</a>
-                        <ul class="dropdown-menu">
-                            <li {% if 'business_hosting' == active %}class="active"{% endif %}><a href="{{ path('business_hosting') }}">Business Hosting</a></li>
-                            <li {% if 'vps_hosting' == active %}class="active"{% endif %}><a href="{{ path('vps_hosting') }}">VPS Hosting</a></li>
-                            <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Dedicated Servers</a></li>
-                        </ul>
-                    </li><!-- /.dropdown -->
-                    <li {% if 'domains' == active %}class="active"{% endif %}><a href="{{ path('domains') }}">Domains</a></li>
-                    <li {% if 'webdesign' == active %}class="active"{% endif %}><a href="{{ path('webdesign') }}">Web Design</a></li>
-                    <li {% if 'site_hosting_tools' == active %}class="active"{% endif %}><a href="{{ path('site_hosting_tools') }}">Site Hosting Tools</a></li>
-                    <li {% if 'why_us' == active %}class="active"{% endif %}><a href="{{ path('why_us') }}">Why Us?</a></li>
-                    <li {% if 'support' == active %}class="active"{% endif %}><a href="{{ path('support') }}">Support Center</a></li>
-                </ul><!-- /.nav -->
-            </div>
+    </div>
+</nav>
+<div id="main" role="main">
+    <div class="wrap intro {{ active|e }}">
+        <div class="container">
+            {# intro #}
+            {% block intro %}
+            {% endblock %}
         </div>
-    </nav>
-
-    <div id="main" role="main">
-        <div class="wrap intro {{ active|e }}">
-            <div class="container">
-
-                {# intro #}
-                {% block intro %}
-                {% endblock %}
-
-            </div>
-        </div><!-- /.intro -->
-
+    </div><!-- /.intro -->
         {# content #}
         {% block content %}
         {% endblock %}
-
-    </div><!-- /#main -->
-
-    {# pre-footer sales area #}
-    {% if not (active in ['business_hosting', 'dedicated_servers', 'vps_hosting', 'cheap_hosting'])  %}
-        {% include 'common/select_hosting_package.html.twig' %}
-    {% endif %}
-
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
-    <script src="{{ app.request.basepath }}/assets/js/scripts.js"></script>
-    <footer role="contentinfo" class="wrap">
-        <div class="container">
-            <ul class="nav nav-list span2">
-                <li class="nav-header">Web Hosting</li>
-                <li><a href="#">Cheap Hosting</a></li>
-                <li><a href="#">Personal/Cheap Hosting</li>
-                <li><a href="{{ path('business_hosting') }}">Business Class Hosting</a></li>
-                <li><a href="{{ path('vps_hosting') }}">VPS Hosting</a></li>
-                <li><a href="{{ path('dedicated_servers') }}">Dedicated Servers</a></li>
-                <li><a href="{{ path('domains') }}">Domain Names</a></li>
-                <li><a href="{{ path('webdesign') }}">Web Design</a></li>
+</div><!-- /#main -->
+{# pre-footer sales area #}
+{% if not (active in ['business_hosting', 'dedicated_servers', 'vps_hosting', 'cheap_hosting'])  %}
+{% include 'common/select_hosting_package.html.twig' %}
+{% endif %}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
+<script src="{{ app.request.basepath }}/assets/js/scripts.js"></script>
+<footer role="contentinfo" class="wrap">
+    <div class="container">
+        <ul class="nav nav-list span2">
+            <li class="nav-header">Web Hosting</li>
+            <li><a href="#">Cheap Hosting</a></li>
+            <li><a href="#">Personal/Cheap Hosting</li>
+            <li><a href="{{ path('business_hosting') }}">Business Class Hosting</a></li>
+            <li><a href="{{ path('vps_hosting') }}">VPS Hosting</a></li>
+            <li><a href="{{ path('dedicated_servers') }}">Dedicated Servers</a></li>
+            <li><a href="{{ path('domains') }}">Domain Names</a></li>
+            <li><a href="{{ path('webdesign') }}">Web Design</a></li>
+        </ul>
+        <ul class="nav nav-list span2">
+            <li class="nav-header">Hosting Tools</li>
+            <li><a href="#">WordPress Hosting</a></li>
+            <li><a href="#">Joomla Hosting</a></li>
+            <li><a href="#">Drupal Hosting</a></li>
+            <li><a href="#">cPanel Hosting</a></li>
+            <li><a href="#">PrestaShop Hosting</a></li>
+            <li><a href="#">Moodle Hosting</a></li>
+            <li><a href="#">OpenCart Hosting</a><li>
             </ul>
-            <ul class="nav nav-list span2">
-                <li class="nav-header">Hosting Tools</li>
-                <li><a href="#">WordPress Hosting</a></li>
-                <li><a href="#">Joomla Hosting</a></li>
-                <li><a href="#">Drupal Hosting</a></li>
-                <li><a href="#">cPanel Hosting</a></li>
-                <li><a href="#">PrestaShop Hosting</a></li>
-                <li><a href="#">Moodle Hosting</a></li>
-                <li><a href="#">OpenCart Hosting</a><li>
-            </ul>
-            <ul class="nav nav-list span2">
-                <li class="nav-header">Community</li>
-                <li><a href="#">Support Center</a></li>
-                <li><a href="#">Host Affiliate</a></li>
-                <li><a href="#">Infographics</a></li>
-                <li><a href="#">Los Angeles Hosting</a></li>
-                <li><a href="#">Green Web Hosting</a></li>
-                <li><a href="#">Student Web Hosting</a></li>
-            </ul>
-            <ul class="nav nav-list span2">
-                <li class="nav-header">About Us</li>
-                <li><a href="#">Terms of Use</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Link to Us</a></li>
-                <li><a href="#">We're Hiring</a></li>
-                <li><a href="#">Site Map</a></li>
-            </ul>
-                <div class="span3">
-                 <ul class="ft-iconlist">
-                    <li>Stay in touch on</li>
-                    <li><a href="https://plus.google.com/+inmotionhosting/posts"><img src="{{ app.request.basepath }}/img/icon-google.png" alt="google+" ></a></li>
-                    <li><a href="https://twitter.com/inmotionhosting"><img src="{{ app.request.basepath }}/img/icon-twitter.png" alt="twitter"></a></li>
-                    <li><a href="https://www.facebook.com/inmotionhosting"><img src="{{ app.request.basepath }}/img/icon-facebook.png" alt="facebook"></a></li>
-                </div>
-                <div itemscope itemtype="schema.org/LocalBusiness">
-                    <span class="ft-logo pull-right"> <a href="http://www.inmotionhosting.com"><img src="{{ app.request.basepath }}/img/footer-logo.png" alt="InMotion Hosting"></a></span>
-                    <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="streetAddress">6100 Center Drive, Suite 1190</span><br>
-                    <span itemprop="addressLocality" class="city">Los Angeles</span>, <span itemprop="addressRegion" class="state">CA</span> <span itemprop="postalCode" class="postalcode">90045</span><br>
-                    <span itemprop="telephone">888-321-HOST(4678)</span><br>
-                    <span>2012 &copy; All Rights Reserved</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
+        <ul class="nav nav-list span2">
+            <li class="nav-header">Community</li>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Host Affiliate</a></li>
+            <li><a href="#">Infographics</a></li>
+            <li><a href="#">Los Angeles Hosting</a></li>
+            <li><a href="#">Green Web Hosting</a></li>
+            <li><a href="#">Student Web Hosting</a></li>
+        </ul>
+        <ul class="nav nav-list span2">
+            <li class="nav-header">About Us</li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Link to Us</a></li>
+            <li><a href="#">We're Hiring</a></li>
+            <li><a href="#">Site Map</a></li>
+        </ul>
+    <div class="span3">
+        <ul class="ft-iconlist">
+            <li>Stay in touch on</li>
+            <li><a href="https://plus.google.com/+inmotionhosting/posts"><img src="{{ app.request.basepath }}/img/icon-google.png" alt="google+" ></a></li>
+            <li><a href="https://twitter.com/inmotionhosting"><img src="{{ app.request.basepath }}/img/icon-twitter.png" alt="twitter"></a></li>
+            <li><a href="https://www.facebook.com/inmotionhosting"><img src="{{ app.request.basepath }}/img/icon-facebook.png" alt="facebook"></a></li>
+        </ul>
+    </div>
+    <div itemscope itemtype="schema.org/LocalBusiness">
+        <span class="ft-logo pull-right"> <a href="http://www.inmotionhosting.com"><img src="{{ app.request.basepath }}/img/footer-logo.png" alt="InMotion Hosting"></a></span>
+        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">6100 Center Drive, Suite 1190</span><br />
+        <span itemprop="addressLocality" class="city">Los Angeles</span>, <span itemprop="addressRegion" class="state">CA</span> <span itemprop="postalCode" class="postalcode">90045</span><br />
+        <span itemprop="telephone">888-321-HOST(4678)</span><br />
+        <span>2012 &copy; All Rights Reserved</span></p>
+    </div>
+    </div>
+</div>
+</footer>
 </body>
 </html>
