@@ -8,9 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Form\FormError;
 
-$articles = $app;  // dedi/vps longtail
-$cpanel = $app;
-$opencart = $app;
 
 $app->match('/', function() use ($app) {
     $app['session']->setFlash('warning', 'Warning flash message');
@@ -62,44 +59,44 @@ $app->match('/support', function() use ($app) {
 })->bind('support');
 
 // dedi/vps longtail controller $articles
-$articles->get('/{product}/articles/', function($product) use ($articles){
-    return $articles['twig']->render('webhosting_plan/'.$product.'.html.twig');
+$app->get('/{product}/articles/', function($product) use ($app){
+    return $app['twig']->render('webhosting_plan/'.$product.'.html.twig');
 })
 ->bind('redirect');
 
-$articles->get('/{product}/articles/{page}', function($product, $page) use ($articles){
-    return $articles['twig']->render('/../'.$product.'/articles/'.$page.'.twig');
+$app->get('/{product}/articles/{page}', function($product, $page) use ($app){
+    return $app['twig']->render('/../'.$product.'/articles/'.$page.'.twig');
 })
 ->bind('longtail_dedi_vps');
 
 
 // cpanel controller $cpanel
-$cpanel->match('/cpanel-hosting/', function() use ($cpanel) {
-    return $cpanel['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+$app->match('/cpanel-hosting/', function() use ($app) {
+    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('cpanel_site_hosting_tools');
 
-$cpanel->match('/host-with-cpanel.html', function() use ($cpanel) {
-    return $cpanel['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+$app->match('/host-with-cpanel.html', function() use ($app) {
+    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('longtail_host_with_cpanel');
 
-$cpanel->get('/cpanel-hosting/{page}', function($page) use ($cpanel){
-    return $cpanel['twig']->render('/../cpanel-hosting/'.$page.'.twig');
+$app->get('/cpanel-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../cpanel-hosting/'.$page.'.twig');
 })
 ->bind('longtail_cpanel');
 
 //opencart controller
-$opencart->match('/opencart/', function() use ($opencart){
-    return $opencart['twig']->render('/../opencart/opencart-hosting.html.twig');
+$app->match('/opencart/', function() use ($app){
+    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
 })
 ->bind('longtail_opencart_landng');
 
-$opencart->match('/opencart-hosting.html', function() use ($opencart){
-    return $opencart['twig']->render('/../opencart/opencart-hosting.html.twig');
+$app->match('/opencart-hosting.html', function() use ($app){
+    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
 })
 ->bind('longtail_opencart');
 
-$opencart->match('/opencart/opencart-templates.html', function() use ($opencart){
-    return $opencart['twig']->render('/../opencart/opencart-templates.html.twig');
+$app->match('/opencart/opencart-templates.html', function() use ($app){
+    return $app['twig']->render('/../opencart/opencart-templates.html.twig');
 })
 ->bind('longtail_opencart_templates');
 
