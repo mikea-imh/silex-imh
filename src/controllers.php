@@ -76,7 +76,7 @@ $articles->get('/{product}/articles/{page}', function($product, $page) use ($art
 // cpanel controller $cpanel
 $cpanel->match('/cpanel-hosting/', function() use ($cpanel) {
     return $cpanel['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
-})->bind('site_hosting_tools');
+})->bind('cpanel_site_hosting_tools');
 
 $cpanel->match('/host-with-cpanel.html', function() use ($cpanel) {
     return $cpanel['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
