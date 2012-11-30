@@ -1,10 +1,13 @@
 <?php
 
+
+
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Form\FormError;
+
 
 $app->match('/', function() use ($app) {
     $app['session']->setFlash('warning', 'Warning flash message');
@@ -55,12 +58,49 @@ $app->match('/support', function() use ($app) {
         'support.html.twig');
 })->bind('support');
 
-$app->match('/{category}/articles/{title}', function($category, $title) use ($app) {
-    return $app['twig']->render(
-        '/longtail.html.twig');
-})->bind('longtail');
+// dedi/vps longtail controller $articles
+$app->get('/{product}/articles/', function($product) use ($app){
+    return $app['twig']->render('webhosting_plan/'.$product.'.html.twig');
+})
+->bind('redirect');
+
+$app->get('/{product}/articles/{page}', function($product, $page) use ($app){
+    return $app['twig']->render('/../'.$product.'/articles/'.$page.'.twig');
+})
+->bind('longtail_dedi_vps');
 
 
+// cpanel controller $cpanel
+$app->match('/cpanel-hosting/', function() use ($app) {
+    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+})->bind('cpanel_site_hosting_tools');
+
+$app->match('/host-with-cpanel.html', function() use ($app) {
+    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+})->bind('longtail_host_with_cpanel');
+
+$app->get('/cpanel-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../cpanel-hosting/'.$page.'.twig');
+})
+->bind('longtail_cpanel');
+
+//opencart controller
+$app->match('/opencart/', function() use ($app){
+    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
+})
+->bind('longtail_opencart_landng');
+
+$app->match('/opencart-hosting.html', function() use ($app){
+    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
+})
+->bind('longtail_opencart');
+
+$app->match('/opencart/opencart-templates.html', function() use ($app){
+    return $app['twig']->render('/../opencart/opencart-templates.html.twig');
+})
+->bind('longtail_opencart_templates');
+
+// form controller
 $app->match('/form', function() use ($app) {
 
     $builder = $app['form.factory']->createBuilder('form');
