@@ -1,0 +1,86 @@
+{% extends '/../views/layout.html.twig' %}
+{% set active = 'longtail' %}
+
+{# title #}
+{% block title %}Dedicated or VPS Servers{% endblock %}
+
+{# keywords #}
+{% block keywords %}dedicated or vps, vps or dedicated hosting{% endblock %}
+
+{# description #}
+{% block description %}Deciding on whether you need a dedicated server or VPS can be difficult. Read more to find out which hosting is right for you.{% endblock %}
+
+{# intro #}
+{% block intro %}
+    <div class="span9">
+        <h1>Need Help Dedicing on a Dedicated Server or VPS?</h1>
+    </div>
+    <div class="span3">
+
+    </div>
+{% endblock %}
+
+{% block content %}
+
+    <h2>Which server is right for you?</h2>
+    <p>Which is the server path you should trod down?</p>
+
+    <p>To help answer that question, you should look at what your hosting requirements are. Are you running multiplie databases from multiple hosting accounts using hardware intensive software platforms? If so, then a dedicated server might be for you.</p>
+
+    <p>If however, your tasks are less demanding and your server won't pull resources from others on the server, then <a href="http://www.inmotionhosting.com/vps_hosting/articles/vps-rental.html">renting a VPS</a> should be the way to go. The table below compares the two:</p>
+
+    <table class="article">
+        <tr>
+            <th></th>
+            <th><p>VPS</p></th>
+            <th><p>Dedicated</p></th>
+        </tr>
+        <tr>
+            <td>
+                <p>Hardware</p>
+            </td>
+            <td>
+                <p>You are still sharing server hardware with other users. However, you server is virtualized which means it runs as though it is on a dedicated server. That means you can restart services, make modifications to server files, and create other user hosting accounts.</p>
+            </td>
+            <td>
+                <p>You are on your own here. The entire server is yours to play with. That means all the hardware specs (CPU, RAM, data transfer, etc.) are yours. Also, you can have more flexibility with hardware setups. For example, need an extra 500GB of storage? Then this could added by the support team for an additional fee.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Software</p>
+            </td>
+            <td>
+                <p>You are free to install whatever program you want. However, if it starts pulling on resources and starts pulling resources from other VPS customers, then this could be an issue and cause your site performance to slow or become suspended for abuse.</p>
+            </td>
+            <td>
+                <p>Regardless of how your software programs perform, you are free to install any programs you please. A high resource program will not affect others expcept for any clients you are managing.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Budget</p>
+            </td>
+            <td>
+                <p>Given the hardware specs and freedom you get on a VPS, the performance boost on a VPS is more budget friendly.</p>
+            </td>
+            <td>
+                <p>More expensive than VPS hosting because you do get your own server and better specs.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>Shared Features</p>
+            </td>
+            <td colspan="3">
+                <ul>
+                    <li>cPanel &amp; Web Hosting Manager</li>
+                    <li>Option root access</li>
+                    <li>Great customer support</li>
+                    <li>Reliable network &amp; Dell hardware</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <p>Regardless of which plan you are thinking about getting, be sure to give us a call to see if there are any <a href="http://www.inmotionhosting.com/vps_hosting/articles/vps-sale.html">plans or promotions</a>.</p>
+{% endblock %}
