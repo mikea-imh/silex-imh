@@ -10,7 +10,6 @@ $app->match('/', function() use ($app) {
     $app['session']->setFlash('info', 'Info flash message');
     $app['session']->setFlash('success', 'Success flash message');
     $app['session']->setFlash('error', 'Error flash message');
-
     return $app['twig']->render('index.html.twig');
 })->bind('homepage');
 
