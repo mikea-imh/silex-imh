@@ -5,6 +5,19 @@
           e.preventDefault();
           $(this).tab('show');
         });
+        $('.collapse').click(function (e) {
+          e.preventDefault();
+          $(this).collapse('toggle')
+        });
+
+        $('#uses .nav-stacked a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        });
+        
+        //$(".collapse").collapse()
+
+
         
         // Apply classes to each table cell indicating column
         var numCols = $('colgroup').length;
@@ -52,3 +65,10 @@
         });
   });
 })(jQuery);
+
+
+
+$('#myTab a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+})

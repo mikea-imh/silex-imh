@@ -12,90 +12,189 @@
 
 {# intro #}
 {% block intro %}
-    <div class="span9">
-        <h1>VPS Hosting</h1>
-        <p>In addition to award winning technical support and 99.9% uptime, InMotion Hosting’s exclusive Speed Zone technology helps keep your website and email fast by locating your data as close to you as possible.</p>
+    <div class="span6 white">
+        <h1>Dedicated Servers</h1>
+        <p>Our managed dedicated servers give your websites the highest level of speed, security and uptime. With over 10 years of hosting experience, we know what it takes to keep our servers performing at their fullest. From hardware matching CPU + RAM, to optimizing the LAMP stack, our system administrators are the experts.</p>
     </div>
-    <div class="span3">
-        stuff
-    </div>
+    <div class="leader-dedi-cta-place">
+        <div class="span3"><span class="btn btn-primary">order now</span></div>
+     </div>
 {% endblock %}
 
 {# secondplaceplan #}
 {% block secondplaceplan %}
-    <h3 class="">Launch</h3>
-    <p class="package-subtitle">Small Business Starter</p>
+    <h3 class="blanky package-title">
+    <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Essential Dedicated Package" class="tier-space">ESSENTIAL</h3>
+    <p class="package-subtitle">Affordable solution for your needs</p>
+    <div class="pricebox"><sup>$</sup>119<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
-        <dt class="split-center-title">Sites on Account:</dt>
-        <dd class="split-center-value">2</dd>
-        <dt class="split-center-title">Domains Supported:</dt>
-        <dd class="split-center-value">6</dd>
-        <dt class="split-center-title">Additional Sub Domains:</dt>
-        <dd class="split-center-value">25</dd>
-        <dt class="split-center-title">Free Google AdWords Credits:</dt>
-        <dd class="split-center-value">$75</dd>
-        <dt class="split-center-title">MySQL Databases:</dt>
-        <dd class="split-center-value">2</dd>
-        <dt class="split-center-title">FTP Accounts:</dt>
-        <dd class="split-center-value">1,000</dd>
+        <dt class="split-center-title">Intel Core E2220/E5400</dt>
+        <dd class="split-center-value">Dual Core /2T</dd>
+        <dt class="split-center-title">RAM:</dt>
+        <dd class="split-center-value">2GB</dd><br />
+        <dt class="split-center-title">Storage:</dt>
+        <dd class="split-center-value">2 x 160GB</dd><br />
+        <dt class="split-center-title">Bandwith:</dt>
+        <dd class="split-center-value">2.5TB/mo.</dd><br />
+        <dt class="split-center-title">IP Addresses:</dt>
+        <dd class="split-center-value">5</dd><br />
+        <dt class="split-center-title">Environment:</dt>
+        <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
     </dl>
+    <div class="mid">
+        <a href="#" class="btn btn-primary over">order now</a>
+    </div>
 {% endblock %}
-
 
 {# firstplaceplan #}
 {% block firstplaceplan %}
-    <h3>Power</h3>
-    <p class="package-subtitle">Top Choice for Small Business</p>
+    <div class="badge"><p>BEST<br/>VALUE</p></div>
+    <h3 class="blanky package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Advanced Dedicated Package" class="tier-space">ADVANCED</h3>
+    <p class="package-subtitle">The best value for responsive, powerful websites</p>
+    <div class="pricebox"><sup>$</sup>139<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
-        <dt class="split-center-title">Sites on Account:</dt>
-        <dd class="split-center-value">6</dd>
-        <dt class="split-center-title">Domains Supported:</dt>
-        <dd class="split-center-value">26</dd>
-        <dt class="split-center-title">Additional Sub Domains:</dt>
-        <dd class="split-center-value">100</dd>
-        <dt class="split-center-title">Free Google AdWords Credits:</dt>
-        <dd class="split-center-value">$100</dd>
-        <dt class="split-center-title">MySQL Databases:</dt>
-        <dd class="split-center-value">50</dd>
-        <dt class="split-center-title">FTP Accounts:</dt>
-        <dd class="split-center-value">2,000</dd>
+        <dt class="split-center-title">Intel Xeon E3-1220 3.1GHz 8MB Cache Turbo Quad Core /4T</dt>
+        <dd class="split-center-value"></dd>
+        <dt class="split-center-title">RAM:</dt>
+        <dd class="split-center-value">4GB</dd><br />
+        <dt class="split-center-title">Storage:</dt>
+        <dd class="split-center-value">500GB</dd><br />
+        <dt class="split-center-title">Bandwith:</dt>
+        <dd class="split-center-value">3.0TB/mo.</dd><br />
+        <dt class="split-center-title">IP Addresses:</dt>
+        <dd class="split-center-value">10</dd><br />
+        <dt class="split-center-title">Environment:</dt>
+        <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
     </dl>
+    <div class="mid">
+        <a href="#" class="btn btn-primary over">order now</a>
+    </div>
 {% endblock %}
-
 
 {# thirdplaceplan #}
 {% block thirdplaceplan %}
-<h3 class="icon package-title">fjwow</h3>
-<p class="package-subtitle">Host 25 sites on 1 account</p>
-<dl class="split-center">
-    <dt class="split-center-title">Sites on Account:</dt>
-    <dd class="split-center-value">25</dd>
-    <dt class="split-center-title">Domains Supported:</dt>
-    <dd class="split-center-value">Unlimited</dd>
-    <dt class="split-center-title">Additional Sub Domains:</dt>
-    <dd class="split-center-value">Unlimited</dd>
-    <dt class="split-center-title">Free Google AdWords Credits:</dt>
-    <dd class="split-center-value">$100</dd>
-    <dt class="split-center-title">MySQL Databases:</dt>
-    <dd class="split-center-value">200</dd>
-    <dt class="split-center-title">FTP Accounts:</dt>
-    <dd class="split-center-value">Unlimited</dd>
-</dl>
+    <div class="badge blue"><p>RAID</p></div>
+    <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">ELITE</h3>
+    <p class="package-subtitle">High performance</p>
+    <div class="pricebox"><sup>$</sup>189<sup>95</sup><sub>/mo.</sub></div>
+    <dl class="split-center">
+        <dt class="split-center-title">Intel® Xeon® E3-1230 3.2GHz 8MB Cache Turbo Quad Core /8T</dt>
+        <dd class="split-center-value"></dd><br />
+        <dt class="split-center-title">Storage:</dt>
+        <dd class="split-center-value">500GB</dd><br />
+        <dt class="split-center-title">Bandwith:</dt>
+        <dd class="split-center-value">4.0TB/mo.</dd><br />
+        <dt class="split-center-title">IP Addresses:</dt>
+        <dd class="split-center-value">15</dd><<br />
+        <dt class="split-center-title">Environment:</dt>
+        <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
+        <dt class="split-center-title">Backups:</dt>
+        <dd class="split-center-value">Every 24-36 hours</dd>
+    </dl>
+    <div class="mid">
+        <a href="#" class="btn btn-primary over">order now</a>
+    </div>
 {% endblock %}
 
+{# commercial #}
+{% block commercial %}
+<div class="container">
+    <div class="island-nopad raised comtop">
+        <div class="combox-l pull-left">
+            <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier-c.png" alt="Commerical #1 Dedicated Package" class="tier-space">COMMERCIAL #1</h3>
+            <p class="package-subtitle">Intense server grade machines</p>
+            <div class="pricebox"><sup>$</sup>469<sup>95</sup><sub>/mo.</sub></div>
+            <dl class="split-center">
+                <dt class="split-center-title">Intel® Xeon® E5645 2.4GHz, 12M Cache, 5.86 GT/s QPI, 6C/12T</dt>
+                <dd class="split-center-value"></dd><br />
+                <dt class="split-center-title">RAM:</dt>
+                <dd class="split-center-value">16GB</dd><br />
+                <dt class="split-center-title">Storage:</dt>
+                <dd class="split-center-value">RAID1 600GB</dd><br />
+                <dt class="split-center-title">Bandwith:</dt>
+                <dd class="split-center-value">3.0TB/mo.</dd><br />
+                <dt class="split-center-title">IP Addresses:</dt>
+                <dd class="split-center-value">20</dd><br />
+                <dt class="split-center-title">Environment:</dt>
+                <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
+            </dl>
+            <div class="com-mid">
+                <a href="#" class="btn btn-primary over">order now</a>
+            </div>
+        </div>
+        <div class="combox pull-right compipe">
+            <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier-c.png" alt="Commercial #2 Dedicated Package" class="tier-space">COMMERCIAL #2</h3>
+            <p class="package-subtitle">Extreme performance</p>
+            <div class="pricebox"><sup>$</sup>569<sup>95</sup><sub>/mo.</sub></div>
+            <dl class="split-center">
+                <dt class="split-center-title">Intel® Xeon® E5645 2.4GHz, 12M Cache, 5.86 GT/s QPI, 12C/24T</dt>
+                <dd class="split-center-value"></dd><br />
+                <dt class="split-center-title">RAM:</dt>
+                <dd class="split-center-value">32GB</dd><br />
+                <dt class="split-center-title">Storage:</dt>
+                <dd class="split-center-value">RAID1 600GB</dd><br />
+                <dt class="split-center-title">Bandwith:</dt>
+                <dd class="split-center-value">3.0TB/mo.</dd><br />
+                <dt class="split-center-title">IP Addresses:</dt>
+                <dd class="split-center-value">25</dd><br />
+                <dt class="split-center-title">Environment:</dt>
+                <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
+            </dl>
+            <div class="com-mid">
+                <a href="#" class="btn btn-primary over">order now</a>
+            </div>
+        </div><br style="clear:both;" />
+    </div>
+</div>
+{% endblock %}
 
 {# webhostingtabbednav #}
 {% block webhostingtabbednav %}
-<li class="active"><a href="#specifications" data-toggle="tab">Specifications<div class="arrow"></div></a></li>
-<li><a href="#features" data-toggle="tab">Standard Features</a></li>
-<li><a href="#compare" data-toggle="tab">Compare Us</a></li>
+    <li><a href="#uses" data-toggle="tab">Typical Uses</a></li>
+    <li class="active"><a href="#specifications" data-toggle="tab">Specifications<div class="arrow"></div></a></li>
+    <li><a href="#support" data-toggle="tab">Support</a></li>
+    <li><a href="#developers" data-toggle="tab">Developers</a></li>
 {% endblock %}
-
 
 {# webhostingtabbedcontent #}
 {% block webhostingtabbedcontent %}
-<div class="tab-pane active business-specification" id="specifications">
-    <h1>something</h1>
+<!-- #uses -->
+<div class="tab-pane m-20" id="uses">
+    <div class="span3 pull-left">
+        <ul class="nav nav-tabs nav-stacked">
+            <li><a href="#t1">E-Commerce</a></li>
+            <li><a href="#t2">Root Access</a></li>
+            <li><a href="#t3">Jabber (XMPP) Server</a></li>
+            <li><a href="#t4">Project Management</a></li>
+            <li><a href="#t5">Online Training</a></li>
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tu-span pull-right tab-pane active" id="t1">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-magento.png" alt="magento logo" /><img src="{{ app.request.basepath }}/img/tu-logo-prestashop.png" alt="prestashop logo" /></div>
+        <h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t2">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-gear.png" alt="root access logo" /></div>
+        <h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
+</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t3">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-jabber.png" alt="jabber logo" /></div>
+        <h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t4">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-joomla.png" alt="joomla logo" /><img src="{{ app.request.basepath }}/img/tu-logo-drupal.png" alt="drupal logo" /></div>
+        <h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t5">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-clipboard.png" alt="clipboard logo" /></div>
+        <h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
+        </div>
+    </div>
+</div><!-- /#uses -->
+<!-- #specification -->
+<div class="tab-pane active dedi-specification" id="specifications">
     <table class="table table-striped">
         <caption class="a11y">Listing of Business Hosting Plan Specifications and Pricing</caption>
         <colgroup span="1" class="plan-specification-listing"></colgroup>
@@ -103,226 +202,204 @@
         <colgroup span="1"></colgroup>
         <colgroup span="1" class="plan-specification-featured"></colgroup>
         <colgroup span="1"></colgroup>
+        <colgroup span="1"></colgroup>
         <thead>
             <tr>
                 <td></td>
-                <td></td>
-                <th scope="col">Launch</th>
-                <th scope="col">Power</th>
-                <th scope="col">Pro</th>
+                <th scope="col" class="tb-title">Essential</th>
+                <th scope="col" class="tb-title">Advanced</th>
+                <th scope="col" class="tb-title">Elite</th>
+                <th scope="col" class="tb-title">Comm. #1</th>
+                <th scope="col" class="tb-title">Comm. #2</th>
             </tr>
         </thead>
         <tfoot>
             <tr>
                 <th scope="row">Price</th>
-                <td></td>
-                <td>$5.95/mo</td>
-                <td>$7.95/mo</td>
-                <td>$13.95/mo</td>
+                <td><span class="smallprice">$119.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$139.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$189.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$469.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$569.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
             </tr>
         </tfoot>
         <tbody>
             <tr>
-                <th scope="row">Sites on 1 Account</th>
-                <td>Multiple sites, no hidden fees!</td>
-                <td>2</td>
-                <td>6</td>
-                <td>25</td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme1">Intel® CPU Specs</span>
+                <div id="showme1" class="collapse">
+                    <p>Every one of our dedicated servers is equipped with either Intel® Core® or Xeon® processors. This helps ensure the fastest and most reliable operation of your dedicated server. In addition, our Elite servers come equipped with a Quad Core Intel® Xeon® CPU with eight-way threading! This provides an affordable and efficient solution to handle even the most robust tasks.</p>
+                </div>
+                </th>
+                <td>Core® E2220/E5400 2.4GHz Dual Core/2T</td>
+                <td>Xeon® 3430 2.4GHz Turbo Quad Core/4T</td>
+                <td>Xeon® 3440 2.53GHz Turbo Quad Core/8T</td>
+                <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 6C/12T </td>
+                <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 12C/24T</td>
             </tr>
             <tr>
-                <th scope="row">Domain Supported</th>
-                <td>Parked Domains</td>
-                <td>6</td>
-                <td>26</td>
-                <td>Unlimited</td>
+                <th scope="row">CPU Cache</th>
+                <td>1MB</td>
+                <td>8MB</td>
+                <td>8MB</td>
+                <td>12MB</td>
+                <td>12MB</td>
             </tr>
             <tr>
-                <th scope="row">Sites on 1 Account</th>
-                <td>Multiple sites, no hidden fees!</td>
-                <td>2</td>
-                <td>6</td>
-                <td>25</td>
+                <th scope="row">Memory Included</th>
+                <td>2GB</td>
+                <td>4GB</td>
+                <td>8GB</td>
+                <td>16GB</td>
+                <td>32GB</td>
             </tr>
             <tr>
-                <th scope="row">Domain Supported</th>
-                <td>Parked Domains</td>
-                <td>6</td>
-                <td>26</td>
-                <td>Unlimited</td>
+                 <th scope="row">Front Side Bus</th>
+                <td>800MHz</td>
+                <td>1333MHz</td>
+                <td>1333MHz</td>
+                <td>1333MHz</td>
+                <td>1333MHz Dual</td>
             </tr>
             <tr>
-                <th scope="row">Sites on 1 Account</th>
-                <td>Multiple sites, no hidden fees!</td>
-                <td>2</td>
-                <td>6</td>
-                <td>25</td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme2">Disc Space</span>
+                <div id="showme2" class="collapse">
+                    <p>All Dedicated Servers come equipped with Serial ATA 7,200RPM hard drives. SATA is the next generation of hard drive and provides a faster, more reliable & more affordable data storage solution than is offered by most of our competitors.</p>
+                </div>
+                </th>
+                <td>2 x 160GB</td>
+                <td>500GB</td>
+                <td>500GB</td>
+                <td>600GB</td>
+                <td>600GB</td>
             </tr>
             <tr>
-                <th scope="row">Domain Supported</th>
-                <td>Parked Domains</td>
-                <td>6</td>
-                <td>26</td>
-                <td>Unlimited</td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme3">RAID 1 Fault Tolerant</span>
+                <div id="showme3" class="collapse">
+                    <p>RAID 1 (Redundant Array of Independent Disks) is a way of storing your data in two places by placing data on multiple hard disks. By placing data on multiple disks your data is conveniently and automatically backed up, increasing fault tolerance.</p>
+                </div>
+                </th>
+                <td><span class="ir unacceptable">Not Included</span></td>
+                <td><span class="ir unacceptable">Not Included</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+            </tr>
+            <tr>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme4">Monthly Premium Transfer</span>
+                <div id="showme4" class="collapse">
+                    <p>Today's broadband connections demand faster and more reliable performance from your web site and email. Our network was specifically built to be expandable for capacity and for throughput. Our data center is connected to the Internet through 3 separate providers with an on demand capacity exceeding 7,500 MBits. We utilize BGP4 Smart Routing and can switch instantly and transparently away from any of our providers that are experiencing latency or downtime. Our advanced knowledge and planning allow us to provide extremely fast and reliable service while still offering affordable web hosting.</p>
+                    <ul><li>Smart Routing (BGP4) over 3 Tier I Providers</li><li>On Demand bandwidth exceeding 7,500 MBits</li></ul>
+                </div>
+                </th>
+                <td>2500GB</td>
+                <td>3000GB</td>
+                <td>4000GB</td>
+                <td>3000GB</td>
+                <td>3000GB</td>
+            </tr>
+            <tr>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme5">Full cPanel License</span>
+                <div id="showme5" class="collapse">
+                    <p>Each one of our Dedicated Server plans includes a full license to the award winning cPanel control panel software. Most other companies offer this feature at additional monthly and set-up costs or don't offer it at all. Additional charges apply for Softaculous, please ask your sales person for details.</p>
+                </div>
+                </th>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
+                <td><span class="ir ideal">Ideal</span></td>
             </tr>
         </tbody>
-    </table>                    
+    </table>  
+    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>
 </div><!-- /#specifications -->
-<div class="tab-pane" id="features">
-    <div class="wrap">
-        <p>All InMotion Hosting packages include the following:</p>
-        <ul class="nav nav-stacked matrix matrix-two-column">
-            <li>
-                <h4>Hosting Email Features</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Web Design and Blog Hosting</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>E-Commerce Hosting</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Website Plugins</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>Dynamic Hosting Support</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li>
-                <h4>FTP Features</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="matrix-last">
-                <h4>Streaming and Interactive Media</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
-            <li class="matrix-last">
-                <h4>Other Hosting Features</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua.</p>
-            </li>
+<!-- #support -->
+<div class="tab-pane" id="support">
+    <div class="island0 pull-left adthree mr20">
+        <h2>24/7 Award-Winning Support</h2>
+        <p>With optional full Root Access management, you are in control. But that doesn’t mean you’re on your own. Get a hold of us either by phone, email or live chat.</p><p>We are here to help. But with a partially managed server, there are limits as to what our responsibilities are. Please see the below table for more information.</p>
+    </div>
+    <div class="island20 pull-left raised adthree mr20">
+        <h3 class="">Coverage</h3>
+        <ul class="checkli">
+            <li>CentOS updates and security patches</li>
+            <li>cPanel and WHM support</li>
+            <li>Hardware maintenance and replacement</li>
+            <li>System level performance monitoring</li>
+            <li>Monitoring and maintaining network uptime</li>
+            <li>Network security support</li>
+            <li>Apache, MySQL, Exim and PureFTPd web server support</li>
         </ul>
     </div>
-</div><!-- /#features -->
-<div class="tab-pane compare" id="compare">
-    <div class="wrap row">
-        <div class="span6">
-            <h1>The InMotion Advantage</h1>
-        </div>
-        <div class="span5 offset1">
-            <ul class="nav nav-pills well well-small">
-                <li><span class="ideal">Ideal</li>
-                <li><span class="less-ideal">Less Than Ideal</li>
-                <li><span class="unacceptable">Unacceptable</span></li>
-            </ul>
-        </div>
+    <div class="island20 pull-left raised adthree">
+        <h3 class="">Your Responsibilites</h3>
+        <ul class="checkli">
+            <li>Advanced server administration</li>
+            <li>Databse administration</li>
+            <li>Custom application support</li>
+            <li>User script errors</li>
+            <li>Server backups</li>
+        </ul>
     </div>
-    <table class="table table-striped">
-        <caption class="a11y">Table comparing InMotion Hosting against other web hosting companies in areas such as custom service, tech support availability, money back guarantee and more"</caption>
-        <thead>
-            <tr>
-                <td></td>
-                <th scope="col">InMotion Hosting</th>
-                <th scope="col">JustHost</th>
-                <th scope="col">BlueHost</th>
-                <th scope="col">FatCow</th>
-                <th scope="col">Host Monster</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <tr>
-                <td></td>
-                <td>Order Now</td>
-                <td>Details</td>
-                <td>Details</td>
-                <td>Details</td>
-                <td>Details</td>
-            </tr>
-        </tfoot>
-        <tbody>
-            <tr>
-                <th scope="row">Better Business Bureau (BBB)</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-            </tr>
-            <tr>
-                <th scope="row">24x7x365 In House Support</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-            </tr>
-            <tr>
-                <th scope="row">Customer Ratings (Positive/Negative)</th>
-                <td>+96/-0</td>
-                <td>+14/-297</td>
-                <td>+17/-20</td>
-                <td>+2/-24</td>
-                <td>+11/-19</td>
-            </tr>
-            <tr>
-                <th scope="row">Data Backups</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-            </tr>
-            <tr>
-                <th scope="row">Standard Shared Hosting Features</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-            </tr>
-            <tr>
-                <th scope="row">Money Back Guarantee</th>
-                <td>90 Days</td>
-                <td>Pro-Rated Only</td>
-                <td>30 Days</td>
-                <td>30 Days</td>
-                <td>30 Days</td>
-            </tr>
-            <tr>
-                <th scope="row">Server Security/Access</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir less-ideal">Less Than Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-            </tr>
-            <tr>
-                <th scope="row">Email Functionality</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir ideal">Ideal</span></td>
-            </tr>
-            <tr>
-                <th scope="row">Room to Grow</th>
-                <td><span class="ir ideal">Ideal</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-                <td><span class="ir unacceptable">Unacceptable</span></td>
-            </tr>
-        </tbody>
-    </table>
-</div><!-- /#compare -->
+</div><!-- /#support -->
+<!-- #developers -->
+<div class="tab-pane" id="developers">
+    <div class="island0 pull-left adthree mr20">
+        <h2>Spend time with clients and coding, not hassling with hosting.</h2>
+        <p>Take control of your Dedicated Server and utilize it as you see fit. With our CentOS environment, and optional Root Access, the possibilities are endless. Call us today to get started!</p>
+    </div>
+    <div class="island20 pull-left raised adthree mr20">
+        <h3 class="">Included:</h3>
+        <ul class="checkli">
+            <li>CentOS updates and security patches</li>
+            <li>cPanel and WHM support</li>
+            <li>Hardware maintenance and replacement</li>
+            <li>System level performance monitoring</li>
+            <li>24-hour server and bandwidth monitoring</li>
+            <li>Network security support</li>
+            <li>Apache (Linux) web server support</li>
+        </ul>
+    </div>
+    <div class="island20 pull-left raised adthree">
+        <h3 class="">Rock-solid Hardware</h3>
+        <ul class="checkli">
+            <li>High-performance Dell servers</li>
+            <li>Custom Advanced Policy Firewall</li>
+            <li>Enterprise Class Linux OS (CentOS)</li>
+            <li>Rebootless kernel updates (Ksplice)</li>
+            <li>RAID 1 High-through put data storage (available on Elite Dedicated Server packages only)</li>
+        </ul>
+    </div>
+</div><!-- /#developers -->
+{% endblock %}
+
+{# suggestion #}
+{% block suggestion %}
+    Questions? Contact us at 1-888-321-HOST
+{% endblock %}
+
+{# contacttitle #}
+{% block contacttitle %}
+    Contact our Dedicated Server Experts
+{% endblock %}
+
+{# testimonial #}
+{% block testimonial %}
+    <div class="row span8 island sunken">
+        <blockquote class="quoted">As a busy developer and site administrator, I know how difficult it is to find a reliable, consistent and accessible hosting company. I have many sites on inmotionhosting.com servers; everything from their budget plans to dedicated servers. They all run quickly and with no downtime."</blockquote>
+        <span class="emisor vibrant indentit">
+            <span class="quotename">Jason Larson</span>
+            <span class="muted quotefrom">Bellingham, WA</span>
+        </span>
+    </div>
 {% endblock %}

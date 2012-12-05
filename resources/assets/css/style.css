@@ -55,6 +55,8 @@
 
 blockquote {
   border: none;
+  margin: 0;
+  padding: 0 0 26px 30px;
 }
 
 body {
@@ -159,7 +161,7 @@ header {
     content: ".";
     display: block;
     line-height: .50em;
-    width: 8em;
+    /* --- width: 8em; ---*/
   }
 
 .icon {
@@ -187,8 +189,8 @@ header .nav-pills-contact a.btn {
 }
 
 .nav-pills-no-link {
-  line-height: 36px;
   color: #232323;
+  line-height: 36px;
   margin-right: 12px;
 }
 
@@ -207,7 +209,6 @@ header .nav-pills-contact a.btn {
   background: url(../../img/icon-phone.gif) no-repeat 0 0;
   padding-bottom: 1px;
 }
-
 
 .muted {
   color: #888;
@@ -253,10 +254,10 @@ header .nav-pills-contact a.btn {
   color: #c52127;
   content: "\201C";
   display: block;
+  float: left;
   font-size: 600%;
   font-family: Helvetica, Arial, sans-serif;
-  float: left;
-  margin: 20px 20px 20px -15px;
+  margin: 20px 20px 40px -30px;
 }
 
 /**
@@ -274,8 +275,8 @@ header .nav-pills-contact a.btn {
 
 .table tbody td,
 .table tfoot td {
-  text-align: center;
   border-left: 1px solid #ccc;
+  text-align: center;
 }
 
 .table tbody th {
@@ -293,14 +294,14 @@ header .nav-pills-contact a.btn {
   width: 33%;
 }
 
-.business-specification thead .table-col-1,
-.business-specification tfoot .table-col-1,
-.business-specification tfoot .table-col-2 {
-
-}
-
 .business-specification thead td {
   border-left-color: #fcfcfc;
+  width: 30%;
+}
+
+.business-specification .table-col-2 {
+  border-left-color: #fcfcfc;
+  width: 30%;
 }
 
 .business-specificaiton tfoot .table-col-1,
@@ -321,6 +322,7 @@ header .nav-pills-contact a.btn {
 .compare .table tbody td,
 .compare .table thead th {
   border-left: 1px solid #ccc;
+  min-width: 110px;
 }
 
 .compare .table thead td + th {
@@ -335,9 +337,9 @@ header .nav-pills-contact a.btn {
   border-bottom: 1px solid #ccc;
   border-collapse: collapse;
   border-right: 1px solid #ccc;
+  height: 150px;
   margin-left: 0;
   padding: 10px 70px;
-  height: 150px;
 }
 
 .matrix > li:nth-child(even) {
@@ -371,18 +373,18 @@ header .nav-pills-contact a.btn {
 
 .well .row-fluid .span4:nth-child(even):before,
 .well .row-fluid .span4:first-child:after {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: -10px;
   border-color: transparent;
   border-left-color: #b4b4b4;
   border-style: solid;
   border-width: 10px;
   content: ' ';
+  display: inline-block;
+  height: 0;
+  margin-left: -10px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 0;
 }
 
 .well-inverted {
@@ -399,17 +401,17 @@ header .nav-pills-contact a.btn {
 }
 
 .ir { /* image replacement */
+  color: transparent;
   font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+  text-shadow: none;
 }
 
 .table .ir {
+  background: transparent no-repeat 0 0;
   display: block;
   height: 18px;
   margin: 0 auto;
   width: 18px;
-  background: transparent no-repeat 0 0;
 }
 
 /**
@@ -469,13 +471,16 @@ header .nav-pills-contact a.btn {
 .suggestion {
   margin: 36px auto;
 }
-.suggestion h3 {
+
+.suggestion 
+h3 {
   font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
-  /*background: url(../../img/bolt.png) no-repeat left center;*/
 }
-.suggestion img {
+
+.suggestion 
+img {
   margin-right: .5em;
 }
 
@@ -501,12 +506,12 @@ textarea::-webkit-input-placeholder {
   color: #232323;
 }
 
-.rostrum-tiered-item h3 {
+.rostrum-tiered-item 
+h3 {
   background-repeat: no-repeat;
   margin-right: 0 auto;
   position: relative;
   text-align: center;
-  width: 6em;
 }
 
 .package-subtitle {
@@ -584,9 +589,136 @@ footer a {
 
 
 /*------------------------------*/
+
+.comtop {
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.island-nopad {
+  background-color: #fff;
+  display: block;
+  outline: 1px solid #ccc;
+  zoom: 1;
+}
+
+.combox-l {
+  padding: 20px;
+  text-align: center;
+  width: 428px;
+}
+.combox {
+  display: block;
+  padding: 20px 20px 20px 21px;
+  text-align: center;
+  width: 429px;
+}
+
+.dedi-specification .table-striped thead th.table-col-3,
+.dedi-specification .table-striped tfoot td.table-col-3,
+.dedi-specification .table-striped tbody td.table-col-3 {
+  background-color: rgba(77, 160, 225, 0.15);
+}
+
+.dedi-specification .table-striped thead th.table-col-3,
+.dedi-specification .table-striped thead th.table-col-4,
+.dedi-specification .table-striped thead th.table-col-5,
+.dedi-specification .table-striped thead th.table-col-6,
+.compipe {
+  border-left: 1px solid #ccc;
+}
+
+.dedi-specification thead th {
+  width: 110px;
+}
+
+.dedi-specification thead td {
+  border-left-color: #fcfcfc;
+  width: 30%;
+}
+
+.vps-specification .table-striped thead th.table-col-2,
+.vps-specification .table-striped tfoot td.table-col-2,
+.vps-specification .table-striped tbody td.table-col-2 {
+  background-color: rgba(77, 160, 225, 0.15);
+  border-left: 1px solid #ccc;
+}
+
+.vps-specification thead td {
+  border-left-color: #fcfcfc;
+  width: 45%;
+}
+
+.vps-specification .table-col-2 {
+  border-left-color: #fcfcfc;
+}
+
+.vps-specificaiton tfoot .table-col-1,
+.vps-specification tfoot .table-col-2 {
+  border-left-color: #fff;
+}
+
+.vps-specification tfoot .table-col-2 {
+  border-right: 1px solid #ccc;
+}
+.vps-specification tfoot {
+  border-bottom: 2px solid #888;
+}
+
+.vps-specification .table-striped thead th.table-col-2 {
+  border-left: 0;
+}
+
+.vps-specification .table-striped thead .table-col-3,
+.vps-specification .table-striped thead .table-col-3 {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.business-specification .table-striped thead th.table-col-2,
+.business-specification .table-striped tfoot td.table-col-2,
+.business-specification .table-striped tbody td.table-col-2{
+  border-left: 1px solid #ccc;
+}
+.business-specification .table-striped thead th.table-col-2 {
+  border-left: 0;
+}
+
+.business-specification .table-striped thead .table-col-4,
+.vps-specification .table-striped thead .table-col-3 {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.uses-img {
+  border: 0;
+  margin-left: 30px;
+  width: 110px;
+}
+
+.collapse p {
+  font-weight: 400;
+}
+
+.curs {
+  cursor: pointer;
+}
+
+.curs:hover {
+  color: #4ba0e1;
+}
+
+.m-20 {
+  margin: 0 0px 0 -20px;
+}
+
 .bq-horiz {
   margin: 0;
-  padding: 0 0 66px 30px;
+  padding: 0 0 20px 30px;
+}
+
+.table tfoot tr {
+  border-bottom: 2px solid #888;
 }
 
 .legend {
@@ -616,13 +748,51 @@ footer a {
   left: 0;
   margin: 6px auto 0;
   position: absolute;
-  width: 100%
+  width: 100%;
+}
+
+.com-mid {
+  margin: 6px auto 0;
+  position: absolute;
+  width: 430px;
+}
+
+.smallprice {
+  color: #c52228;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .intro.business_hosting {
   background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
   display: block;
   height: 253px;
+}
+
+.intro.vps_hosting {
+  background: url(../../img/leader-vps-server.png) no-repeat top center, url(../../img/leader-bg-vps.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 286px;
+}
+
+.intro.dedicated_servers {
+  background: url(../../img/leader-dedi-tower.png) no-repeat top center, url(../../img/leader-bg-dedi.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 284px;
+}
+
+.leader-biz-cta-place {
+  float: right;
+  margin: 60px 121px 0 0;
+}
+.leader-vps-cta-place {
+  float: right;
+  margin: 0 -50px 0 0;
+}
+
+.leader-dedi-cta-place {
+  float: right;
+  margin: 123px 157px 0 0;
 }
 
 .tabbg {
@@ -634,12 +804,6 @@ footer a {
   padding-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
-  width: 200px;
-}
-
-.leader-biz-cta-place {
-  float: right;
-  margin: 60px 121px 0 0;
 }
 
 .tier-space {
@@ -676,8 +840,17 @@ sub {
   background-image: url(../../img/ideal.png);
 }
 
+.checkli 
+li {
+  list-style-image: url(../../img/ideal.png);
+}
+
 .split-center-mid {
   padding: 0 40px;
+}
+
+.tu-span {
+  width: 670px;
 }
 
 .adtwo {
@@ -685,6 +858,15 @@ sub {
   line-height: 18px;
   padding: 20px;
   width: 419px;
+}
+
+.adthree {
+  padding: 20px; 
+  width: 258px;
+}
+
+.mr20 {
+  margin-right: 20px;
 }
 
 .iconleft {
@@ -730,9 +912,13 @@ sub {
   padding: 40px 0 0;
 }
 
-.island30 {
-  outline: 1px solid #ccc;
-  padding: 30px;
+.island0 {
+  outline: none;
+}
+
+.island20 {
+  border: 1px solid #ccc;
+  padding: 20px;
 }
 
 .dc {
@@ -757,6 +943,7 @@ sub {
   padding-bottom: 3px;
   width: 100%;
 }
+
 .centered {
   text-align: center;
 }
@@ -770,6 +957,10 @@ sub {
 .oth-icon {
   float: left;
   margin: 12px 12px 0 0;
+}
+
+.supportbox {
+  float: left;
 }
 
 .inp-fatty {
@@ -861,4 +1052,9 @@ p {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+
+.blue {
+  border-top: 40px solid #327FB9;
+  border-right: 40px solid #327FB9;
 }
