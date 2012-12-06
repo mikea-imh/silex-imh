@@ -24,6 +24,7 @@
                         {# secondplaceplan #}
                         {% block secondplaceplan %}
                         {% endblock %}
+
                     </div><!-- /.rostrum-tiered-item-second -->
                 </div>
                 <div class="span4 rostrum-tiered-item rostrum-tiered-item-first">
@@ -45,98 +46,125 @@
                     </div><!-- /.rostrum-tiered-item-third -->
                 </div>
             </div><!-- /.rostrum -->
-            <div class="jutwrap2 row trust-building">
-                <div class="span12">
-                    <div class="island pull-left raised adtwo">
-                        <img src="{{ app.request.basepath }}/img/90day.png" alt="90 Day Garauntee icon" class="iconleft">
-                        <p>All business plans come with an Industry Leading <a href="#">90-Day Money Back Guarantee</a></p>
-                    </div>
-                    <div class="island pull-left raised span10 adtwo">
-                        <img src="{{ app.request.basepath }}/img/spedometer.png" alt="Max Speed Zone icon" class="iconleft">
-                        <p><a href="#">Max Speed Zone Enabled.</a> Multiple data centers means you can get the fastest connection on either coast.</p>
-                    </div>
-                </div>
-                <div class=" span4 pull-left trust">
-                    <span class="ln">Our Trusted Partners</span>
-                    <a href="#"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" /></a></div>
-                <div class=" span4 pull-left trust"><span class="ln">Security</span>
-                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" /></a></div>
-                <div class=" span4 pull-left trust"><span class="ln">Our Awards</span>
-                <a href="#"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" /></a></div>
-            </div>
-    </div>
-    <div class="tabbg">
-        <div class="navbar-inverse nav-static-top hosting-plan-details">
-            <div class="navbar-inner">
-                <div class="container"> 
-                    <ul class="nav nav-tabs">
 
-                    {# webhostingtabbednav #}
-                    {% block webhostingtabbednav %}
-                    {% endblock %}
-
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-        <div class="tab-content">
-
-            {# webhostingtabbedcontent #}
-            {% block webhostingtabbedcontent %}
+            {# commercial #}
+            {% block commercial %}
             {% endblock %}
 
-        </div><!-- /.tab-content -->
-        <div class="row-fluid suggestion">
-            <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="" />Need More Hosting Power? Learn about our <a href="#">VPS</a> and <a href="#">Dedicated Servers.</a></h3>
-        </div>
-        </div>
-    </div>
-    <div class="wrap raised">
-        <div class="container">
-            <div class="row">
-                <h2 class="span8">Contact our Business Hosting Experts</h2>
-                <p class="span8">Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
-            </div>
-            <div class="container">
-                <div class="well well-deep">
-                    <form class="row-fluid">
-                        <div class="span4">
-                            <label class="a11y" for="fullName">Full Name</label>
-                            <input id="fullName" type="text" placeholder="Full Name" class="span11" />
-                            <label class="a11y" for="desiredUrl">Website URL Desired</label>
-                            <input id="desiredUrl" type="text" placeholder="Website URL Desired" class="span11" />
-                            <label class="a11y span11" for="phoneNumber">Your Phone #</label>
-                            <input id="phoneNumber span11" type="text" placeholder="Your Phone #" />
+            <div class="jutwrap2 row">
+                    <div class="span6">
+                        <div class="island raised ads">
+                            <img src="{{ app.request.basepath }}/img/90day.png" alt="90 Day Garauntee icon" class="iconleft" />
+                            <p>All business plans come with an Industry Leading <a href="#">90-Day Money Back Guarantee</a></p>
                         </div>
-                        <div class="span4">
-                            <label>Currently an InMotion Hosting Customer?</label>
-                            <label class="a11y" for="postalCode">Zip Code</label>
-                            <input id="postalCode" type="text" placeholder="Zip Code" class="span11" />
-                            <label class="a11y" for="whereIMH">Your Phone #</label>
-                            <input id="whereIMH" type="text" placeholder="Where'd you hear about us" class="span11" />
+                    </div>
+                    <div class="span6">
+                        <div class="island raised ads">
+                            <img src="{{ app.request.basepath }}/img/spedometer.png" alt="Max Speed Zone icon" class="iconleft" />
+                            <p><a href="#">Max Speed Zone Enabled.</a> Multiple data centers means you can get the fastest connection on either coast.</p>
                         </div>
-                        <div class="span4">
-                            <label for="siteGoals">What are your goals for this site?</label>
-                            <textarea id="siteGoals" rows="3" class="span11"></textarea>
-                        </div>
-                    </form>
+                    </div>
+                <div class="span4">
+                    <div class=" trust muted centered">
+                        <span class="ln">Our Trusted Partners</span>
+                        <a href="#"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" /></a>
+                    </div>
                 </div>
-            </div>
-             <div class="row wrap">
-                <div class="dc span3">
-                    <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" >Moving domains can be messy. We'll handle the dirty work.<a href="#">Learn More</a>
+                <div class="span4">
+                    <div class=" trust muted centered">
+                        <span class="ln">Security</span>
+                        <a href="#"><img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" /></a>
+                    </div>
                 </div>
-                <div class="row span8 island sunken">
-                    <blockquote class="quoted">I just wanted to let you know how absolutely pleased I am with InMotion Hosting. You’re always up, your support is excellent and I have NEVER had a problem with uptime or connections. Not to mention that your rates are very reasonable.”
-                    </blockquote>
-                    <span class="emisor vibrant indentit">
-                        <span class="quotename">Ajay Narain</span>
-                        <span class="muted quotefrom">Sunnyvale, CA</span>
-                    </span>
+                <div class="span4">
+                    <div class=" trust muted centered">
+                        <span class="ln">Our Awards</span>
+                        <a href="#"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" /></a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+            <div class="tabbg">
+                <div class="navbar-inverse nav-static-top hosting-plan-details">
+                    <div class="navbar-inner">
+                        <div class="container"> 
+                            <ul class="nav nav-tabs">
 
+                            {# webhostingtabbednav #}
+                            {% block webhostingtabbednav %}
+                            {% endblock %}
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="tab-content">
+
+                    {# webhostingtabbedcontent #}
+                    {% block webhostingtabbedcontent %}
+                    {% endblock %}
+
+                    </div><!-- /.tab-content -->
+                    <div class="row-fluid suggestion">
+                        <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="suggestion lightning bolt icon" />
+
+                        {# suggestion #}
+                        {% block suggestion %}
+                        {% endblock %}
+
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap raised">
+                <div class="container">
+                    <div class="row">
+                        <h2 class="span8">
+
+                        {# contacttitle #}
+                        {% block contacttitle %}
+                        {% endblock %}
+
+                        </h2>
+                        <p class="span8">Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
+                    </div>
+                <div class="container">
+                    <div class="well well-deep">
+                        <form class="row-fluid">
+                            <div class="span4">
+                                <label class="a11y" for="fullName">Full Name</label>
+                                <input id="fullName" type="text" placeholder="Full Name" class="span11" />
+                                <label class="a11y" for="desiredUrl">Website URL Desired</label>
+                                <input id="desiredUrl" type="text" placeholder="Website URL Desired" class="span11" />
+                                <label class="a11y" for="phoneNumber">Your Phone #</label>
+                                <input id="phoneNumber span11" type="text" placeholder="Your Phone #" class="span11" />
+                            </div>
+                            <div class="span4">
+                                <label>Currently an InMotion Hosting Customer?</label>
+                                <label class="a11y" for="postalCode">Zip Code</label>
+                                <input id="postalCode" type="text" placeholder="Zip Code" class="span11" />
+                                <label class="a11y" for="whereIMH">Your Phone #</label>
+                                <input id="whereIMH" type="text" placeholder="Where'd you hear about us" class="span11" />
+                            </div>
+                            <div class="span4">
+                                <label for="siteGoals">What are your goals for this site?</label>
+                                <textarea id="siteGoals" rows="3" class="span11"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row wrap">
+                    <div class="dc span3">
+                        <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" />Moving domains can be messy. We'll handle the dirty work. <br /><a href="#">Learn More</a>
+                    </div>
+
+                    {# testimonial #}
+                    {% block testimonial %}
+                    {% endblock %}
+
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

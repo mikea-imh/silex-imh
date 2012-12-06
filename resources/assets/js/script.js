@@ -5,7 +5,15 @@
           e.preventDefault();
           $(this).tab('show');
         });
-        
+        // Allows collapsable elements in multiple spots on page
+        $('.collapse').click(function (e) {
+          e.preventDefault();
+          $(this).collapse('toggle');
+        });
+        $('#uses .nav-stacked a').click(function (e) {
+          e.preventDefault();
+          $(this).tab('show');
+        });
         // Apply classes to each table cell indicating column
         var numCols = $('colgroup').length;
         $('#specifications td, #specifications th').each(function(i) {
@@ -14,7 +22,6 @@
         // set tabindex on #main and #nav so they can be focus and work with webkit
         $('#main').attr('tabindex',-1);
         $('#nav').attr('tabindex',-1);
-
         // add placeholder text for browsers that do not support placeholder attribute
         if (!Modernizr.input.placeholder) {
           $('[placeholder]').focus(function() {
