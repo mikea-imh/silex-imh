@@ -55,6 +55,8 @@
 
 blockquote {
   border: none;
+  margin: 0;
+  padding: 0 0 26px 30px;
 }
 
 body {
@@ -159,7 +161,6 @@ header {
     content: ".";
     display: block;
     line-height: .50em;
-    width: 8em;
   }
 
 .icon {
@@ -187,8 +188,8 @@ header .nav-pills-contact a.btn {
 }
 
 .nav-pills-no-link {
-  line-height: 36px;
   color: #232323;
+  line-height: 36px;
   margin-right: 12px;
 }
 
@@ -207,7 +208,6 @@ header .nav-pills-contact a.btn {
   background: url(../../img/icon-phone.gif) no-repeat 0 0;
   padding-bottom: 1px;
 }
-
 
 .muted {
   color: #888;
@@ -253,10 +253,10 @@ header .nav-pills-contact a.btn {
   color: #c52127;
   content: "\201C";
   display: block;
-  font-size: 600%;
-  font-family: Helvetica, Arial, sans-serif;
   float: left;
-  margin: 20px 20px 20px -15px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 600%;
+  margin: 20px 20px 40px -30px;
 }
 
 /**
@@ -274,8 +274,8 @@ header .nav-pills-contact a.btn {
 
 .table tbody td,
 .table tfoot td {
-  text-align: center;
   border-left: 1px solid #ccc;
+  text-align: center;
 }
 
 .table tbody th {
@@ -288,19 +288,11 @@ header .nav-pills-contact a.btn {
   border-right: 1px solid #ccc;
 }
 
-.plan-specification-listing,
-.plan-specification-example {
-  width: 33%;
 }
-
-.business-specification thead .table-col-1,
-.business-specification tfoot .table-col-1,
-.business-specification tfoot .table-col-2 {
-
-}
-
-.business-specification thead td {
+.business-specification thead td,
+.business-specification .table-col-2 {
   border-left-color: #fcfcfc;
+  width: 30%;
 }
 
 .business-specificaiton tfoot .table-col-1,
@@ -321,6 +313,7 @@ header .nav-pills-contact a.btn {
 .compare .table tbody td,
 .compare .table thead th {
   border-left: 1px solid #ccc;
+  min-width: 110px;
 }
 
 .compare .table thead td + th {
@@ -335,9 +328,9 @@ header .nav-pills-contact a.btn {
   border-bottom: 1px solid #ccc;
   border-collapse: collapse;
   border-right: 1px solid #ccc;
+  height: 150px;
   margin-left: 0;
   padding: 10px 70px;
-  height: 150px;
 }
 
 .matrix > li:nth-child(even) {
@@ -371,18 +364,18 @@ header .nav-pills-contact a.btn {
 
 .well .row-fluid .span4:nth-child(even):before,
 .well .row-fluid .span4:first-child:after {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: -10px;
   border-color: transparent;
   border-left-color: #b4b4b4;
   border-style: solid;
   border-width: 10px;
   content: ' ';
+  display: inline-block;
+  height: 0;
+  margin-left: -10px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 0;
 }
 
 .well-inverted {
@@ -399,17 +392,17 @@ header .nav-pills-contact a.btn {
 }
 
 .ir { /* image replacement */
+  color: transparent;
   font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+  text-shadow: none;
 }
 
 .table .ir {
+  background: transparent no-repeat 0 0;
   display: block;
   height: 18px;
   margin: 0 auto;
   width: 18px;
-  background: transparent no-repeat 0 0;
 }
 
 /**
@@ -469,13 +462,16 @@ header .nav-pills-contact a.btn {
 .suggestion {
   margin: 36px auto;
 }
-.suggestion h3 {
+
+.suggestion 
+h3 {
   font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
-  /*background: url(../../img/bolt.png) no-repeat left center;*/
 }
-.suggestion img {
+
+.suggestion 
+img {
   margin-right: .5em;
 }
 
@@ -501,12 +497,12 @@ textarea::-webkit-input-placeholder {
   color: #232323;
 }
 
-.rostrum-tiered-item h3 {
+.rostrum-tiered-item 
+h3 {
   background-repeat: no-repeat;
   margin-right: 0 auto;
   position: relative;
   text-align: center;
-  width: 6em;
 }
 
 .package-subtitle {
@@ -584,9 +580,149 @@ footer a {
 
 
 /*------------------------------*/
+
+/**
+ * Implements fix on 3 col boxes on product pages
+ */
+.tab-pane .island {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/**
+ * Commercial class container/boxes
+ */
+.combox-row {
+  margin: 50px auto 10px;
+}
+
+.combox {
+  text-align: center;
+  width: 45.667%;
+}
+
+/**
+ * Link buttons for collapsable drawers on tables
+ */
+th > .btn-link {
+  color: #232323;
+  font-weight: bold;
+  margin-left: -8px;
+}
+th > .btn-link:hover {
+  color: #4ba0e1;
+  text-decoration: none;
+}
+
+.dedi-specification .table-striped thead th.table-col-3,
+.dedi-specification .table-striped tfoot td.table-col-3,
+.dedi-specification .table-striped tbody td.table-col-3 {
+  background-color: rgba(77, 160, 225, 0.15);
+}
+
+.dedi-specification .table-striped thead th.table-col-3,
+.dedi-specification .table-striped thead th.table-col-4,
+.dedi-specification .table-striped thead th.table-col-5,
+.dedi-specification .table-striped thead th.table-col-6,
+.compipe {
+  border-left: 1px solid #ccc;
+}
+
+.dedi-specification thead th {
+  width: 110px;
+}
+
+.dedi-specification thead td {
+  border-left-color: #fcfcfc;
+  width: 30%;
+}
+
+.vps-specification .table-striped thead th.table-col-2,
+.vps-specification .table-striped tfoot td.table-col-2,
+.vps-specification .table-striped tbody td.table-col-2 {
+  background-color: rgba(77, 160, 225, 0.15);
+  border-left: 1px solid #ccc;
+}
+
+.vps-specification thead td {
+  border-left-color: #fcfcfc;
+  width: 45%;
+}
+
+.vps-specification .table-col-2 {
+  border-left-color: #fcfcfc;
+}
+
+.vps-specificaiton tfoot .table-col-1,
+.vps-specification tfoot .table-col-2 {
+  border-left-color: #fff;
+}
+
+.vps-specification tfoot .table-col-2 {
+  border-right: 1px solid #ccc;
+}
+
+.vps-specification tfoot {
+  border-bottom: 2px solid #888;
+}
+
+.vps-specification .table-striped thead .table-col-3,
+.vps-specification .table-striped thead .table-col-3 {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.vps-specification .table-striped thead th.table-col-2,
+.business-specification .table-striped thead th.table-col-2,
+.vps-specification tfoot td .table-col-1 {
+  border-left: 0;
+}
+
+.business-specification .table-striped thead th.table-col-2,
+.business-specification .table-striped tfoot td.table-col-2,
+.business-specification .table-striped tbody td.table-col-2{
+  border-left: 1px solid #ccc;
+}
+
+.business-specification .table-striped th.table-col-1 {
+  width: 33%;
+}
+
+.business-specification th.table-col-3,
+.business-specification th.table-col-4,
+.business-specification th.table-col-5 {
+  width: 110px;
+}
+
+.business-specification .table-striped thead .table-col-4,
+.vps-specification .table-striped thead .table-col-3 {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+/**
+ * Use cases tabbed section images
+ */
+.uses-img {
+  border: 0;
+  margin-left: 30px;
+  width: 110px;
+}
+
+.collapse p {
+  font-weight: 400;
+}
+
+/**
+ * Horizonal blockquote
+ */
 .bq-horiz {
   margin: 0;
-  padding: 0 0 66px 30px;
+  padding: 0 0 20px 30px;
+}
+
+.table tfoot tr {
+  border-bottom: 2px solid #888;
 }
 
 .legend {
@@ -598,6 +734,9 @@ footer a {
   margin-bottom: 0;
 }
 
+/**
+ * Table titles
+ */
 .tb-title {
   font-size: 16px;
   font-weight: 500;
@@ -607,24 +746,84 @@ footer a {
   color: #fff;
 }
 
-.blanky {
+/**
+ * Main package title for hosting options
+ */
+.package-title h3 {
   margin: 0;
   padding: 0;
 }
 
+/**
+ * CTA placement on regular hosting packages
+ */
 .mid {
   left: 0;
   margin: 6px auto 0;
   position: absolute;
-  width: 100%
+  width: 100%;
 }
 
+/**
+ * CTA placement div for Commercial packages
+ */
+.com-mid {
+  margin: 6px auto 0;
+  position: absolute;
+  width: 430px;
+}
+
+/**
+ * Price styling for bottom of table matrices
+ */
+.smallprice {
+  color: #c52228;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/**
+ * Leaderboards/banners for biz, vps, dedi
+ */
 .intro.business_hosting {
   background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
   display: block;
   height: 253px;
 }
 
+.intro.vps_hosting {
+  background: url(../../img/leader-vps-server.png) no-repeat top center, url(../../img/leader-bg-vps.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 286px;
+}
+
+.intro.dedicated_servers {
+  background: url(../../img/leader-dedi-tower.png) no-repeat top center, url(../../img/leader-bg-dedi.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 284px;
+}
+
+/**
+ * CTA placement in leaderboards for biz, vps, dedi
+ */
+.leader-biz-cta-place {
+  float: right;
+  margin: 60px 121px 0 0;
+}
+
+.leader-vps-cta-place {
+  float: right;
+  margin: 0 -50px 0 0;
+}
+
+.leader-dedi-cta-place {
+  float: right;
+  margin: 123px 157px 0 0;
+}
+
+/**
+ * Background color behind tables
+ */
 .tabbg {
   background-color: #f5f5f5;
 }
@@ -634,18 +833,15 @@ footer a {
   padding-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
-  width: 200px;
-}
-
-.leader-biz-cta-place {
-  float: right;
-  margin: 60px 121px 0 0;
 }
 
 .tier-space {
     margin: -4px 6px 0 0;
 }
 
+/**
+ * Hosting package prices display
+ */
 .pricebox {
   color: #c52228;
   font-family: 'adelle';
@@ -667,6 +863,9 @@ sub {
   margin: 0 0 0 -32px;
 }
 
+/**
+ * Offsets price when needed
+ */
 .offs {
   margin-right: 38px;
 }
@@ -676,22 +875,44 @@ sub {
   background-image: url(../../img/ideal.png);
 }
 
+/**
+ * Unordered list with green checkmark icons
+ */
+.checkli 
+li {
+  list-style-image: url(../../img/ideal.png);
+}
+
 .split-center-mid {
   padding: 0 40px;
 }
 
-.adtwo {
-  height: 36px;
-  line-height: 18px;
-  padding: 20px;
-  width: 419px;
+/**
+ * Typical uses container for content
+ */
+.tu-span {
+  width: 670px;
 }
 
+/**
+ * Ad spot where two island boxes are side by side
+ */
+.ads {
+  height: 36px;
+  line-height: 18px;
+}
+
+/**
+ * Pushes icons leftwards of a heading
+ */
 .iconleft {
   float: left;
   margin: 0 12px 10px 0;
 }
 
+/**
+ * Testimonial or quote - person's name 
+ */
 .quotename {
   color: #c52228;
   font-family: 'adelle';
@@ -699,16 +920,25 @@ sub {
   font-weight: 600;
 }
 
+/**
+ * Testimonial or quote - person's location
+ */
 .quotefrom {
   font-family: 'adelle';
   font-size: 11px;
   margin-top: -3px;
 }
 
+/**
+ * Apply thicker padding
+ */
 .thick {
   padding: 30px;
 }
 
+/**
+ * These are wraps that fall above or below an element that "juts" out. For example a CTA that is positioned on the outline of an island
+ */
 .jutwrap {
   padding: 30px 0 40px;
 }
@@ -726,30 +956,35 @@ sub {
   padding: 0 0 30px;
 }
 
+/**
+ * Empty wrap - applies 2x padding to top only
+ */
 .wrap-emp {
   padding: 40px 0 0;
 }
 
-.island30 {
-  outline: 1px solid #ccc;
-  padding: 30px;
-}
-
+/**
+ * Domain Concierge block next to quotebox
+ */
 .dc {
   display: block;
   float: right;
   text-align: center;
 }
 
+/**
+ * Trust-builders section headings
+ */
 .trust {
-  color: #888;
   font-family: 'adelle';
   font-size: 16px;
   font-weight: 600;
   margin-top: 30px;
-  text-align: center;
 }
 
+/**
+ * Dotted line under trust-builders titles
+ */
 .ln {
   border-bottom: #ccc dotted 1px;
   display: block;
@@ -757,6 +992,7 @@ sub {
   padding-bottom: 3px;
   width: 100%;
 }
+
 .centered {
   text-align: center;
 }
@@ -767,8 +1003,10 @@ sub {
   margin: 10px 12px 0 -38px;
 }
 
+/**
+ * Spacing for table caption icon at top next to legend
+ */
 .oth-icon {
-  float: left;
   margin: 12px 12px 0 0;
 }
 
@@ -788,6 +1026,9 @@ sub {
   margin: 1px auto -1px;
 }
 
+/**
+ * IMH logo in footer
+ */
 .ft-logo {
   border: 0;
   display: block;
@@ -797,6 +1038,9 @@ sub {
   width: 155px;
 }
 
+/**
+ * Social media icons in footer
+ */
 .ft-iconlist {
   border-bottom: 1px solid #333;
   float: right;
@@ -827,6 +1071,9 @@ img {
   width: 31px;
 }
 
+/**
+ * Apply indent
+ */
 .indentit {
   margin-left: 44px;
 }
@@ -835,6 +1082,9 @@ img {
   margin-right: 11px;
 }
 
+/**
+ * Red Badge for featured/promoted hosting plan
+ */
 .badge { 
   background: none;
   border-top: 40px solid #c52228;
@@ -850,15 +1100,27 @@ img {
   width: 0;
 } 
 
+/**
+ * Text for badge
+ */
 .badge
 p {
   font-size: 11px;
   font-weight: 400;
   margin-top: -40px;
+  rotation:45deg;
   padding: 0;
   text-shadow: none;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+
+/**
+ * Blue Badge for featured/promoted hosting plan
+ */
+.blue {
+  border-right: 40px solid #327fb9;
+  border-top: 40px solid #327fb9;
 }
