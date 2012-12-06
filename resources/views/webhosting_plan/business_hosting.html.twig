@@ -17,14 +17,14 @@
         <p>In addition to award winning technical support and 99.9% uptime, InMotion Hosting’s exclusive Speed Zone technology helps keep your website and email fast by locating your data as close to you as possible.</p>
     </div>
     <div class="leader-biz-cta-place">
-        <div class="span3"><a href="#" class="btn btn-primary over">order now</a></div>
+        <div class="span3"><a href="#" class="btn btn-primary over">Order Now</a></div>
     </div>
 {% endblock %}
 
 {# secondplaceplan #}
 {% block secondplaceplan %}
-    <h3 class="blanky package-title">
-    <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Launch Business Package" class="tier-space">Launch</h3>
+    <h3 class="package-title">
+    <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Launch Business Package" class="tier-space" />Launch</h3>
     <p class="package-subtitle">Small Business Starter</p>
     <div class="pricebox"><sup>$</sup>5<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
@@ -42,14 +42,14 @@
         <dd class="split-center-value">1,000</dd>
     </dl>
     <div class="mid">
-        <a href="#" class="btn btn-primary over">order now</a>
+        <a href="#" class="btn btn-primary over">Order Now</a>
     </div>
 {% endblock %}
 
 {# firstplaceplan #}
 {% block firstplaceplan %}
     <div class="badge"><p>BEST<br/>VALUE</p></div>
-    <h3 class="blanky package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Power Business Package" class="tier-space">Power</h3>
+    <h3 class="package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Power Business Package" class="tier-space" />Power</h3>
     <p class="package-subtitle">Top Choice for Small Business</p>
     <div class="pricebox"><sup>$</sup>7<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center-mid">
@@ -67,13 +67,13 @@
         <dd class="split-center-value">2,000</dd>
     </dl>
     <div class="mid">
-        <a href="#" class="btn btn-primary over">order now</a>
+        <a href="#" class="btn btn-primary over">Order Now</a>
     </div>
 {% endblock %}
 
 {# thirdplaceplan #}
 {% block thirdplaceplan %}
-    <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">PRO</h3>
+    <h3 class="package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space" />PRO</h3>
     <p class="package-subtitle">Host 25 sites on 1 account</p>
     <div class="pricebox"><sup>$</sup>13<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
@@ -91,7 +91,7 @@
         <dd class="split-center-value">Unlimited</dd>
     </dl>
     <div class="mid">
-        <a href="#" class="btn btn-primary over">order now</a>
+        <a href="#" class="btn btn-primary over">Order Now</a>
     </div>
 {% endblock %}
 
@@ -125,21 +125,18 @@
             <tr>
                 <th scope="row">Price</th>
                 <td></td>
-                <td><span class="smallprice">$5.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
-                <td><span class="smallprice">$7.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
-                <td><span class="smallprice">$13.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$5.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
+                <td><span class="smallprice">$7.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
+                <td><span class="smallprice">$13.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
             </tr>
         </tfoot>
         <tbody>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme1">Sites on 1 Account</span>
-                <div id="showme1" class="collapse">
-                    <p>Included for free. Don't Be Fooled! Unlike the others who claim to offer 6 sites on 1 account, or even 10 sites on 1 account, we're different because we don't have any hidden setup fees or hard to find additional monthly charges.Our web hosting packages are plain and simple - host multiple websites on 1 account for one low price.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme1">Sites on 1 Account</button>
+                    <div id="showme1" class="collapse">
+                        <p>Included for free. Don't Be Fooled! Unlike the others who claim to offer 6 sites on 1 account, or even 10 sites on 1 account, we're different because we don't have any hidden setup fees or hard to find additional monthly charges.Our web hosting packages are plain and simple - host multiple websites on 1 account for one low price.</p>
+                    </div>
                 </th>
                 <td>Multiple sites, no hidden fees!</td>
                 <td>2</td>
@@ -148,10 +145,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme2">Domains Supported</span>
-                <div id="showme2" class="collapse">
-                    <p>This allows you to have multiple domain names point to the same account - often used to send mydomain.com, mydomain.net, and mydomain.org to the same site.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme2">Domains Supported</button>
+                    <div id="showme2" class="collapse">
+                        <p>This allows you to have multiple domain names point to the same account - often used to send mydomain.com, mydomain.net, and mydomain.org to the same site.</p>
+                    </div>
                 </th>
                 <td>Parked Domains</td>
                 <td>6</td>
@@ -160,10 +157,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme3">Additional Sub Domains</span>
-                <div id="showme3" class="collapse">
-                    <p>A canonical name looks like canonical.domain.com. The standard ones are www.domain.com and domain.com. Depending on your package, other names like info.domain.com or support.domain.com can be used - the "canonical" is chosen by you.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme3">Additional Sub Domains</button>
+                    <div id="showme3" class="collapse">
+                        <p>A canonical name looks like canonical.domain.com. The standard ones are www.domain.com and domain.com. Depending on your package, other names like info.domain.com or support.domain.com can be used - the "canonical" is chosen by you.</p>
+                    </div>
                 </th>
                 <td>For example: mobile.domain.com</td>
                 <td>25</td>
@@ -179,13 +176,15 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme4">Easy 1-Click Install</span>
-                <div id="showme4" class="collapse">
-                    <p>Our easy to use application installer allows you to install and manage over 280 applications! Easily install these popular application tools: </p>
-                    <ul><li>For bloggers: Wordpress, b2evolution, & Open Blog</li>
-                    <li>Online shopping carts: Prestashop, Open Cart, & Magento</li>
-                    <li>CMS platforms: Drupal, Joomla, & Moodle and many more!</li></ul>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme4">Easy 1-Click Install</button>
+                    <div id="showme4" class="collapse">
+                        <p>Our easy to use application installer allows you to install and manage over 280 applications! Easily install these popular application tools: </p>
+                        <ul>
+                            <li>For bloggers: Wordpress, b2evolution, & Open Blog</li>
+                            <li>Online shopping carts: Prestashop, Open Cart, & Magento</li>
+                            <li>CMS platforms: Drupal, Joomla, & Moodle and many more!</li>
+                        </ul>
+                    </div>
                 </th>
                 <td>Over 280 Applications</td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -193,12 +192,11 @@
                 <td><span class="ir ideal">Ideal</span></td>
             </tr>
             <tr>
-            <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme5">Data Backup</span>
-                <div id="showme5" class="collapse">
-                    <p>It is critical for you to have backups. We provide, included with your account, a complete backup of your Shared environment. This will occur automatically unless requested. The backup environment is as secure as the main Shared Web Hosting environment and the data is transmitted over an SSL encrypted connection. The following limits apply to the backups included with your account: Restoring your account is FREE, but limited to once every 4 months. A fee of $49 will apply for any additional restores. Sites larger than 10GB will not be backed up automatically. Options are available, please contact our Sales Department for current prices.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme5">Data Backup</button>
+                    <div id="showme5" class="collapse">
+                        <p>It is critical for you to have backups. We provide, included with your account, a complete backup of your Shared environment. This will occur automatically unless requested. The backup environment is as secure as the main Shared Web Hosting environment and the data is transmitted over an SSL encrypted connection. The following limits apply to the backups included with your account: Restoring your account is FREE, but limited to once every 4 months. A fee of $49 will apply for any additional restores. Sites larger than 10GB will not be backed up automatically. Options are available, please contact our Sales Department for current prices.</p>
+                    </div>
                 </th>
                 <td>Weekly</td>
                 <td>INCLUDED</td>
@@ -207,10 +205,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme6">Free Google AdWords Credits</span>
-                <div id="showme6" class="collapse">
-                    <p>Use Google AdWords to drive quality traffic to your website and grow your business. See how quickly and easily you can attract new customers – as a InMotion Hosting customer, we offer you a $100 credit to start advertising on Google when you spend $25.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme6">Free Google AdWords Credits</button>
+                    <div id="showme6" class="collapse">
+                        <p>Use Google AdWords to drive quality traffic to your website and grow your business. See how quickly and easily you can attract new customers – as a InMotion Hosting customer, we offer you a $100 credit to start advertising on Google when you spend $25.</p>
+                    </div>
                 </th>
                 <td>Drive traffic with Ads</td>
                 <td>$75</td>
@@ -219,10 +217,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme7">Disk Space (GB)</span>
-                <div id="showme7" class="collapse">
-                    <p>Our Award Winning Business Class Web Hosting packages offer an unlimited amount of disk space on which to store your Web site. There are many factors you should be considering when choosing a web hosting company and we feel that disk space limitations shouldn't be one. Instead of worrying about limiting your megabytes & gigabytes, we focus on the issues that really matter to business owners, namely, our exceptional Customer Support & Quality of Service.Certain restrictions apply, see <a href="#">Terms of Service</a> for details.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme7">Disk Space (GB)</button>
+                    <div id="showme7" class="collapse">
+                        <p>Our Award Winning Business Class Web Hosting packages offer an unlimited amount of disk space on which to store your Web site. There are many factors you should be considering when choosing a web hosting company and we feel that disk space limitations shouldn't be one. Instead of worrying about limiting your megabytes & gigabytes, we focus on the issues that really matter to business owners, namely, our exceptional Customer Support & Quality of Service.Certain restrictions apply, see <a href="#">Terms of Service</a> for details.</p>
+                    </div>
                 </th>
                 <td>All expandable</td>
                 <td>UNLIMITED</td>
@@ -231,10 +229,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme8">Monthly Transfer Included (GB)</span>
-                <div id="showme8" class="collapse">
-                    <p>InMotion Hosting allows an unlimited amount of Data Transfer per month on all of our Business Class Web Hosting accounts. Much like arbitrary disk space limitations, we'd rather focus on the key aspects that help Small & Medium Businesses maintain a successful online presence. This is why every Business Class Web Hosting account includes powerful features such as our Premium Web Site Builder, regular data backups & a full list of added features; all backed by our Award Winning World Class Support.Certain restrictions apply, see Terms of Service for details.<a href="#">Terms of Service</a> for details.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme8">Monthly Transfer Included (GB)</button>
+                    <div id="showme8" class="collapse">
+                        <p>InMotion Hosting allows an unlimited amount of Data Transfer per month on all of our Business Class Web Hosting accounts. Much like arbitrary disk space limitations, we'd rather focus on the key aspects that help Small & Medium Businesses maintain a successful online presence. This is why every Business Class Web Hosting account includes powerful features such as our Premium Web Site Builder, regular data backups & a full list of added features; all backed by our Award Winning World Class Support.Certain restrictions apply, see Terms of Service for details.<a href="#">Terms of Service</a> for details.</p>
+                    </div>
                 </th>
                 <td>Industry-Leading</td>
                 <td>UNLIMITED</td>
@@ -243,10 +241,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme9">SPAM Safe Email</span>
-                <div id="showme9" class="collapse">
-                    <p>Real Time Spam Filtering is an absolute necessity for individuals and businesses. It saves time and money by letting your employees or yourself focus on real email instead of sifting through junk mail. Our system monitors a very large portion of the Internet's email traffic to target sources of spam and tag that spam if it comes into our network. It is ready to go out of the box, but is also configurable by you if needed.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme9">SPAM Safe Email</button>
+                    <div id="showme9" class="collapse">
+                        <p>Real Time Spam Filtering is an absolute necessity for individuals and businesses. It saves time and money by letting your employees or yourself focus on real email instead of sifting through junk mail. Our system monitors a very large portion of the Internet's email traffic to target sources of spam and tag that spam if it comes into our network. It is ready to go out of the box, but is also configurable by you if needed.</p>
+                    </div>
                 </th>
                 <td>With Real-time Filtering</td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -262,10 +260,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme10">Premium Website Builder</span>
-                <div id="showme10" class="collapse">
-                    <p>Our Premium Web Site Builder offers one of the easiest and most full-featured ways to get your web site online. Using this latest, best-in-industry web builder allows you to choose from over 200 stunning premium web site templates, customize your site's logo, images & color scheme. You can also use it to incorporate message boards, blogs, photo galleries & Flash intros! </p><p>Power & Pro Web Hosting packages also have the option to create an online store directly from the builder. Easily set up your store to accept payments from your 3rd party merchant account, calculate shipping & even track inventory! With InMotion Hosting's Premium Web Site Builder there's no need to install additional scripts or databases to get your online store up and running.</p><p>Each Business Class Web Hosting account includes a single Premium Web Builder license enabling you to create & publish (1) premium website. Additional licenses are available for a nominal monthly fee. Please ask your sales representative for details. Depending on your preferences, other options exist to publish your site, please contact Sales for options.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme10">Premium Website Builder</button>
+                    <div id="showme10" class="collapse">
+                        <p>Our Premium Web Site Builder offers one of the easiest and most full-featured ways to get your web site online. Using this latest, best-in-industry web builder allows you to choose from over 200 stunning premium web site templates, customize your site's logo, images & color scheme. You can also use it to incorporate message boards, blogs, photo galleries & Flash intros! </p><p>Power & Pro Web Hosting packages also have the option to create an online store directly from the builder. Easily set up your store to accept payments from your 3rd party merchant account, calculate shipping & even track inventory! With InMotion Hosting's Premium Web Site Builder there's no need to install additional scripts or databases to get your online store up and running.</p><p>Each Business Class Web Hosting account includes a single Premium Web Builder license enabling you to create & publish (1) premium website. Additional licenses are available for a nominal monthly fee. Please ask your sales representative for details. Depending on your preferences, other options exist to publish your site, please contact Sales for options.</p>
+                    </div>
                 </th>
                 <td><a href="#">Launch Builder</a></td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -274,7 +272,7 @@
             </tr>
         </tbody>
     </table>
-    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>
+    <a href="#" class="btn btn-info">View More Specs</a>
 </div><!-- /#specifications -->
 <!-- #features -->
 <div class="tab-pane" id="features">
@@ -328,7 +326,7 @@
 <div class="tab-pane compare" id="compare">
     <div class="jutwrap4 row">
         <div class="span6">
-            <img src="{{ app.request.basepath }}/img/icon-trophy.png"  class="oth-icon" alt="The InMotion Hosting Advantage" />
+            <img src="{{ app.request.basepath }}/img/icon-trophy.png"  class="oth-icon pull-left" alt="The InMotion Hosting Advantage" />
             <h2>The InMotion Advantage</h2>
             <p> We put you first. You will not wait on hold for hours, you will not have to move your site when your business grows, you will not have to tolerate incomprehensible outsourced technical support. You will have a friendly, helpful company with a history of great service.</p>
         </div>
@@ -354,8 +352,8 @@
         </thead>
         <tfoot>
             <tr>
-                <td style="border-left: 0;"></td>
-                <td><a href="#" class="btn btn-primary over">order now</a></td>
+                <td></td>
+                <td><a href="#" class="btn btn-primary over">Order Now</a></td>
                 <td><a href="#">Details</a></td>
                 <td><a href="#">Details</a></td>
                 <td><a href="#">Details</a></td>
@@ -365,10 +363,10 @@
         <tbody>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme11">Better Business Bureau (BBB)</span>
-                <div id="showme11" class="collapse">
-                    <p>We take great pride in the reputation of our company and strive to resolve any issues that our clients may have. The Better Business Bureau is the leading agency in the country for consumers researching the companies they deal with. InMotion Hosting has continually maintained an A Rating with the BBB for nearly 5 years.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme11">Better Business Bureau (BBB)</button>
+                    <div id="showme11" class="collapse">
+                        <p>We take great pride in the reputation of our company and strive to resolve any issues that our clients may have. The Better Business Bureau is the leading agency in the country for consumers researching the companies they deal with. InMotion Hosting has continually maintained an A Rating with the BBB for nearly 5 years.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir less-ideal">Less Than Ideal</span></td>
@@ -378,10 +376,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme12">24x7 U.S. Based In-House Support</span>
-                <div id="showme12" class="collapse">
-                    <p>Providing an in-house support team insures that support technicians are properly trained on the equipment, procedures & software of the hosting provider. It allows a company to assure that a high level of quality of support is maintained. Providing that support on a true 24x7 basis allows customers to get quick resolution to any issues that may arise. At InMotion Hosting our support is comprised of 100% In-House, U.S. Based technicians available 24 hours a day, 7 days a week, 365 days a year.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme12">24x7 U.S. Based In-House Support</button>
+                    <div id="showme12" class="collapse">
+                        <p>Providing an in-house support team insures that support technicians are properly trained on the equipment, procedures & software of the hosting provider. It allows a company to assure that a high level of quality of support is maintained. Providing that support on a true 24x7 basis allows customers to get quick resolution to any issues that may arise. At InMotion Hosting our support is comprised of 100% In-House, U.S. Based technicians available 24 hours a day, 7 days a week, 365 days a year.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir unacceptable">Unacceptable</span></td>
@@ -391,10 +389,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme13">Customer Ratings (Positive/Negative)</span>
-                <div id="showme13" class="collapse">
-                    <p>We strive to provide the highest level of customer satisfaction. Our reputation as one of the leading web hosting companies in the country is important to us. This is reflected in the reviews and recommendations of our clients posted on websites such as WebHostingReviews.com.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme13">Customer Ratings (Positive/Negative)</button>
+                    <div id="showme13" class="collapse">
+                        <p>We strive to provide the highest level of customer satisfaction. Our reputation as one of the leading web hosting companies in the country is important to us. This is reflected in the reviews and recommendations of our clients posted on websites such as WebHostingReviews.com.</p>
+                    </div>
                 </th>
                 <td>+96/-0</td>
                 <td>+14/-297</td>
@@ -404,10 +402,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme14">Data Backups</span>
-                <div id="showme14" class="collapse">
-                    <p>As a business with an online presence, the protection of your data and web files is of the utmost importance. In the event of a catastrophic system or user error, valuable data can be lost in moments. The backing up of your data and web files can help insure that the recovery of that data is as smooth as possible. While most hosting companies allow you to backup your own data, InMotion Hosting goes a step further and backs up customer data every 48 hours. While you shouldn't rely solely on automated data backups, you can rest assured that InMotion Hosting is doing everything possible to insure the safety of your valuable data. *Certain restrictions apply, see terms for <a href="#">details</a>.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme14">Data Backups</button>
+                    <div id="showme14" class="collapse">
+                        <p>As a business with an online presence, the protection of your data and web files is of the utmost importance. In the event of a catastrophic system or user error, valuable data can be lost in moments. The backing up of your data and web files can help insure that the recovery of that data is as smooth as possible. While most hosting companies allow you to backup your own data, InMotion Hosting goes a step further and backs up customer data every 48 hours. While you shouldn't rely solely on automated data backups, you can rest assured that InMotion Hosting is doing everything possible to insure the safety of your valuable data. *Certain restrictions apply, see terms for <a href="#">details</a>.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir unacceptable">Unacceptable</span></td>
@@ -417,10 +415,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme15">Standard Shared Hosting Features</span>
-                <div id="showme15" class="collapse">
-                    <p>By choosing a hosting company that provides support for standard functionality insures you'll have all the tools you'll need to build a website with all the necessary functionality. This includes the ability to create & manage SQL databases, perform PHP scripts & utilize various programming languages.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme15">Standard Shared Hosting Features</button>
+                    <div id="showme15" class="collapse">
+                        <p>By choosing a hosting company that provides support for standard functionality insures you'll have all the tools you'll need to build a website with all the necessary functionality. This includes the ability to create & manage SQL databases, perform PHP scripts & utilize various programming languages.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -430,10 +428,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme16">Money Back Guarantee</span>
-                <div id="showme16" class="collapse">
-                    <p>Money back guarantees allow customers the time to judge the quality of service & support for themselves. The length of that guarantee directly affects how long you have to make that judgment. At InMotion Hosting, we're so confident that you'll be pleased with our service that we offer an Industry Leading, 90 Day <a href="#">Money Back Guarantee!</a></p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme16">Money Back Guarantee</button>
+                    <div id="showme16" class="collapse">
+                        <p>Money back guarantees allow customers the time to judge the quality of service & support for themselves. The length of that guarantee directly affects how long you have to make that judgment. At InMotion Hosting, we're so confident that you'll be pleased with our service that we offer an Industry Leading, 90 Day <a href="#">Money Back Guarantee!</a></p>
+                    </div>
                 </th>
                 <td>90 Days</td>
                 <td>Pro-Rated Only</td>
@@ -443,10 +441,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme17">Server Security/Access</span>
-                <div id="showme17" class="collapse">
-                    <p>SuPHP is the next generation of scripting access which provides far greater security than PHPSuExec when running PHP based scripts.For advanced users of VPS and Dedicated Servers, providing SSH access allows a greater level of access than what is available through standard web hosting control panels. Because of the additional security concerns this type of access may generate, InMotion Hosting requires clients to request SSH access before it is granted. Those clients are then moved to an SSH enabled server to eliminate the additional risks for our non-SSH clients.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme17">Server Security/Access</button>
+                    <div id="showme17" class="collapse">
+                        <p>SuPHP is the next generation of scripting access which provides far greater security than PHPSuExec when running PHP based scripts.For advanced users of VPS and Dedicated Servers, providing SSH access allows a greater level of access than what is available through standard web hosting control panels. Because of the additional security concerns this type of access may generate, InMotion Hosting requires clients to request SSH access before it is granted. Those clients are then moved to an SSH enabled server to eliminate the additional risks for our non-SSH clients.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir less-ideal">Less Than Ideal</span></td>
@@ -456,10 +454,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme18">Email Functionality</span>
-                <div id="showme18" class="collapse">
-                    <p>While it's common practice for hosting companies to provide some form spam protection, InMotion Hosting goes a step further and provides 2 stage spam protection for Personal Hosting clients and an industry leading 4 stages of spam protection for Business Class Hosting clients. An additional factor to be concerned about is the ability to create email addresses for add-on domains. While most hosting companies do provide this functionality, there are several utilizing older control panels that do not provide this ability.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme18">Email Functionality</button>
+                    <div id="showme18" class="collapse">
+                        <p>While it's common practice for hosting companies to provide some form spam protection, InMotion Hosting goes a step further and provides 2 stage spam protection for Personal Hosting clients and an industry leading 4 stages of spam protection for Business Class Hosting clients. An additional factor to be concerned about is the ability to create email addresses for add-on domains. While most hosting companies do provide this functionality, there are several utilizing older control panels that do not provide this ability.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -469,10 +467,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme19">Room to Grow</span>
-                <div id="showme19" class="collapse">
-                    <p>Website hosting is not a one size fits all product. By providing multiple levels of web hosting and multiple packages within those levels, your company has a clear path available to grow your online presence as your business grows. Here at InMotion Hosting, we believe that your business's success shouldn't be a roadblock. That's why as your business grows you can be confident that, instead of forcing you to transfer to another hosting company, we'll work with you to help your online presence grow too.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme19">Room to Grow</button>
+                    <div id="showme19" class="collapse">
+                        <p>Website hosting is not a one size fits all product. By providing multiple levels of web hosting and multiple packages within those levels, your company has a clear path available to grow your online presence as your business grows. Here at InMotion Hosting, we believe that your business's success shouldn't be a roadblock. That's why as your business grows you can be confident that, instead of forcing you to transfer to another hosting company, we'll work with you to help your online presence grow too.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir unacceptable">Unacceptable</span></td>
@@ -482,7 +480,7 @@
             </tr>
         </tbody>
     </table>
-        <a href="#" class="btn btn-info">VIEW MORE</a>
+    <a href="#" class="btn btn-info">View More</a>
 </div><!-- /#compare -->
 {% endblock %}
 

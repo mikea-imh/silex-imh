@@ -17,14 +17,14 @@
         <p>Our managed dedicated servers give your websites the highest level of speed, security and uptime. With over 10 years of hosting experience, we know what it takes to keep our servers performing at their fullest. From hardware matching CPU + RAM, to optimizing the LAMP stack, our system administrators are the experts.</p>
     </div>
     <div class="leader-dedi-cta-place">
-        <div class="span3"><span class="btn btn-primary">order now</span></div>
+        <div class="span3"><span class="btn btn-primary">Order Now</span></div>
      </div>
 {% endblock %}
 
 {# secondplaceplan #}
 {% block secondplaceplan %}
-    <h3 class="blanky package-title">
-    <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Essential Dedicated Package" class="tier-space">ESSENTIAL</h3>
+    <h3 class="package-title">
+    <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Essential Dedicated Package" class="tier-space" />ESSENTIAL</h3>
     <p class="package-subtitle">Affordable solution for your needs</p>
     <div class="pricebox"><sup>$</sup>119<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
@@ -42,14 +42,14 @@
         <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
     </dl>
     <div class="mid">
-        <a href="#" class="btn btn-primary over">order now</a>
+        <a href="#" class="btn btn-primary over">Order Now</a>
     </div>
 {% endblock %}
 
 {# firstplaceplan #}
 {% block firstplaceplan %}
     <div class="badge"><p>BEST<br/>VALUE</p></div>
-    <h3 class="blanky package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Advanced Dedicated Package" class="tier-space">ADVANCED</h3>
+    <h3 class="package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Advanced Dedicated Package" class="tier-space" />ADVANCED</h3>
     <p class="package-subtitle">The best value for responsive, powerful websites</p>
     <div class="pricebox"><sup>$</sup>139<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
@@ -67,14 +67,14 @@
         <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
     </dl>
     <div class="mid">
-        <a href="#" class="btn btn-primary over">order now</a>
+        <a href="#" class="btn btn-primary over">Order Now</a>
     </div>
 {% endblock %}
 
 {# thirdplaceplan #}
 {% block thirdplaceplan %}
     <div class="badge blue"><p>RAID</p></div>
-    <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">ELITE</h3>
+    <h3 class="package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space" />ELITE</h3>
     <p class="package-subtitle">High performance</p>
     <div class="pricebox"><sup>$</sup>189<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
@@ -92,16 +92,15 @@
         <dd class="split-center-value">Every 24-36 hours</dd>
     </dl>
     <div class="mid">
-        <a href="#" class="btn btn-primary over">order now</a>
+        <a href="#" class="btn btn-primary over">Order Now</a>
     </div>
 {% endblock %}
 
 {# commercial #}
 {% block commercial %}
-<div class="container">
-    <div class="island-nopad raised comtop">
-        <div class="combox-l pull-left">
-            <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier-c.png" alt="Commerical #1 Dedicated Package" class="tier-space">COMMERCIAL #1</h3>
+    <div class="row-fluid combox-row">
+        <div class="pull-left raised island combox">
+            <h3 class="package-title"><img class="tier-space" alt="Commerical #1 Dedicated Package" src="{{ app.request.basepath }}/img/package-icon-tier-c.png" />COMMERCIAL #1</h3>
             <p class="package-subtitle">Intense server grade machines</p>
             <div class="pricebox"><sup>$</sup>469<sup>95</sup><sub>/mo.</sub></div>
             <dl class="split-center">
@@ -119,11 +118,11 @@
                 <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
             </dl>
             <div class="com-mid">
-                <a href="#" class="btn btn-primary over">order now</a>
+                <a href="#" class="btn btn-primary over">Order Now</a>
             </div>
         </div>
-        <div class="combox pull-right compipe">
-            <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier-c.png" alt="Commercial #2 Dedicated Package" class="tier-space">COMMERCIAL #2</h3>
+        <div class="pull-left raised island combox">
+            <h3 class="package-title"><img class="tier-space" alt="Commercial #2 Dedicated Package" src="{{ app.request.basepath }}/img/package-icon-tier-c.png" />COMMERCIAL #2</h3>
             <p class="package-subtitle">Extreme performance</p>
             <div class="pricebox"><sup>$</sup>569<sup>95</sup><sub>/mo.</sub></div>
             <dl class="split-center">
@@ -141,11 +140,10 @@
                 <dd class="split-center-value">CentOS, cPanel, WHM</dd><br />
             </dl>
             <div class="com-mid">
-                <a href="#" class="btn btn-primary over">order now</a>
+                <a href="#" class="btn btn-primary over">Order Now</a>
             </div>
-        </div><br style="clear:both;" />
+        </div>
     </div>
-</div>
 {% endblock %}
 
 {# webhostingtabbednav #}
@@ -159,7 +157,7 @@
 {# webhostingtabbedcontent #}
 {% block webhostingtabbedcontent %}
 <!-- #uses -->
-<div class="tab-pane m-20" id="uses">
+<div class="tab-pane row" id="uses">
     <div class="span3 pull-left">
         <ul class="nav nav-tabs nav-stacked">
             <li><a href="#t1">E-Commerce</a></li>
@@ -198,7 +196,7 @@
     <table class="table table-striped">
         <caption class="a11y">Listing of Business Hosting Plan Specifications and Pricing</caption>
         <colgroup span="1" class="plan-specification-listing"></colgroup>
-        <colgroup span="1" class="plan-specification-example"></colgroup>
+        <colgroup span="1"></colgroup>
         <colgroup span="1"></colgroup>
         <colgroup span="1" class="plan-specification-featured"></colgroup>
         <colgroup span="1"></colgroup>
@@ -216,30 +214,25 @@
         <tfoot>
             <tr>
                 <th scope="row">Price</th>
-                <td><span class="smallprice">$119.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
-                <td><span class="smallprice">$139.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
-                <td><span class="smallprice">$189.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
-                <td><span class="smallprice">$469.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
-                <td><span class="smallprice">$569.95</span> /mo.
-                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$119.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
+                <td><span class="smallprice">$139.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
+                <td><span class="smallprice">$189.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
+                <td><span class="smallprice">$469.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
+                <td><span class="smallprice">$569.95</span> /mo.<a href="#" class="btn btn-primary over">Order Now</a></td>
             </tr>
         </tfoot>
         <tbody>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme1">Intel® CPU Specs</span>
-                <div id="showme1" class="collapse">
-                    <p>Every one of our dedicated servers is equipped with either Intel® Core® or Xeon® processors. This helps ensure the fastest and most reliable operation of your dedicated server. In addition, our Elite servers come equipped with a Quad Core Intel® Xeon® CPU with eight-way threading! This provides an affordable and efficient solution to handle even the most robust tasks.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme1">Intel® CPU Specs</button>
+                    <div id="showme1" class="collapse">
+                        <p>Every one of our dedicated servers is equipped with either Intel® Core® or Xeon® processors. This helps ensure the fastest and most reliable operation of your dedicated server. In addition, our Elite servers come equipped with a Quad Core Intel® Xeon® CPU with eight-way threading! This provides an affordable and efficient solution to handle even the most robust tasks.</p>
+                    </div>
                 </th>
                 <td>Core® E2220/E5400 2.4GHz Dual Core/2T</td>
                 <td>Xeon® 3430 2.4GHz Turbo Quad Core/4T</td>
                 <td>Xeon® 3440 2.53GHz Turbo Quad Core/8T</td>
-                <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 6C/12T </td>
+                <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 6C/12T</td>
                 <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 12C/24T</td>
             </tr>
             <tr>
@@ -268,10 +261,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme2">Disc Space</span>
-                <div id="showme2" class="collapse">
-                    <p>All Dedicated Servers come equipped with Serial ATA 7,200RPM hard drives. SATA is the next generation of hard drive and provides a faster, more reliable & more affordable data storage solution than is offered by most of our competitors.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme2">Disc Space</button>
+                    <div id="showme2" class="collapse">
+                        <p>All Dedicated Servers come equipped with Serial ATA 7,200RPM hard drives. SATA is the next generation of hard drive and provides a faster, more reliable & more affordable data storage solution than is offered by most of our competitors.</p>
+                    </div>
                 </th>
                 <td>2 x 160GB</td>
                 <td>500GB</td>
@@ -281,10 +274,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme3">RAID 1 Fault Tolerant</span>
-                <div id="showme3" class="collapse">
-                    <p>RAID 1 (Redundant Array of Independent Disks) is a way of storing your data in two places by placing data on multiple hard disks. By placing data on multiple disks your data is conveniently and automatically backed up, increasing fault tolerance.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme3">RAID 1 Fault Tolerant</button>
+                    <div id="showme3" class="collapse">
+                        <p>RAID 1 (Redundant Array of Independent Disks) is a way of storing your data in two places by placing data on multiple hard disks. By placing data on multiple disks your data is conveniently and automatically backed up, increasing fault tolerance.</p>
+                    </div>
                 </th>
                 <td><span class="ir unacceptable">Not Included</span></td>
                 <td><span class="ir unacceptable">Not Included</span></td>
@@ -294,11 +287,14 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme4">Monthly Premium Transfer</span>
-                <div id="showme4" class="collapse">
-                    <p>Today's broadband connections demand faster and more reliable performance from your web site and email. Our network was specifically built to be expandable for capacity and for throughput. Our data center is connected to the Internet through 3 separate providers with an on demand capacity exceeding 7,500 MBits. We utilize BGP4 Smart Routing and can switch instantly and transparently away from any of our providers that are experiencing latency or downtime. Our advanced knowledge and planning allow us to provide extremely fast and reliable service while still offering affordable web hosting.</p>
-                    <ul><li>Smart Routing (BGP4) over 3 Tier I Providers</li><li>On Demand bandwidth exceeding 7,500 MBits</li></ul>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme4">Monthly Premium Transfer</button>
+                    <div id="showme4" class="collapse">
+                        <p>Today's broadband connections demand faster and more reliable performance from your web site and email. Our network was specifically built to be expandable for capacity and for throughput. Our data center is connected to the Internet through 3 separate providers with an on demand capacity exceeding 7,500 MBits. We utilize BGP4 Smart Routing and can switch instantly and transparently away from any of our providers that are experiencing latency or downtime. Our advanced knowledge and planning allow us to provide extremely fast and reliable service while still offering affordable web hosting.</p>
+                        <ul>
+                            <li>Smart Routing (BGP4) over 3 Tier I Providers</li>
+                            <li>On Demand bandwidth exceeding 7,500 MBits</li>
+                        </ul>
+                    </div>
                 </th>
                 <td>2500GB</td>
                 <td>3000GB</td>
@@ -308,10 +304,10 @@
             </tr>
             <tr>
                 <th scope="row">
-                <span class="curs" data-toggle="collapse" data-target="#showme5">Full cPanel License</span>
-                <div id="showme5" class="collapse">
-                    <p>Each one of our Dedicated Server plans includes a full license to the award winning cPanel control panel software. Most other companies offer this feature at additional monthly and set-up costs or don't offer it at all. Additional charges apply for Softaculous, please ask your sales person for details.</p>
-                </div>
+                    <button class="btn-link" data-toggle="collapse" data-target="#showme5">Full cPanel License</button>
+                    <div id="showme5" class="collapse">
+                        <p>Each one of our Dedicated Server plans includes a full license to the award winning cPanel control panel software. Most other companies offer this feature at additional monthly and set-up costs or don't offer it at all. Additional charges apply for Softaculous, please ask your sales person for details.</p>
+                    </div>
                 </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -321,64 +317,72 @@
             </tr>
         </tbody>
     </table>  
-    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>
+    <a href="#" class="btn btn-info">View More Specs</a>
 </div><!-- /#specifications -->
 <!-- #support -->
-<div class="tab-pane" id="support">
-    <div class="island0 pull-left adthree mr20">
+<div class="tab-pane row" id="support">
+    <div class="span4">
         <h2>24/7 Award-Winning Support</h2>
         <p>With optional full Root Access management, you are in control. But that doesn’t mean you’re on your own. Get a hold of us either by phone, email or live chat.</p><p>We are here to help. But with a partially managed server, there are limits as to what our responsibilities are. Please see the below table for more information.</p>
     </div>
-    <div class="island20 pull-left raised adthree mr20">
-        <h3 class="">Coverage</h3>
-        <ul class="checkli">
-            <li>CentOS updates and security patches</li>
-            <li>cPanel and WHM support</li>
-            <li>Hardware maintenance and replacement</li>
-            <li>System level performance monitoring</li>
-            <li>Monitoring and maintaining network uptime</li>
-            <li>Network security support</li>
-            <li>Apache, MySQL, Exim and PureFTPd web server support</li>
-        </ul>
+    <div class="span4">
+        <div class="island raised">
+            <h3 class="">Coverage</h3>
+            <ul class="checkli">
+                <li>CentOS updates and security patches</li>
+                <li>cPanel and WHM support</li>
+                <li>Hardware maintenance and replacement</li>
+                <li>System level performance monitoring</li>
+                <li>Monitoring and maintaining network uptime</li>
+                <li>Network security support</li>
+                <li>Apache, MySQL, Exim and PureFTPd web server support</li>
+            </ul>
+        </div>
     </div>
-    <div class="island20 pull-left raised adthree">
-        <h3 class="">Your Responsibilites</h3>
-        <ul class="checkli">
-            <li>Advanced server administration</li>
-            <li>Databse administration</li>
-            <li>Custom application support</li>
-            <li>User script errors</li>
-            <li>Server backups</li>
-        </ul>
+    <div class="span4">
+        <div class="island raised">
+            <h3 class="">Your Responsibilites</h3>
+            <ul class="checkli">
+                <li>Advanced server administration</li>
+                <li>Databse administration</li>
+                <li>Custom application support</li>
+                <li>User script errors</li>
+                <li>Server backups</li>
+            </ul>
+        </div>
     </div>
 </div><!-- /#support -->
 <!-- #developers -->
-<div class="tab-pane" id="developers">
-    <div class="island0 pull-left adthree mr20">
+<div class="tab-pane row" id="developers">
+    <div class="span4">
         <h2>Spend time with clients and coding, not hassling with hosting.</h2>
         <p>Take control of your Dedicated Server and utilize it as you see fit. With our CentOS environment, and optional Root Access, the possibilities are endless. Call us today to get started!</p>
     </div>
-    <div class="island20 pull-left raised adthree mr20">
-        <h3 class="">Included:</h3>
-        <ul class="checkli">
-            <li>CentOS updates and security patches</li>
-            <li>cPanel and WHM support</li>
-            <li>Hardware maintenance and replacement</li>
-            <li>System level performance monitoring</li>
-            <li>24-hour server and bandwidth monitoring</li>
-            <li>Network security support</li>
-            <li>Apache (Linux) web server support</li>
-        </ul>
+    <div class="span4">
+        <div class="island raised">
+            <h3 class="">Included:</h3>
+            <ul class="checkli">
+                <li>CentOS updates and security patches</li>
+                <li>cPanel and WHM support</li>
+                <li>Hardware maintenance and replacement</li>
+                <li>System level performance monitoring</li>
+                <li>24-hour server and bandwidth monitoring</li>
+                <li>Network security support</li>
+                <li>Apache (Linux) web server support</li>
+            </ul>
+        </div>
     </div>
-    <div class="island20 pull-left raised adthree">
-        <h3 class="">Rock-solid Hardware</h3>
-        <ul class="checkli">
-            <li>High-performance Dell servers</li>
-            <li>Custom Advanced Policy Firewall</li>
-            <li>Enterprise Class Linux OS (CentOS)</li>
-            <li>Rebootless kernel updates (Ksplice)</li>
-            <li>RAID 1 High-through put data storage (available on Elite Dedicated Server packages only)</li>
-        </ul>
+    <div class="span4">
+        <div class="island raised">
+            <h3 class="">Rock-solid Hardware</h3>
+            <ul class="checkli">
+                <li>High-performance Dell servers</li>
+                <li>Custom Advanced Policy Firewall</li>
+                <li>Enterprise Class Linux OS (CentOS)</li>
+                <li>Rebootless kernel updates (Ksplice)</li>
+                <li>RAID 1 High-through put data storage (available on Elite Dedicated Server packages only)</li>
+            </ul>
+        </div>
     </div>
 </div><!-- /#developers -->
 {% endblock %}
