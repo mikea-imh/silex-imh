@@ -5,7 +5,13 @@
           e.preventDefault();
           $(this).tab('show');
         });
-        
+
+        // adds collapse functionality
+        $('.collapse').click(function (e) {
+          e.preventDefault();
+          $(this).collapse('toggle');
+        });
+
         // Apply classes to each table cell indicating column
         var numCols = $('colgroup').length;
         $('#specifications td, #specifications th').each(function(i) {
