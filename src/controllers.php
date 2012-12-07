@@ -38,6 +38,11 @@ $app->match('/domains', function() use ($app) {
         'domains.html.twig');
 })->bind('domains');
 
+$app->match('/privacy-policy', function() use ($app) {
+    return $app['twig']->render(
+        'privacy_policy.html.twig');
+})->bind('privacy_policy');
+
 $app->match('/webdesign', function() use ($app) {
     return $app['twig']->render(
         'webdesign.html.twig');

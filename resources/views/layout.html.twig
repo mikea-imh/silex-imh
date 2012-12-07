@@ -66,14 +66,24 @@
                     <li {% if 'domains' == active %}class="active"{% endif %}><a href="{{ path('domains') }}">Domains</a></li>
                     <li {% if 'webdesign' == active %}class="active"{% endif %}><a href="{{ path('webdesign') }}">Web Design</a></li>
                     <li {% if 'site_hosting_tools' == active %}class="active"{% endif %}><a href="{{ path('site_hosting_tools') }}">Site Hosting Tools</a></li>
-                    <li {% if 'why_us' == active %}class="active"{% endif %}><a href="{{ path('why_us') }}">Why Us?</a></li>
+                    <li class="dropdown{% if 'account' == active %} active{% endif %}">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Meet Us</a>
+                        <ul class="dropdown-menu">
+                        <li {% if 'business_hosting' == active %}class="active"{% endif %}><a href="{{ path('business_hosting') }}">Meet Us</a></li>
+                        <li {% if 'vps_hosting' == active %}class="active"{% endif %}><a href="{{ path('vps_hosting') }}">About Us</a></li>
+                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Awards &amp; Partners</a></li>
+                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Blog</a></li>
+                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">We're Hiring</a></li>
+                        <li {% if 'dedicated_servers' == active %}class="active"{% endif %}><a href="{{ path('dedicated_servers') }}">Contact Us</a></li>
+                        </ul>
+                    </li><!-- /.dropdown -->
                     <li {% if 'support' == active %}class="active"{% endif %}><a href="{{ path('support') }}">Support Center</a></li>
                 </ul><!-- /.nav -->
             </div>
         </div>
     </nav>
     <div id="main" role="main">
-        <div class="wrap intro {{ active|e }}">
+        <div class="intro wrap {{ active|e }}">
             <div class="container">
                 {# intro #}
                 {% block intro %}
@@ -85,12 +95,13 @@
             {% endblock %}
     </div><!-- /#main -->
     {# pre-footer sales area #}
-    {% if not (active in ['business_hosting', 'dedicated_servers', 'vps_hosting', 'cheap_hosting'])  %}
-    {% include 'common/select_hosting_package.html.twig' %}
+    {% if not (active in ['business_hosting', 'homepage', 'dedicated_servers', 'vps_hosting', 'cheap_hosting', 'webdesign','privacy_policy']) %}
+        {% include 'common/select_hosting_package.html.twig' %}
     {% endif %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="{{ app.request.basepath }}/assets/js/scripts.js"></script>
+    <span class="{% if (active in ['homepage','webdesign','privacy_policy']) %} solo-gears {% endif %}"></span>
     <footer role="contentinfo" class="wrap">
         <div class="container">
             <ul class="nav nav-list span2">
