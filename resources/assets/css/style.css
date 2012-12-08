@@ -284,9 +284,9 @@ header .nav-pills-contact a.btn {
   height: 220px;
 }
 
-.intro.homepage h1 {
+.intro.homepage h1, .intro.business_hosting h1, .intro.vps_hosting h1, .intro.dedicated_servers h1 {
   color: white;
-  margin-top: 18px;
+  padding-bottom: 5px;
 }
 
 .intro.homepage p {
@@ -354,15 +354,6 @@ img {
   padding: 5px 4px 10px 8px;
   text-align: center;
   width: 50px;
-}
-
-h4 {
-  color: #c52228;
-  font-family: adelle sans;
-  font-size: 17px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0 0 4px;
 }
 
 /**
@@ -463,10 +454,6 @@ h4 {
 }
 .matrix > .matrix-last {
   border-bottom: none;
-}
-
-.well {
-  background-color: #cfcfcf;
 }
 
 .well .row-fluid .span4 {
@@ -709,16 +696,6 @@ footer a {
 
 /*------------------------------*/
 
-h1 {
-  font-size: 33px;
-  font-weight: 600;
-  line-height: 33px;
-}
-
-h2 {
-  font-weight: 500;
-}
-
 /**
  * Applies to text in special area Tools & Tech on homepage
  */
@@ -734,6 +711,7 @@ h2 {
 p{
   padding-bottom: 4px;
 }
+
 /**
  * Advertising strip logo and text spacing
  */
@@ -918,14 +896,6 @@ th > .btn-link:hover {
 
 .white {
   color: #fff;
-}
-
-/**
- * Main package title for hosting options
- */
-.package-title h3 {
-  margin: 0;
-  padding: 0;
 }
 
 /**
@@ -1194,20 +1164,6 @@ li {
 }
 
 /**
- * CTA properties to be added to bootstrap
- */
-.btn-primary, 
-.btn-primary:hover {
-  color: #fff;
-  margin: 0 auto 0;
-
-}
-
-.btn-primary:active {
-  margin: 1px auto -1px;
-}
-
-/**
  * Special slider CTA
  */
 .btn-white {
@@ -1226,6 +1182,16 @@ li {
 .btn-white:active {
   margin-top: 6px;
 }
+
+.btn-primary:hover; {
+  color: #fff;
+  margin: 0 auto;
+}
+
+.btn-primary:active {
+  margin: 1px auto -1px;
+}
+
 
 /**
  * IMH logo in footer
