@@ -45,7 +45,11 @@ $app->register(new TwigServiceProvider(), array(
         'strict_variables' => true
     ),
     'twig.form.templates' => array('form_div_layout.html.twig', 'common/form_div_layout.html.twig'),
-    'twig.path'           => array(__DIR__ . '/../resources/views')
+    'twig.path'           => array(
+        __DIR__ . '/../resources/views',
+        __DIR__ . '/../resources/softaculous/',
+
+        )
 ));
 
 if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {

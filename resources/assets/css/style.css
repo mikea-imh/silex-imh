@@ -1804,6 +1804,31 @@ p {
   border-top: 40px solid #327fb9;
 }
 
+/**
+ * Longtail sales page table styles
+ */
+
+table.longtail {
+  width: 100%;
+}
+
+table.longtail tr th {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: #C52228;
+  text-align: left;
+  width: 33%;
+}
+
+table.longtail tr td {
+  background-color: #ededed;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  width: 33%;
+  vertical-align: top;
+}
 /*------------------------------------*\
     SALES PAGES LONGTAIL LAYOUT
 \*------------------------------------*/
