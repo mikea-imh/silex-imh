@@ -243,6 +243,10 @@ header .nav-pills-contact a.btn {
   background: url(../../img/icon-tree.png) no-repeat 0 0;
 }
 
+.icon-greencheck {
+  background: url(../../img/ideal.png) no-repeat 0 0;
+}
+
 .muted {
   color: #888;
 }
@@ -269,12 +273,11 @@ header .nav-pills-contact a.btn {
 }
 
 /**
- * Apply blue background with noise to element
-
+ * Apply gray background with noise to element
+*/
 .intro {
-  background: url(../../img/bluenoise.png) repeat 0 0;
-  border-top: 2px solid #232323;
-} */
+  background: url(../../img/graynoise.png) repeat 0 0;
+} 
 /**
  * Main leader/banner factory with buttons underneath
  */
@@ -586,7 +589,7 @@ textarea,
 input[type="text"] {
   border-radius: 3px;
   box-shadow: 0 3px 0 #b2b2b2;
-  padding: 18px 12px;
+  padding: 12px 12px;
 }
 
 input:-moz-placeholder,
@@ -629,7 +632,7 @@ h3 {
 }
 
 .span6:nth-child(even) > .site-hosting-tool,
-.span6:nth-child(even) > h2 {
+.span6:nth-child(even) > .site-hosting-tool > h2 {
   margin-left: 10px;
 }
 
@@ -695,6 +698,58 @@ footer a {
 
 
 /*------------------------------*/
+
+/**
+ * Domains page search input and wells / spacing
+ */
+.domains-pill {
+  background-color: #ccc;
+}
+
+.domains-pill 
+input {
+  background: url(../../img/icon-magnifying.png) no-repeat 10px 12px #fff;
+  color: #ccc;
+  font-size: 20px;
+  margin: 0 8px 3px 3px;
+  padding-left: 40px;
+  width: 451px;
+}
+
+.domains-pill > .inputtext {
+  color: #888;
+}
+
+input::-webkit-input-placeholder {
+  color: #888;
+}
+
+.tall {
+  height: 29px;
+  margin-top: -1px;
+  padding-top: 13px;
+}
+
+.domainwell {
+  height: 70px;
+}
+
+/**
+ * Domains page gears placement in banner
+ */
+.gears-domains {
+  margin: -40px 0 0 0;
+}
+
+/**
+ * Domains page quadrants
+ */
+.domain-quadrants .span6 {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 0 30px 40px 0;
+}
 
 /**
  * Applies to text in special area Tools & Tech on homepage
