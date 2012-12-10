@@ -89,7 +89,7 @@ $app->get('/{product}/articles/{page}', function($product, $page) use ($app){
 })
 ->bind('longtail_dedi_vps');
 
-// cpanel controller $cpanel
+// cpanel controller
 $app->match('/cpanel-hosting/', function() use ($app) {
     return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('cpanel_site_hosting_tools');
@@ -127,6 +127,22 @@ $app->match('/prestashop-hosting/', function() use ($app) {
 $app->match('/prestashop-hosting.html', function() use ($app) {
     return $app['twig']->render('/../longtail-pages/prestashop/prestashop-hosting.html.twig');
 })->bind('longtail_prestashop_hosting_landing_page');
+
+//softaculous controller
+$app->match('/softaculous/', function() use ($app){
+    return $app['twig']->render('/../softaculous/softaculous.html.twig');
+})
+->bind('longtail_softaculous_landng_redirect');
+
+$app->match('/softaculous.html', function() use ($app){
+    return $app['twig']->render('/../softaculous/softaculous.html.twig');
+})
+->bind('longtail_softaculous_landing');
+
+$app->match('/softaculous/available-softaculous-applications.html', function() use ($app){
+    return $app['twig']->render('/../softaculous/available-softaculous-applications.html.twig');
+})
+->bind('longtail_softaculous_available_applications');
 
 //opencart controller
 $app->match('/opencart/', function() use ($app){
