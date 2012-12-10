@@ -138,47 +138,158 @@ $app->match('/contact', function() use ($app) {
         'contact.html.twig');
 })->bind('contact');
 
-// dedi/vps longtail controller $articles
+// dedi/vps longtail controller
 $app->get('/{product}/articles/', function($product) use ($app){
     return $app['twig']->render('webhosting_plan/'.$product.'.html.twig');
 })
 ->bind('redirect');
 
-$app->get('/{product}/articles/{page}', function($product, $page) use ($app){
-    return $app['twig']->render('/../'.$product.'/articles/'.$page.'.twig');
+$app->get('/vps-hosting/articles/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/vps/'.$page.'.twig');
 })
-->bind('longtail_dedi_vps');
+->bind('longtail_vps');
 
+$app->get('/dedicated-servers/articles/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/dedicated-servers/'.$page.'.twig');
+})
+->bind('longtail_dedi');
 
-// cpanel controller $cpanel
+// cpanel controller
 $app->match('/cpanel-hosting/', function() use ($app) {
-    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+    return $app['twig']->render('/../longtail-pages/cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('cpanel_site_hosting_tools');
 
 $app->match('/host-with-cpanel.html', function() use ($app) {
-    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+    return $app['twig']->render('/../longtail-pages/cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('longtail_host_with_cpanel');
 
 $app->get('/cpanel-hosting/{page}', function($page) use ($app){
-    return $app['twig']->render('/../cpanel-hosting/'.$page.'.twig');
+    return $app['twig']->render('/../longtail-pages/cpanel-hosting/'.$page.'.twig');
 })
 ->bind('longtail_cpanel');
 
+//softaculous controller
+$app->match('/softaculous/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/softaculous/softaculous.html.twig');
+})
+->bind('longtail_softaculous_landng_redirect');
+
+$app->match('/softaculous.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/softaculous/softaculous.html.twig');
+})
+->bind('longtail_softaculous_landing');
+
+$app->get('/softaculous/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/softaculous/'.$page.'.twig');
+})
+->bind('longtail_softaculous');
+
+// prestashop controller
+$app->match('/prestashop-hosting/', function() use ($app) {
+    return $app['twig']->render('/../longtail-pages/prestashop/prestashop-hosting.html.twig');
+})->bind('prestashop_hosting_redirect');
+
+$app->match('/prestashop-hosting.html', function() use ($app) {
+    return $app['twig']->render('/../longtail-pages/prestashop/prestashop-hosting.html.twig');
+})->bind('longtail_prestashop_hosting_landing_page');
+
+// moodle controller
+$app->match('/moodle-hosting/', function() use ($app) {
+    return $app['twig']->render('/../longtail-pages/moodle-hosting/moodle-hosting.html.twig');
+})->bind('moodle_hosting_redirect');
+
+$app->match('/moodle-hosting.html', function() use ($app) {
+    return $app['twig']->render('/../longtail-pages/moodle-hosting/moodle-hosting.html.twig');
+})->bind('longtail_moodle_hosting_landing_page');
+
+// prestashop controller
+$app->match('/prestashop-hosting/', function() use ($app) {
+    return $app['twig']->render('/../prestashop/prestashop-hosting.html.twig');
+})->bind('prestashop_hosting_redirect');
+
+$app->match('/prestashop-hosting.html', function() use ($app) {
+    return $app['twig']->render('/../prestashop/prestashop-hosting.html.twig');
+})->bind('longtail_prestashop_hosting_landing_page');
+
 //opencart controller
-$app->match('/opencart/', function() use ($app){
-    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
+$app->match('/opencart-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/opencart-hosting/opencart-hosting.html.twig');
 })
 ->bind('longtail_opencart_landng');
 
 $app->match('/opencart-hosting.html', function() use ($app){
-    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
+    return $app['twig']->render('/../longtail-pages/opencart-hosting/opencart-hosting.html.twig');
 })
 ->bind('longtail_opencart');
 
-$app->match('/opencart/opencart-templates.html', function() use ($app){
-    return $app['twig']->render('/../opencart/opencart-templates.html.twig');
+$app->match('/opencart/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/opencart-hosting/'.$page.'.twig');
 })
 ->bind('longtail_opencart_templates');
+
+//drupal controller
+$app->match('/drupal-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/drupal-hosting/drupal-hosting.html.twig');
+})
+->bind('longtail_drupal_landng_redirect');
+
+$app->match('/drupal-hosting.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/drupal-hosting/drupal-hosting.html.twig');
+})
+->bind('longtail_drupal_landing');
+
+$app->get('/drupal-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/drupal-hosting/'.$page.'.twig');
+})
+->bind('longtail_drupal');
+
+//joomla controller
+$app->match('/joomla-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/joomla-hosting/joomla-hosting.html.twig');
+})
+->bind('longtail_joomla_landng_redirect');
+
+$app->match('/joomla-hosting.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/joomla-hosting/joomla-hosting.html.twig');
+})
+->bind('longtail_joomla_landing');
+
+$app->get('/joomla-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/joomla-hosting/'.$page.'.twig');
+})
+->bind('longtail_joomla');
+
+//wordpress controller
+$app->match('/wordpress-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/wordpress-hosting/wordpress-hosting.html.twig');
+})
+->bind('longtail_wordpress_landng_redirect');
+
+$app->match('/wordpress-hosting.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/wordpress-hosting/wordpress-hosting.html.twig');
+})
+->bind('longtail_wordpress_landing');
+
+$app->get('/wordpress-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/wordpress-hosting/'.$page.'.twig');
+})
+->bind('longtail_wordpress');
+
+//webbuilder controller
+$app->match('/webbuilder/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/webbuilder/webbuilder.html.twig');
+})
+->bind('longtail_webbuilder_landng_redirect');
+
+$app->match('/webbuilder.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/webbuilder/webbuilder.html.twig');
+})
+->bind('longtail_webbuilder_landing');
+
+$app->get('/webbuilder/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/webbuilder/'.$page.'.twig');
+})
+->bind('longtail_webbuilder');
 
 // form controller
 $app->match('/form', function() use ($app) {
