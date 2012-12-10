@@ -1,0 +1,116 @@
+{% extends 'longtail-joomla.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Secure Joomla Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Secure Joomla Web Hosting</h1>
+    </div>
+    <div class="span3">
+        <p>Is your web host taking steps to secure Joomla?</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+        <p>Secure Joomla Hosting through InMotion Hosting is easy because we've done half of the work already for you! There are several steps that all webmasters should ensure are taken when securing Joomla, some of them the Server Administrators need to do and some of them the site owners should be on top of. Joomla security is not something that you can ignore, so be sure to find a joomla hosting provider that has the knowledge and know how to secure their servers (like InMotion Hosting!).</p>
+        <h2>Secure Joomla Hosting runs suPHP</h2>
+            <table class="table longtail">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <p>How does suPHP work?</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>The Technical Details</p>
+                        </td>
+                        <td>
+                            <p>Helping you understand...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>When you run your Joomla website using suPHP, the server runs all php scripts as your server's user. This makes sense, right? Well, before suPHP, php scripts were executed as Apache's nobody user. This meant that if you had a folder set with 777 permissions, other users on the server would potentially have access to change files in that directory! When <a href="/joomla-hosting/joomla-reseller-hosting">reselling Joomla hosting</a>, segregating all the accounts on your server is very important. A major plus of suPHP is that it eliminates the need to run insecure 777 permissions. The most secure shared servers run suPHP.</p>
+                        </td>
+                        <td>
+                            <p>You may have seen in shopping malls where individual stores have their own metal gate they can use when the store is closed. If someone breaks into the mall in the middle of the night, they wouldn't be able to browse the entire mall and steal from each individual store. That metal gate is much like the security benefits of suPHP. suPHP blocks off your account in a way from other users, so that if their account is hacked, the hacker won't be able to simply stroll into your account and make changes.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <h2>Joomla websites should be protected by mod_security</h2>
+        <table class="table longtail">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <p>What is mod_security</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>The Technical Details</p>
+                        </td>
+                        <td>
+                            <p>Helping you understand...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Mod_security is a type of firewall that protects your website from know types of hack attempts. Websites have been hacked since the early days of the internet, and there are many known types of different attack types. Mod_security has an internal database of common hacking methods, and blocks them at a server level (meaning the hack code never even reaches Joomla!)</p>
+                        </td>
+                        <td>
+                            <p>Continuing with our Shopping Mall example, mod_security would be like a high tech invisible metal detector. Shoppers walking into the mall are scanned before they even walk through the doors. If the detection system notices a common weapon, such as a knife or a gun, the doors are locked immediately - blocking the intruder's entrance.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <h2>Joomla Backups - it's like website insurance!</h2>
+        <img src="{{ app.request.basepath }}/img/joomla-hosting/easy-joomla-backups.gif" class="sales-page-left-float" alt="easy joomla backups image" />
+            <table class="table longtail">
+                <thead>
+                    <tr>
+                        <th colspan="2">
+                            <p>What is mod_security</p>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p>The Technical Details</p>
+                        </td>
+                        <td>
+                            <p>Helping you understand...</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><a href="/joomla-hosting/joomla-cpanel">cPanel</a>, the control panel available with all <a href="/joomla-hosting">InMotion Hosting Joomla accounts</a>, gives you the power to create backups of your website with just a few clicks. If ever your Joomla website is compromised, restoring a website backup can literally roll your website back as if the hack never happened.</p>
+                        </td>
+                        <td>
+                            <p>Account backups are like insurance. If a store within a mall is ever broken into, with adequate insurance, the store owners can have everything replaced.</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <p>The Joomla software has been around for many years now, and is quite secure. Many times Joomla websites are compromised through insecure 3rd party extensions however. So if your Joomla website is ever hacked, it may not even be the fault of the Joomla software itself! You'll also want to keep in mind that no website is 100% safe. For example, you may have heard about the Sony Playstation website hack in 2011, which took the Playstation network down for days. If your website is on the internet, it is vulnerable to malicious activity.</p>
+        <p>If you're concerned about securing Joomla, look to InMotion Hosting and <a href="/joomla-hosting/joomla-hosting-reviews">read our reviews</a>. Our System Administration team already has security measures in place on each server, and our helpful Support Team is available 24/7 if you have any questions. If you're on the search for Joomla Hosting, why not browse through one of our shared hosting solutions? For even busier Joomla websites, we're sure to have a <a href="/vps-hosting">Virtual Private Server</a> or <a href="/dedicated-servers">Dedicated Hosting Server</a> hosting package to meet your requirements.</p>
+    </div>
+    <!--  end span8  -->
+{% endblock %}
