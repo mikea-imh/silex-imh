@@ -38,6 +38,11 @@ $app->match('/domains', function() use ($app) {
         'domains.html.twig');
 })->bind('domains');
 
+$app->match('/hosting-affiliate-program', function() use ($app) {
+    return $app['twig']->render(
+        'hosting_affiliate_program.html.twig');
+})->bind('hosting_affiliate_program');
+
 $app->match('/webdesign', function() use ($app) {
     return $app['twig']->render(
         'webdesign.html.twig');
