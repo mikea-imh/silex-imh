@@ -105,17 +105,17 @@ $app->get('/cpanel-hosting/{page}', function($page) use ($app){
 
 //softaculous controller
 $app->match('/softaculous/', function() use ($app){
-    return $app['twig']->render('/../softaculous/softaculous.html.twig');
+    return $app['twig']->render('/../longtail-pages/softaculous/softaculous.html.twig');
 })
 ->bind('longtail_softaculous_landng_redirect');
 
 $app->match('/softaculous.html', function() use ($app){
-    return $app['twig']->render('/../softaculous/softaculous.html.twig');
+    return $app['twig']->render('/../longtail-pages/softaculous/softaculous.html.twig');
 })
 ->bind('longtail_softaculous_landing');
 
 $app->get('/softaculous/{page}', function($page) use ($app){
-    return $app['twig']->render('/../softaculous/'.$page.'.twig');
+    return $app['twig']->render('/../longtail-pages/softaculous/'.$page.'.twig');
 })
 ->bind('longtail_softaculous');
 
