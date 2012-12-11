@@ -139,10 +139,10 @@ $app->match('/softaculous.html', function() use ($app){
 })
 ->bind('longtail_softaculous_landing');
 
-$app->match('/softaculous/available-softaculous-applications.html', function() use ($app){
-    return $app['twig']->render('/../softaculous/available-softaculous-applications.html.twig');
+$app->get('/softaculous/{page}', function($page) use ($app){
+    return $app['twig']->render('/../softaculous/'.$page.'.twig');
 })
-->bind('longtail_softaculous_available_applications');
+->bind('longtail_softaculous');
 
 //opencart controller
 $app->match('/opencart/', function() use ($app){
