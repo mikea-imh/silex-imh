@@ -83,6 +83,11 @@ $app->match('/support', function() use ($app) {
         'support.html.twig');
 })->bind('support');
 
+$app->match('/contact', function() use ($app) {
+    return $app['twig']->render(
+        'contact.html.twig');
+})->bind('contact');
+
 // dedi/vps longtail controller $articles
 $app->get('/{product}/articles/', function($product) use ($app){
     return $app['twig']->render('webhosting_plan/'.$product.'.html.twig');

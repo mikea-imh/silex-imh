@@ -670,8 +670,8 @@ h3 {
 }
 
 /**
-+ * Apply gears to pre-footer sales area
-+ */
+ * Apply gears to pre-footer sales area
+ */
 .wrap.pre-footer {
   padding-bottom: 0;
 }
@@ -693,13 +693,117 @@ footer {
   background: #232323;
   color: #888;
 }
+
 footer p,
 footer h5 {
   text-align: right;
 }
+
 footer a {
   color: #888;
 }
+
+
+/**
+ * Contact Us
+ */
+.row-fluid.sunken.contact {
+  padding: 0;
+}
+
+.row-fluid.sunken.contact > .span4 > .fence-right {
+  min-height: 155px;
+}
+
+.fence-right {
+  border-right: 1px solid #ccc;
+}
+
+.contact > .span4 > div {
+  padding: 20px;
+}
+
+a.map {
+  line-height: 1.1;
+  margin: 16px;
+  text-transform: uppercase;
+  width: 40px;
+}
+
+.icon-mail {
+  background: url(../../img/icon-mail.png) no-repeat 0 0;
+  height: 24px;
+  line-height: 24px;
+  width: 24px;
+}
+
+.postal-address {
+  margin: 16px 0;
+  width: 180px;
+}
+
+.postal-stripes {
+  background-image: -webkit-repeating-linear-gradient(-60deg,
+  #fff,
+  #fff 10px,
+  #62a0cf 10px,
+  #62a0cf 20px,
+  #fff 20px,
+  #fff 30px,
+  #d66468 30px,
+  #d66468 40px
+  );
+  background-image: repeating-linear-gradient(-60deg,
+  #fff,
+  #fff 10px,
+  #62a0cf 10px,
+  #62a0cf 20px,
+  #fff 20px,
+  #fff 30px,
+  #d66468 30px,
+  #d66468 40px
+  );
+  height: 10px;
+  width: inherit;
+}
+.contact-details {
+  padding: 20px;
+}
+
+.raised.contact {
+  border: 1px solid #ddd;
+}
+
+h3.contact {
+  border-top: 1px solid #ccc;
+  font-size: 20px;
+  font-weight: 400;
+  padding-top: 23px;
+  margin-top: 24px;
+  text-transform: uppercase;
+}
+
+.row-fluid.contact > .span6.department-details > h3.contact {
+  border-top: none;
+}
+
+h3.contact + .row-fluid {
+  margin-top: 20px;
+}
+
+.span6.department-details {
+  padding-right: 10px;
+}
+
+.span6.department-details + .span6.department-details {
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+.nav li a.inline {
+  display: inline;
+}
+
 
 @media (min-width: 768px) and (max-width: 979px) {
 
