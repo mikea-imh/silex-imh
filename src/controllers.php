@@ -43,6 +43,11 @@ $app->match('/hosting-affiliate-program', function() use ($app) {
         'hosting_affiliate_program.html.twig');
 })->bind('hosting_affiliate_program');
 
+$app->match('/privacy-policy', function() use ($app) {
+    return $app['twig']->render(
+        'privacy_policy.html.twig');
+})->bind('privacy_policy');
+
 $app->match('/webdesign', function() use ($app) {
     return $app['twig']->render(
         'webdesign.html.twig');

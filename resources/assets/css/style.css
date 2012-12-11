@@ -715,6 +715,21 @@ footer a {
 
 /*------------------------------*/
 
+.privacy {
+  color: #c52228;
+  font-size: 18px;
+  margin: 30px 0 30px 30px;
+}
+
+.privacy li {
+  margin-bottom: 20px;
+}
+
+.privacy p {
+  font-size: 13px;
+  color: #232323;
+}
+
 .carousel-control {
   margin-top: 20px;
 }
@@ -843,7 +858,7 @@ input::-webkit-input-placeholder {
  * Placement for gears etc. on pages with banners
  */
 .banner-img {
-  margin: -40px 0 0 0;
+  margin: -44px 0 0 0;
 }
 
 /**
