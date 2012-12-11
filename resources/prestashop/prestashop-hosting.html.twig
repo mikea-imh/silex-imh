@@ -1,0 +1,117 @@
+{% extends 'longtail-prestashop.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Free PrestaShop Application{% endblock %}
+
+{# keywords #}
+{% block keywords %}An easy-to-use e-commerce solution{% endblock %}
+
+{# description #}
+{% block description %}Software specifically designed to work with a VPS, cPanel VPS Optimized provides better performance without a loss in functionality.{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Host with cPanel</h1>
+    </div>
+    <div class="span3">
+        Hosting Has Never Been Easier
+    </div>
+{% endblock %}
+
+{% block container %}
+
+    {% block left_column %}
+        <div class="span8">
+
+            <h2>The PrestaShop Web Host Experts</h2>
+            <p>PrestaShop is a free e-commerce tool that can be easily installed on any hosting package that InMotion offers. With over 310 features, hundreds of themes and thousands of PrestaShop modules to choose from, you can customize your shopping cart to function how you want it to.</p>
+
+            <p>As one of the premiere open source shopping carts, PrestaShop is supported by a devoted team of developers and designers. All working together to give you and your customers the best experience. Here are some of the features PrestaShop has to offer:</p>
+
+
+            <h4 class="features-collapse">Features</h4>
+
+            <!--  collapse table  -->
+
+            <ul class="longtail-features-collapse">
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/prestashop/search-engine-icon.png" alt="prestashop search engine icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Search Engine Friendly</p>
+                        </div>
+                        <div id="demo" class="collapse" data-parent="menu">
+                            <p>PrestaShop gives you a lot of options to make your online presence known. Custom URL's, keyword tags, Google Site Map, meta information for each item, and tags for each product means you can get your products and website seen without having to pay extraordinary amounts of money.</p>
+                        </div>
+                </li>
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/prestashop/advanced-reporting-icon.jpg" alt="prestashop advanced reporting icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Advanced Reporting</p>
+                        </div>
+                        <div id="demo" class="collapse" data-parent="menu">
+                            <p>Increase the performance of your store. Review sales, customer profiles, track visitors to see what they are looking at, and most importantly, track sales! Included is also affiliate statistics to help you improve where your traffic is coming from.</p>
+                        </div>
+                </li>
+            </ul>
+
+            <ul class="longtail-features-collapse">
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/prestashop/security.jpg" alt="prestashop security icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Marketing</p>
+                        </div>
+                    <div id="demo" class="collapse" data-parent="menu">
+                        <p>With automated email follow ups, newsletter subscriptions, referral, and even a loyalty program, PrestaShop makes marketing your store and products simple.</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/prestashop/module-icon.png" alt="prestashop module icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Thousands of Free Modules</p>
+                        </div>
+                    <div id="demo2" class="collapse" data-parent="menu">
+                        <p>Search through over 2000+ modules to help you improve the shopping experience for your customers. Modules also makes it easier for you to manage your store.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="longtail-features-collapse longtail-odd">
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/prestashop/email-administration.jpg" alt="email administration icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Customer Management</p>
+                        </div>
+                    <div id="demo" class="collapse" data-parent="menu">
+                        <p>Each customer can create their own custom account where they can edit addresses, track orders, send messages direct to the owner, and provide RMA information.</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/prestashop/theme-icon.png" alt="prestashop theme icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Free Themes</p>
+                        </div>
+                    <div id="demo2" class="collapse" data-parent="menu">
+                        <p>With free PrestaShop themes, you can change the look and feel of your store to match what you are selling. If you don't like one, easily switch themes with a few clicks.</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="button-class">
+                <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
+                  View Details
+                </button>
+            </div>
+            <!--  end collapse table  -->
+
+            <h2>PrestaShop Hosting &amp; Easy Installation</h2>
+            <p>Our <a href="/business-hosting">Shared Hosting packages</a> can easily accomadate a PrestaShop marketplace. Our servers run the latest Apache, MySQL, and PHP versions to ensure proper compatibility. Installing PrestaShop is easy with our application installer Softaculous. With this, you can easily install, update, and delete installations of your shopping cart. InMotion is here to help you get your products sold.</p>
+
+            <p>Come see more of the applications InMotion has to offer you. Check out our <a href="/site-hosting-tools">free software tools</a>.</p>
+
+        </div>
+        <!--  end span8  -->
+    {% endblock %}
+
+{% endblock %}

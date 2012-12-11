@@ -48,7 +48,7 @@ $app->register(new TwigServiceProvider(), array(
     'twig.path'           => array(
         __DIR__ . '/../resources/views',
         __DIR__ . '/../resources/softaculous/',
-
+        __DIR__ . '/../resources/prestashop',
         )
 ));
 
