@@ -12,11 +12,13 @@
 
 {# intro #}
 {% block intro %}
-    <div class="span9">
+    <div class="span8">
         <h1>Build your business online in no time.</h1>
         <p>Thousands of customers know us to be the fastest, easiest and most reliable way to get online.</p>
+        <a href="#" class="btn btn-large btn-white">Learn More</a>
     </div>
     <div class="span3">
+        <img alt="Business Class Hosting box" src="{{ app.request.basepath }}/img/slider-cardboard-box.png" />
     </div>
 {% endblock %}
 
@@ -26,19 +28,26 @@
         <div class="container">
             <div class="well well-small well-inverted clearfix">
                 <div class="row">
-                    <p class="span2">Choose a plan to learn more</p>
-                    <div class="span3 well well-small raised">
-                        <h3>Business Hosting</h3>
-                        <p>Basic websites, start-ups and personalzied email.</p>
-                    </div>
-                    <div class="span3 well well-small raised">
-                        <h3>VPS Hosting</h3>
-                        <p>High-growth businesses &amp; moderate web traffic</p>
-                    </div>
-                    <div class="span3 well well-small raised">
-                        <h3>Dedicated Hosting</h3>
-                        <p>Big projects, high traffic websites and root access</p>
-                    </div>
+                    <p class="span2"><img alt="mini gear" src="../../img/mini-gear.png" />Choose a plan to learn more</p>
+                    <a href="business-hosting"><div class="span3 well-small raised slab">
+                            <span class="span1">$5.95 <p>per month</p></span>
+                            <h4>Business Hosting</h4>
+                            <p>Basic websites, start-ups and personalzied email.</p>
+                        </div>
+                    </a>
+                    <a href="vps-hosting"><div class="span3 well-small raised slab">
+                            <span class="span1">$29.95 <p>per month</p></span>
+                            <h4>VPS Hosting</h4>
+                            <p>High-growth businesses &amp; moderate web traffic</p>
+                        </div>
+                    </a>
+                    <a href="dedicated-servers">
+                        <div class="span3 well-small raised slab">
+                            <span class="span1">$119.95 <p>per month</p></span>
+                            <h4>Dedicated Hosting</h4>
+                            <p>Big projects, high traffic websites and root access</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -46,40 +55,40 @@
     <div class="wrap pattern">
         <div class="container">
             <div class="row">
-                <div class="span12">
-                    <h2>Tools &amp; technology you need to succeed</h2>
+                <div class="span12 tools-tech">
+                    <h1 class="centered jutwrap4">Tools &amp; Technology You Need to Succeed</h1>
                     <div class="row">
                         <div class="span4">
-                            <h3 class="muted">Support</h3>
-                            <p>You’ll get quick answers 24x7x365 from our US-based support team. Contact our experts anytime via phone, email or chat.</p>
+                            <h2 class="muted"><i class="icon-headphones ipos"></i> Support</h2>
+                            <p>You’ll get quick answers 24x7x365 from our US-based <a href="#">support team</a>. For general questions, comments or concerns, contact our experts anytime via phone, email or chat.</p><span class="ln"></span>
                         </div>
                         <div class="span4">
-                            <h3 class="muted">Technology</h3>
-                            <p>Your websites will sing in our data centers. We use high-performance Dell® servers running CentOS® enterprise-class Linux, with networking hardware from Cisco Systems® among others.</p>
+                            <h2 class="muted"><i class="icon-cpu ipos"></i> Technology</h2>
+                            <p>Your websites will sing in our data centers. We use <a href="#">high-performance</a> Dell&reg; servers running CentOS&reg; enterprise-class Linux, with networking hardware from Cisco Systems&reg; among others.</p><span class="ln"></span>
                         </div>
                         <div class="span4">
-                            <h3 class="muted">Reliability</h3>
-                            <p>99.9% uptime. That is the promise we make to you. Our proprietary software and expert system administrators monitor your websites 24 hours a day.</p>
+                            <h2 class="muted"><i class="icon-tach ipos"></i> Reliability</h2>
+                            <p><a href="#">99.9% uptime</a>. That is the promise we make to you. Our proprietary software and expert system administrators monitor your websites 24 hours a day, 7 days a week.</p><span class="ln"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="span4">
-                            <h3 class="muted">Guarantee</h3>
-                            <p>Starting with InMotion Hosting is risk free. We are so confident that we offer a 90-day money back guarantee on certain products. No questions asked. Seriously.</p>
+                            <h2 class="muted"><i class="icon-star ipos"></i> Guarantee</h2>
+                            <p>Starting with InMotion Hosting is risk free. We are so confident that we offer a <a href="#">90-day money back guarantee</a> on certain products. No questions asked. Seriously.</p>
                         </div>
                         <div class="span4">
-                            <h3 class="muted">Software</h3>
-                            <p>You have a huge range of free tools available at InMotion Hosting, including open source software like WordPress and Moodle, plus other free tools like Spam Assasin®.</p>
+                            <h2 class="muted"><i class="icon-disc ipos"></i> Software</h2>
+                            <p>You have a huge range of free tools available at InMotion Hosting, including open source software like <a href="#">WordPress</a> and <a href="#">Moodle</a>, plus other free tools like <a href="#">Spam Assasin&reg;</a>.</p>
                         </div>
                         <div class="span4">
-                            <h3 class="muted">Go Green</h3>
+                            <h2 class="muted"><i class="icon-tree ipos"></i> Go Green</h2>
                             <p>Your website will have a tiny carbon footprint with InMotion Hosting. We have invested in green data centers and environmental partnerships for years.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="span12"><a href="#">See all the benefits</a></div>
+                <div class="span12 centered jutwrap5"><a href="#" class="btn btn-primary">See All the Benefits</a></div>
             </div>
         </div>
     </div><!-- /.pattern -->
@@ -89,28 +98,39 @@
                 <img src="../img/traffic.png" />
             </div>
             <div class="span7">
-                <h2>Start getting traffic.</h2>
-                <span>Great web hosting is the foundation of a strong online presence.</span>
+                <h1>Start getting traffic.</h1>
+                <h2>Great web hosting is the foundation of a strong online presence.</h2>
                 <p>Having a professionally designed website is how you attract quality web traffic. Our Premium Web Builder lets you easily build an outstanding website in just minutes.If you’re looking for a professional site but don’t have the time to build it yourself, let our professional team of experienced web designers build the perfect site to your exact needs. Once your site is up, start sending targeted traffic to your website with free advertising credits from the biggest sites on the web including free with all web hosting plans.</p>
-                <a href="#">View portfolio</a>
+                <a href="#" class="btn btn-primary">View Portfolio</a>
             </div>
         </div>
     </div>
-    <div class="wrap sunken">
+    <div class="sunken">
         <div class="container">
+            <div class="span3 row">
+                <span class="cr-title">INCLUDED FREE:</span>
+                <p class="credit-text">Over <b>$250</b> in advertising credits</p>
+            </div>
+            <div class="span8 logospace">
+                <img alt="Google logo" src="../../img/logo-google.png" />
+                <img alt="Bing logo" src="../../img/logo-bing.png" />
+                <img alt="Amazon logo" src="../../img/logo-amazon.png" />
+                <img alt="Yahoo logo" src="../../img/logo-yahoo.png" />
+                <img alt="Yellow Pages logo" src="../../img/logo-yellow-pages.png" />
+            </div>
         </div>
     </div>
     <div class="wrap container">
         <div class="row">
-            <div class="span8">
-                <h2>A Brand You Can Trust</h2>
-                <span>IMH has been serving the web community since 2001.</span>
-                <p>We’ve worked hard to develop an impeccable reputation of having unmatched support and reliability. We’ve been awarded 3 out of 3 stars from CNET since 2003 and have an A+ service rating from the Better Business Bureau. But the opinions that matter most to us are from our thousands of loyal customers. Our devoted customers send us dozens of compliments each day. See for yourself just what everyone’s raving about.</p>
-                <a href="#">Learn more about us</a>
+            <div class="span8 pull-left">
+                <h1>A Brand You Can Trust</h1>
+                <h2>IMH has been serving the web community since 2001.</h2>
+                <p><img class="pull-left hspace" alt="BBB A+ Rating and CNET 3 out of 3 Stars" src="../../img/logo-bbb-cnet.gif" />We’ve worked hard to develop an impeccable reputation of having unmatched support and reliability. We’ve been awarded 3 out of 3 stars from CNET since 2003 and have an A+ service rating from the Better Business Bureau. But the opinions that matter most to us are from our thousands of loyal customers. Our devoted customers send us dozens of compliments each day. See for yourself just what everyone’s raving about.</p>
+                <a href="#" class="btn btn-primary">Learn More About Us</a>
             </div>
-            <div class="span3 offset1 island sunken">
+            <div class="span3 island sunken pull-right">
                 <blockquote class="quoted">Inmotion has given my growing company the reliability, flexibility and consistency that I hav ebeen looking for. Their customer service and technical support have always been fast and efficient.</blockquote>
-                <span class="emisor vibrant">Ajay Narain <span class="muted">Sunnyvale, CA</span></span>
+                <span class="emisor vibrant quotename">Ajay Narain <span class="muted quotefrom">Sunnyvale, CA</span></span>
             </div>
         </div>
     </div>
