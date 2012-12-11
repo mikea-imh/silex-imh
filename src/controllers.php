@@ -91,15 +91,15 @@ $app->get('/{product}/articles/{page}', function($product, $page) use ($app){
 
 // cpanel controller
 $app->match('/cpanel-hosting/', function() use ($app) {
-    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+    return $app['twig']->render('/../longtail-pages/cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('cpanel_site_hosting_tools');
 
 $app->match('/host-with-cpanel.html', function() use ($app) {
-    return $app['twig']->render('/../cpanel-hosting/host-with-cpanel.html.twig');
+    return $app['twig']->render('/../longtail-pages/cpanel-hosting/host-with-cpanel.html.twig');
 })->bind('longtail_host_with_cpanel');
 
 $app->get('/cpanel-hosting/{page}', function($page) use ($app){
-    return $app['twig']->render('/../cpanel-hosting/'.$page.'.twig');
+    return $app['twig']->render('/../longtail-pages/cpanel-hosting/'.$page.'.twig');
 })
 ->bind('longtail_cpanel');
 
