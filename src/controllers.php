@@ -128,6 +128,15 @@ $app->match('/prestashop-hosting.html', function() use ($app) {
     return $app['twig']->render('/../longtail-pages/prestashop/prestashop-hosting.html.twig');
 })->bind('longtail_prestashop_hosting_landing_page');
 
+// moodle controller 
+$app->match('/moodle-hosting/', function() use ($app) {
+    return $app['twig']->render('/../longtail-pages/moodle-hosting/moodle-hosting.html.twig');
+})->bind('moodle_hosting_redirect');
+
+$app->match('/moodle-hosting.html', function() use ($app) {
+    return $app['twig']->render('/../longtail-pages/moodle-hosting/moodle-hosting.html.twig');
+})->bind('longtail_moodle_hosting_landing_page');
+
 //softaculous controller
 $app->match('/softaculous/', function() use ($app){
     return $app['twig']->render('/../softaculous/softaculous.html.twig');
