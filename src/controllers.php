@@ -121,11 +121,11 @@ $app->get('/softaculous/{page}', function($page) use ($app){
 
 // prestashop controller 
 $app->match('/prestashop-hosting/', function() use ($app) {
-    return $app['twig']->render('/../prestashop/prestashop-hosting.html.twig');
+    return $app['twig']->render('/../longtail-pages/prestashop/prestashop-hosting.html.twig');
 })->bind('prestashop_hosting_redirect');
 
 $app->match('/prestashop-hosting.html', function() use ($app) {
-    return $app['twig']->render('/../prestashop/prestashop-hosting.html.twig');
+    return $app['twig']->render('/../longtail-pages/prestashop/prestashop-hosting.html.twig');
 })->bind('longtail_prestashop_hosting_landing_page');
 
 //opencart controller
