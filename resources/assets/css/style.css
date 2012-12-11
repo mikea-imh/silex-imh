@@ -56,7 +56,7 @@
 blockquote {
   border: none;
   margin: 0;
-  padding: 0 0 26px 30px;
+  padding: 0 0 20px 36px;
 }
 
 body {
@@ -172,14 +172,16 @@ header {
  * Apply chat bubble icon
  */
 header .nav-pills-contact,
-header .nav-pills-contact a {
+header .nav-pills-contact a,
+.chatstrip .nav-pills-contact a {
   color: #232323;
   font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
 }
 header .nav-pills-contact,
-header .nav-pills-contact a:hover {
+header .nav-pills-contact a:hover,
+.chatstrip .nav-pills-contact a:hover {
   color: #888;
 }
 header .nav-pills-contact a.btn {
@@ -189,6 +191,7 @@ header .nav-pills-contact a.btn {
 
 .nav-pills-no-link {
   color: #232323;
+  font-size: 15px;
   line-height: 36px;
   margin-right: 12px;
 }
@@ -200,13 +203,63 @@ header .nav-pills-contact a.btn {
   width: 18px;
 }
 
+/**
+ * Icon positioning to apply to icon elements
+ */
+.ipos {
+  height: 24px;
+  margin-right: 6px;
+  width: 24px;
+}
+
 .icon-chat {
   background: url(../../img/icon-chat.gif) no-repeat 0 0;
   margin-right: 10px;
 }
+
 .icon-phone {
   background: url(../../img/icon-phone.gif) no-repeat 0 0;
   padding-bottom: 1px;
+}
+
+.icon-headphones {
+  background: url(../../img/icon-headphones.png) no-repeat 0 0;
+}
+
+.icon-cpu {
+  background: url(../../img/icon-cpu.png) no-repeat 0 0;
+}
+
+.icon-tach {
+  background: url(../../img/icon-tach.png) no-repeat 0 0;
+}
+
+.icon-star {
+  background: url(../../img/icon-star.png) no-repeat 0 0;
+}
+
+.icon-disc {
+  background: url(../../img/icon-disc.png) no-repeat 0 0;
+}
+
+.icon-tree {
+  background: url(../../img/icon-tree.png) no-repeat 0 0;
+}
+
+.icon-greencheck {
+  background: url(../../img/ideal.png) no-repeat 0 0;
+}
+
+.icon-chart {
+  background: url(../../img/icon-chart.png) no-repeat 0 0;
+}
+
+.icon-facebook {
+  background: url(../../img/icon-facebook.png) no-repeat 0 0;
+}
+
+.icon-tag {
+  background: url(../../img/icon-tag.png) no-repeat 0 0;
 }
 
 .muted {
@@ -235,15 +288,91 @@ header .nav-pills-contact a.btn {
 }
 
 /**
- * Apply blue background with noise to element
-
+ * Apply gray background with noise to element
+*/
 .intro {
-  background: url(../../img/bluenoise.png) repeat 0 0;
-  border-top: 2px solid #232323;
-} */
+  background: url(../../img/graynoise.png) repeat 0 0;
+}
+
+/**
+ * Main leader/banner factory with buttons underneath
+ */
+.intro.homepage {
+  background: url(../../img/conveyor-tile.png) repeat-x 0 234px, url(../../img/leader-bg-home.png) no-repeat top center, url(../../img/bluenoise.png) repeat 0 0;
+  display: block;
+  height: 220px;
+}
+
+.intro.homepage h1, .intro.business_hosting h1, .intro.vps_hosting h1, .intro.dedicated_servers h1 {
+  color: white;
+  padding-bottom: 5px;
+}
+
+.intro.homepage p {
+  color: #0F3857;
+  font-size: 20px;
+}
+
+.intro.homepage .span3 {
+  padding: 58px 0 0 40px;
+  }
+
 .intro-foot {
   background: #333;
-  padding-top: 10px;
+  height: 124px;
+}
+
+.intro-foot .well {
+  border-radius: 5px;
+  height: 86px;
+  margin: 10px;
+}
+
+.span3.slab {
+  box-shadow: 0px 3px 0px #666;
+  color: #232323;
+  height: 65px;
+}
+
+.span3.slab:active {
+  box-shadow: 0px 2px 0px #666;
+  height: 65px;
+  margin-top: 1px;
+}
+
+.slab p {
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.intro-foot .span2 {
+  color: #888;
+  line-height: 16px;
+  padding-left: 10px;
+  text-align: center;
+  width: 110px;
+}
+
+.intro-foot .span2 
+img {
+  border: 0;
+  clear: both;
+  display: block;
+  margin: 13px auto 2px;
+}
+
+.intro-foot .span1 {
+  border-left: #ccc 1px solid;
+  color: #888;
+  display: block;
+  float: right;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 9px;
+  padding: 5px 4px 10px 8px;
+  text-align: center;
+  width: 50px;
 }
 
 /**
@@ -256,14 +385,15 @@ header .nav-pills-contact a.btn {
   float: left;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 600%;
-  margin: 20px 20px 40px -30px;
+  margin: 20px 0px 40px -38px;
+  width: 30px;
 }
 
 /**
  * Apply top and bottom padding to element
  */
 .wrap {
-  padding: 36px 0;
+  padding: 40px 0;
 }
 
 .business-specification .table-striped thead th.table-col-4,
@@ -343,10 +473,6 @@ header .nav-pills-contact a.btn {
 }
 .matrix > .matrix-last {
   border-bottom: none;
-}
-
-.well {
-  background-color: #cfcfcf;
 }
 
 .well .row-fluid .span4 {
@@ -479,7 +605,7 @@ textarea,
 input[type="text"] {
   border-radius: 3px;
   box-shadow: 0 3px 0 #b2b2b2;
-  padding: 18px 12px;
+  padding: 12px 12px;
 }
 
 input:-moz-placeholder,
@@ -522,7 +648,7 @@ h3 {
 }
 
 .span6:nth-child(even) > .site-hosting-tool,
-.span6:nth-child(even) > h2 {
+.span6:nth-child(even) > .site-hosting-tool > h2 {
   margin-left: 10px;
 }
 
@@ -548,6 +674,14 @@ h3 {
 .pre-footer > .container {
   background: url(../../img/pre-footer-gears.png) no-repeat right bottom;
   padding-bottom: 72px;
+}
+
+.solo-gears {
+  background: url(../../img/pre-footer-gears.png) no-repeat right top;
+  display: block;
+  width: 940px;
+  margin: 0 auto;
+  height: 45px;
 }
 
 footer {
@@ -580,6 +714,213 @@ footer a {
 
 
 /*------------------------------*/
+
+.privacy {
+  color: #c52228;
+  font-size: 18px;
+  margin: 30px 0 30px 30px;
+}
+
+.privacy li {
+  margin-bottom: 20px;
+}
+
+.privacy p {
+  font-size: 13px;
+  color: #232323;
+}
+
+.carousel-control {
+  margin-top: 20px;
+}
+
+h2 {
+  padding-bottom: 8px;
+}
+
+.red {
+  color: #c52228;
+}
+
+/**
+ * "How it Works" blue icon ordered list under red tabs
+ */
+.b1 {
+  background-color: #4BA0E1;
+  border-radius: 14px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  font-size: 28px;
+  font-family: adelle;
+  height: 28px;
+  margin-right: 5px;
+  padding: 2px 0 0 0;
+  text-align: center;
+  width: 28px;
+  -moz-border-radius: 14px;
+  -webkit-border-radius: 14px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.howitworks-list {
+  list-style-type: none;
+  margin: 0;
+}
+
+.howitworks-list li {
+  display: block;
+  float: left;
+  margin: 5px 0;
+  width: 50%;
+}
+
+/**
+ * Strip with contact info (chat and phone) like header
+ */
+.chatstrip {
+  border-top: #ccc 1px solid;
+  display: block;
+  float: left;
+  margin: 20px 0 0 0;
+  padding: 10px 0;
+  width: 100%;
+}
+
+/**
+ * Design gallery list of categories
+ */
+.gallery-list {
+  color: #232323;
+  font-size: 13px;
+  list-style-type: none;
+  margin: 0 0 0 8px;
+  text-transform: uppercase;
+}
+
+.gallery-list li a {
+  color: #232323;
+  display: block;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.gallery-list li a:hover {
+  background-color: #888;
+  color: #fff;
+  text-decoration: none;
+}
+
+/**
+ * Domains page search input and wells / spacing
+ */
+.domains-pill {
+  background-color: #ccc;
+}
+
+.domains-pill 
+input {
+  background: url(../../img/icon-magnifying.png) no-repeat 10px 12px #fff;
+  color: #ccc;
+  font-size: 20px;
+  margin: 0 8px 3px 3px;
+  padding-left: 40px;
+  width: 451px;
+}
+
+.domains-pill > .inputtext {
+  color: #888;
+}
+
+input::-webkit-input-placeholder {
+  color: #888;
+}
+
+.tall {
+  height: 29px;
+  margin-top: -1px;
+  padding-top: 13px;
+}
+
+.domainwell {
+  height: 70px;
+}
+
+/**
+ * Domains page gears placement in banner
+ */
+.gears-domains {
+  margin: -40px 0 0 0;
+}
+
+/**
+ * Placement for gears etc. on pages with banners
+ */
+.banner-img {
+  margin: -44px 0 0 0;
+}
+
+/**
+ * Domains page quadrants
+ */
+.domain-quadrants .span6 {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 0 30px 40px 0;
+}
+
+/**
+ * Side by side paragraph span6's
+ */
+.design-info .span6 {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 0 30px 40px 0;
+}
+
+.design-info .span6:first-child {
+  border-right: #ccc 1px solid;
+}
+
+/**
+ * Applies to text in special area Tools & Tech on homepage
+ */
+.tools-tech .span4 {
+  box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.tools-tech .span4
+p{
+  padding-bottom: 4px;
+}
+
+/**
+ * Advertising strip logo and text spacing
+ */
+.credit-text {
+  line-height: 16px;
+  margin-top: -10px;
+}
+
+.logospace
+img {
+  margin: 20px 10px 0 0;
+}
+
+.cr-title {
+  display: block;
+  font-family: adelle sans;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 12px 0;
+}
 
 /**
  * Implements fix on 3 col boxes on product pages
@@ -614,6 +955,26 @@ th > .btn-link:hover {
   text-decoration: none;
 }
 
+/**
+ * Web Design page tables/columns styles
+ */
+.webdesign.table-striped thead th:nth-child(even) {
+  border-left: #ccc 1px solid;
+  border-right: #ccc 1px solid;
+  width: 108px;
+}
+
+.webdesign.table-striped thead th:first-child {
+  text-align: left;
+}
+
+.webdesign.table-striped {
+  border-bottom: #888 2px solid;
+}
+
+/**
+ * Dedicated page tables/columns styles
+ */
 .dedi-specification .table-striped thead th.table-col-3,
 .dedi-specification .table-striped tfoot td.table-col-3,
 .dedi-specification .table-striped tbody td.table-col-3 {
@@ -637,6 +998,9 @@ th > .btn-link:hover {
   width: 30%;
 }
 
+/**
+ * VPS page tables/columns styles
+ */
 .vps-specification .table-striped thead th.table-col-2,
 .vps-specification .table-striped tfoot td.table-col-2,
 .vps-specification .table-striped tbody td.table-col-2 {
@@ -678,6 +1042,9 @@ th > .btn-link:hover {
   border-left: 0;
 }
 
+/**
+ * Business page tables/columns styles
+ */
 .business-specification .table-striped thead th.table-col-2,
 .business-specification .table-striped tfoot td.table-col-2,
 .business-specification .table-striped tbody td.table-col-2{
@@ -744,14 +1111,6 @@ th > .btn-link:hover {
 
 .white {
   color: #fff;
-}
-
-/**
- * Main package title for hosting options
- */
-.package-title h3 {
-  margin: 0;
-  padding: 0;
 }
 
 /**
@@ -911,7 +1270,7 @@ li {
 }
 
 /**
- * Testimonial or quote - person's name 
+ * Testimonial or quote - person's name/location etc.
  */
 .quotename {
   color: #c52228;
@@ -920,13 +1279,17 @@ li {
   font-weight: 600;
 }
 
-/**
- * Testimonial or quote - person's location
- */
 .quotefrom {
   font-family: 'adelle';
   font-size: 11px;
   margin-top: -3px;
+}
+
+.quotesample{
+  border: #dadada 10px solid;
+  border-radius: 5px;
+  float: right;
+  margin: 0 0 10px 20px;
 }
 
 /**
@@ -954,6 +1317,10 @@ li {
 .jutwrap4 {
   display: block;
   padding: 0 0 30px;
+}
+
+.jutwrap5 {
+  padding: 20px 0 0;
 }
 
 /**
@@ -1015,16 +1382,35 @@ li {
   height: 36px;
 }
 
-.over, 
-.over:hover {
-  color: #fff;
-  margin: 0 auto 0;
-  position: relative;
+/**
+ * Special slider CTA
+ */
+.btn-white {
+  background-color: #fff;
+  border-radius: 3px;
+  color: #4ba0e1;
+  margin-top: 5px;
 }
 
-.over:active {
+.btn-white:hover {
+  background-color: #fff;
+  color: #4ba0e1;
+  margin-top: 5px;
+}
+
+.btn-white:active {
+  margin-top: 6px;
+}
+
+.btn-primary:hover; {
+  color: #fff;
+  margin: 0 auto;
+}
+
+.btn-primary:active {
   margin: 1px auto -1px;
 }
+
 
 /**
  * IMH logo in footer
@@ -1078,8 +1464,23 @@ img {
   margin-left: 44px;
 }
 
+/**
+ * Horizontal right margin
+ */
 .hspace {
-  margin-right: 11px;
+  margin-right: 18px;
+}
+
+/**
+ * This is used on SEO and Social media sections on web design
+ */
+.hspace2 {
+  margin-right: 25px;
+  margin-top: 8px;
+}
+
+.no-wrap {
+  overflow: hidden;
 }
 
 /**

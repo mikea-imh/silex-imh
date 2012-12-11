@@ -1,6 +1,7 @@
 
 (function($) {
     $(function(){
+        $('.carousel').carousel()
         $('.hosting-plan-details a').click(function (e) {
           e.preventDefault();
           $(this).tab('show');
