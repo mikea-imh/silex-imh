@@ -163,18 +163,18 @@ $app->match('/prestashop-hosting.html', function() use ($app) {
 })->bind('longtail_prestashop_hosting_landing_page');
 
 //opencart controller
-$app->match('/opencart/', function() use ($app){
-    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
+$app->match('/opencart-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/opencart-hosting/opencart-hosting.html.twig');
 })
 ->bind('longtail_opencart_landng');
 
 $app->match('/opencart-hosting.html', function() use ($app){
-    return $app['twig']->render('/../opencart/opencart-hosting.html.twig');
+    return $app['twig']->render('/../longtail-pages/opencart-hosting/opencart-hosting.html.twig');
 })
 ->bind('longtail_opencart');
 
-$app->match('/opencart/opencart-templates.html', function() use ($app){
-    return $app['twig']->render('/../opencart/opencart-templates.html.twig');
+$app->match('/opencart/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/opencart-hosting/'.$page.'.twig');
 })
 ->bind('longtail_opencart_templates');
 
