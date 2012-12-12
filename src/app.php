@@ -54,6 +54,7 @@ $app->register(new TwigServiceProvider(), array(
         __DIR__ . '/../resources/longtail-pages/drupal-hosting',
         __DIR__ . '/../resources/longtail-pages/joomla-hosting',
         __DIR__ . '/../resources/longtail-pages/wordpress-hosting',
+        __DIR__ . '/../resources/longtail-pages/webbuilder',
         )
 ));
 

@@ -2258,3 +2258,68 @@ ol.longtail {
 code.longtail {
   font: 12px/1.5 'terminal', serif;
 }
+
+/**
+ * webbuilder ol styles
+ */
+
+ol.webbuilder {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  height: 130px;
+  margin: 0;
+  padding: 10px 38px;
+  width: 562px;
+}
+
+ol.webbuilder li {
+  display: inline-block;
+  float: left;
+  height: 117px;
+  list-style-type: none;
+  margin: 0;
+}
+
+ol.webbuilder li.step1 {
+  width: 160px;
+}
+
+ol.webbuilder li.step2 {
+  width: 172px;
+}
+
+ol.webbuilder li.step3 {
+  width: 132px;
+}
+
+ol.webbuilder li.arrow {
+  float: left;
+  height: 25px;
+  margin: 46px 10px 0 20px;
+  width: 13px;
+}
+
+ul.theme_showcase {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  height: 140px;
+}
+
+ul.theme_showcase li {
+  display: block;
+  float: left;
+  margin: 5px 0;
+  text-align: center;
+  list-style-type: none;
+  width: 120px;
+  height: 130px;
+}
+
+ul.theme_showcase img {
+  width: 115px;
+  height: 115px;
+  border: 1px solid #ccc;
+}

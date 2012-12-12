@@ -210,6 +210,22 @@ $app->get('/wordpress-hosting/{page}', function($page) use ($app){
 })
 ->bind('longtail_wordpress');
 
+//webbuilder controller
+$app->match('/webbuilder/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/webbuilder/webbuilder.html.twig');
+})
+->bind('longtail_webbuilder_landng_redirect');
+
+$app->match('/webbuilder.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/webbuilder/webbuilder.html.twig');
+})
+->bind('longtail_webbuilder_landing');
+
+$app->get('/webbuilder/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/webbuilder/'.$page.'.twig');
+})
+->bind('longtail_webbuilder');
+
 // form controller
 $app->match('/form', function() use ($app) {
 
