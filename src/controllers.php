@@ -43,6 +43,11 @@ $app->match('/privacy-policy', function() use ($app) {
         'privacy_policy.html.twig');
 })->bind('privacy_policy');
 
+$app->match('/terms-of-service', function() use ($app) {
+    return $app['twig']->render(
+        'terms_of_service.html.twig');
+})->bind('terms_of_service');
+
 $app->match('/webdesign', function() use ($app) {
     return $app['twig']->render(
         'webdesign.html.twig');
