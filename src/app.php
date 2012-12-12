@@ -47,10 +47,7 @@ $app->register(new TwigServiceProvider(), array(
     'twig.form.templates' => array('form_div_layout.html.twig', 'common/form_div_layout.html.twig'),
     'twig.path'           => array(
         __DIR__ . '/../resources/views',
-        __DIR__ . '/../resources/softaculous/',
-        __DIR__ . '/../resources/prestashop',
         __DIR__ . '/../resources/longtail-pages/prestashop',
-        __DIR__ . '/../resources/softaculous/',
         __DIR__ . '/../resources/longtail-pages/softaculous/',
         __DIR__ . '/../resources/longtail-pages/cpanel-hosting',
         __DIR__ . '/../resources/longtail-pages/moodle-hosting',
