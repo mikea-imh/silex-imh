@@ -48,6 +48,11 @@ $app->match('/terms-of-service', function() use ($app) {
         'terms_of_service.html.twig');
 })->bind('terms_of_service');
 
+$app->match('/about-us', function() use ($app) {
+    return $app['twig']->render(
+        'about_us.html.twig');
+})->bind('about_us');
+
 $app->match('/webdesign', function() use ($app) {
     return $app['twig']->render(
         'webdesign.html.twig');
