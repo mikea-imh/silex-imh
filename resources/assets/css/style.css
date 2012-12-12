@@ -2241,3 +2241,16 @@ table.drupal-review tr td {
 table.drupal-review tr td p {
   font-style: italic;
 }
+
+/**
+ * longtail ol style
+ */
+
+ol.longtail {
+  display: block;
+  margin: 0 0 0 40px;
+}
+
+code.longtail {
+  font: 12px/1.5 'terminal', serif;
+}

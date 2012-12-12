@@ -1,0 +1,99 @@
+{% extends 'longtail-joomla.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Joomla Managed Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Joomla Managed Hosting</h1>
+    </div>
+    <div class="span3">
+        <p>Joomla Hosting made easy!</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+
+<p>Managed Joomla Hosting is a hosting package in which the server is managed by InMotion Hosting. While you focus on creating your website and driving traffic to it, we'll setup and maintain your server.</p>
+
+<p>You can think of managed hosting in the same aspect of renting a house:</p>
+
+<h3>Setup and Base Configuration</h3>
+<p>When you rent a house, it's obviously already built and has the basic amenities.</p>
+
+<p>You may not think about it, but a hosting server is more than just a computer. Our System Administration team has installed and configured quite a bit of software, including:</p>
+
+<li>Linux: operating system</li>
+<li>Apache: web server software</li>
+<li>MySQL: database</li>
+<li>PHP: scripting language used by Joomla</li>
+
+<p>If you look at the bolded letters above, you'll notice that they spell LAMP. If you're looking for a lamp stack / linux joomla hosting, that's exactly what we provide!</p>
+
+<table class="table longtail four-column">
+    <thead>
+        <tr>
+            <th>
+                <p>Linux</p>
+            </th>
+            <th>
+                <p>Apache</p>
+            </th>
+            <th>
+                <p>MySQL</p>
+            </th>
+            <th>
+                <p>PHP</p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.linux.png" alt="linux icon" />
+            </td>
+            <td>
+                <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.apache.gif" alt="apache icon" />
+            </td>
+            <td>
+                <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.mysql.png" alt="mysql icon" />
+            </td>
+            <td>
+                <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.php.png" alt="php icon" />
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h3>Updates and Custom Setups</h3>
+<p>If you need your house wheelchair accessible, a good landlord will help you get a wheelchair ramp built (assuming you'll be paying the fees).</p>
+
+<p>If you need something that's not on the server, we can help get and install it for you (free of charge in many cases). Joomla requires certain PHP extensions to be installed, and you may be building a custom module that requires a rare PHP extension not currently installed. Our System Administration team is highly skilled in custom server setup and configuration, and can install many different 3rd party applications to help in providing you with the greatest joomla hosting experience.</p>
+
+<img src="{{ app.request.basepath }}/img/joomla-hosting/update-server-software.gif" alt="php icon" />
+
+<h3>Repairs</h3>
+<p>Imagine it's a hot summer and your AC stops working. You'll be quick to make a call to the home owner and inform them of the problem!</p>
+
+<p>While software generally doesn't "break", there may be times that you need something fixed. For example, due to known bugs in PHP 4.3.9, PHP 4.4.2, and PHP 5.0.4, Joomla does not suggest you run these versions of PHP on your joomla hosting server. If your server is running one of these PHP versions, we can fix the problem for you by updating PHP to a newer more stable version.</p>
+
+<h3>Different levels of Managed Joomla Hosting</h3>
+<p>InMotion Hosting offers three levels of hosting: Shared Hosting, VPS Hosting, and <a href="/dedicated-servers">Dedicated Server Hosting</a>. Each hosting plan has different levels of managed Joomla hosting, with VPS and Dedicated hosting plans offering the highest level of customization and server management.</p>
+
+<p>Shared Hosting can be thought of as renting an apartment. When renting an apartment, most often you are not allowed to paint the walls the color of your choice. When you rent a town house (VPS Hosting) or a single family home (Dedicated Server), your landlord is more lenient in allowing you to do such things as painting the walls or hanging custom fixtures.</p>
+
+<p>The same train of thought applies to managed joomla hosting. If you simply need a server setup that's ready to go, Shared Hosting can be a good choice for you. In Shared Hosting, we'll setup the server and ensure everything stays up to date. If you need additional server extensions or you need your LAMP stack configured in a very specific way, choose a <a href="/joomla-hosting/joomla-vps-hosting.html">Joomla VPS Hosting Server</a> or Dedicated Server hosting plan. You can <a href="/joomla-hosting.html">find more information here</a> about our available joomla hosting packages.</p>
+
+    </div>
+    <!--  end span8  -->
+{% endblock %}

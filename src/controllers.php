@@ -194,6 +194,22 @@ $app->get('/drupal-hosting/{page}', function($page) use ($app){
 })
 ->bind('longtail_drupal');
 
+//joomla controller
+$app->match('/joomla-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/joomla-hosting/joomla-hosting.html.twig');
+})
+->bind('longtail_joomla_landng_redirect');
+
+$app->match('/joomla-hosting.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/joomla-hosting/joomla-hosting.html.twig');
+})
+->bind('longtail_joomla_landing');
+
+$app->get('/joomla-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/joomla-hosting/'.$page.'.twig');
+})
+->bind('longtail_joomla');
+
 // form controller
 $app->match('/form', function() use ($app) {
 
