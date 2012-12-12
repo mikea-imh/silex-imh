@@ -54,6 +54,7 @@ $app->register(new TwigServiceProvider(), array(
         __DIR__ . '/../resources/longtail-pages/softaculous/',
         __DIR__ . '/../resources/longtail-pages/cpanel-hosting',
         __DIR__ . '/../resources/longtail-pages/moodle-hosting',
+        __DIR__ . '/../resources/longtail-pages/drupal-hosting',
         )
 ));
 

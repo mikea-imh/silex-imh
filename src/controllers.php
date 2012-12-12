@@ -178,6 +178,22 @@ $app->match('/opencart/{page}', function($page) use ($app){
 })
 ->bind('longtail_opencart_templates');
 
+//drupal controller
+$app->match('/drupal-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/drupal-hosting/drupal-hosting.html.twig');
+})
+->bind('longtail_drupal_landng_redirect');
+
+$app->match('/drupal-hosting.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/drupal-hosting/drupal-hosting.html.twig');
+})
+->bind('longtail_drupal_landing');
+
+$app->get('/drupal-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/drupal-hosting/'.$page.'.twig');
+})
+->bind('longtail_drupal');
+
 // form controller
 $app->match('/form', function() use ($app) {
 

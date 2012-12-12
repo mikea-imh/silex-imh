@@ -1,0 +1,58 @@
+{% extends 'longtail-drupal.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Drupal Managed Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Drupal Managed Hosting</h1>
+    </div>
+    <div class="span3">
+        <p>Leave the Server Management up to us!</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+
+        <p>Managed Drupal Hosting allows you to focus on your website and not your server. There's no need to worry about basic <a href="/drupal-hosting/drupal-requirements.html">Drupal server requirements</a> or advanced my.cnf MySQL congifurations, we've got you covered. InMotion Hosting offers Drupal managed hosting for those Drupal users that either don't have the time or don't wish to make any modifications to the software on their server. We can help with software installation and configuration, security and upgrades, and even website transfers.</p>
+
+        <h3>Software Installations</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/install-server-software.png" class="sales-page-left-float" alt="install software image" /><p>Having full access to a server can sometimes be a scary thing. In a production server, an inexperienced System Administrator can easily make common mistakes. These issues can cause downtime for important websites from anywhere to a few minutes to a few hours! Downtime is stressful because you're in a position to lose both time and money.
+        </p>
+
+        <p>Drupal sites managed at InMotion Hosting are in the hands of a highly skilled System Administration team, making us one of the <a href="/drupal-hosting/best-drupal-hosting.html">best Drupal hosting providers</a>. We've definitely been around the block more than just a few times. Our Systems Team can help you by installing many applications on your server, including:</p>
+
+        <li>Varnish: HTTP Accelerator</li>
+        <li>APC: Alternative PHP Cache</li>
+        <li>Memcache: A type of caching system</li>
+        <li>SVN: Subversion</li>
+
+        <h3>Software Upgrades</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/upgrade-and-configure.png" class="sales-page-left-float" alt="update and configure image" /><p>Any experienced web developer knows that the programs running on servers are updated quite often, which is a good thing. Security patches are released making software safer, bugs are fixed making software more reliable, and new features are added to make software better. Running old software on your server can not only be a security concern, it can also cause newer scripts not to work correctly.</p>
+
+        <p>Managing software on your server is something you don't have to worry about, the InMotion Hosting team can help! Here's only a short list of the programs we can both help upgrade and customize the configuration for:</p>
+
+        <li>PHP: the scripting language Drupal is written in</li>
+        <li>MySQL: the type of database Drupal uses</li>
+        <li>Apache: the web server</li>
+
+        <h3>Website Migrations</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/website-migrations.png" class="sales-page-left-float" alt="website migration image" /><p>If you already have a Drupal website with another hosting company, we can help manage the the transfer of all your website files to your InMotion Hosting server. This includes moving your files and database, and also updating any configuration settings so that everything connects on your new server. While the extent of what we can do is based on a per site basis, our years of experience allow us to transfer most websites without issue.</p>
+
+        <h3>Drupal Managed Hosting with InMotion Hosting</h3>
+        <p>InMotion Hosting offers Shared Hosting, VPS Hosting, and Dedicated Hosting. While most of the manageable items listed on this page are for VPS and Dedicated customers, there are many things we can help with too for our users running Drupal on shared hosting. Sign up today for <a href="/drupal-hosting.html">managed Drupal Hosting</a> through InMotion Hosting. If have any questions, we're happy to help - you can call us at 888-321-4678, click the Chat with Sales button at the top of the page, or <a href="/contact.html">send us an email</a>!</p>
+
+    </div>
+    <!--  end span8  -->
+
+{% endblock %}

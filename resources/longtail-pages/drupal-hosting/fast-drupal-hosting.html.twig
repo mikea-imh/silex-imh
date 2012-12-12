@@ -1,0 +1,69 @@
+{% extends 'longtail-drupal.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Fast Drupal Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>How can I make Drupal faster?</h1>
+    </div>
+    <div class="span3">
+        <p>Host Drupal on a server built for performance.</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+
+        <p>Fast Drupal Hosting is something on the mind of all web designers, but it's not on the mind of your website users. When you build a website in Drupal, no one is going to notice that your website is loading at top speed, because they're only visiting your website for the content that it offers. The only time speed becomes a concern is when your site takes too long to load, and users bounce away from your page only after a couple seconds of waiting.</p>
+
+        <p>As a web developer, you're most likely focused on either the look or feel of your Drupal website. You're trying to match up pixels and margins just right, or you're looking for that perfect 3rd party extension to help you save some development time. When it comes to website speed however, not everything is up to your control.</p>
+
+        <h3>Programmers</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/php-developer.png" class="sales-page-left-float" alt="php logo" /><p>The speed in which an application works is in large part due to how the software was developed. Software built with care will include things like precise SQL queries that only call what is needed, or PHP code that has been optimized and tested under different conditions.</p>
+
+        <h3>Server Administrators</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/dell-drupal-server.gif" class="sales-page-left-float" alt="dell drupal server" /><p>Other than the application itself, you should think about the server that it is running on. There are many parts of a server that work together in order to serve web pages, and with today's technology anyone with diligence and some free time can setup their home computer to be a server. However, just because you can setup a server doesn't mean it's an optimal setup. Through years of experience (which we have), you learn the inner details of how processes work together (such as Apache and PHP), and it takes a skilled System Administrator to properly tune a server for speed and optimum performance.</p>
+
+        <p>Let's take a look at just a few configurations that InMotion Hosting utilizes that allow us to offer the <a href="/drupal-hosting.html">fastest Drupal Hosting</a>:</p>
+
+        <li>Fast 15K SAS Harddrives</li>
+        <li>Localhost MySQL database setup, including query caching</li>
+        <li>Multiple datacenter locations</li>
+
+        <h3>Faster Harddrives</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/hard-drive.png" class="sales-page-left-float" alt="hard drive image" /><p>Server harddrives are read from and written to non stop. To offer a faster server, build them with faster harddrives. InMotion Hosting uses 15K SAS Harddrives. Most harddrives spin at 10,000 rotations per minute. Our harddrives are built to out perform, and run at 15,000 RPM's. Faster harddrives? Yes, InMotion Hosting has you covered.</p>
+
+        <h3>Faster Databases</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/database.png" class="sales-page-left-float" alt="database image" /><p>Your Drupal website requests information from your MySQL database during each page request. You can speed up your website by ensuring that Drupal is able to effectively communicate with MySQL. We boost database interactions in the following ways:</p>
+
+        <h5>Localhost Setup</h5>
+        <p>Some hosting providers have separate servers built specifically for database hosting. If your Drupal website is not on the same physical server as your database server, time is wasted when the two physical servers communicate with each other. InMotion Hosting runs website files on the same server as the database, which speeds up calls to MySQL because it's all done on the same physical server.</p>
+
+        <h5>Query Caching</h5>
+        <p>Content that you write for your website is stored in the database. Let's say you have a page called "About Us". Every time someone visits this page, Drupal must connect to the database and request the content for this page. If you think about it, your "About Us" page probably doesn't change that often, and so it can be a waste to continue requesting the same information over and over from the database. With InMotion Hosting's query cache setup, these duplicate requests are sped up. You can think about it like this:</p>
+
+        <p>Let's say Drupal asks MySQL for the date that Company X was started on. MySQL opens a folder, pulls out a file, reads it, and then returns the answer of Jan 1, 2001. If Drupal asks MySQL for this information 1,000 times in one day, MySQL repeats the same process over and over. With caching enabled, after the first time being asked for this information, it simply remembers it. The next 1,000 times that it's asked, it immediately responds with the answer - Jan 1, 2001. When you remove this unnecessary time to process duplicate requests, your website will perform faster.</p>
+
+        <h3>Multiple Datacenters</h3>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/max-speed-zone.gif" class="sales-page-left-float" alt="max speed zone logo" /><p>Delivering a letter from one part of Virginia to another part of Virginia is going to be a lot faster than delivering a letter from Virginia to California. The simple fact of being closer to your destination means less time in travel.</p>
+
+        <p>InMotion Hosting has <a href="/fast-web-hosting.html">datacenters in multiple locations</a>: one datacenter in California and another in Virginia. When you sign up, you can choose which dataceter is closest to your customers. Choosing a server geographically closer to your customers will mean that the information travels across the web faster, and your website will therefor load more quickly.</p>
+
+        <h3>InMotion Hosting Provides Fast Drupal Hosting!</h3>
+        <p>There are other reasons that InMotion Hosting offers fast web hosting. For example, we load of servers with mind blowing amounts of memory. Have you ever been on a server with 96GB of RAM? That's right, that's 96 gigabytes of memory! Your server's RAM can be thought of as its short term memory, and the ability for them to sort and retrieve information quickly is largely dependent on the amount of RAM they have.</p>
+
+        <p>We can keep going on and on about our server setup, but you'll get to the point where you simply need to feel the difference. <a href="/drupal-hosting/drupal-hosting-reviews.html">Our customers are very happy</a> with our services, and we know you will be too. Sign up with InMotion Hosting today and let us show you how it feels to host your Drupal website on such a highly tuned server. We offer Shared, VPS, and Dedicated server hosting. If you have a very busy website, our VPS and Dedicated servers have what it takes to deliver. For new websites or sites not as demanding, our Shared Hosting packages may be your perfect choice.</p>
+
+    </div>
+    <!--  end span8  -->
+{% endblock %}

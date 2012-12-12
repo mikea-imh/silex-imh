@@ -1863,6 +1863,11 @@ img.sales-page-longtail-logo {
   margin: 11px 0 0;
 }
 
+img.sales-page-left-float {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
 img.sales-page-right-float {
   float: right;
   margin: 0 0 0 15px;
@@ -2003,9 +2008,11 @@ ul.longtail-features-collapse li p {
 
 table.longtail {
   width: 100%;
+  margin: 0 0 30px;
 }
 
 table.longtail tr th {
+  border-bottom: 1px solid #ccc;
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   color: #C52228;
@@ -2200,4 +2207,37 @@ ul.longtail-features-collapse li p {
 .btn-longtail:active,
 .btn-longtail.active {
   background-color: #942a25 \9;
+}
+
+
+/**
+ * drupal reviews page for quotes
+ */
+
+table.four-column tr th,
+table.four-column tr td {
+  width: 25%;
+}
+table.drupal-review tr th {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: #C52228;
+  padding: 8px 0 0 20px;
+  text-align: left;
+}
+
+table.drupal-review {
+  margin: 0 0 20px;
+}
+
+table.drupal-review tr td {
+  background: #ededed;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 100%;
+}
+
+table.drupal-review tr td p {
+  font-style: italic;
 }
