@@ -5,6 +5,7 @@
           e.preventDefault();
           $(this).tab('show');
         });
+        $('.carousel').carousel();
         // Allows collapsable elements in multiple spots on page
         $('.collapse').click(function (e) {
           e.preventDefault();
