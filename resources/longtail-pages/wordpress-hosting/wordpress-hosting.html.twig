@@ -1,0 +1,108 @@
+{% extends 'longtail-wordpress.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Wordpress Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}web hosting, webhosting, business hosting, business web hosting, website hosting, web site hosting, business website hosting, business hosting, business web site hosting{% endblock %}
+
+{# description #}
+{% block description %}Wordpress hosting plans by InMotion Hosting. Easy web hosting for Wordpress blogs including 1-click install and faster performance.{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Wordpress Web Hosting</h1>
+    </div>
+    <div class="span3">
+
+    </div>
+{% endblock %}
+
+{% block container %}
+
+    {% block left_column %}
+        <div class="span8">
+
+In addition to award winning technical support and 99.9% uptime, InMotion Hosting's WordPress Hosting is optimized for the active blogger. Our exclusive Speed Zone technology, top of the line security features, and business class servers ensure your WordPress will run smoothly and securely.
+
+            <h4 class="features-collapse">Features</h4>
+
+            <!--  collapse table  -->
+
+            <ul class="longtail-features-collapse">
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/advanced-features.jpg" alt="cpanel advanced features icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">1-Click Easy Install With Softaculous</p>
+                        </div>
+                        <div id="demo" class="collapse" data-parent="menu">
+                            <p>1-Click Easy Install with Softaculous. Each InMotion Hosting Business Class web hosting package includes access to Softaculous. Softaculous offers a one-click installation of WordPress and will automatically update to offer the most current version! It couldn't get much easier to begin your WordPress site!</p>
+                        </div>
+                </li>
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/website-statistics.jpg" alt="cpanel website statistics icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Better Security with suPHP</p>
+                        </div>
+                        <div id="demo" class="collapse" data-parent="menu">
+                            <p>Better Security with suPHP. suPHP is a PHP module that restricts how and at which permission level PHP scripts are executed. Without suPHP, scripts are executed as the user "nobody," meaning they have system-wide access which can result in security vulnerabilities. InMotion Hosting utilizes suPHP to ensure the most secure environment available.</p>
+                        </div>
+                </li>
+            </ul>
+
+            <ul class="longtail-features-collapse">
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/security.jpg" alt="cpanel security icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Latest Versions of MySQL 5 &amp; PHP 5</p>
+                        </div>
+                    <div id="demo" class="collapse" data-parent="menu">
+                        <p>Latest Versions of MySQL5 and PHP5. InMotion Hosting currently offers the most recent and stable versions of MySQL and PHP. By choosing InMotion Hosting, you can ensure that your WordPress is running on the most up to date and secure platform.</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/ftp-features.jpg" alt="cpanel ftp features icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">FREE New Domain or Domain Transfer for the first year</p>
+                        </div>
+                    <div id="demo2" class="collapse" data-parent="menu">
+                        <p>Free New Domain or Domain Transfer for the first year. With each Business Class web hosting account, InMotion Hosting offers one free domain name or domain name transfer for the first year. Start your WordPress site with a FREE domain name or transfer for the first year and NO hidden fees!</p>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="longtail-features-collapse longtail-odd">
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/email-administration.jpg" alt="email administration icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Faster Performance with High Grade Hardware &amp; Max Speed Zones</p>
+                        </div>
+                    <div id="demo" class="collapse" data-parent="menu">
+                        <p>Faster Performance with High Grade Hardware &amp; Max Speed Zones. With InMotion Hosting Business Class web hosting, you have the choice of data center locations. With data centers located in Los Angeles, CA and Washington D.C., your information can be located closer to you, improving website and email performance! [ <a href="/fast-web-hosting.html">See The Difference</a> ]</p>
+                    </div>
+                </li>
+                <li>
+                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/database-administration.jpg" alt="cpanel database administration icon" />
+                        <div class="media-body raised">
+                            <p class="collapse-title">Easy Transfer from Wordpress.com &amp; Other Hosts</p>
+                        </div>
+                    <div id="demo2" class="collapse" data-parent="menu">
+                        <p>Easy Site Transfer from Wordpress.com and Other Hosts. InMotion Hosting makes it easy to transfer your current WordPress site. We have helped thousands of customers transfer their site with no downtime!</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="button-class">
+                <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
+                  View Details
+                </button>
+            </div>
+            <!--  end collapse table  -->
+
+        </div>
+        <!--  end span8  -->
+    {% endblock %}
+
+{% endblock %}

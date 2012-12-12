@@ -137,22 +137,6 @@ $app->match('/moodle-hosting.html', function() use ($app) {
     return $app['twig']->render('/../longtail-pages/moodle-hosting/moodle-hosting.html.twig');
 })->bind('longtail_moodle_hosting_landing_page');
 
-//softaculous controller
-$app->match('/softaculous/', function() use ($app){
-    return $app['twig']->render('/../softaculous/softaculous.html.twig');
-})
-->bind('longtail_softaculous_landng_redirect');
-
-$app->match('/softaculous.html', function() use ($app){
-    return $app['twig']->render('/../softaculous/softaculous.html.twig');
-})
-->bind('longtail_softaculous_landing');
-
-$app->get('/softaculous/{page}', function($page) use ($app){
-    return $app['twig']->render('/../softaculous/'.$page.'.twig');
-})
-->bind('longtail_softaculous');
-
 // prestashop controller 
 $app->match('/prestashop-hosting/', function() use ($app) {
     return $app['twig']->render('/../prestashop/prestashop-hosting.html.twig');
@@ -209,6 +193,22 @@ $app->get('/joomla-hosting/{page}', function($page) use ($app){
     return $app['twig']->render('/../longtail-pages/joomla-hosting/'.$page.'.twig');
 })
 ->bind('longtail_joomla');
+
+//wordpress controller
+$app->match('/wordpress-hosting/', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/wordpress-hosting/wordpress-hosting.html.twig');
+})
+->bind('longtail_wordpress_landng_redirect');
+
+$app->match('/wordpress-hosting.html', function() use ($app){
+    return $app['twig']->render('/../longtail-pages/wordpress-hosting/wordpress-hosting.html.twig');
+})
+->bind('longtail_wordpress_landing');
+
+$app->get('/wordpress-hosting/{page}', function($page) use ($app){
+    return $app['twig']->render('/../longtail-pages/wordpress-hosting/'.$page.'.twig');
+})
+->bind('longtail_wordpress');
 
 // form controller
 $app->match('/form', function() use ($app) {
