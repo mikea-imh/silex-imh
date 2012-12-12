@@ -53,6 +53,11 @@ $app->match('/about-us', function() use ($app) {
         'about_us.html.twig');
 })->bind('about_us');
 
+$app->match('/sitemap', function() use ($app) {
+    return $app['twig']->render(
+        'sitemap.html.twig');
+})->bind('sitemap');
+
 $app->match('/webdesign', function() use ($app) {
     return $app['twig']->render(
         'webdesign.html.twig');
