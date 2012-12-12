@@ -1,0 +1,109 @@
+{% extends 'layout.html.twig' %}
+{% set active = 'sitemap' %}
+
+{# title #}
+{% block title %}{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+<div class="row">
+    <div class="span9">
+        <h1>Sitemap</h1>
+    </div>
+    <div class="span3">
+        <img alt="gears" class="banner-img" src="../../img/gears-plain.png" />
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container wrap">
+    <div class="row">
+        <div class="span3">
+            <h2>Our Company</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Awards</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">30/90 Day Money Back Guarantee</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Employment</a></li>
+                <li><a href="#">Link To Us</a></li>
+            </ul>
+        </div>
+        <div class="span3">
+            <h2>Our Products</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Business Hosting</a></li>
+                <li><a href="#">VPS Hosting</a></li>
+                <li><a href="#">Dedicated Servers</a></li>
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Domain Registration</a></li>
+            </ul>
+        </div>
+        <div class="span3">
+            <h2>Support/Resources</h2>
+            <ul class="sm">
+                <li><a href="#">Customer Center</a></li>
+                <li><a href="#">Support Desk</a></li>
+                <li><a href="#">Support Forum</a></li>
+                <li><a href="#">Billing Information</a></li>
+                <li><a href="#">User Guides</a>
+                    <ul>
+                        <li><a href="#">Flash Guides</a>
+                            <ul>
+                                <li><a href="#">CPanel Flash Tutorials</a></li>
+                                <li><a href="#">Change Nameservers (DNS)</a></li>
+                                <li><a href="#">Configure an Email Client</a></li>
+                                <li><a href="#">WS FTP Tutorials</a></li>
+                                <li><a href="#">osCommerce Flash Tutorials</a></li>
+                                <li><a href="#">FrontPage Tutorials</a></li>
+                                <li><a href="#">Dreamweaver Tutorials</a></li>
+                                <li><a href="#">Flash Tutorials</a></li>
+                                <li><a href="#">phpBB Admin & User Tutorials</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Text Guides</a>
+                            <ul>
+                                <li><a href="#">Spam Prevention Series</a>
+                                    <ul>
+                                        <li><a href="#">Spam Assassin Guide</a></li>
+                                        <li><a href="#">BoxTrapper Setup Guide</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Explorer's FTP Program</a></li>
+                                <li><a href="#">Upload with SmartFTP</a></li>
+                                <li><a href="#">WS FTP Tutorials</a></li>
+                                <li><a href="#">FrontPage Tutorials</a></li>
+                                <li><a href="#">Dreamweaver Tutorials</a></li>
+                                <li><a href="#">Setup Email Accoutn in CPanel</a></li>
+                                <li><a href="#">Setup Outlook/Outlook Express</a></li>
+                                <li><a href="#">Configure FormMail</a></li>
+                                <li><a href="#">WebBuilder User Guide</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Web Hosting Articles</a></li>
+            </ul>
+        </div>
+        <div class="span3">
+            <h2>Affiliate Program</h2>
+            <p>Start making money with the InMotion Hosting Affiliate Program. Earn a generous $50.00 payout when you send a customer to experience our affordable web hosting.</p>
+            <ul>
+                <li><a href="#">Affiliate Program</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

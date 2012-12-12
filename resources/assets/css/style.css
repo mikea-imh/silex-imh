@@ -715,6 +715,10 @@ footer a {
 
 /*------------------------------*/
 
+.sm ul li li {
+  list-style-image: url(../../img/bullet-in.gif);
+}
+
 /**
  * Add these to boostrap
  */
@@ -967,13 +971,6 @@ img {
   font-family: adelle-sans, Helvetica, Arial, sans-serif;
   font-size: 13px;
   color: #232323;
-}
-
-/**
- * Spacing for all carousels' prev and next buttons
- */
-.carousel-control {
-  margin-top: 20px;
 }
 
 /**
@@ -1544,6 +1541,7 @@ li {
   float: right;
   margin: 0 0 10px 20px;
 }
+
 .quote {
   box-sizing: border-box;
   color: #888;
