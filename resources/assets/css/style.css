@@ -56,7 +56,12 @@
 blockquote {
   border: none;
   margin: 0;
-  padding: 0 0 20px 36px;
+  padding: 0 20px 20px 36px;
+}
+
+blockquote p {
+  font-size: 13px;
+  line-height: 22px;
 }
 
 body {
@@ -743,6 +748,7 @@ footer a {
   margin: 30px 0 30px 30px;
 }
 
+.marg-bot,
 .privacy li {
   margin-bottom: 20px;
 }
@@ -892,7 +898,7 @@ input::-webkit-input-placeholder {
 }
 
 /**
- * Domains page quadrants
+ * Domains page quadrants -- need to change this to just quadrants since we use it on Testimonials and elsewhere
  */
 .domain-quadrants .span6 {
   box-sizing: border-box;
