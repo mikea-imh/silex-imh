@@ -21,110 +21,99 @@
 {% endblock %}
 
 {% block container %}
-
     {% block left_column %}
         <div class="span8">
-
             <h3>The Drupal Web Hosting Experts</h3>
             <p><a href="/drupal-hosting/cheap-drupal-hosting.html">Web hosting</a> with drupal couldn't be easier with InMotion Hosting. Our advanced webhosting service includes blazing-fast hard drives, the enhanced security of suPHP, and a support center that's second-to-none. And with our painless one-click install, your drupal web site will be up and running in no time.</p>
-
             <h4 class="features-collapse">Features</h4>
-
             <!--  collapse table  -->
-
-            <ul class="longtail-features-collapse">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/advanced-features.jpg" alt="cpanel advanced features icon" />
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/advanced-features.jpg" alt="cpanel advanced features icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">1-Click Easy Install With Softaculous</p>
+                            <p>1-Click Easy Install With Softaculous</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>1-Click Easy Install with Softaculous. Each InMotion Hosting Business Class web hosting package includes access to Softaculous. Softaculous offers a one-click installation of Drupal and will automatically update to offer the most current version! It couldn't get much easier to begin your Drupal site!</p>
+                            </div>
                         </div>
-                        <div id="demo" class="collapse" data-parent="menu">
-                            <p>1-Click Easy Install with Softaculous. Each InMotion Hosting Business Class web hosting package includes access to Softaculous. Softaculous offers a one-click installation of Drupal and will automatically update to offer the most current version! It couldn't get much easier to begin your Drupal site!</p>
-                        </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/website-statistics.jpg" alt="cpanel website statistics icon" />
-                        <div class="media-body raised">
-                            <p class="collapse-title">Better Security with suPHP</p>
-                        </div>
-                        <div id="demo" class="collapse" data-parent="menu">
-                            <p>Better Security with suPHP. suPHP is a PHP module that restricts how and at which permission level PHP scripts are executed. Without suPHP, scripts are executed as the user "nobody," meaning they have system-wide access which can result in security vulnerabilities. InMotion Hosting utilizes suPHP to ensure the most secure environment available.</p>
-                        </div>
-                </li>
-            </ul>
-
-            <ul class="longtail-features-collapse">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/security.jpg" alt="cpanel security icon" />
-                        <div class="media-body raised">
-                            <p class="collapse-title">Latest Versions of MySQL 5 &amp; PHP 5</p>
-                        </div>
-                    <div id="demo" class="collapse" data-parent="menu">
-                        <p>Latest Versions of MySQL5 and PHP5. InMotion Hosting currently offers the most recent and stable versions of MySQL and PHP. By choosing InMotion Hosting, you can ensure that your Drupal is running on the most up to date and secure platform.</p>
                     </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/ftp-features.jpg" alt="cpanel ftp features icon" />
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/website-statistics.jpg" alt="cpanel website statistics icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">FREE New Domain or Domain Transfer</p>
+                            <p>Better Security with suPHP</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Better Security with suPHP. suPHP is a PHP module that restricts how and at which permission level PHP scripts are executed. Without suPHP, scripts are executed as the user "nobody," meaning they have system-wide access which can result in security vulnerabilities. InMotion Hosting utilizes suPHP to ensure the most secure environment available.</p>
+                            </div>
                         </div>
-                    <div id="demo2" class="collapse" data-parent="menu">
-                        <p>Free New Domain or Domain Transfer. With each Business Class web hosting account, InMotion Hosting offers one free domain name or domain name transfer for the first year of hosting. Start your Drupal site with a FREE domain name or transfer for the first year and NO hidden fees!</p>
                     </div>
-                </li>
-            </ul>
-
-            <ul class="longtail-features-collapse longtail-odd">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/email-administration.jpg" alt="email administration icon" />
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/security.jpg" alt="cpanel security icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Faster Performance with High Grade Hardware &amp; Max Speed Zones</p>
+                            <p>Latest Versions of MySQL 5 &amp; PHP 5</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Latest Versions of MySQL5 and PHP5. InMotion Hosting currently offers the most recent and stable versions of MySQL and PHP. By choosing InMotion Hosting, you can ensure that your Drupal is running on the most up to date and secure platform.</p>
+                            </div>
                         </div>
-                    <div id="demo" class="collapse" data-parent="menu">
-                        <p>Faster Performance with High Grade Hardware & Max Speed Zones. With InMotion Hosting Business Class web hosting, you have the choice of data center locations. With data centers located in Los Angeles, CA and Washington D.C., your information can be located closer to you, improving website and email performance! <a href="/fast-web-hosting.html">See the difference</a></p>
                     </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/database-administration.jpg" alt="cpanel database administration icon" />
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/ftp-features.jpg" alt="cpanel ftp features icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Easy Transfer from Other Hosts</p>
+                            <p>FREE New Domain or Domain Transfer</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Free New Domain or Domain Transfer. With each Business Class web hosting account, InMotion Hosting offers one free domain name or domain name transfer for the first year of hosting. Start your Drupal site with a FREE domain name or transfer for the first year and NO hidden fees!</p>
+                            </div>
                         </div>
-                    <div id="demo2" class="collapse" data-parent="menu">
-                        <p>Easy Site Transfer from Other Hosts. InMotion Hosting makes it easy to transfer your current Drupal site. We have helped thousands of customers transfer their site with no downtime!</p>
                     </div>
-                </li>
-            </ul>
-
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/email-administration.jpg" alt="email administration icon" />
+                        <div class="media-body raised">
+                            <p>Faster Performance with High Grade Hardware &amp; Max Speed Zones</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Faster Performance with High Grade Hardware &amp; Max Speed Zones. With InMotion Hosting Business Class web hosting, you have the choice of data center locations. With data centers located in Los Angeles, CA and Washington D.C., your information can be located closer to you, improving website and email performance! <a href="/fast-web-hosting.html">See the difference</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/database-administration.jpg" alt="cpanel database administration icon" />
+                        <div class="media-body raised">
+                            <p>Easy Transfer from Other Hosts</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Easy Site Transfer from Other Hosts. InMotion Hosting makes it easy to transfer your current Drupal site. We have helped thousands of customers transfer their site with no downtime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="button-class">
                 <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
                   View Details
                 </button>
             </div>
             <!--  end collapse table  -->
-
             <h3>Fast Drupal Hosting</h3>
             <p>Our <a href="/drupal-hosting/drupal-dedicated-hosting.html">dedicated</a>, <a href="/drupal-hosting/drupal-vps-hosting.html">VPS</a> and <a href="/drupal-hosting/drupal-shared-hosting.html">Shared servers</a> use some of the fastest disk drives available (SAS drives running at 15,000 RPM with RAID 10 configuration, if you must know).</p>
-
             <p>Fast disk access is critical for Drupal since it accesses design templates and page content from databases before serving every web page. And InMotion doesn't overload its servers with too many customers, keeping your CPU <a href="/drupal-hosting/fast-drupal-hosting.html">performance</a> where it should be for Drupal.</p>
-
             <h3>Secure Drupal Hosting</h3>
             <p>InMotion enhances the security of your Drupal site by using suPHP to execute Drupal and your own PHP scripts. Our Drupal, PHP and MySQL distributions are kept up to date, helping you to keep your configuration more secure.
             Of course we also have some of the most secure firewall and network monitoring systems in the hosting business.</p>
-
             <h3>Drupal Hosting Support</h3>
             <p>Our support team is the envy of the industry and they are available when you need them. For installation and configuration, InMotion offers Drupal support 24/7 from the U.S. via phone, live chat and email.
             Our online Support Center contains a wealth of information about Drupal hosting and troubleshooting.
             Learn more about our managed hosting with Drupal <a href="/drupal-hosting/managed-drupal-hosting.html">here</a>.</p>
-
             <h3>Customer Testimonials</h3>
             <p>&ldquo;Absolutely amazing. Technical support is fast and responsive. Nearly ZERO down time. I just wanted to thank the technical support staff at inmotionhosting.com for making my visitors and myself welcome.&rdquo;</p>
             <p>&mdash; Nick Patel, Merced, CA</p>
-
             <p><a href="/quotes.html">Read More</a></p>
-
         </div>
         <!--  end span8  -->
-
     {% endblock %}
-
 {% endblock %}

@@ -16,110 +16,97 @@
         <h1>Easy 1-Click Application Installer</h1>
     </div>
     <div class="span3">
-
     </div>
 {% endblock %}
 
 {% block container %}
-
     {% block left_column %}
-
         <div class="span8">
-
             <h2>Over 280 Easy-To-Install Applications!</h2>
             <p>With an entire suite of application at your fingertips, you can easily create a website with the features your customers want.</p>
-
             <p>Our application installer, Softaculous, has an easy to use interface that lets you install, update, or delete applications with just a single click! This means less time trying to get an application to work, and more time actually working.</p>
-
             <p>To see the full list of applications, <a href="softaculous/available-softaculous-applications.html">click here</a>.</p>
-
             <h4 class="features-collapse">Features</h4>
-
             <!--  collapse table  -->
-
-            <ul class="longtail-features-collapse">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/softaculous/softaculous_blogs_icon.gif" alt="softaculous blogs icon" />
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/softaculous/softaculous_blogs_icon.gif" alt="softaculous blogs icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Blogs</p>
+                            <p>Blogs</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Keep your online presence up-to-date. Choose a blogging application that matches your style. With customizable templates and a slew of plugins, you can easily create a blog with all the features you want.</p>
+                            </div>
                         </div>
-                        <div id="demo" class="collapse" data-parent="menu">
-                            <p>Keep your online presence up-to-date. Choose a blogging application that matches your style. With customizable templates and a slew of plugins, you can easily create a blog with all the features you want.</p>
-                        </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/softaculous/softaculous_ecommerce_icon.gif" alt="softaculous ecommerce icon" />
-                        <div class="media-body raised">
-                            <p class="collapse-title">E-Commerce</p>
-                        </div>
-                        <div id="demo" class="collapse" data-parent="menu">
-                            <p>Sell online and make money. No more dealing with third party websites to sell your goods. Instead, keep your branding consistent to match what you are selling. With an e-commerce cart, you can build a store, sell and then ship your product with ease.</p>
-                        </div>
-                </li>
-            </ul>
-
-            <ul class="longtail-features-collapse">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/softaculous/softaculous_cms_icon.gif" alt="softaculous CMS icon" />
-                        <div class="media-body raised">
-                            <p class="collapse-title">CMS</p>
-                        </div>
-                    <div id="demo" class="collapse" data-parent="menu">
-                        <p>Organize your website with a CMS. Keeping a website organized is no easy task. Using a CMS keeps a website organized and allows multiple users to easily edit and manage your website content.</p>
                     </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/softaculous/softaculous_projectman_icon.gif" alt="softaculous educational icon" />
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/softaculous/softaculous_ecommerce_icon.gif" alt="softaculous ecommerce icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Educational</p>
+                            <p>E-Commerce</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Sell online and make money. No more dealing with third party websites to sell your goods. Instead, keep your branding consistent to match what you are selling. With an e-commerce cart, you can build a store, sell and then ship your product with ease.</p>
+                            </div>
                         </div>
-                    <div id="demo2" class="collapse" data-parent="menu">
-                        <p>Organize and teach online. Educational applications provides a way for educators to organize their courses online, redistribute coursework, and provides an easy method for teaching.</p>
                     </div>
-                </li>
-            </ul>
-
-            <ul class="longtail-features-collapse longtail-odd">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/softaculous/softaculous_forums_icon.gif" alt="softaculous forum icon" />
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/softaculous/softaculous_cms_icon.gif" alt="softaculous CMS icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Forums</p>
+                            <p>CMS</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Organize your website with a CMS. Keeping a website organized is no easy task. Using a CMS keeps a website organized and allows multiple users to easily edit and manage your website content.</p>
+                            </div>
                         </div>
-                    <div id="demo" class="collapse" data-parent="menu">
-                        <p>Build a community. Allow users to post and comment on messages about any topic you want to talk about. A forum is a great way to engage others who are as enthused about your hobbies as you are.</p>
                     </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/softaculous/softaculous_galleries_icon.gif" alt="softaculous galleries icon" />
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/softaculous/softaculous_projectman_icon.gif" alt="softaculous educational icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Image Galleries</p>
+                            <p>Educational</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Organize and teach online. Educational applications provides a way for educators to organize their courses online, redistribute coursework, and provides an easy method for teaching.</p>
+                            </div>
                         </div>
-                    <div id="demo2" class="collapse" data-parent="menu">
-                        <p>Give your photos a professional look. With image galleries applications, you can get your photos organized and put in front of your customers without the hassle of manually creating HTML photo galleries.</p>
                     </div>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/softaculous/softaculous_forums_icon.gif" alt="softaculous forum icon" />
+                        <div class="media-body raised">
+                            <p>Forums</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Build a community. Allow users to post and comment on messages about any topic you want to talk about. A forum is a great way to engage others who are as enthused about your hobbies as you are.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/softaculous/softaculous_galleries_icon.gif" alt="softaculous galleries icon" />
+                        <div class="media-body raised">
+                            <p>Image Galleries</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Give your photos a professional look. With image galleries applications, you can get your photos organized and put in front of your customers without the hassle of manually creating HTML photo galleries.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!--  end collapse table  -->
-
             <div class="button-class">
                 <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
                   View Details
                 </button>
             </div>
-
             <h2>Free for Shared Hosting Customers!</h2>
             Softaculous is free with every Shared Hosting plan. This means after signup, you will have instant access to over 280 applications!
-
             <p>For those on a VPS or dedicated hosting plans, you will need to purchase a license which are $5/mo or $50/year. You can order a license through your Account Management Panel, or give us a call to get started today! (888) 321-4678.</p>
-
             <h2>Reliable Servers &amp; Multiple Data Center Locations</h2>
             <p>Every application installed is hosted on one of our 100% Dell built-and-tested servers. This means you don't have to worry about downtime or any of the other issues that happens when hosting companies buy cheap hardware.</p>
-
             <p>We provide our customers with the option of selecting between 2 data centers. This means your application can be hosted closer to your audience. With less travel time, your content gets delivered sooner rather than later.</p>
-
         </div>
         <!--  end span8  -->
-
     {% endblock %}
-
 {% endblock %}

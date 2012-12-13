@@ -21,97 +21,90 @@
 {% endblock %}
 
 {% block container %}
-
     {% block left_column %}
         <div class="span8">
-
             <h2>The OpenCart Hosting Experts</h2>
             <p>OpenCart is a free shopping cart system that can be integrated to any <a href="/business-hosting">hosting package</a> InMotion offers. Thousands of OpenCart templates, themes, extensions and modules enable you to fully customize your customer's shopping cart experience. It utilizes a clean file system and simple interface so no technical skills are required. If you do need assistance, there is a large community online that provides plenty of support, tutorials and documentation. InMotion Hosting also offers a full OpenCart <a href="www.inmotionhosting.com/support/edu/opencart">education channel</a> providing many tutorials and articles.</p>
-
             <h3>Templates and Modules</h3>
             <p>OpenCart is a module and extension based system. This means you have full control over the appearance and functionality of your shopping cart and administrative panel. Hundreds, if not thousands, of <a href="/opencart/opencart-templates.html">OpenCart templates</a> are available and make it easy for you to install a high quality design in no time. You also have complete control of the functionality of your store by customizing its modules and extensions. Adding and removing different <a href="/opencart/opencart-modules.html">modules</a> is easy to do and can enhance your customer's shopping experience in great ways.</p>
-
             <p>OpenCart is completely open source, supports an unlimited number of products and categories, and includes product reviews and ratings functionality. Below are a few more noteworthy features:</p>
-
             <h4 class="features-collapse">Features</h4>
-
             <!--  collapse table  -->
-
-            <ul class="longtail-features-collapse">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/advanced-features.jpg" alt="cpanel advanced features icon" />
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/advanced-features.jpg" alt="cpanel advanced features icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Simple Installation</p>
+                            <p>Simple Installation</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>OpenCart is lightweight and easy to download and install. With the right hosting package, you could have your shopping cart installed and uploading products in no time at all.</p>
+                            </div>
                         </div>
-                        <div id="demo" class="collapse" data-parent="menu">
-                            <p>OpenCart is lightweight and easy to download and install. With the right hosting package, you could have your shopping cart installed and uploading products in no time at all.</p>
-                        </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/website-statistics.jpg" alt="cpanel website statistics icon" />
-                        <div class="media-body raised">
-                            <p class="collapse-title">Large Range of Support</p>
-                        </div>
-                        <div id="demo" class="collapse" data-parent="menu">
-                            <p>Help is available to you 24x7x365. Take advantage of InMotion Hosting's Support Center education channels directly related to OpenCart here. There's also a large online community that provides plenty of support, documentation and tutorials</p>
-                        </div>
-                </li>
-            </ul>
-
-            <ul class="longtail-features-collapse">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/security.jpg" alt="cpanel security icon" />
-                        <div class="media-body raised">
-                            <p class="collapse-title">Feature Rich</p>
-                        </div>
-                    <div id="demo" class="collapse" data-parent="menu">
-                        <p>Thousands of OpenCart templates, themes and modules are at your fingertips. Have thousands of products? Upload your entire inventory with one click using one of OpenCart's import/export modules.</p>
                     </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/ftp-features.jpg" alt="cpanel ftp features icon" />
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/website-statistics.jpg" alt="cpanel website statistics icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Multiple Payment Gateways</p>
+                            <p>Large Range of Support</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Help is available to you 24x7x365. Take advantage of InMotion Hosting's Support Center education channels directly related to OpenCart here. There's also a large online community that provides plenty of support, documentation and tutorials.</p>
+                            </div>
                         </div>
-                    <div id="demo2" class="collapse" data-parent="menu">
-                        <p>Make it simple for your customers. OpenCart software is compatible with hundreds of payment gateways and shipping method integrations. PayPal, Google Checkout, Amazon Payments, UPS, FEDEX, USPS and many more are all available.</p>
                     </div>
-                </li>
-            </ul>
-
-            <ul class="longtail-features-collapse longtail-odd">
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/email-administration.jpg" alt="email administration icon" />
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/ftp-features.jpg" alt="cpanel ftp features icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Easy Admin Panel</p>
+                            <p>Multiple Payment Gateways</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Make it simple for your customers. OpenCart software is compatible with hundreds of payment gateways and shipping method integrations. PayPal, Google Checkout, Amazon Payments, UPS, FEDEX, USPS and many more are all available.</p>
+                            </div>
                         </div>
-                    <div id="demo" class="collapse" data-parent="menu">
-                        <p>No technical skills are required. The administration control panel is very user-friendly and allows you to have complete control over your online store.</p>
                     </div>
-                </li>
-                <li>
-                    <img class="media-object pull-left sunken" src="{{ app.request.basepath }}/img/cpanel-hosting/database-administration.jpg" alt="cpanel database administration icon" />
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/security.jpg" alt="cpanel security icon" />
                         <div class="media-body raised">
-                            <p class="collapse-title">Multiple Language &amp; Currencies</p>
+                            <p>Feature Rich</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Thousands of OpenCart templates, themes and modules are at your fingertips. Have thousands of products? Upload your entire inventory with one click using one of OpenCart's import/export modules.</p>
+                            </div>
                         </div>
-                    <div id="demo2" class="collapse" data-parent="menu">
-                        <p>Offer language and currency support to other countries! OpenCart software is available in 18 different languages and currencies to maximize your company's selling potential.</p>
                     </div>
-                </li>
-            </ul>
-
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/email-administration.jpg" alt="email administration icon" />
+                        <div class="media-body raised">
+                            <p>Easy Admin Panel</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>No technical skills are required. The administration control panel is very user-friendly and allows you to have complete control over your online store.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/cpanel-hosting/database-administration.jpg" alt="cpanel database administration icon" />
+                        <div class="media-body raised">
+                            <p>Multiple Language &amp; Currencies</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Offer language and currency support to other countries! OpenCart software is available in 18 different languages and currencies to maximize your company's selling potential.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="button-class">
                 <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
                   View Details
                 </button>
             </div>
             <!--  end collapse table  -->
-
             <h3>OpenCart Hosting &amp; Simple Installation</h3>
             <p>InMotion provides the best hosting for OpenCart along with a simple one-click installation process via Softaculous. Our servers run the latest Apache, MySQL, and PHP versions to ensure proper compatibility. The whole shopping cart installation process is so easy you can start adding your products within minutes! For more information on what InMotion offers, visit our <a href="/site-hosting-tools">hosting features and tools</a> page.</p>
-
         </div>
         <!--  end span8  -->
     {% endblock %}
-
 {% endblock %}

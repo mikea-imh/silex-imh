@@ -23,128 +23,108 @@
 {# left column #}
 {% block left_column %}
     <div class="span8">
-
-<p>Joomla hosting services need to meet the minimum Joomla server requirements in order to run the Joomla Content Management System. If a web server does not offer the basic needs for a Joomla website to run, it can't possibly be considered a joomla hosting service. We've outlined on this page the requirements you need to make sure your web hosting provider offers if you want to <a href="/joomla-hosting.html">host Joomla</a> with them.</p>
-
-<h3>PHP 5.2.4</h3>
-<img src="{{ app.request.basepath }}/img/joomla-hosting/icon.php.png" class="sales-page-left-float" alt="php icon" /><p>The current version of Joomla, Joomla 2.5, requires at minimum PHP version 5.2.4. The Joomla team recommends that you run php 5.3.</p>
-
-<table class="table longtail">
-    <thead>
-        <tr>
-            <th>
-                <p>What version of PHP does my server run?</p>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p>If you already have a hosting account that offers PHP, you can use a php info page to show you what version of PHP you are using. To do this, create a file named phpinfo.php and put in the following code:</p>
-
-                <pre>&lt;?php phpinfo(); ?&gt;</pre>
-
-                <p>After you save this file on your server, access it via your browser. At the top of the page, you should see something like, "PHP Version 5.2.17". This is the PHP version that your server is running.</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<table class="table longtail">
-    <thead>
-        <tr>
-            <th>
-                <p>What if my server does not have PHP 5.2.4 or higher?</p>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p>If your hosting provider has placed your account on a server that does not offer PHP 5.2.4 or higher, you should contact them and ask if they can move your account to a newer server. A good joomla hosting service should be able to accommodate this requirement and have a server running an up to date version of PHP.</p>
-
-                <img src="{{ app.request.basepath }}/img/joomla-hosting/good-joomla-hosting.png" class="sales-page-left-float" alt="good joomla hosting image" /><p>If you're searching for Joomla web hosting services, you won't need to worry about PHP versions with InMotion Hosting as we ensure the software on our servers is up to date!</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>MySQL 5.0.4</h3>
-<img src="{{ app.request.basepath }}/img/joomla-hosting/icon.mysql.png" class="sales-page-left-float" alt="mysql icon" /><p>Joomla hosting companies should offer MySQL version 5.0.4, the minimum required database type and version.</p>
-
-<table class="table longtail">
-    <thead>
-        <tr>
-            <th>
-                <p>What version of MySQL is my server running?</p>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p>If you created the phpinfo.php file earlier in this article, the MySQL version on the server should be listed next to Client API version. This version does not always match the exact version of MySQL on the server, so if you have ssh access to your server, you can run the following command:</p>
-
-                <p>mysql --version</p>
-                <p>mysql Ver 14.12 Distrib 5.0.92, for unknown-linux-gnu (x86_64) using readline 5.1</p>
-
-                <p>As you can see from the above, the server is running MySQL version 5.0.92</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<table class="table longtail">
-    <thead>
-        <tr>
-            <th>
-                <p>What if my server does not have a high enough version of MySQL?</p>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p>As with your server's PHP version, you should contact your hosting service and ask if they can help you with getting moved to a server running a more recent version of MySQL.</p>
-
-                <img src="{{ app.request.basepath }}/img/joomla-hosting/good-joomla-hosting.png" class="sales-page-left-float" alt="good joomla hosting image" /><p>InMotion Hosting's servers are running 5.0.92 and higher, which meets Joomla's MySQL requirements. If you do need a different version of MySQL, our <a href="/joomla-hosting/managed-joomla-hosting.html">managed VPS and Dedicated hosting</a> customers can request that we do this MySQL upgrade for them.</p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>Web Server</h3>
-<img src="{{ app.request.basepath }}/img/joomla-hosting/icon.apache.gif" class="sales-page-left-float" alt="apache icon" /><p>Joomla also requires that your server run web server software, either Apache or IIS. Most Joomla hosting sites run off linux servers. Because IIS is a Microsoft Windows product, they won't be running it. Apache is the most popular web server running on Linux, and most likely this is the server software you will be concerned about.</p>
-
-<p>In addition to Apache itself, Joomla requires the following Apache modules to be installed:</p>
-
-<li>mod_mysql</li>
-<li>mod_xml</li>
-<li>mod_zlib</li>
-
-<table class="table longtail">
-    <thead>
-        <tr>
-            <th>
-                <p>Does my installation of Apache meet Joomla's minimum requirements?</p>
-            </th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>
-                <p>While there are ways to check if your server includes mod_mysql, mod_xml, and mod_zlib, it may just be easier to contact your web host with these questions. They should be able to answer this question for you immediately.</p>
-
-                <img src="{{ app.request.basepath }}/img/joomla-hosting/good-joomla-hosting.png" class="sales-page-left-float" alt="good joomla hosting image" /><p>InMotion Hosting servers are already preconfigured to run Joomla. We run these 3 required Apache server modules, and many others!</p>
-                <p>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
-<h3>InMotion Hosting is a Great Joomla Hosting Provider!</h3>
-<p>InMotion Hosting has been providing <a href="/joomla-hosting/affordable-joomla-hosting.html">affordable Joomla hosting</a> services for years! Our servers are setup for Joomla, so you can save yourself all the version testing by purchasing Joomla hosting through InMotion. We offer Shared Hosting, VPS Hosting, and Joomla dedicated servers. You can also upgrade your account at any time. This is a great advantage, as we allow your hosting plan to grow as your website grows too.</p>
-
+        <p>Joomla hosting services need to meet the minimum Joomla server requirements in order to run the Joomla Content Management System. If a web server does not offer the basic needs for a Joomla website to run, it can't possibly be considered a joomla hosting service. We've outlined on this page the requirements you need to make sure your web hosting provider offers if you want to <a href="/joomla-hosting.html">host Joomla</a> with them.</p>
+        <h3>PHP 5.2.4</h3>
+        <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.php.png" class="sales-page-left-float" alt="php icon" /><p>The current version of Joomla, Joomla 2.5, requires at minimum PHP version 5.2.4. The Joomla team recommends that you run php 5.3.</p>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>What version of PHP does my server run?</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>If you already have a hosting account that offers PHP, you can use a php info page to show you what version of PHP you are using. To do this, create a file named phpinfo.php and put in the following code:</p>
+                        <pre>&lt;?php phpinfo(); ?&gt;</pre>
+                        <p>After you save this file on your server, access it via your browser. At the top of the page, you should see something like, "PHP Version 5.2.17". This is the PHP version that your server is running.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>What if my server does not have PHP 5.2.4 or higher?</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>If your hosting provider has placed your account on a server that does not offer PHP 5.2.4 or higher, you should contact them and ask if they can move your account to a newer server. A good joomla hosting service should be able to accommodate this requirement and have a server running an up to date version of PHP.</p>
+                        <img src="{{ app.request.basepath }}/img/joomla-hosting/good-joomla-hosting.png" class="sales-page-left-float" alt="good joomla hosting image" /><p>If you're searching for Joomla web hosting services, you won't need to worry about PHP versions with InMotion Hosting as we ensure the software on our servers is up to date!</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>MySQL 5.0.4</h3>
+        <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.mysql.png" class="sales-page-left-float" alt="mysql icon" /><p>Joomla hosting companies should offer MySQL version 5.0.4, the minimum required database type and version.</p>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>What version of MySQL is my server running?</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>If you created the phpinfo.php file earlier in this article, the MySQL version on the server should be listed next to Client API version. This version does not always match the exact version of MySQL on the server, so if you have ssh access to your server, you can run the following command:</p>
+                        <p>mysql --version</p>
+                        <p>mysql Ver 14.12 Distrib 5.0.92, for unknown-linux-gnu (x86_64) using readline 5.1</p>
+                        <p>As you can see from the above, the server is running MySQL version 5.0.92</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>What if my server does not have a high enough version of MySQL?</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>As with your server's PHP version, you should contact your hosting service and ask if they can help you with getting moved to a server running a more recent version of MySQL.</p>
+                        <img src="{{ app.request.basepath }}/img/joomla-hosting/good-joomla-hosting.png" class="sales-page-left-float" alt="good joomla hosting image" /><p>InMotion Hosting's servers are running 5.0.92 and higher, which meets Joomla's MySQL requirements. If you do need a different version of MySQL, our <a href="/joomla-hosting/managed-joomla-hosting.html">managed VPS and Dedicated hosting</a> customers can request that we do this MySQL upgrade for them.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Web Server</h3>
+        <img src="{{ app.request.basepath }}/img/joomla-hosting/icon.apache.gif" class="sales-page-left-float" alt="apache icon" /><p>Joomla also requires that your server run web server software, either Apache or IIS. Most Joomla hosting sites run off linux servers. Because IIS is a Microsoft Windows product, they won't be running it. Apache is the most popular web server running on Linux, and most likely this is the server software you will be concerned about.</p>
+        <p>In addition to Apache itself, Joomla requires the following Apache modules to be installed:</p>
+        <li>mod_mysql</li>
+        <li>mod_xml</li>
+        <li>mod_zlib</li>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>Does my installation of Apache meet Joomla's minimum requirements?</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>While there are ways to check if your server includes mod_mysql, mod_xml, and mod_zlib, it may just be easier to contact your web host with these questions. They should be able to answer this question for you immediately.</p>
+                        <img src="{{ app.request.basepath }}/img/joomla-hosting/good-joomla-hosting.png" class="sales-page-left-float" alt="good joomla hosting image" /><p>InMotion Hosting servers are already preconfigured to run Joomla. We run these 3 required Apache server modules, and many others!</p>
+                        <p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>InMotion Hosting is a Great Joomla Hosting Provider!</h3>
+        <p>InMotion Hosting has been providing <a href="/joomla-hosting/affordable-joomla-hosting.html">affordable Joomla hosting</a> services for years! Our servers are setup for Joomla, so you can save yourself all the version testing by purchasing Joomla hosting through InMotion. We offer Shared Hosting, VPS Hosting, and Joomla dedicated servers. You can also upgrade your account at any time. This is a great advantage, as we allow your hosting plan to grow as your website grows too.</p>
     </div>
     <!--  end span8  -->
 {% endblock %}

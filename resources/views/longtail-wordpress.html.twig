@@ -12,53 +12,48 @@
 
 {# intro #}
 {% block intro %}
+    {# opening #}
     {% block opening %}
     {% endblock %}
-
 {% endblock %}
 
 {# content #}
 {% block content %}
     <div class="wrap">
         <div class="container">
-
+            {# left_column #}
             {% block left_column %}
             {% endblock %}
-
             <div class="span3 offset1-longtail">
                 <div class="sales-longtail-right-column">
-                    <img src="{{ app.request.basepath }}/img/icon_cpanel-logo.png" alt="cPanel logo" class="sales-page-longtail-logo" />
+                    <img src="{{ app.request.basepath }}/img/site-hosting-tools/sht-logo-wordpress.jpg" alt="wordpress logo" class="sales-page-longtail-logo" />
                     <h3>Recommended Hosting</h3>
                     <div class="recommended-hosting-image-shared"></div>
                     <h4 class="recommended-hosting">Business Hosting</h4>
                     <a href="/business-hosting" class="recommended-hosting">View Plans</a>
                     <hr class="recommended-hosting" />
                     <p>We have tutorials available in our Education Channels</p>
-                    <a href="#" class="btn btn-primary">VIEW TUTORIALS</a>
+                    <a href="http://www.inmotionhosting.com/support/edu/wordpress" class="btn btn-primary">VIEW TUTORIALS</a>
                 </div>
                 <div class="sales-longtail-right-column">
-                    <img src="{{ app.request.basepath }}/img/sales-page-recommended-hosting-awards.gif">
+                    <img src="{{ app.request.basepath }}/img/sales-page-recommended-hosting-awards.gif" />
                 </div>
                 <div class="sales-longtail-right-column">
                     <h4>Proud Sponsors of:</h4>
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_lv2011.gif" class="sponsor" alt="wordcamp sponsor las vegas 2011">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_la2011.gif" class="sponsor" alt="wordcamp sponsor los angeles 2011">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_oc2011.gif" class="sponsor" alt="wordcamp sponsor orange county 2011">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_lv2010.gif" class="sponsor" alt="wordcamp sponsor las vegas 2012">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_la2010.gif" class="sponsor" alt="wordcamp sponsor los angeles 2010">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_sf2010.gif" class="sponsor" alt="wordcamp sponsor san francisco 2010">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_oc2010.gif" class="sponsor" alt="wordcamp sponsor orange county 2010">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_la2009.gif" class="sponsor" alt="wordcamp sponsor los angeles 2009">
-                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_hunts2009.gif" class="sponsor" alt="wordcamp sponsor huntsville 2009">
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_lv2011.gif" class="sponsor" alt="wordcamp sponsor las vegas 2011" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_la2011.gif" class="sponsor" alt="wordcamp sponsor los angeles 2011" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_oc2011.gif" class="sponsor" alt="wordcamp sponsor orange county 2011" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_lv2010.gif" class="sponsor" alt="wordcamp sponsor las vegas 2012" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_la2010.gif" class="sponsor" alt="wordcamp sponsor los angeles 2010" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_sf2010.gif" class="sponsor" alt="wordcamp sponsor san francisco 2010" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_oc2010.gif" class="sponsor" alt="wordcamp sponsor orange county 2010" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_la2009.gif" class="sponsor" alt="wordcamp sponsor los angeles 2009" />
+                    <img src="{{ app.request.basepath }}/img/wordpress-hosting/wc_logo_hunts2009.gif" class="sponsor" alt="wordcamp sponsor huntsville 2009" />
                 </div>
             </div>
             <!--  end span3 (right column)  -->
-
-
-
         </div>
         <!--  end container  -->
-
     </div>
     <!--  end wrap  -->
 {% endblock %}

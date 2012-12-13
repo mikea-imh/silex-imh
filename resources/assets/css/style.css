@@ -666,12 +666,13 @@ h3 {
   width: 120px;
 }
 
-.site-hosting-tool > .media-body {
+.site-hosting-tool > .media-body-sht {
   border: 1px solid #ccc;
   border-radius:5px;
   height:120px;
   margin-bottom:10px;
   padding:10px 0 0 6px;
+  overflow: none;
 }
 
 .site-hosting-tool > .raised p {
@@ -1841,17 +1842,6 @@ p {
  * sales page longtail styles
  */
 
-h2 {
-  color: #888;
-  clear: left;
-}
-
-h3 {
-  color: #222;
-  line-height: 1.0;
-  text-transform: uppercase;
-}
-
 h4.features-collapse {
   border-top: 1px solid #ccc;
   color: #C52127;
@@ -1863,7 +1853,8 @@ img.sales-page-longtail-logo {
   margin: 11px 0 0;
 }
 
-img.sales-page-left-float {
+img.sales-page-left-float,
+img.sales-page-left-float-cpanel {
   float: left;
   margin: 0 15px 0 0;
 }
@@ -1873,6 +1864,10 @@ img.sales-page-right-float {
   margin: 0 0 0 15px;
 }
 
+img.sales-page-left-float-cpanel {
+  display: block;
+  width: 40px;
+}
 p.collapse-title {
   padding: 0 0 0 30px;
 }
@@ -1972,6 +1967,7 @@ ul.longtail-features-collapse li p {
  */
 
 .btn-longtail {
+  box-shadow: 0 3px 0 #666666;
   border-radius: 0 0 3px 3px;
   color: #ffffff;
   padding: 4px 40px;
@@ -1989,6 +1985,7 @@ ul.longtail-features-collapse li p {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); /* left-right border color */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff888', endColorstr='#ff888', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow 0 3px 0 #666666;
 }
 
 .btn-longtail:hover,
@@ -1996,9 +1993,11 @@ ul.longtail-features-collapse li p {
 .btn-longtail.active,
 .btn-longtail.disabled,
 .btn-longtail[disabled] {
+  box-shadow: 0 3px 0 #666666;
   color: #ffffff;
   background-color: #888;
   *background-color: #a9302a;
+  -webkit-box-shadow 0 3px 0 #666666;
 }
 
 .btn-longtail:active,
@@ -2011,8 +2010,8 @@ ul.longtail-features-collapse li p {
  */
 
 table.longtail {
-  width: 100%;
   margin: 0 0 30px;
+  width: 100%;
 }
 
 table.longtail tr th {
@@ -2030,8 +2029,8 @@ table.longtail tr td {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   text-align: left;
-  width: 33%;
   vertical-align: top;
+  width: 33%;
 }
 
 /*------------------------------------*\
@@ -2077,11 +2076,6 @@ h4.features-collapse {
 
 img.sales-page-longtail-logo {
   margin: 11px 0 0;
-}
-
-img.sales-page-right-float {
-  float: right;
-  margin: 0 0 0 15px;
 }
 
 p.collapse-title {
@@ -2301,25 +2295,39 @@ ol.webbuilder li.arrow {
 }
 
 ul.theme_showcase {
+  display: block;
+  height: 140px;
   margin: 0;
   padding: 0;
-  display: block;
   width: 100%;
-  height: 140px;
 }
 
 ul.theme_showcase li {
   display: block;
   float: left;
+  height: 130px;
+  list-style-type: none;
   margin: 5px 0;
   text-align: center;
-  list-style-type: none;
   width: 120px;
-  height: 130px;
 }
 
 ul.theme_showcase img {
-  width: 115px;
-  height: 115px;
   border: 1px solid #ccc;
+  height: 115px;
+  width: 115px;
+}
+
+/**
+ * longtail page Features dropdown
+ */
+
+.feature-column {
+  float: left;
+  margin-left:20px;
+  width: 300px;
+}
+
+.longtail-features {
+  margin: 0 0 5px;
 }
