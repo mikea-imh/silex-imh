@@ -58,6 +58,11 @@ $app->match('/about-us', function() use ($app) {
         'about_us.html.twig');
 })->bind('about_us');
 
+$app->match('/cheap-hosting', function() use ($app) {
+    return $app['twig']->render(
+        'cheap_hosting.html.twig');
+})->bind('cheap_hosting');
+
 $app->match('/sitemap', function() use ($app) {
     return $app['twig']->render(
         'sitemap.html.twig');
