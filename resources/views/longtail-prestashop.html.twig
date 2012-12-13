@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+    {# opening #}
+    {% block opening %}
+    {% endblock %}
+{% endblock %}
+
+{# content #}
+{% block content %}
+    <div class="wrap">
+        <div class="container">
+            {# left_column #}
+            {% block left_column %}
+            {% endblock %}
+            <div class="span3 offset1-longtail">
+                <div class="sales-longtail-right-column">
+                    <img src="{{ app.request.basepath }}/img/prestashop/icon_prestashop-logo.png" alt="Prestashop logo" class="sales-page-longtail-logo" />
+                    <h3>Recommended Hosting</h3>
+                    <div class="recommended-hosting-image-shared"></div>
+                    <h4 class="recommended-hosting">Business Hosting</h4>
+                    <a href="/business-hosting" class="recommended-hosting">View Plans</a>
+                    <hr class="recommended-hosting" />
+                    <p>We have tutorials available in our Education Channels</p>
+                    <a href="http://www.inmotionhosting.com/support/edu/prestashop-15" class="btn btn-primary">VIEW TUTORIALS</a>
+                </div>
+                <div class="sales-longtail-right-column">
+                    <img src="{{ app.request.basepath }}/img/sales-page-recommended-hosting-awards.gif" />
+                </div>
+            </div>
+            <!--  end span3 (right column)  -->
+        </div>
+        <!--  end container  -->
+    </div>
+    <!--  end wrap  -->
+{% endblock %}

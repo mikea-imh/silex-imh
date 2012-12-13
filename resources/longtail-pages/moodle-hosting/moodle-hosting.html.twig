@@ -1,0 +1,106 @@
+{% extends 'longtail-moodle.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Free Moodle Educational Application{% endblock %}
+
+{# keywords #}
+{% block keywords %}free moodle, moodle features, course management system, education application{% endblock %}
+
+{# description #}
+{% block description %}Moodle is a free education application that allows educators to setup courses, track student grades, and create a robust educational program.{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Free Moodle Education Application</h1>
+    </div>
+    <div class="span3">
+        <p>A course management system</p>
+    </div>
+{% endblock %}
+
+{% block container %}
+    {% block left_column %}
+        <div class="span8">
+            <h2>Course Management System Provided by InMotion</h2>
+            <p>Moodle is a free course management system that allows educators to setup online courses. These courses are interactive so that students can post items, create discussion threads, and get their coursework graded. With its easy to use admin dashboard, educators can focus on creating an education program.</p>
+            <h4 class="features-collapse">Features</h4>
+            <!--  collapse table  -->
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/moodle-hosting/courses-icon.png" alt="cpanel advanced features icon" />
+                        <div class="media-body raised">
+                            <p>Courses</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Moodle allows for courses to be created by educators so that students can sign up and take them. Students can easily enroll in courses and follow events within the built-in calendar.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/moodle-hosting/grades-icon.png" alt="moodle hosting grades icon" />
+                        <div class="media-body raised">
+                            <p>Grades</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Educators can assign grades based on test scores, quizzes, and online assignments for any given course. This means that both students and educators can keep track of their progress as the course progresses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/moodle-hosting/calendar-icon.png" alt="moodle hosting calendar icon" />
+                        <div class="media-body raised">
+                            <p>Calendar</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>The calendar allows educators and students to create and view events with ease. This features allows lessons to be added or deleted and gives the student a place to view and download files relating to the course.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/moodle-hosting/class-icon.jpg" alt="moodle hosting class icon" />
+                        <div class="media-body raised">
+                            <p>Organize Classes</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>As an educator, classes are easily organized. Participants are displayed in an easy to view table as well as grades and other important information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/moodle-hosting/students-icon.jpg" alt="moodle hosting students icon" />
+                        <div class="media-body raised">
+                            <p>Students</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Students get their own dashboard too! This allows them to quickly access their courses, review grades, and edit their profile. Moodle includes forums for discussion that students can access and have message threads revolving around a specific topic.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <div class="media-body raised">
+                            <div id="demo" class="collapse" data-parent="menu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-class">
+                <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
+                  View Details
+                </button>
+            </div>
+            <!--  end collapse table  -->
+            <h2>Moodle Hosting &amp; Easy Installation</h2>
+            <p>Our Business Class Hosting packages can easily handle a Moodle installation. With unlimited disk space, bandwidth, and up to 10GB of data backup, InMotion can easily handle a Moodle education install.</p>
+            <p>With Softaculous, InMotion's easy to use application installer, Moodle can be installed, and live without any hassle of having to manually setup a database or configure files.</p>
+            <p>Interested in some other applications, take a look at the other applications available to you.</p>
+        </div>
+        <!--  end span8  -->
+    {% endblock %}
+{% endblock %}

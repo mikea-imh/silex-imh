@@ -1,0 +1,101 @@
+{% extends 'longtail-drupal.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Drupal VPS Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Drupal VPS Hosting Solutions</h1>
+    </div>
+    <div class="span3">
+        <p>Hosting a Drupal website on a VPS is easy with InMotion Hosting!</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+        <p>Drupal VPS Hosting is the next step up from <a href="/drupal-hosting/drupal-shared-hosting.html">Drupal Shared Hosting</a>. A Virtual Private Server (VPS) is going to give you both more server resources (such as RAM and CPU) and a fully customizable hosting server. InMotion Hosting has several different VPS hosting plans you can choose from for your next Drupal hosting solution.</p>
+        <h3>Dedicated Server Resources</h3>
+        <p>If you decided to <a href="/drupal-hosting.html">host Drupal</a> on a shared server, your Drupal website shares the server's resources with all other websites on the same physical server. These server resources include RAM and CPU time, which are used each and every time someone visits your website. Problems arise when one of the following situations come into play:</p>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>Scenario 1: Your website becomes too popular</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>If your Drupal website gains in popularity and receives lots of traffic, your website may begin to use more of the essential parts of the server, such as RAM and CPU. When this happens, it takes these away from other sites that need them, and as a result those sites can experience performance issues.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>Scenario 2: Traffic from other websites negatively impact your own</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>Very similar to the scenario above, your Drupal website may be on a server where other sites aren't playing fair. They may either be experiencing surges in traffic, or they may even have unoptimized PHP code that causes their scripts to run out of control. Either way, your website becomes an innocent bystander.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Regardless of the situation, VPS Drupal Hosting helps to solve both of these issues. In a Virtualized Private Server, your websites are guaranteed their own block of the server's resources. For example, our VPS 3000 plan guarantees 2GB of RAM. This means that when you need RAM, you'll have at least 2 GB to use, and your websites don't need to compete with any other to use it. Our VPS solutions also include burstable ram as well. While our VPS 3000 plan guarantees 2GB of RAM, if you get a sudden burst in website activity, your VPS will allow you to use another 1GB of RAM while you handle the additional traffic.</p>
+        <p>We don't want to say, <em>it isn't rocket science</em>, but it sure is a fascinating and very technical setup. We make VPS hosting easy, fun, and <a href="/drupal-hosting/cheap-drupal-hosting.html">affordable</a>.</p>
+        <h3>Fully Customizable Server Configurations</h3>
+        <p>In addition to having your own server resources, VPS Servers are fully customizable. Think about it, VPS stands for Virtual Private Server. This means that you have your own server. This includes your own Operating System and your own core processes, such as Apache and MySQL. Having your own instances of these programs running on your server gives you the freedom to make configuration changes without having to worry about how it will affect other websites (a problem in shared hosting).</p>
+        <img src="{{ app.request.basepath }}/img/drupal-hosting/custom-apache-configuration.gif" alt="custom apache configuration" />
+        <p>If you need specific caching settings for MySQL or require custom changes to Apache's httpd.conf file (configuration file), we can help make it happen. It's your server, make it work for you!</p>
+        <h3>VPS Hosting solutions for Drupal</h3>
+        <p>InMotion Hosting offers the following VPS Packages:</p>
+        <table class="table longtail">
+        <thead>
+            <tr>
+                <th>VPS 1000</th>
+                <th>VPS 2000</th>
+                <th>VPS 3000</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Affordable performance &amp; flexibility</p>
+                    <li>512MB of RAM / 1GB Burstable</li>
+                    <li>40GB of storage, 750GB of bandwidth</li>
+                </td>
+                <td>
+                    <p>The best value for responsive, powerful websites</p>
+                    <li>1GB of RAM / 2GB Burstable</li>
+                    <li>80GB of storage, 1,500GB of bandwidth</li>
+                </td>
+                <td>
+                    <p>Ultimate performance for demanding applications</p>
+                    <li>2GB of RAM / 3GB Burstable</li>
+                    <li>160GB of storage, 2,500GB of bandwidth</li>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        <p>For a full comparison of our VPS hosting plans, please see <a href="/vps_hosting/features.html">this page</a>. We pride ourselves on offering both top VPS Hosting and the best customer service in the industry. We're happy to help answer any questions you may have, and we hope to be your choice in Drupal VPS Hosting!</p>
+    </div>
+    <!--  end span8  -->
+{% endblock %}
