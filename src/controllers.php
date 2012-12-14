@@ -53,6 +53,11 @@ $app->match('/terms-of-service', function() use ($app) {
         'terms_of_service.html.twig');
 })->bind('terms_of_service');
 
+$app->match('/hosting-affiliate-program', function() use ($app) {
+    return $app['twig']->render(
+        'hosting_affiliate_program.html.twig');
+})->bind('hosting_affiliate_program');
+
 $app->match('/about-us', function() use ($app) {
     return $app['twig']->render(
         'about_us.html.twig');
