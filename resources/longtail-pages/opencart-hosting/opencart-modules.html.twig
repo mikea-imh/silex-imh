@@ -1,0 +1,44 @@
+{% extends 'longtail-opencart.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Opencart Modules{% endblock %}
+
+{# keywords #}
+{% block keywords %}opencart modules, opencart extensions{% endblock %}
+
+{# description #}
+{% block description %}OpenCart is a free shopping cart system that can be integrated to any hosting package InMotion offers. Thousands of OpenCart templates, themes, extensions and modules enable you to really customize the store to fit your needs.{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>OpenCart Modules</h1>
+    </div>
+    <div class="span3">
+        <p>Functionality at your fingertips.</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+        <h2>Modules and Extensions</h2>
+        <p>Being a module and extension based system, OpenCart enables you to extend the functionality of your shopping cart in hundreds of ways. And with no technical skills required, modules and extensions can be installed and configured in minutes.  All of our <a href="/business-hosting">hosting packages</a> are compatible with OpenCart and its modules. Customize the appearance with responsive layouts, social media tabs and photo galleries. Or customize the functionality with alternative payment gateways, languages and specialized admin reports. Of course there are hundreds of choices for each of those categories. Below are a few key modules that come with OpenCart right out of the box:</p>
+        <ul>
+          <li>Bestsellers</li>
+          <li>Featured Products</li>
+          <li>Latest or Newest additions</li>
+          <li>Specials and Promotions</li>
+          <li>Manufacturers Info</li>
+          <li>Google Analytics</li>
+          <li>Google Talk</li>
+        </ul>
+        <h2>A Rich Experience</h2>
+        <p>The OpenCart community is just as involved with creating new and useful modules and extensions as they are with templates, with new ones being added every week. You can choose between 7,000 free and commercial grade extensions to make your e-commerce site function how you want it to. Facebook and Twitter integration and likes, coupon countdown banners, bulk inventory imports; almost everything you could possibly need is available.</p>
+        <img src="{{ app.request.basepath }}/img/opencart-hosting/modules-icons.jpg" alt="opencart modules extensions" />
+        <h3>Presentation Counts</h3>
+        <p>Having the right look and feel to your online store is just as important as having the right products and marketing strategy. With the OpenCart community offering thousands of high-quality designs, you'll be sure to find one that fits your style and represents your products in a clean and professional way. Find out more about the <a href="/site-hosting-tools">free tools</a> we offer.</p>
+    </div>
+    <!--  end span8  -->
+{% endblock %}
