@@ -1570,6 +1570,32 @@ li {
 }
 
 /**
+ * PF= Pre-Footer section for price and cta button
+ */
+.pf-cta-place {
+  color: #888;
+  float: right;
+  border-left: #ccc 1px solid;
+  margin: 0px 6px 0 10px;
+  padding-left: 15px;
+  text-align: center;
+  width: 80px;
+}
+
+.pf .span4{
+  box-sizing: box-border;
+  font-size: 12px;
+  line-height: 18px;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+
+.pf-price {
+  font-family: "adelle";
+  font-size: 20px;
+  font-weight: 600;
+}
+/**
  * These are wraps that fall above or below an element that "juts" out. For example a CTA that is positioned on the outline of an island
  */
 .jutwrap {
