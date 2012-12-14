@@ -1387,6 +1387,15 @@ th > .btn-link:hover {
 }
 
 /**
+ * CTA placement for cheap hosting banner
+ */
+.cheap-cta {
+  display: block;
+  margin: 4px auto;
+  width: 127px;
+}
+
+/**
  * Price styling for bottom of table matrices
  */
 .smallprice {
@@ -1414,6 +1423,10 @@ th > .btn-link:hover {
   background: url(../../img/leader-dedi-tower.png) no-repeat top center, url(../../img/leader-bg-dedi.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
   display: block;
   height: 284px;
+}
+
+.intro.cheap_hosting {
+  height: 150px;
 }
 
 /**
@@ -1668,7 +1681,7 @@ li {
 .mx-icon {
   display: block;
   float: left;
-  margin: 10px 12px 0 -38px;
+  margin: 0 12px 0 -38px;
 }
 
 /**
