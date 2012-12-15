@@ -48,6 +48,11 @@ $app->match('/privacy-policy', function() use ($app) {
         'privacy_policy.html.twig');
 })->bind('privacy_policy');
 
+$app->match('/link-to-us', function() use ($app) {
+    return $app['twig']->render(
+        'link_to_us.html.twig');
+})->bind('link_to_us');
+
 $app->match('/guarantee', function() use ($app) {
     return $app['twig']->render(
         'guarantee.html.twig');
