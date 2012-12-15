@@ -95,13 +95,13 @@
             {% endblock %}
     </div><!-- /#main -->
     {# pre-footer sales area #}
-    {% if not (active in ['business_hosting', 'homepage', 'dedicated_servers', 'vps_hosting', 'cheap_hosting', 'webdesign','privacy_policy','terms_of_service','about_us','sitemap','testimonials', 'contact','hosting_affiliate_program'])  %}
+    {% if not (active in ['business_hosting', 'homepage', 'dedicated_servers', 'vps_hosting', 'cheap_hosting', 'webdesign','privacy_policy','terms_of_service','about_us','sitemap','testimonials', 'contact','hosting_affiliate_program','link_to_us'])  %}
         {% include 'common/select_hosting_package.html.twig' %}
     {% endif %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="{{ app.request.basepath }}/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
     <script src="{{ app.request.basepath }}/assets/js/scripts.js"></script>
-    <span class="{% if (active in ['homepage','webdesign','privacy_policy','terms_of_service','sitemap','testimonials', 'contact']) %} solo-gears {% endif %}"></span>
+    <span class="{% if (active in ['homepage','webdesign','privacy_policy','terms_of_service','sitemap','testimonials', 'contact','link_to_us']) %} solo-gears {% endif %}"></span>
     <footer role="contentinfo" class="wrap">
         <div class="container">
             <ul class="nav nav-list span2">
