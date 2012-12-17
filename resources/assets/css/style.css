@@ -999,6 +999,31 @@ h3.contact + .row-fluid {
 /*------------------------------*/
 
 /**
+ * Grid-like unordered list for awards/partners page
+ */
+.partners ul {
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+.partners ul li {
+  display: inline-block;
+  height: 80px;
+  width: 114px;
+}
+
+.awards span {
+  display: inline-block;
+  float: left;
+  margin: -1px 0 0 -1px;
+  height: 160px;
+  overflow: hidden;
+  padding: 20px 0 10px 0;
+  text-align: center;
+  width: 233px;
+}
+
+/**
  * Link to Us snippet css
  */
 .snippet {
@@ -1046,6 +1071,10 @@ pre:hover {
   font-size: 60px;
   line-height: 25px;
   top: 50%;
+}
+
+.img-polaroid {
+  box-shadow: none;
 }
 
 /**

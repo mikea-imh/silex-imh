@@ -43,6 +43,11 @@ $app->match('/testimonials', function() use ($app) {
         'testimonials.html.twig');
 })->bind('testimonials');
 
+$app->match('/partners-and-awards', function() use ($app) {
+    return $app['twig']->render(
+        'partners_and_awards.html.twig');
+})->bind('partners_and_awards');
+
 $app->match('/privacy-policy', function() use ($app) {
     return $app['twig']->render(
         'privacy_policy.html.twig');
