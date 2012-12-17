@@ -1,13 +1,10 @@
 <?php
 
-
-
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Form\FormError;
-
 
 $app->match('/', function() use ($app) {
     $app['session']->setFlash('warning', 'Warning flash message');
@@ -132,6 +129,11 @@ $app->match('/contact', function() use ($app) {
     return $app['twig']->render(
         'contact.html.twig');
 })->bind('contact');
+
+$app->match('/domain-transfer', function() use ($app) {
+    return $app['twig']->render(
+        'domain_transfer.html.twig');
+})->bind('domain_transfer');
 
 // dedi/vps longtail controller $articles
 $app->get('/{product}/articles/', function($product) use ($app){
