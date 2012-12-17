@@ -88,6 +88,11 @@ $app->match('/webdesign', function() use ($app) {
         'webdesign.html.twig');
 })->bind('webdesign');
 
+$app->match('/web-design', function() use ($app) {
+    return $app['twig']->render(
+        'web_design.html.twig');
+})->bind('web_design');
+
 $app->match('/site-hosting-tools', function() use ($app) {
     return $app['twig']->render(
         'site_hosting_tools.html.twig');
