@@ -1,0 +1,402 @@
+{% extends 'longtail-softaculous.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Available Installer Applications{% endblock %}
+
+{# keywords #}
+{% block keywords %}application auto installer, softaculous applications, available applications{% endblock %}
+
+{# description #}
+{% block description %}With over 280 applications available for installation, find the application that is right for you.{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Available Applications</h1>
+    </div>
+    <div class="span3">
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+        <h2>Easy to Install Applications</h2>
+        <p>Each of the applications listed below can be installed through the Softaculous application installer. Not only that, but they can be updated to the latest versions, or deleted all together. All from a single overview page.</p>
+        <p>Also, our Support Center contains some tutorials to help get you started. Click on a link below to see tutorials for that application.</p>
+        <table class="table longtail">
+            <tr>
+                <th>Blogs</th>
+                <th>Portal/CMS</th>
+                <th>Portal/CMS (cont.)</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>b2evolution</li>
+                    <li>Chyrp</li>
+                    <li>Dotclear</li>
+                    <li>eggBlog</li>
+                    <li>LifeType</li>
+                    <li>Nucleus</li>
+                    <li>Open Blog</li>
+                    <li>PivotX</li>
+                    <li>Pixie</li>
+                    <li>Serendipity</li>
+                    <li>Textpattern</li>
+                    <li><a href='http://www.inmotionhosting.com/support/edu/wordpress/wordpress-introduction'>WordPress</a></li>
+                </td>
+                <td>
+                    <li>CMS Made Simple</li>
+                    <li>Concrete5</li>
+                    <li><a href='http://www.inmotionhosting.com/support/edu/drupal-7'>Drupal</a></li>
+                    <li>e107</li>
+                    <li>Geeklog</li>
+                    <li><a href='http://www.inmotionhosting.com/support/edu/joomla-25'>Joomla</a></li>
+                    <li>Mambo</li>
+                    <li>MODx</li>
+                    <li>ocPortal</li>
+                    <li>PHP-Nuke</li>
+                    <li>phpwcms</li>
+                    <li>Pligg</li>
+                    <li>sNews</li>
+                    <li>Tiki Wiki CMS Groupware</li>
+                    <li>Website Baker</li>
+                    <li>Xoops</li>
+                    <li>Zikula</li>
+                </td>
+                <td>
+                    <li>BIGACE</li>
+                    <li>Contao</li>
+                    <li>Fork</li>
+                    <li>ImpressCMS</li>
+                    <li>ImpressPages</li>
+                    <li>jCore</li>
+                    <li>Mahara</li>
+                    <li>PHP-Fusion</li>
+                    <li>Pluck</li>
+                    <li>PyroCMS</li>
+                    <li>Quick.CMS</li>
+                    <li>Redaxscript</li>
+                    <li>Saurus</li>
+                    <li>Silex</li>
+                    <li>SilverStripe</li>
+                    <li>Tribiq</li>
+                    <li>Typo3</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Forums</th>
+                <th>Image Galleries</th>
+                <th>Social Networking</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>AEF</li>
+                    <li>bbPress</li>
+                    <li>FluxBB</li>
+                    <li>FUDforum</li>
+                    <li>miniBB</li>
+                    <li>MyBB</li>
+                    <li>Phorum</li>
+                    <li><a href='http://www.inmotionhosting.com/support/website/phpbb'>phpBB</a></li>
+                    <li>PunBB</li>
+                    <li>SMF</li>
+                    <li>UseBB</li>
+                    <li>Vanilla</li>
+                    <li>XMB</li>
+                </td>
+                <td>
+                    <li>4images</li>
+                    <li>Coppermine</li>
+                    <li>Gallery</li>
+                    <li>phpAlbum</li>
+                    <li>Piwigo</li>
+                    <li>Pixelpost</li>
+                    <li>Plogger</li>
+                    <li>Shutter</li>
+                    <li>TinyWebGallery</li>
+                    <li>ZenPhoto</li>
+                </td>
+                <td>
+                    <li>Beatz</li>
+                    <li>Dolphin</li>
+                    <li>Elgg</li>
+                    <li>Etano</li>
+                    <li>Jcow</li>
+                    <li>Oxwall</li>
+                    <li>PeoplePods</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Ad Managament</th>
+                <th>Calendars</th>
+                <th>Gaming</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>GPixPixel</li>
+                    <li>Kamads</li>
+                    <li>Noahs Classifieds</li>
+                    <li>OpenClassifieds</li>
+                    <li>OpenX</li>
+                    <li>OSClass</li>
+                    <li>PHPads</li>
+                </td>
+                <td>
+                    <li>ExtCalendar</li>
+                    <li>phpicalendar</li>
+                    <li>phpScheduleIt</li>
+                    <li>WebCalendar</li>
+                </td>
+                <td>
+                    <li>BlackNova Traders</li>
+                    <li>Multiplayer Checkers</li>
+                    <li>Shadow Rising</li>
+                    <li>Word Search Puzzle</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Micro Blogs</th>
+                <th>Mails</th>
+                <th>Polls &amp; Surveys</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>PageCookery</li>
+                    <li>Sharetronix</li>
+                    <li>StatusNet</li>
+                    <li>Storytlr</li>
+                </td>
+                <td>
+                    <li>ccMail</li>
+                    <li>OpenNewsletter</li>
+                    <li>phpList</li>
+                    <li>poMMo</li>
+                    <li>Roundcube</li>
+                    <li><a href='http://www.inmotionhosting.com/support/email/squirrelmail-webmail'>SquirrelMail</a></li>
+                    <li>Webinsta Mailist</li>
+                    <li>WebMail Lite</li>
+                </td>
+                <td>
+                    <li>Aardvark Topsites</li>
+                    <li>Advanced Poll</li>
+                    <li>CJ Dynamic Poll</li>
+                    <li>EasyPoll</li>
+                    <li>LimeSurvey</li>
+                    <li>LittlePoll</li>
+                    <li>Logaholic</li>
+                    <li>Open Web Analytics</li>
+                    <li>phpESP</li>
+                    <li>Piwik</li>
+                    <li>Simple PHP Poll</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Project Management</th>
+                <th>E-Commerce</th>
+                <th>ERP</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Collabtive</li>
+                    <li>dotProject</li>
+                    <li>Eventum</li>
+                    <li>eyeOS</li>
+                    <li>Feng Office</li>
+                    <li>Mantis Bug Tracker</li>
+                    <li>Mound</li>
+                    <li>phpCollab</li>
+                    <li>PHProjekt</li>
+                    <li>ProjectPier</li>
+                    <li>TaskFreak</li>
+                    <li>The Bug Genie</li>
+                </td>
+                <td>
+                    <li>AbanteCart</li>
+                    <li>AlegroCart</li>
+                    <li>Avactis</li>
+                    <li>Axis</li>
+                    <li>BoxBilling</li>
+                    <li><a href='http://www.inmotionhosting.com/support/website/cube-cart'>CubeCart</a></li>
+                    <li>Freeway</li>
+                    <li><a href='http://www.inmotionhosting.com/support/edu/magento'>Magento</a></li>
+                    <li><a href='http://www.inmotionhosting.com/support/edu/opencart'>OpenCart</a></li>
+                    <li><a href='http://www.inmotionhosting.com/support/website/oscommerce'>osCommerce</a></li>
+                    <li>PHP Point of Sale</li>
+                    <li>phpCOIN</li>
+                    <li><a href='http://www.inmotionhosting.com/support/edu/prestashop-15'>Presta
+                    Shop</a></li>
+                    <li>Quick.Cart</li>
+                    <li>TheHostingTool</li>
+                    <li>TomatoCart</li>
+                    <li>WHMCS</li>
+                    <li><a href='http://www.inmotionhosting.com/support/website/zen-cart'>Zen Cart</a></li>
+                    <li>Zeuscart</li>
+                </td>
+                <td>
+                    <li>Dolibarr</li>
+                    <li>Egroupware</li>
+                    <li>FrontAccounting</li>
+                    <li>OrangeHRM</li>
+                    <li>SimpleInvoices</li>
+                    <li>SugarCRM</li>
+                    <li>Tine</li>
+                    <li>Vtiger</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Guest Books</th>
+                <th>Customer Support</th>
+                <th>Frameworks</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Advanced Guestbook</li>
+                    <li>BellaBook</li>
+                    <li>Lazarus</li>
+                    <li>phpBook</li>
+                    <li>PHPKode Guestbook</li>
+                    <li>RicarGBooK</li>
+                    <li>VX Guestbook</li>
+                </td>
+                <td>
+                    <li>Crafty Syntax</li>
+                    <li>ExoPHPDesk</li>
+                    <li>Help Center Live</li>
+                    <li>HESK</li>
+                    <li>iQDesk</li>
+                    <li>Maian Support</li>
+                    <li>Open Web Messenger</li>
+                    <li>osTicket</li>
+                    <li>phpMyFAQ</li>
+                    <li>phpOnline</li>
+                    <li>phpSupport</li>
+                    <li>Trellis Desk</li>
+                </td>
+                <td>
+                    <li>AjaxAC</li>
+                    <li>CakePHP</li>
+                    <li>CodeIgniter</li>
+                    <li>DIY</li>
+                    <li>HTML Purifier</li>
+                    <li>Kohana</li>
+                    <li>PHPDevShell</li>
+                    <li>PhpOpenBiz</li>
+                    <li>PRADO</li>
+                    <li>Smarty</li>
+                    <li>Symfony</li>
+                    <li>WideImage</li>
+                    <li>xAjax</li>
+                    <li>yii</li>
+                    <li>Zend</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Educational</th>
+                <th>DB Tools</th>
+                <th>Video</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Atutor</li>
+                    <li>Claroline</li>
+                    <li>DoceboLMS</li>
+                    <li>eFront</li>
+                    <li><a href='http://www.inmotionhosting.com/support/website/moodle'>Moodle</a></li>
+                    <li>Omeka</li>
+                    <li>TXExam</li>
+                </td>
+                <td>
+                    <li>Adminer</li>
+                    <li>Chive</li>
+                    <li>MyWebSQL</li>
+                    <li>phpMyAdmin</li>
+                    <li>RockMongo</li>
+                    <li>SIDU</li>
+                    <li>SQLiteManager</li>
+                    <li>Vty</li>
+                </td>
+                <td>
+                    <li>ClipBucket</li>
+                    <li>videoDB</li>
+                    <li>VidiScript</li>
+                    <li>Viperwolf</li>
+                </td>
+            </tr>
+            <tr>
+                <th>RSS</th>
+                <th>File Management</th>
+                <th>Others</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Feeds On Feeds</li>
+                    <li>Gregarius</li>
+                    <li>selfoss</li>
+                    <li>SimplePie</li>
+                </td>
+                <td>
+                    <li>AjaXplorer</li>
+                    <li>Arfoo</li>
+                    <li>eSyndiCat</li>
+                    <li>eXplorer</li>
+                    <li>LetoDMS</li>
+                    <li>OpenDocMan</li>
+                    <li>ownCloud</li>
+                    <li>PHPfileNavigator</li>
+                    <li>ProjectSend</li>
+                </td>
+                <td>
+                    <li>OpenDocMan</li>
+                    <li>PHP QR Code</li>
+                    <li>phpFormGenerator</li>
+                    <li>phpFreeChat</li>
+                    <li>PhpGedView</li>
+                    <li>phpLD</li>
+                    <li>ProjectSend</li>
+                    <li>WeBid</li>
+                    <li>YOURLS</li>
+                </td>
+            </tr>
+            <tr>
+                <th>Other (cont.)</th>
+                <th>Other (cont.)</th>
+                <th>Other (cont.)</th>
+            </tr>
+            <tr>
+                <td>
+                    <li>Arfooo</li>
+                    <li>Form Tools</li>
+                    <li>Hablator</li>
+                    <li>LetoDMS</li>
+                    <li>Open Journal Systems</li>
+                    <li>PASTE</li>
+                    <li>phpDocumentor</li>
+                    <li>PHPWeby</li>
+                </td>
+                <td>
+                    <li>AjaXplorer</li>
+                    <li>jobberBase</li>
+                    <li>JoobsBox</li>
+                    <li>OpenBiblio</li>
+                    <li>Question2Answer</li>
+                    <li>Seo Panel</li>
+                    <li><a href='http://www.inmotionhosting.com/support/website/soho-web-builder'>Soholaunch</a></li>
+                    <li>WIODE</li>
+                </td>
+                <td>
+                    <li>ArticleSetup</li>
+                    <li>eSyndiCat</li>
+                    <li>eXtplorer</li>
+                    <li>GLPI</li>
+                    <li>Open Conference Systems</li>
+                    <li>ownCloud</li>
+                    <li>SPIP</li>
+                    <li>SVNManager</li>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--  end span8  -->
+{% endblock %}
