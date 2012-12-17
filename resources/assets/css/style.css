@@ -712,7 +712,8 @@ footer a {
   margin: 24px 0 0 30px;
 }
 
-.meet_us > .media > .media-body {
+.meet_us > .media > .media-body,
+.typical-uses > .media > .media-body {
   border-bottom: 1px solid #ccc;
   padding-bottom: 24px;
 }
@@ -743,7 +744,8 @@ footer a {
   padding: 30px;
 }
 
-.meet_us.nav-tabs.nav-stacked > li > a {
+.meet_us.nav-tabs.nav-stacked > li > a,
+.typical-uses.nav-tabs.nav-stacked > li > a {
   background: #eee;
   border-top: none;
   color: #888;
@@ -754,11 +756,14 @@ footer a {
 }
 
 .meet_us.nav-tabs.nav-stacked > li > a:hover,
-.meet_us.nav-tabs.nav-stacked > li > a:focus {
+.meet_us.nav-tabs.nav-stacked > li > a:focus,
+.typical-uses.nav-tabs.nav-stacked > li > a:hover,
+.typical-uses.nav-tabs.nav-stacked > li > a:focus {
   color: #232323;
 }
 
-.meet_us.nav-tabs.nav-stacked > li:first-child > a {
+.meet_us.nav-tabs.nav-stacked > li:first-child > a,
+.typical-uses.nav-tabs.nav-stacked > li:first-child > a {
   border-top: 1px solid #ddd;
 }
 
@@ -768,7 +773,8 @@ footer a {
 .meet_us.nav-tabs.nav-stacked.reliability > li > a.reliability,
 .meet_us.nav-tabs.nav-stacked.guarantee > li > a.guarantee,
 .meet_us.nav-tabs.nav-stacked.software > li > a.software,
-.meet_us.nav-tabs.nav-stacked.gogreen > li > a.gogreen {
+.meet_us.nav-tabs.nav-stacked.gogreen > li > a.gogreen,
+.typical-uses.nav-tabs.nav-stacked > .active > a {
   background: #ddd;
   color: #232323;
 }
@@ -779,7 +785,8 @@ footer a {
 .meet_us.nav-tabs.nav-stacked.reliability > li > a.reliability:after,
 .meet_us.nav-tabs.nav-stacked.guarantee > li > a.guarantee:after,
 .meet_us.nav-tabs.nav-stacked.software > li > a.software:after,
-.meet_us.nav-tabs.nav-stacked.gogreen > li > a.gogreen:after {
+.meet_us.nav-tabs.nav-stacked.gogreen > li > a.gogreen:after,
+.typical-uses.nav-tabs.nav-stacked > .active > a:after {
   border-color: transparent;
   border-style: solid;
   border-left-color: #ddd;
@@ -1075,6 +1082,12 @@ pre:hover {
 
 .img-polaroid {
   box-shadow: none;
+}
+
+h3 {
+  font-family: "adelle-sans";
+  font-weight: 500;
+  padding-bottom: 12px;
 }
 
 /**
@@ -1657,17 +1670,17 @@ th > .btn-link:hover {
  */
 .leader-biz-cta-place {
   float: right;
-  margin: 60px 121px 0 0;
+  margin: 56px 122px 0 0;
 }
 
 .leader-vps-cta-place {
   float: right;
-  margin: 0 -50px 0 0;
+  margin: -3px -49px 0 0;
 }
 
 .leader-dedi-cta-place {
   float: right;
-  margin: 123px 157px 0 0;
+  margin: 119px 157px 0 0;
 }
 
 /**
@@ -1904,7 +1917,7 @@ li {
 .mx-icon {
   display: block;
   float: left;
-  margin: 10px 12px 0 -38px;
+  margin: 0px 12px 0 -38px;
 }
 
 /**
