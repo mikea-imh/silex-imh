@@ -1023,10 +1023,30 @@ h3.contact + .row-fluid {
 
 
 
+
+
+
+
+
+
+
+
+
 /*------------------------------*/
 
 .webbuilder p {
   margin-bottom: 20px;
+}
+
+/**
+ * CTA placement on webdesign page
+ */
+.undercpu {
+  margin: 6px 0 0 50px;
+}
+
+.carousel a {
+  color: #fff;
 }
 
 /**
@@ -1250,6 +1270,15 @@ ul {
   background-color: #888;
   color: #fff;
   text-decoration: none;
+}
+
+/**
+ * remove this css when active state functionality is made
+ */
+.selected {
+  background-color: #888;
+  color: #fff;
+  padding: 5px 10px;
 }
 
 /**
