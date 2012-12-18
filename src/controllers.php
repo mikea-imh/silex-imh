@@ -48,6 +48,11 @@ $app->match('/partners-and-awards', function() use ($app) {
         'partners_and_awards.html.twig');
 })->bind('partners_and_awards');
 
+$app->match('/webbuilder', function() use ($app) {
+    return $app['twig']->render(
+        'webbuilder.html.twig');
+})->bind('webbuilder');
+
 $app->match('/privacy-policy', function() use ($app) {
     return $app['twig']->render(
         'privacy_policy.html.twig');
