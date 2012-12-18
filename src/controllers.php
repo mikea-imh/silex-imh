@@ -58,6 +58,11 @@ $app->match('/privacy-policy', function() use ($app) {
         'privacy_policy.html.twig');
 })->bind('privacy_policy');
 
+$app->match('/fast-web-hosting', function() use ($app) {
+    return $app['twig']->render(
+        'fast_web_hosting.html.twig');
+})->bind('fast_web_hosting');
+
 $app->match('/link-to-us', function() use ($app) {
     return $app['twig']->render(
         'link_to_us.html.twig');
