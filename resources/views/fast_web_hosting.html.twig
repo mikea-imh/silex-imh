@@ -1,0 +1,93 @@
+{% extends 'layout.html.twig' %}
+{% set active = 'fast_web_hosting' %}
+
+{# title #}
+{% block title %}{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+<div class="row">
+    <div class="span9">
+        <h1>Max Speed Zone</h1>
+        <p>Virtually all of our competitors utilize a single data center. This means your website and email could be 3,000 miles or more away from you. It is cheaper for them, but just doesn't make sense for you. With InMotion Hosting you can choose your data center location. Even better, if you are within our Exclusive Max Speed Zones, your email and website can run up to 6x faster.</p>
+    </div>
+    <div class="span3">
+        <img class="gears-top" src="../../img/gears-maxspeed.png" alt="gears" />
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container wrap">
+    <div class="row">
+        <div class="span4">
+            <h2>Multiple Data Centers = Faster</h2>
+            <p>Max Speed Zone options available to <a href="{{ app.request.basepath }}/vps-hosting">VPS</a> and <a href="{{ app.request.basepath }}/business-hosting">Business Class</a> hosting clients only. Individual speeds will vary due to your personal internet connection (ISP). To confirm performance, we test from 35 locations in the US and another 46 locations around the world. <a href="http://www.inmotionhosting.com/_pdf/east_coast_download_speeds.pdf">See Example Data</a></p>
+
+
+        </div>
+        <div class="span8">
+            <p align="center"><!--[if !IE]> -->
+            <object type="application/x-shockwave-flash" data="http://www.inmotionhosting.com/_swf/dceast-map-final_outline.swf" width="583" height="250">
+            <!-- <![endif]--><!--[if IE]><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+              codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+              width="583" height="250">
+              <param name="movie" value="_swf/dceast-map-final_outline.swf" /><!--><!--dgx-->
+            <param name="loop" value="true" /><param name="menu" value="false" /><a href="http://get.adobe.com/flashplayer/" target="_blank" rel="nofollow" border="0"><img src="http://www.inmotionhosting.com/_img/dceast-map-final_outline.gif" alt="Data Center Map and Speed Zones, Download Flash To View" border="0"/></a></object><!-- <![endif]-->
+        </div>
+    </div>
+    <div class="row jutwrap4">
+        <div class="span4">
+            <h2>Peering = Faster</h2>
+            <p>In addition to our multiple data centers, we have teamed up with some of the world's largest ISPs and peering exchanges to create direct data connections. The end result is a noticeably faster connection.</p>
+        </div>
+        <div class="span8">
+            <p align="center"> <!--[if !IE]> -->
+            <object type="application/x-shockwave-flash" data="http://www.inmotionhosting.com/_swf/peering1.swf" width="523" height="197"><!-- <![endif]--><!--[if IE]>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+              codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+              width="523" height="197">
+              <param name="movie" value="_swf/peering1.swf" /><!--><!--dgx-->
+              <param name="loop" value="true" />
+              <param name="menu" value="false" />
+              <a href="http://get.adobe.com/flashplayer/" target="_blank" rel="nofollow" border="0"><img src="http://www.inmotionhosting.com/_img/dceast-alt-peering.gif" alt="Peering Techology Demonstration, Download Flash To View" border="0"/></a> 
+            </object><!-- <![endif]-->
+        </div>
+    </div>
+    <div class="row">
+        <div class="span4">
+            <h2>DIY: File Download Test</h2>
+            <p>As an additional test, download files to your personal computer to see which data center is your best option. Please remember results may vary depending on your personal Internet connection.</p>
+        </div>
+        <div class="span8">
+            <p align="center"><!--[if !IE]> -->
+            <object type="application/x-shockwave-flash" data="http://www.inmotionhosting.com/_swf/file-download2.swf" width="524" height="150"><!-- <![endif]--><!--[if IE]>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+              codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0"
+              width="524" height="150">
+              <param name="movie" value="_swf/file-download2.swf" />
+            <!--><!--dgx-->
+            <param name="loop" value="true" />
+            <param name="menu" value="false" />
+            <a href="http://get.adobe.com/flashplayer/" target="_blank" rel="nofollow" border="0"><img src="http://www.inmotionhosting.com/_img/dceast-alt-file.gif" alt="File Download Test, Download Flash To View" border="0"/></a> </object><!-- <![endif]--></p>
+        </div>
+    </div>
+    <div class="container">
+            <h2>Our Technology</h2>
+            <ul>
+                <li>Servers housed in Category A, PCI compliant data centers. These include several controlled access points.</li>
+                <li>N+2 or N+1 power systems with multiple battery and diesel power sources in case of public utility failure.</li>
+                <li>BGP4 network to prevent downtime in case of loss of hardware.</li>
+                <li>N+1 Configurations on all servers using RAID 5.</li>
+                <li>24x7x365 System Administrators on hand.</li>
+                <li>Backups created every 36 hours up to 10GB.</li>
+            </ul>
+    </div>
+</div>
+{% endblock %}
