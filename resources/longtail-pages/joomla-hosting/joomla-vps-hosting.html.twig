@@ -1,0 +1,73 @@
+{% extends 'longtail-joomla.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Is a VPS for Joomla right for you?{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Is a VPS for Joomla right for you?</h1>
+    </div>
+    <div class="span3">
+        <p>The benefits of hosting Joomla on a VPS</p>
+    </div>
+{% endblock %}
+
+{# left column #}
+{% block left_column %}
+    <div class="span8">
+        <p>Joomla VPS Hosting is the perfect option for a website that has grown past shared hosting but may not be ready yet for a fully dedicated server. Shared hosting is great when you're just getting started, but as your website expands and attracts more traffic, you can quickly outgrow the shared hosting limitations. A <a href="/joomla-hosting/joomla-dedicated-server.html">fully dedicated server for joomla</a> can be the best joomla hosting option, but it may be more than you need.</p>
+        <p>Hosting Joomla on VPS servers gives you many of the advantages of dedicated hosting, including:</p>
+        <li>Dedicated Resources</li>
+        <li>Control of Server Configuration</li>
+        <li>"Unlimited" Hosting</li>
+        <h3>Why is there a need for VPS Joomla Hosting?</h3>
+        <p>When <a href="/joomla-hosting.html">hosting Joomla</a> on a shared server, you're literally sharing all of the server's resources with other websites. For example, let's say that your website gets a burst of traffic. The web server is going to use more RAM and CPU when sending out all of those pages. Because your site is utilizing much of the RAM, other sites on the server needing the RAM end up "waiting in line" and as a result experience some decrease in performance.</p>
+        <p>Your website may not be suitable for shared hosting if your site requires more resources (such as RAM) than the average. Upgrading past shared hosting means taking the step to either VPS hosting or a Dedicated Server. Dedicated hosting in many cases is simply too much. You may not need 8GB of RAM or turbo quad core processors, or the sticker price of a dedicated server may be more than what you're willing to pay.</p>
+        <table class="table longtail">
+            <thead>
+                <tr>
+                    <th>
+                        <p>Shared Hosting may not be enough</p>
+                    </th>
+                    <th>
+                        <p>Dedicated Hosting may be too much</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <li>You busy website needs a more robust server</li>
+                        <li>You need custom PHP, Apache, and MySQL configurations.</li>
+                    </td>
+                    <td>
+                        <li>This is top of the line, and can be costly</li>
+                        <li>You may need more RAM, but not all of the RAM</li>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p>VPS hosting falls between shared hosting and a dedicated server, both in price and features offered. A VPS server is a virtual private server. What we do is take a fully dedicated server and "virtually" partition it into several smaller servers. While technically you are sharing the same physical server with others, you are boxed off from everyone else. You are given your own operating system, your own customizable software installations (like Apache and MySQL), and portions of the server's resources (like CPU and RAM) are dedicated just for you.</p>
+        <img src="{{ app.request.basepath }}/img/joomla-hosting/vps-shared-dedicated-diagram.png" class="sales-page-left-float" alt="joomla diagram" />
+        <h3>Dedicated RAM and CPU for your Joomla Website</h3>
+        <p>With shared hosting, you are sharing the RAM and CPU with all other websites hosted on the server as well. On a VPS Server, you have your own RAM and CPU time dedicated just to you. If your website gets a sudden burst of traffic, your server expectedly must work a little harder to send out all the pages. Because you have RAM dedicated just to you, this additional usage of server resources is not going to take them away from anyone else. In the same aspect there are no other sites on your VPS that will use those resources, which means when you need them they are their. The best joomla vps servers include burstable RAM to help prevent your server from maxing out its resources during periods of unexpected traffic. Our top VPS servers can give your Joomla website an extra 1GB of RAM when it is needed!</p>
+        <h3>Custom Server Configurations tailored to your install of Joomla</h3>
+        <p>On a VPS server, you have your own instance of Apache, PHP, and MySQL. You also have your own operating system for <a href="/joomla-hosting/joomla-centos.html">joomla, CentOS</a>. If you need any specific adjustments, they can be made without worrying about who else it might affect. You can't take control of these services in shared hosting because a necessary MySQL change for your site for example may have inadvertent effects to other sites on the same server.</p>
+        <h3>Freedom from Joomla Shared Hosting Feature Limitations</h3>
+        <p>Shared hosting accounts are typically offered in packages. For example, Package A will allow you to host only so many seperate websites and use only so many databases. Package B could offer more of these features, and so on. VPS hosting breaks you free from these types of packages! There are no packages that limit the number of websites you can host. If you're a web developer and host several different websites, you can host them all on one VPS. You can also create as many MySQL databases as you need.</p>
+        <p>A VPS server through InMotion Hosting is configured with both cPanel and Web Host Manager (WHM). Using Web Host Manager, you can give each of your websites its own control panel, giving each of your clients the ability to control certain features of their account without making changes to anyone else's. Giving each of your clients their own cPanel will save you time by allowing your own customers to:</p>
+        <li>Create their own email addresses and forwarders</li>
+        <li>Review their website statistics using AWSTATS</li>
+        <li>Generate their own website backups</li>
+        <p>If you're currently transitioning between hosts and looking for a VPS for joomla, click here to explore our <a href="/vps-hosting">VPS Hosting</a> packages. Each plan offers different levels of RAM, disk storage, and bandwidth. If you have any questions about which VPS package is best for your Joomla site, fill out the form on that page and one of our VPS experts will get back with you to help answer all of your questions.</p>
+    </div>
+    <!--  end span8  -->
+{% endblock %}

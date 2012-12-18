@@ -645,9 +645,12 @@ h3 {
 /**
  * Use in addition with media component
  */
-.site-hosting-tool {
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
+.span6 h2.sht {
+  color: #212121;
+  font-family: "adelle", serif;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .span6:nth-child(odd) > .site-hosting-tool {
@@ -660,15 +663,26 @@ h3 {
 }
 
 .site-hosting-tool > .pull-left {
-  background-color: #eee;
+  border-radius:5px 0 0 5px;
+  border-right: 1px solid #ccc;
   display: block;
+  height: 87px;
   margin-right: 0;
-  padding: 18px;
+  margin: 1px 0 0 1px;
+  padding: 26px 0 17px 40px;
+  width: 120px;
 }
 
-.site-hosting-tool > .media-body {
-  border-left: 1px solid #ccc;
-  padding: 18px 28px;
+.site-hosting-tool > .media-body-sht {
+  border-radius:5px;
+  border: 1px solid #ccc;
+  height:120px;
+  margin-bottom:10px;
+  padding:10px 0 0 6px;
+}
+
+.site-hosting-tool > .raised p {
+  padding: 0 16px 0 171px;
 }
 
 /**
@@ -686,9 +700,9 @@ h3 {
 .solo-gears {
   background: url(../../img/pre-footer-gears.png) no-repeat right top;
   display: block;
-  width: 940px;
-  margin: 0 auto;
   height: 45px;
+  margin: 0 auto;
+  width: 940px;
 }
 
 footer {
@@ -2088,4 +2102,340 @@ p {
 .blue {
   border-right: 40px solid #327fb9;
   border-top: 40px solid #327fb9;
+}
+
+/*------------------------------------*\
+    SALES PAGES LONGTAIL LAYOUT
+\*------------------------------------*/
+
+/**
+ * sales page longtail column layout
+ */
+
+.offset1-longtail {
+  margin-left: 80px;
+}
+.sales-longtail-right-column {
+  background: #eee;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 30px;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.sales-longtail-right-column > h3 {
+  padding: 15px 0 0;
+}
+
+.sales-longtail-right-column p {
+  padding: 0 15px;
+}
+
+.sales-longtail-right-column a {
+  margin: 0 0 10px;
+}
+
+.sales-longtail-right-column img {
+  margin: 0;
+}
+
+.sales-longtail-right-column img.sponsor {
+  margin: 0 0 10px;
+}
+
+/**
+ * sales page longtail styles
+ */
+
+h3.longtail {
+  margin: 0 0 15px;
+}
+
+img.sales-page-longtail-logo {
+  margin: 11px 0 0;
+}
+
+p.collapse-title {
+  padding: 0 0 0 30px;
+}
+
+img.sales-page-left-float {
+  float: left;
+  margin: 0 15px 0 0;
+}
+
+img.sales-page-right-float {
+  float: right;
+  margin: 0 0 0 15px;
+}
+
+/**
+ * longtail right column - recommended hosting, plans link, tutorials, and awards
+ */
+
+.recommended-hosting-image-no-select,
+.recommended-hosting-image-shared,
+.recommended-hosting-image-vps,
+.recommended-hosting-image-dedi {
+  background: url("http://img01.inmotionhosting.com/_img/free-software-tools/sales-page-recommended-hosting.png") 0 0;
+  display: block;
+  height: 55px;
+  list-style-type: none;
+  margin: 0 auto;
+  width: 162px;
+}
+
+.recommended-hosting-image-shared {
+  background-position: 0 -55px;
+}
+
+.recommended-hosting-image-vps {
+  background-position: 0 -110px;
+}
+
+.recommended-hosting-image-dedi {
+  background-position: 0 -165px;
+}
+
+h4.recommended-hosting {
+  color: #888;
+  margin: 11px 0 0;
+}
+
+hr.recommended-hosting {
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+}
+
+/**
+ * longtail right column page button
+ */
+
+.btn-longtail {
+  box-shadow: 0 3px 0 #666666;
+  border-radius: 0 0 3px 3px;
+  color: #ffffff;
+  padding: 4px 40px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+  background-color: #888; /* top-bottom border color */
+  *background-color: #888;
+  background-image: -moz-linear-gradient(top, #888, #888);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#888), to(#888));
+  background-image: -webkit-linear-gradient(top, #888, #888); /* background gradient */
+  background-image: -o-linear-gradient(top, #888, #888);
+  background-image: linear-gradient(to bottom, #888, #888);
+  background-repeat: repeat-x;
+  border-color: #888 #888 #802420;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); /* left-right border color */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff888', endColorstr='#ff888', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -webkit-box-shadow 0 3px 0 #666666;
+}
+
+.btn-longtail:hover,
+.btn-longtail:active,
+.btn-longtail.active,
+.btn-longtail.disabled,
+.btn-longtail[disabled] {
+  box-shadow: 0 3px 0 #666666;
+  color: #ffffff;
+  background-color: #888;
+  *background-color: #a9302a;
+  -webkit-box-shadow 0 3px 0 #666666;
+}
+
+.btn-longtail:active,
+.btn-longtail.active {
+  background-color: #942a25 \9;
+}
+
+/**
+ * longtail features collapse section
+ */
+
+h4.features-collapse {
+  border-top: 1px solid #ccc;
+  color: #C52127;
+  padding: 11px 0 11px 20px;
+  width: 100%;
+}
+
+.button-class {
+  border-top: 3px solid #888;
+  float: left;
+  height: 63px;
+  margin: 20px 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.feature-column {
+  float: left;
+  margin-left: 20px;
+  width: 300px;
+}
+
+.longtail-features {
+  margin: 0 0 5px;
+}
+
+/**
+ * Longtail sales page table
+ */
+
+table.longtail {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+table.longtail tr th {
+  border: 1px solid #ccc;
+  color: #C52228;
+  text-align: left;
+  width: 33%;
+}
+
+table.longtail tr td {
+  background-color: #ededed;
+  border-bottom: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: left;
+  vertical-align: top;
+  width: 33%;
+}
+
+img.longtail-center {
+  display: block;
+  margin: 0 auto;
+}
+
+table.two-column tr th,
+table.two-column tr td {
+  width: 50%;
+}
+
+table.four-column tr th,
+table.four-column tr td {
+  width: 25%;
+}
+
+/**
+ * drupal reviews page for quotes
+ */
+
+table.drupal-review tr th {
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: #C52228;
+  padding: 8px 0 0 20px;
+  text-align: left;
+}
+
+table.drupal-review {
+  margin: 0 0 20px;
+}
+
+table.drupal-review tr td {
+  background: #ededed;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 100%;
+}
+
+table.drupal-review tr td p {
+  font-style: italic;
+}
+
+/**
+ * code and longtail ol style
+ */
+
+code.longtail {
+  font: 12px/1.5 "monospace", serif;
+}
+
+ol.longtail {
+  display: block;
+  margin: 0 0 0 40px;
+}
+
+/**
+ * webbuilder ol styles
+ */
+
+ol.webbuilder {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+  height: 130px;
+  margin: 0;
+  padding: 10px 38px;
+  width: 562px;
+}
+
+ol.webbuilder li {
+  display: inline-block;
+  float: left;
+  height: 117px;
+  list-style-type: none;
+  margin: 0;
+}
+
+ol.webbuilder li.step1 {
+  width: 160px;
+}
+
+ol.webbuilder li.step2 {
+  width: 172px;
+}
+
+ol.webbuilder li.step3 {
+  width: 132px;
+}
+
+ol.webbuilder li.arrow {
+  float: left;
+  height: 25px;
+  margin: 46px 10px 0 20px;
+  width: 13px;
+}
+
+ul.theme_showcase {
+  display: block;
+  height: 140px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul.theme_showcase li {
+  display: block;
+  float: left;
+  height: 130px;
+  list-style-type: none;
+  margin: 5px 0;
+  text-align: center;
+  width: 120px;
+}
+
+ul.theme_showcase img {
+  border: 1px solid #ccc;
+  height: 115px;
+  width: 115px;
+}
+
+/**
+ * leaderboard background image
+ */
+
+.blue-vps {
+  background: url(../../img/bluenoise.png) repeat 0 0;
+}
+
+.green-dedi {
+  background: url(../../img/greennoise.jpg) repeat 0 0;
 }
