@@ -2,13 +2,13 @@
 {% set active = 'guarantee' %}
 
 {# title #}
-{% block title %}{% endblock %}
+{% block title %}Risk Free Hosting{% endblock %}
 
 {# keywords #}
-{% block keywords %}{% endblock %}
+{% block keywords %}vps hosting, web hosting, dedicated server, inmotion hosting, inmotion, virtual private server, cpanel hosting{% endblock %}
 
 {# description #}
-{% block description %}{% endblock %}
+{% block description %}Web hosting money back guarantee from InMotion Hosting. 30 and 90 day money back guarantees available on our web hosting solutions.{% endblock %}
 
 {# intro #}
 {% block intro %}
@@ -18,7 +18,7 @@
         We are so confident in our service that we offer a 30 and 90 day money back guarantee.
     </div>
     <div class="span3">
-        <img alt="gears" class="banner-img" src="../../img/gears-plain.png" />
+        <img class="banner-img" src="../../img/gears-plain.png" alt="gears" />
     </div>
 </div>
 {% endblock %}
@@ -28,7 +28,7 @@
     <div class="row">
         <div class="span9">
             <h2>Overview</h2>
-            <p>If you purchase any 1 or 2 year Business Class Hosting Packages (<a href="#">Launch</a>, <a href="#">Power</a> or <a href="#">Pro</a>) - you are eligible for our 90 day money back guarantee.</p><p>If you purchase any 6 month or 12 month Virtual Dedicated (<a href="#">VPS-1000</a>, <a href="#">VPS-2000</a> or <a href="#">VPS-3000</a>) - you are eligible for our 90 day money back guarantee. Purchasing any Virtual Dedicated for less than 6 month billing cycles are only eligible for a 30 day money back guarantee.</p><p>If you purchase any monthly, 6 month, or 12 month Dedicated Server package (<a href="#">Essential</a>, <a href="#">Advanced</a>, <a href="#">Elite</a> or <a href="#">Commercial Class</a>) you are eligible for our 30 day money back guarantee.</p><p>If you purchase any of our other web hosting packages, including our Value Class (<a href="#">Starter</a>, <a href="#">Basic</a> or <a href="#">Max</a>) you are eligible for our 30 day money back guarantee.</p><p>In the event of exercising any money back guarantee, certain restrictions apply.
+            <p>If you purchase any 1 or 2 year Business Class Hosting Packages (<a href="{{ app.request.basepath }}/business-hosting">Launch, Power or Pro</a>) - you are eligible for our 90 day money back guarantee.</p><p>If you purchase any 6 month or 12 month Virtual Dedicated (<a href="{{ app.request.basepath }}/vps-hosting">VPS-1000, VPS-2000 or VPS-3000</a>) - you are eligible for our 90 day money back guarantee. Purchasing any Virtual Dedicated for less than 6 month billing cycles are only eligible for a 30 day money back guarantee.</p><p>If you purchase any monthly, 6 month, or 12 month Dedicated Server package (<a href="{{ app.request.basepath }}/dedicated-servers">Essential, Advanced, Elite</a> or <a href="{{ app.request.basepath }}/dedicated-servers">Commercial Class</a>) you are eligible for our 30 day money back guarantee.</p><p>If you purchase any of our other web hosting packages, including our Value Class (<a href="{{ app.request.basepath }}/business-hosting">Starter, Basic or Max</a>) you are eligible for our 30 day money back guarantee.</p><p>In the event of exercising any money back guarantee, certain restrictions apply.
             <ul>
                 <li>Domain names are non-refundable. The domain is yours to keep and you will be given the rights and registry key so that you can manage your domain name.</li>
                 <li>In the event that you exercise our free domain or free domain name transfer promotion, the price of the domain of $11.95 per year and a $5.00 administrative fee will be deducted from your refund.</li>
@@ -39,7 +39,7 @@
                 <li>All cancellations/refunds must be done via our electronic form. Cancellations/refunds via email, telephone or live chat are not adequate means to request a cancellation or refund.</li>
                 <li>Customers who have signed up on or after June 15, 2007 are eligible for 90 day money back guarantee. Customers who have signed up on June 14, 2007 or earlier are only eligible for a 30 day money back guarantee.</li>
             </ul>
-            <p>If you have any other questions, please do not hesitate to <a href="#">contact us</a>.
+            <p>If you have any other questions, please do not hesitate to <a href="{{ app.request.basepath }}/contact">contact us</a>.
         </div>
         <div class="span3">
             <img src="../../img/icons-guarantee.png" alt="awards, bbb, cnet icons" class="pull-right" />

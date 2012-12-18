@@ -391,6 +391,10 @@ img {
   width: 30px;
 }
 
+.q-home {
+  padding-right: 0;
+}
+
 /**
  * Apply top and bottom padding to element
  */

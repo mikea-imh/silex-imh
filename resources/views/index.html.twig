@@ -2,20 +2,20 @@
 {% set active = 'homepage' %}
 
 {# title #}
-{% block title %}This is a super optimized title element to which the system concatenates &#39; | InMotion Hosting&#39;{% endblock %}
+{% block title %}Web Hosting, VPS Hosting, Dedicated Hosting{% endblock %}
 
 {# keywords #}
-{% block keywords %}comma, delimited, listing, of, keywords{% endblock %}
+{% block keywords %}web hosting, vps hosting, dedicated server, hosting provider, website hosting, inmotion, inmotion hosting, inmotionhosting{% endblock %}
 
 {# description #}
-{% block description %}more optimized stuff in this description{% endblock %}
+{% block description %}Web Hosting Services by InMotion Hosting. Top rated Business Hosting Provider for Small and Medium Companies. Website hosting company offering VPS Hosting, Dedicated Servers and Shared Hosting.{% endblock %}
 
 {# intro #}
 {% block intro %}
     <div class="span8">
         <h1>Build your business online in no time.</h1>
         <p>Thousands of customers know us to be the fastest, easiest and most reliable way to get online.</p>
-        <a href="#" class="btn btn-large btn-white">Learn More</a>
+        <a href="{{ app.request.basepath }}/meet-us" class="btn btn-large btn-white">Learn More</a>
     </div>
     <div class="span3">
         <img alt="Business Class Hosting box" src="{{ app.request.basepath }}/img/slider-cardboard-box.png" />
@@ -29,19 +29,19 @@
             <div class="well well-small well-inverted clearfix">
                 <div class="row">
                     <p class="span2"><img alt="mini gear" src="../../img/mini-gear.png" />Choose a plan to learn more</p>
-                    <a href="business-hosting"><div class="span3 well-small raised slab">
+                    <a href="{{ app.request.basepath }}/business-hosting"><div class="span3 well-small raised slab">
                             <span class="span1">$5.95 <p>per month</p></span>
                             <h4>Business Hosting</h4>
                             <p>Basic websites, start-ups and personalzied email.</p>
                         </div>
                     </a>
-                    <a href="vps-hosting"><div class="span3 well-small raised slab">
+                    <a href="{{ app.request.basepath }}/vps-hosting"><div class="span3 well-small raised slab">
                             <span class="span1">$29.95 <p>per month</p></span>
                             <h4>VPS Hosting</h4>
                             <p>High-growth businesses &amp; moderate web traffic</p>
                         </div>
                     </a>
-                    <a href="dedicated-servers">
+                    <a href="{{ app.request.basepath }}/dedicated-servers">
                         <div class="span3 well-small raised slab">
                             <span class="span1">$119.95 <p>per month</p></span>
                             <h4>Dedicated Hosting</h4>
@@ -60,35 +60,35 @@
                     <div class="row">
                         <div class="span4">
                             <h2 class="muted"><i class="icon-headphones ipos"></i> Support</h2>
-                            <p>You’ll get quick answers 24x7x365 from our US-based <a href="#">support team</a>. For general questions, comments or concerns, contact our experts anytime via phone, email or chat.</p><span class="ln"></span>
+                            <p>You’ll get quick answers 24x7x365 from our US-based <a href="{{ app.request.basepath }}/meet-us/support#main">support team</a>. For general questions, comments or concerns, contact our experts anytime via phone, email or chat.</p><span class="ln"></span>
                         </div>
                         <div class="span4">
                             <h2 class="muted"><i class="icon-cpu ipos"></i> Technology</h2>
-                            <p>Your websites will sing in our data centers. We use <a href="#">high-performance</a> Dell&reg; servers running CentOS&reg; enterprise-class Linux, with networking hardware from Cisco Systems&reg; among others.</p><span class="ln"></span>
+                            <p>Your websites will sing in our data centers. We use <a href="{{ app.request.basepath }}/meet-us/technology#main">high-performance</a> Dell&reg; servers running CentOS&reg; enterprise-class Linux, with <a href="{{ app.request.basepath }}/meet-us/reliability#main">networking hardware</a> from Cisco Systems&reg; among others.</p><span class="ln"></span>
                         </div>
                         <div class="span4">
                             <h2 class="muted"><i class="icon-tach ipos"></i> Reliability</h2>
-                            <p><a href="#">99.9% uptime</a>. That is the promise we make to you. Our proprietary software and expert system administrators monitor your websites 24 hours a day, 7 days a week.</p><span class="ln"></span>
+                            <p><a href="{{ app.request.basepath }}/meet-us/reliability#main">99.9% uptime</a>. That is the promise we make to you. Our proprietary software and expert system administrators monitor your websites 24 hours a day, 7 days a week.</p><span class="ln"></span>
                         </div>
                     </div>
                     <div class="row">
                         <div class="span4">
                             <h2 class="muted"><i class="icon-star ipos"></i> Guarantee</h2>
-                            <p>Starting with InMotion Hosting is risk free. We are so confident that we offer a <a href="#">90-day money back guarantee</a> on certain products. No questions asked. Seriously.</p>
+                            <p>Starting with InMotion Hosting is risk free. We are so confident that we offer a <a href="{{ app.request.basepath }}/meet-us/guarantee#main">90-day money back guarantee</a> on certain products. No questions asked. Seriously.</p>
                         </div>
                         <div class="span4">
                             <h2 class="muted"><i class="icon-disc ipos"></i> Software</h2>
-                            <p>You have a huge range of free tools available at InMotion Hosting, including open source software like <a href="#">WordPress</a> and <a href="#">Moodle</a>, plus other free tools like <a href="#">Spam Assasin&reg;</a>.</p>
+                            <p>You have a huge range of <a href="{{ app.request.basepath }}/site-hosting-tools">free tools</a> available at InMotion Hosting, including open source software like <a href="{{ app.request.basepath }}/meet-us/software#main">WordPress</a> and <a href="{{ app.request.basepath }}/meet-us/software#main">Moodle</a>, plus other free tools like <a href="{{ app.request.basepath }}/meet-us/software#main">Spam Assasin&reg;</a>.</p>
                         </div>
                         <div class="span4">
                             <h2 class="muted"><i class="icon-tree ipos"></i> Go Green</h2>
-                            <p>Your website will have a tiny carbon footprint with InMotion Hosting. We have invested in green data centers and environmental partnerships for years.</p>
+                            <p>Your website will have a tiny carbon footprint with InMotion Hosting. We have invested in <a href="{{ app.request.basepath }}/meet-us/go-green#main">green data centers</a> and environmental partnerships for years.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="span12 centered jutwrap5"><a href="#" class="btn btn-primary">See All the Benefits</a></div>
+                <div class="span12 centered jutwrap5"><a href="{{ app.request.basepath }}/meet-us" class="btn btn-primary">See All the Benefits</a></div>
             </div>
         </div>
     </div><!-- /.pattern -->
@@ -101,7 +101,7 @@
                 <h1>Start getting traffic.</h1>
                 <h2>Great web hosting is the foundation of a strong online presence.</h2>
                 <p>Having a professionally designed website is how you attract quality web traffic. Our Premium Web Builder lets you easily build an outstanding website in just minutes.If you’re looking for a professional site but don’t have the time to build it yourself, let our professional team of experienced web designers build the perfect site to your exact needs. Once your site is up, start sending targeted traffic to your website with free advertising credits from the biggest sites on the web including free with all web hosting plans.</p>
-                <a href="#" class="btn btn-primary">View Portfolio</a>
+                <a href="{{ app.request.basepath }}/webdesign" class="btn btn-primary">View Portfolio</a>
             </div>
         </div>
     </div>
@@ -125,11 +125,11 @@
             <div class="span8 pull-left">
                 <h1>A Brand You Can Trust</h1>
                 <h2>IMH has been serving the web community since 2001.</h2>
-                <p><img class="pull-left hspace" alt="BBB A+ Rating and CNET 3 out of 3 Stars" src="../../img/logo-bbb-cnet.gif" />We’ve worked hard to develop an impeccable reputation of having unmatched support and reliability. We’ve been awarded 3 out of 3 stars from CNET since 2003 and have an A+ service rating from the Better Business Bureau. But the opinions that matter most to us are from our thousands of loyal customers. Our devoted customers send us dozens of compliments each day. See for yourself just what everyone’s raving about.</p>
-                <a href="#" class="btn btn-primary">Learn More About Us</a>
+                <p><img class="pull-left hspace" alt="BBB A+ Rating and CNET 3 out of 3 Stars" src="../../img/logo-bbb-cnet.gif" />We’ve worked hard to develop an impeccable reputation of having unmatched support and reliability. We’ve been awarded 3 out of 3 stars from CNET since 2003 and have an <a href="{{ app.request.basepath }}/partners-and-awards">A+ service</a> rating from the <a href="http://www.la.bbb.org/business-reviews/Website-Hosting-Services/InMotion-Hosting-Inc-in-Los-Angeles-CA-13192913">Better Business Bureau</a>. But the opinions that matter most to us are from our thousands of loyal customers. Our devoted customers send us dozens of compliments each day. See for yourself just what everyone’s raving about.</p>
+                <a href="{{ app.request.basepath }}/about-us" class="btn btn-primary">Learn More About Us</a>
             </div>
             <div class="span3 island sunken pull-right">
-                <blockquote class="quoted">Inmotion has given my growing company the reliability, flexibility and consistency that I hav ebeen looking for. Their customer service and technical support have always been fast and efficient.</blockquote>
+                <blockquote class="quoted q-home">Inmotion has given my growing company the reliability, flexibility and consistency that I hav ebeen looking for. Their customer service and technical support have always been fast and efficient.</blockquote>
                 <span class="emisor vibrant quotename">Ajay Narain <span class="muted quotefrom">Sunnyvale, CA</span></span>
             </div>
         </div>

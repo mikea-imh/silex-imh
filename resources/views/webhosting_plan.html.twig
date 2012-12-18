@@ -1,13 +1,13 @@
 {% extends 'layout.html.twig' %}
 
 {# title #}
-{% block title %}{% endblock %}
+{% block title %}Web Hosting, VPS Hosting, Dedicated Hosting{% endblock %}
 
 {# keywords #}
-{% block keywords %}{% endblock %}
+{% block keywords %}web hosting, vps hosting, dedicated server, hosting provider, website hosting, inmotion, inmotion hosting, inmotionhosting{% endblock %}
 
 {# description #}
-{% block description %}{% endblock %}
+{% block description %}Web Hosting Services by InMotion Hosting. Top rated Business Hosting Provider for Small and Medium Companies. Website hosting company offering VPS Hosting, Dedicated Servers and Shared Hosting.{% endblock %}
 
 {# intro #}
 {% block intro %}
@@ -55,31 +55,31 @@
                     <div class="span6">
                         <div class="island raised ads">
                             <img src="{{ app.request.basepath }}/img/90day.png" alt="90 Day Garauntee icon" class="iconleft" />
-                            <p>All business plans come with an Industry Leading <a href="#">90-Day Money Back Guarantee</a></p>
+                            <p>All business plans come with an Industry Leading <a href="{{ app.request.basepath }}/guarantee">90-Day Money Back Guarantee</a></p>
                         </div>
                     </div>
                     <div class="span6">
                         <div class="island raised ads">
                             <img src="{{ app.request.basepath }}/img/spedometer.png" alt="Max Speed Zone icon" class="iconleft" />
-                            <p><a href="#">Max Speed Zone Enabled.</a> Multiple data centers means you can get the fastest connection on either coast.</p>
+                            <p><a href="{{ app.request.basepath }}/fast-web-hosting">Max Speed Zone Enabled.</a> Multiple data centers means you can get the fastest connection on either coast.</p>
                         </div>
                     </div>
                 <div class="span4">
                     <div class=" trust muted centered">
                         <span class="ln">Our Trusted Partners</span>
-                        <a href="#"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" /></a>
+                        <a href="{{ app.request.basepath }}/partners-and-awards"><img src="{{ app.request.basepath }}/img/trusted-partners.png" alt="Trusted Partners logos" /></a>
                     </div>
                 </div>
                 <div class="span4">
                     <div class=" trust muted centered">
                         <span class="ln">Security</span>
-                        <a href="#"><img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" /></a>
+                        <img src="{{ app.request.basepath }}/img/trusted-security.png" alt="Security logos" />
                     </div>
                 </div>
                 <div class="span4">
                     <div class=" trust muted centered">
                         <span class="ln">Our Awards</span>
-                        <a href="#"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" /></a>
+                        <a href="{{ app.request.basepath }}/partners-and-awards"><img src="{{ app.request.basepath }}/img/trusted-awards.png" alt="Our Awards" /></a>
                     </div>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                 </div>
                 <div class="row wrap">
                     <div class="dc span3">
-                        <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" />Moving domains can be messy. We'll handle the dirty work. <br /><a href="#">Learn More</a>
+                        <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" />Moving domains can be messy. We'll handle the dirty work. <br /><a href="{{ app.request.basepath }}/domain-transfer">Learn More</a>
                     </div>
 
                     {# testimonial #}
