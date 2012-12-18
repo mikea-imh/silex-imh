@@ -2,13 +2,13 @@
 {% set active = 'terms_of_service' %}
 
 {# title #}
-{% block title %}{% endblock %}
+{% block title %}Terms of Service and Policies{% endblock %}
 
 {# keywords #}
-{% block keywords %}{% endblock %}
+{% block keywords %}inmotion hosting terms of service, vps hosting, web hosting, dedicated server, inmotion hosting, inmotion, virtual private server, cpanel hosting{% endblock %}
 
 {# description #}
-{% block description %}{% endblock %}
+{% block description %}Web hosting policies and terms of service from InMotion Hosting.{% endblock %}
 
 {# intro #}
 {% block intro %}
@@ -17,7 +17,7 @@
         <h1>Terms of Service</h1>
     </div>
     <div class="span3">
-        <img alt="gears" class="banner-img" src="../../img/gears-plain.png" />
+        <img class="banner-img" src="../../img/gears-plain.png" alt="gears" />
     </div>
 </div>
 {% endblock %}
@@ -55,8 +55,8 @@
             <li>Preserve the privacy and security of individual users.</li>
         </ul>
         <p>The Acceptable Use Policy below defines the actions which IMH considers to be abusive, and thus, strictly prohibited. The examples named in this list are non-exclusive, and are provided solely for guidance to IMH customers. If you are unsure whether any contemplated use or action is permitted, please send mail to abuse@InMotionHosting.com and we will assist you. Please note that the actions listed below are also not permitted from other Internet Service Providers on behalf of, or to advertise, any service hosted by IMH, or connected via the IMH network. Furthermore, such services may not be advertised via deceptive marketing policies, as defined by the Federal Trade Commission Deception Policy Statement.</p>
-        <h4>Unlimited Disk Space & Bandwidth</h4>
-        <p>While IMH does not meter disk space & bandwidth, the purpose of an IMH hosting account is to host web sites. Using a hosting account primarily for online file storage or archiving electronic files is prohibited.</p><p>IMH Personal & Business Class hosting are shared hosting environments, so to ensure fast & reliable service to all of our clients, accounts that adversely affect server or network performance must correct these issues or will be asked to upgrade to a virtual or dedicated server.</p>
+        <h4>Unlimited Disk Space &amp; Bandwidth</h4>
+        <p>While IMH does not meter disk space &amp; bandwidth, the purpose of an IMH hosting account is to host web sites. Using a hosting account primarily for online file storage or archiving electronic files is prohibited.</p><p>IMH Personal &amp; Business Class hosting are shared hosting environments, so to ensure fast &amp; reliable service to all of our clients, accounts that adversely affect server or network performance must correct these issues or will be asked to upgrade to a virtual or dedicated server.</p>
         <h4>Free Domain Name</h4>
         <p>Your web hosting account includes a free domain registration or transfer for the first year of service. When your web hosting account renews, the applicable then-current pricing will be applied to your account (currently domain registration is $11.95/year).</p>
         <h4>Student Web Hosting</h4>
@@ -134,7 +134,7 @@
             <li>Customers who violate systems and/or network security, may incur in criminal or civil liability.</li>
             <li>IMH reserves the right to amend its policies at any time. You will be held responsible for the actions of your clients in the matter described on these Terms and conditions. Therefore, it is in your best interest to implement a similar or stricter Terms and conditions or otherwise called Acceptable Terms of use policy.</li>
         </ul>
-        <p>If you have any questions concerning the above stated terms and conditions then please <a href="#">Contact us</a>.</p>
+        <p>If you have any questions concerning the above stated terms and conditions then please <a href="{{ app.request.basepath }}/contact">Contact us</a>.</p>
     </div>
 </div>
 {% endblock %}
