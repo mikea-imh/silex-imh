@@ -587,7 +587,8 @@ img {
 
 .compare .nav-pills .ideal,
 .compare .nav-pills .less-ideal,
-.compare .nav-pills .unacceptable {
+.compare .nav-pills .unacceptable,
+.addgutter {
   background-repeat: no-repeat;
   padding-left: 20px;
 }
@@ -1004,6 +1005,10 @@ h3.contact + .row-fluid {
 
 
 /*------------------------------*/
+
+.webbuilder p {
+  margin-bottom: 20px;
+}
 
 /**
  * Grid-like unordered list for awards/partners page
@@ -1633,6 +1638,15 @@ th > .btn-link:hover {
   margin: 6px auto 0;
   position: absolute;
   width: 430px;
+}
+
+/**
+ * CTA placement div for premium web builder
+ */
+.centercta {
+  margin: 0 auto 0;
+  position: relative;
+  width: 153px;
 }
 
 /**
