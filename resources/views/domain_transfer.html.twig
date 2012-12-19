@@ -12,9 +12,14 @@
 
 {# intro #}
 {% block intro %}
-<div class="span8">
-    <h1>Domain Concierge</h1>
-    <p>Moving Domains is Messy. Let Us Handle the Dirty Work for You.</p>
+<div class="row">
+    <div class="span8">
+        <h1>Domain Concierge</h1>
+        <p>Moving Domains is Messy. Let Us Handle the Dirty Work for You.</p>
+    </div>
+    <div class="span3 offset1">
+        <img src="{{ app.request.basepath }}/img/logo-dc-grayscale.gif" alt="" />
+    </div>
 </div>
 {% endblock %}
 
@@ -25,115 +30,121 @@
         <div class="row">
             <div class="span8">
                 <h2>Save Time &amp; Effort</h2>
-                <p>Already have a domain or multiple domains with another registrar? Save time and effort by letting our expert support staff move them to your account at InMotion Hosting. All we need is your account information at your current registrar and we handle the rest. Forget the messy process of waiting for emails, codes and error messages. We handle it all for you. This means one bill from one company. Simplicity and ease at its finest. To get started, log into your <a href="#">AMP</a> and select “Domain Transfer.”</p>
+                <p>Already have a domain or multiple domains with another registrar? Save time and effort by letting our expert support staff move them to your account at InMotion Hosting. All we need is your account information at your current registrar and we handle the rest. Forget the messy process of waiting for emails, codes and error messages. We handle it all for you. This means one bill from one company. Simplicity and ease at its finest. To get started, log into your <a href="http://andrewn.imh.imhtech.net/index/login?force_version=b">AMP</a> and select “Domain Transfer.”</p>
             </div>
-            <div class="span3 offset1">
-                <div class="well">
-                    <p>$25 <span>per domain</span></p>
-                    <a class="btn btn-primary">AMP Login</a>
+            <div class="span2 offset1">
+                <div class="well well-small">
+                    <p class="pricebox pricebox-{{ active }}">$25 <span>per domain</span><a href="http://andrewn.imh.imhtech.net/index/login?force_version=b" class="btn btn-primary">AMP Login</a>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="span12">
-        <h3>How does the domain concierge process work?</h3>
+<div class="row well-inverted">
+    <div class="container">
+        <h3 class="span12">How does the domain concierge process work?</h3>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="span4">
-            <h3>What you do:</h3>
-            <div class="media">
-                <div class="media-object pull-left">
-                    <img src="#" />
+<div class="tabbg">
+    <div class="container">
+        <div class="row {{ active }}">
+            <div class="span4 {{ active }}-you raised">
+                <h3 class="{{ active }}">What you do:</h3>
+            </div>
+            <div class="span8 {{ active }}-we raised gutter-remove">
+                <h3 class="{{ active }}">What InMotion Hosting does:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span4 {{ active }}-you">
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-overview-active.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>Hand our expert support staff your domain or list of domains you want to transfer over to us.</p>
+                    </div>
                 </div>
-                <div class="media-body">
-                    <p>Hand our expert support staff your domain or list of domains you want to transfer over to us.</p>
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-checkbox.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>Fill out our simple form with your login information at your current registrar(s).</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-flagstick.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>Kick back and replax or get back to running your business - whatever suits your fancy.</p>
+                    </div>
                 </div>
             </div>
-            <div class="media">
-                <div class="media-object">
-                    <img src="#" />
+            <div class="span4 {{ active }}-we gutter-remove">
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-id.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>Initiate transfer process with your current host by filling out their transfer forms.</p>
+                    </div>
                 </div>
-                <div class="media-body">
-                    <p>Fill out our simple form with your login information at your current registrar(s).</p>
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-mail.png" />
+                    </div>
+                    <div class="media-body">
+                        <p>Change admin email addresses to avoid receiving annoying transfer instructions and notifications.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-stopwatch.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>We wait for registrar to send us official transfer codes.</p>
+                    </div>
                 </div>
             </div>
-            <div class="media">
-                <div class="media-object">
-                    <img src="#" />
+            <div class="span4 {{ active }}-we gutter-remove">
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-shuffle.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>We move your domains over to our registrars.</p>
+                    </div>
                 </div>
-                <div class="media-body">
-                    <p>Kick back and replax or get back to running your business - whatever suits your fancy.</p>
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-reset.png" />
+                    </div>
+                    <div class="media-body">
+                        <p>We reset admin information to your email address to put you back in control.</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <div class="media-object pull-left">
+                        <img src="{{ app.request.basepath }}/img/icon-flag.gif" />
+                    </div>
+                    <div class="media-body">
+                        <p>We notify you that the process has been completed.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="span8">
-            <h3>What InMotion Hosting does:</h3>
+        <div class="wrap raised package-subtitle">
             <div class="row">
-                <div class="span4">
-                    <div class="media">
-                        <div class="media-object pull-left">
-                            <img src="#" />
-                        </div>
-                        <div class="media-body">
-                            <p>Initiate transfer process with your current host by filling out their transfer forms.</p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-object pull-left">
-                            <img src="#" />
-                        </div>
-                        <div class="media-body">
-                            <p>Change admin email addresses to avoid receiving annoying transfer instructions and notifications.</p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-object pull-left">
-                            <img src="#" />
-                        </div>
-                        <div class="media-body">
-                            <p>We wait for registrar to send us official transfer codes.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="span4">
-                    <div class="media">
-                        <div class="media-object">
-                            <img src="#" />
-                        </div>
-                        <div class="media-body">
-                            <p>We move your domains over to our registrars.</p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-object">
-                            <img src="#" />
-                        </div>
-                        <div class="media-body">
-                            <p>We reset admin information to your email address to put you back in control.</p>
-                        </div>
-                    </div>
-                    <div class="media">
-                        <div class="media-object">
-                            <img src="#" />
-                        </div>
-                        <div class="media-body">
-                            <p>We notify you that the process has been completed.</p>
-                        </div>
-                    </div>
+                <h3 class="span3 {{ active }}">Important Details</h3>
+                <div class="span8 offset1">
+                    <p>In order for you to use our Domain Concierge Service, the domains must be unlocked (cannot be set to private) and past their 60 day waiting period after you have purchased them.</p>
+                    <p>Domain transfers can take 7-14 days (although most of the time we have experienced it takes much less than that) depending upon the policies and procedures at your current registrar.</p>
+                    <p>We can support all domain types, but they do not qualify for our Domain Concierge Service and cannot be transferred to our registrars. We can move: .com, .org, .biz, .net, .us, and .info.</p>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <h3 class="span3">Important Details</h3>
-        <div class="span8 offset1">
-            <p>In order for you to use our Domain Concierge Service, the domains must be unlocked (cannot be set to private) and past their 60 day waiting period after you have purchased them.</p>
-            <p>Domain transfers can take 7-14 days (although most of the time we have experienced it takes much less than that) depending upon the policies and procedures at your current registrar.</p>
-            <p>We can support all domain types, but they do not qualify for our Domain Concierge Service and cannot be transferred to our registrars. We can move: .com, .org, .biz, .net, .us, and .info.</p>
         </div>
     </div>
 </div>

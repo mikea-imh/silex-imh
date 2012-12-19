@@ -978,6 +978,93 @@ h3.contact + .row-fluid {
   display: inline;
 }
 
+/**
+ * Domain Transfer
+ */
+
+.intro.domain_transfer .span3 > img {
+  display: block;
+  margin: 0 auto;
+}
+
+.row.well-inverted > .container > h3.span12 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3.domain_transfer {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-indent: 20px;
+}
+
+.domain_transfer h3.domain_transfer {
+  line-height: 66px;
+  padding-left: 20px;
+  text-indent: 0;
+}
+
+.domain_transfer-we.span8 {
+  border-bottom: 1px solid #ccc;
+  border-right: none;
+  width: 626px;
+}
+
+.pricebox-domain_transfer {
+  line-height: 1;
+  text-align: center;
+}
+.pricebox-domain_transfer > span {
+  display: block;
+  font-size: 16px;
+}
+
+p.pricebox.pricebox-domain_transfer {
+  margin: 0;
+}
+
+.pricebox-domain_transfer > .btn {
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
+}
+
+.domain_transfer-you .media,
+.domain_transfer-we .media {
+  margin-top: 0;
+  min-height: 77px;
+  padding-top: 15px;
+}
+
+.domain_transfer-you.span4,
+.domain_transfer-we.span4 {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 312px;
+}
+
+.domain_transfer-you .media:nth-child(even),
+.domain_transfer-we .media:nth-child(odd) {
+  background: #ededed;
+}
+
+.domain_transfer-you .media:nth-child(odd),
+.domain_transfer-we .media:nth-child(even) {
+  background: #f5f5f5;
+}
+
+.domain_transfer-you > *,
+.domain_transfer-we > * {
+  padding-left: 20px;
+}
+
+.domain_transfer-we + .domain_transfer-we {
+  border-right: none;
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
 
@@ -1053,7 +1140,7 @@ pre:hover {
  */
 .privacy {
   color: #c52228;
-  font-family: "adelle-sans", Helvetica, Arial, sans-serif;;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-size: 17px;
   font-weight: 400;
   margin: 30px 0 30px 30px;
