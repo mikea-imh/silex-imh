@@ -153,6 +153,17 @@ $app->match('/contact', function() use ($app) {
         'contact.html.twig');
 })->bind('contact');
 
+// infographics page
+$app->match('/infographics', function() use ($app) {
+    return $app['twig']->render(
+        'infographics.html.twig');
+})->bind('infographics_landing_pages');
+
+$app->match('/infographics/{page}', function($page) use ($app) {
+    return $app['twig']->render(
+        '/../infographic/'.$page.'.html.twig');
+})->bind('infographics_pages');
+
 // vps and dedi longtail controller
 $app->match('/{product}/articles/{page}', function($product, $page) use ($app){
     return $app['twig']->render('/../longtail-pages/'.$product.'/'.$page.'.html.twig');
