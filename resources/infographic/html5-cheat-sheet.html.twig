@@ -1,0 +1,81 @@
+{% extends 'layout.html.twig' %}
+
+{# title #}
+{% block title %}HTML5 Cheat Sheet Infographics{% endblock %}
+
+{# keywords #}
+{% block keywords %}html cheat sheet{% endblock %}
+
+{# description #}
+{% block description %}HTML5 cheat sheets for tags, event handlers, and broswer support{% endblock %}
+
+{# intro #}
+{% block intro %}
+    <div class="span9">
+        <h1>HTML5 Cheat Sheets</h1>
+    </div>
+    <div class="span3">
+    </div>
+{% endblock %}
+
+{# content #}
+{% block content %}
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <h2>HTML5 Cheat Sheet - Tags</h2>
+                    <p><a href="/">Web hosting</a> is our specialty but we also like to share useful information with our community of web developers and designers. Below are three very comprehensive HTML5 cheat sheets that can be easily printed or posted on your website using the provided HTML code.</p>
+                    <p><a href="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-tags.png" alt="html5 cheat sheet tags" target="_blank">Click to see full image</a></p>
+                    <p>Prints on:</p>
+                    <ul>
+                        <li>Letter (8.5" x 11")</li>
+                        <li>US B (11" x 17")</li>
+                        <li>Super B (13" x 19")</li>
+                    </ul>
+                    <a href="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-tags.png" target="_blank"><img src="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-tags-title.jpg" class="infographics" alt="seo audit infographic cover image" /></a>
+                    <table class="infographics">
+                        <tr>
+                            <td>
+                              <pre id="selectme" onClick="fnSelect('selectme')">&lt;a href="http://www.inmotionhosting.com/infographics/html5-cheat-sheet/" target="_blank"&gt;&lt;img src="http://www.inmotionhosting.com/infographics/_img/html5_cheat_sheet_tags-670x460.png" width="670" height="460" border="0" alt="HTML5 Cheat Sheet - Tags" /&gt;&lt;/a&gt; &lt;div&gt;HTML5 Cheat Sheet By InMotion Hosting - A &lt;a href="http://www.inmotionhosting.com/vps_hosting.html"&gt;Virtual Private Servers&lt;/a&gt; Provider&lt;/div&gt;</pre>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>HTML5 Cheat Sheet - Event Handler Attributes</h2>
+                    <p><a href="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-event-attributes.png" alt="html5 cheat sheet tags" target="_blank">Click to see full image</a></p>
+                    <p>Prints on:</p>
+                    <ul>
+                        <li>Letter (8.5" x 11")</li>
+                        <li>US B (11" x 17")</li>
+                        <li>Super B (13" x 19")</li>
+                    </ul>
+                    <a href="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-event-attributes.png" target="_blank"><img src="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-event-attributes-title.jpg" class="infographics" alt="html5 event attributes" /></a>
+                    <table class="infographics">
+                        <tr>
+                            <td>
+                              <pre id="selectme2" onClick="fnSelect('selectme2')">&lt;a href="http://www.inmotionhosting.com/infographics/html5-cheat-sheet/#eventhandler" target="_blank"&gt;&lt;img src="http://www.inmotionhosting.com/infographics/_img/html5_cheat_sheet_event_attributes-670x460.png" width="670" height="460" border="0" alt="HTML5 Cheat Sheet - Event Handler Attributes" /&gt;&lt;/a&gt; &lt;div&gt;HTML5 Cheat Sheet By InMotion Hosting - A &lt;a href="http://www.inmotionhosting.com/"&gt;Web Hosting&lt;/a&gt; Provider&lt;/div&gt;</pre>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>HTML5 Cheat Sheet - Browser Support</h2>
+                    <p><a href="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-browser-support.png" alt="html5 cheat sheet browser support" target="_blank">Click to see full image</a></p>
+                    <p>Prints on:</p>
+                    <ul>
+                        <li>Letter (8.5" x 11")</li>
+                        <li>US B (11" x 17")</li>
+                        <li>Super B (13" x 19")</li>
+                    </ul>
+                    <a href="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-browser-support.png" target="_blank"><img src="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-browser-support-title.jpg" class="infographics" alt="html5 cheat sheet browser support" /></a>
+                    <table class="infographics">
+                        <tr>
+                            <td>
+                              <pre id="selectme3" onClick="fnSelect('selectme3')">&lt;a href="http://www.inmotionhosting.com/infographics/html5-cheat-sheet/#browsersupport" target="_blank"&gt;&lt;img src="http://www.inmotionhosting.com/infographics/_img/html5_cheat_sheet_browser_support-670x460.png" width="670" height="460" border="0" alt="HTML5 Cheat Sheet - Browser Support" /&gt;&lt;/a&gt; &lt;div&gt;HTML5 Cheat Sheet By InMotion Hosting - A &lt;a href="http://www.inmotionhosting.com/dedicated_servers.html"&gt;Dedicated Server&lt;/a&gt; Provider&lt;/div&gt;</pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!--  end span8  -->
+                <div class="span3 offset1"></div>
+            </div><!--  end row  -->
+        </div><!--  end container  -->
+    </div><!--  end wrap  -->
+{% endblock %}

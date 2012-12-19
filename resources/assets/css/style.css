@@ -2480,3 +2480,17 @@ ul.theme_showcase img {
 .green-dedi {
   background: url(../../img/greennoise.jpg) repeat 0 0;
 }
+
+/**
+ * infographics
+ */
+
+table.infographics {
+  margin-top: 10px;
+  width: 620px;
+}
+
+table.infographics tr td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}

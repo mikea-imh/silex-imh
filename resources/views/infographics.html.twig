@@ -1,0 +1,52 @@
+{% extends 'layout.html.twig' %}
+
+{# title #}
+{% block title %}Infographics{% endblock %}
+
+{# keywords #}
+{% block keywords %}inmotion infographics, graphic information{% endblock %}
+
+{# description #}
+{% block description %}Show off your web hosting company! If you like InMotion Hosting's service and support, show it off using these badges and links.{% endblock %}
+
+{# intro #}
+{% block intro %}
+    <div class="span9">
+        <h1>Infographics</h1>
+    </div>
+    <div class="span3">
+    </div>
+{% endblock %}
+
+{# content #}
+{% block content %}
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="span8">
+                    <h2>HTML5 Cheat Sheet</h2>
+                    <a href="/infographics/html5-cheat-sheet"><img src="{{ app.request.basepath }}/img/infographics/html5-cheat-sheet-title.jpg" class="infographics" alt="html5 cheat sheet cover image" /></a>
+                    <h2>Where Does Your Website Live?</h2>
+                    <a href="{{ app.request.basepath }}/img/infographics/where-does-your-website-live.png" target="_blank"><img src="{{ app.request.basepath }}/img/infographics/where-does-your-website-live-title.jpg" class="infographics" alt="where does your website live cover image" /></a>
+                    <table class="infographics">
+                        <tr>
+                            <td>
+                              <pre id="selectme2" onClick="fnSelect('selectme2')">&lt;img src="http://www.inmotionhosting.com/infographics/_img/where_does_your_website_live.png" width="800" height="1487" border="0" alt="Where Does Your Website Live?" /&gt; &lt;div&gt;InMotion Hosting - &lt;a href="http://www.inmotionhosting.com/"&gt;Types of Web Hosting Plans&lt;/a&gt;&lt;/div&gt;</pre>
+                            </td>
+                        </tr>
+                    </table>
+                    <h2>Where Does Your Website Live?</h2>
+                    <a href="{{ app.request.basepath }}/img/infographics/seo-audit-infographic.jpg" target="_blank"><img src="{{ app.request.basepath }}/img/infographics/seo-audit-infographic-title.jpg" class="infographics" alt="seo audit infographic cover image" /></a>
+                    <table class="infographics">
+                        <tr>
+                            <td>
+                              <pre id="selectme3" onClick="fnSelect('selectme3')">&lt;img src="http://www.inmotionhosting.com/infographics/_img/seo_audit_infographic.jpg" width="1000" height="1900" border="0" alt="20-Minutes or Less SEO Audit Checklist" /&gt; &lt;div&gt;InMotion Hosting - A Los Angeles &lt;a href="http://www.inmotionhosting.com/"&gt;Web Hosting&lt;/a&gt; Company&lt;/div&gt;</pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div><!--  end span8  -->
+                <div class="span3 offset1"></div>
+            </div><!--  end row  -->
+        </div><!--  end container  -->
+    </div><!--  end wrap  -->
+{% endblock %}
