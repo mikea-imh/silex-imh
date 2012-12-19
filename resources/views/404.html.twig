@@ -1,0 +1,28 @@
+{% extends 'layout.html.twig' %}
+{% set active = 'error404' %}
+
+{# title #}
+{% block title %}404: Page not found.{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+
+{# content #}
+{% block content %}
+<div class="errorpage {{active}}">
+    <div class="container">
+        <div class="row">
+            <div class="span7">
+                <h1>A stock image?!?</h1>
+                <h1>THIS isn't supposed to be here...</h1>
+                <h2>404: page not found</h2>
+                <a href="{{ app.request.basepath }}/" class="btn btn-large btn-primary">Make baby happy</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

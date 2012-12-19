@@ -53,6 +53,11 @@ $app->match('/privacy-policy', function() use ($app) {
         'privacy_policy.html.twig');
 })->bind('privacy_policy');
 
+$app->match('/oops', function() use ($app) {
+    return $app['twig']->render(
+        '404.html.twig');
+})->bind('error404');
+
 $app->match('/link-to-us', function() use ($app) {
     return $app['twig']->render(
         'link_to_us.html.twig');
