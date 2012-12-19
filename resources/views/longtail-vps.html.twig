@@ -1,0 +1,44 @@
+{% extends 'layout.html.twig' %}
+{% set active = 'blue-vps' %}
+
+{# title #}
+{% block title %}{% endblock %}
+
+{# keywords #}
+{% block keywords %}{% endblock %}
+
+{# description #}
+{% block description %}{% endblock %}
+
+{# intro #}
+{% block intro %}
+    {% block opening %}
+    {% endblock %}
+
+{% endblock %}
+
+{# content #}
+{% block content %}
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
+                {# left_column #}
+                {% block left_column %}
+                {% endblock %}
+                <div class="span3 offset1">
+                    <div class="sales-longtail-right-column">
+                        <h3>VPS Servers</h3>
+                        <p>Starting at<br />$xxx.xx/month!</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                        <hr class="recommended-hosting" />
+                        <h4>Questions?</h4>
+                        <p><a href="#">Live Chat</a> with our Sales<br />team or call 888-321-HOST.</p>
+                    </div>
+                    <div class="sales-longtail-right-column">
+                        <img src="{{ app.request.basepath }}/img/awards-logo.png" alt="IMH Awards" />
+                    </div>
+                </div><!--  end span3 (right column)  -->
+            </div><!--  end row  -->
+        </div><!--  end container  -->
+    </div><!--  end wrap  -->
+{% endblock %}

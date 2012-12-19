@@ -1,0 +1,119 @@
+{% extends 'longtail-joomla.html.twig' %}
+{% set active = 'site_hosting_tools' %}
+
+{# title #}
+{% block title %}Joomla Hosting{% endblock %}
+
+{# keywords #}
+{% block keywords %}Joomla hosting, host, joomla, web hosting, fast, easy{% endblock %}
+
+{# description #}
+{% block description %}Joomla Hosting from InMotion Hosting offers easy 1-click installation and the fast SAS hard drives.{% endblock %}
+
+{# opening #}
+{% block opening %}
+    <div class="span9">
+        <h1>Joomla Hosting</h1>
+    </div>
+    <div class="span3">
+        <p>Unmatched Speed, Enhanced Security, and Expert Support</p>
+    </div>
+{% endblock %}
+
+{# container #}
+{% block container %}
+    {# left_column #}
+    {% block left_column %}
+        <div class="span8">
+            <h2>The Joomla Web Hosting Experts</h2>
+            <p>Web hosting with Joomla couldn't be easier with InMotion Hosting. Our advanced webhosting service includes blazing-fast hard drives, the enhanced security of suPHP, and a support center that's second-to-none. To top that off, we are now auto-installing <a href="http://inmotionhosting.com/support/edu/joomla-3">Joomla 3.0</a> or <a href="http://inmotionhosting.com/support/edu/joomla-25">Joomla 2.5</a> for you! See why InMotion offers the <a href="/joomla-hosting/best-joomla-hosting">best Joomla hosting</a> around.</p>
+            <h4 class="features-collapse">Features</h4>
+            <!--  collapse table  -->
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/joomla-hosting/wp_icon_1.png" alt="1-click easy install" />
+                        <div class="media-body raised">
+                            <p>1-Click Easy Install With Softaculous</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>1-Click Easy Install with Softaculous. Each InMotion Hosting Business Class web hosting package includes access to Softaculous. Softaculous offers a one-click installation of Joomla and will automatically update to offer the most current version! It couldn't get much easier to begin your Joomla site!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/joomla-hosting/wp_icon_5.png" alt="joomla security icon" />
+                        <div class="media-body raised">
+                            <p>Better Security with suPHP</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Better Security with suPHP. suPHP is a PHP module that restricts how and at which permission level PHP scripts are executed. Without suPHP, scripts are executed as the user "nobody," meaning they have system-wide access which can result in security vulnerabilities. InMotion Hosting utilizes suPHP to ensure the most secure environment available.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/joomla-hosting/wp_icon_3.png" alt="joomla latest version icon" />
+                        <div class="media-body raised">
+                            <p>Latest Versions of MySQL 5 &amp; PHP 5</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Latest Versions of MySQL5 and PHP5. InMotion Hosting currently offers the most recent and stable versions of MySQL and PHP. By choosing InMotion Hosting, you can ensure that your Joomla is running on the most up to date and secure platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/joomla-hosting/wp_icon_4.png" alt="domain transfer icon" />
+                        <div class="media-body raised">
+                            <p>FREE New Domain or Domain Transfer for first year</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Free New Domain or Domain Transfer. With each Business Class web hosting account, InMotion Hosting offers one free domain name or domain name transfer for the first year of hosting. Start your Joomla site with a FREE domain name or transfer for the first year and NO hidden fees!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row longtail-features">
+                <div class="container">
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/joomla-hosting/wp_icon_2.png" alt="faster performance icon" />
+                        <div class="media-body raised">
+                            <p>Faster Performance with High Grade Hardware &amp; Max Speed Zones</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Faster Performance with High Grade Hardware &amp; Max Speed Zones. With InMotion Hosting Business Class web hosting, you have the choice of data center locations. With data centers located in Los Angeles, CA and Washington D.C., your information can be located closer to you, improving website and email performance! [ <a href="/fast-web-hosting">See The Difference</a> ]</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-column">
+                        <img class="sales-page-left-float" src="{{ app.request.basepath }}/img/joomla-hosting/wp_icon_6.png" alt="joomla easy transfer icon" />
+                        <div class="media-body raised">
+                            <p>Easy Transfer from Other Hosts</p>
+                            <div id="demo" class="collapse" data-parent="menu">
+                                <p>Easy Site Transfer from Other Hosts. InMotion Hosting makes it easy to transfer your current Joomla site. We have helped thousands of customers transfer their site with no downtime!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-class">
+                <button type="button" class="btn btn-longtail" data-toggle="collapse" data-target="#demo, #demo2" data-parent="#menu">
+                  View Details
+                </button>
+            </div>
+            <!--  end collapse table  -->
+            <h2>Fast Joomla Hosting</h2>
+            <p>Our <a href="/joomla-hosting/joomla-vps-hosting">VPS</a> and Shared servers use some of the fastest disk drives available (SAS drives running at 15,000 RPM with RAID 10 configuration, if you must know). Need more configuration options? Our <a href="/joomla-hosting/joomla-dedicated-server">Joomla dedicated servers</a> allow for maximum customization.</p>
+            <p>Fast disk access is critical for <a href="/joomla-hosting/fast-joomla-hosting">fast Joomla hosting</a> since it accesses design templates and page content from databases before serving every web page. And InMotion doesn't overload its servers with too many customers, keeping your CPU performance where it should be for Joomla.</p>
+            <h2>Secure Joomla Hosting</h2>
+            <p>InMotion enhances the security of your Joomla site by using suPHP to execute Joomla and your own PHP scripts. Our Joomla, PHP and MySQL distributions are kept up to date, helping you to keep your configuration more secure.
+            Of course we also have some of the most secure firewall and network monitoring systems in the hosting business. Let InMotion <a href="joomla-hosting/managed-joomla-hosting">manage your Joomla hosted site</a>.</p>
+            <h2>Joomla Hosting Support</h2>
+            <p>Our support team is the envy of the industry and they are available when you need them. For installation and configuration, InMotion offers Joomla support 24/7 from the U.S. via phone, live chat and email.
+            Our online Support Center contains a wealth of information about Joomla hosting and troubleshooting. Don't settle for <a href="/joomla-hosting/cheap-joomla-hosting">cheap Joomla hosting</a>, go with InMotion.</p>
+            <h2>Customer Testimonials</h2>
+            <p>&ldquo;Absolutely amazing. Technical support is fast and responsive. Nearly ZERO down time. I just wanted to thank the technical support staff at inmotionhosting.com for making my visitors and myself welcome.&rdquo;</p>
+            <p>&mdash; Nick Patel, Merced, CA</p>
+        </div>
+        <!--  end span8  -->
+    {% endblock %}
+{% endblock %}

@@ -2,44 +2,116 @@
 {% set active = 'site_hosting_tools' %}
 
 {# title #}
-{% block title %}{% endblock %}
+{% block title %}Site Hosting{% endblock %}
 
 {# keywords #}
-{% block keywords %}{% endblock %}
+{% block keywords %}site hosting, site hosting software, blogging software, cms software{% endblock %}
 
 {# description #}
-{% block description %}{% endblock %}
+{% block description %}InMotion Hosting offers a wide range of site hosting software and features included FREE with each web hosting account.{% endblock %}
 
 {# intro #}
 {% block intro %}
 <div class="span8">
     <h1>Site Hosting Tools</h1>
-    <p>All InMotion Hosting site hosting accounts offer a wide range of software and features to help your site stand above the rest. We offer the most popular blogging and CMS software like Wordpress, Joomla, and Drupal. Installing these features are quick and painless thanks to the Softaculous one-click installation script which is accessed within cPanel. InMotion Hosting supports the most popular PHP and MySQL software and offers tutorials and EDU channels in our Support Center.</p>
+    <p>All InMotion Hosting site hosting accounts offer a wide range of software and features to help your site stand above the rest. We offer the most popular blogging and CMS software like Wordpress, Joomla, and Drupal. Installing these features are quick and painless thanks to the <a href="http:/www.inmotionhosting.com/support/edu/cpanel/softaculous">Softaculous</a> one-click installation script which is accessed within cPanel. InMotion Hosting supports the most popular PHP and MySQL software and offers tutorials and EDU channels in our <a href="http:/www.inmotionhosting.com/support/">Support Center</a>.</p>
 </div>
 {% endblock %}
 
 {# content #}
 {% block content %}
-<div class="wrap">
-    <div class="container">
-        <div class="row">
-            {% set io = 0 %}
-            {% for io in range(0,5) %}
+    <div class="wrap">
+        <div class="container">
+            <div class="row">
                 <div class="span6">
-                    <h2>Free stuff</h2>
-                    {% set i = 0 %}
-                    {% for i in range(0, 2) %}
-                        <div class="media site-hosting-tool">
-                            <a href="#" class="pull-left sunken"><img class="media-object" src="http://placehold.it/80x80" alt="" /></a>
-                            <div class="media-body raised">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
+                    <h2 class="sht">Account Management</h2>
+                    <div class="media site-hosting-tool">
+                        <a href="/host-with-cpanel" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/cpanel-logo.png" alt="cpanel logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>cPanel is a powerful web hosting conrol panel that lets you easily manage your website, email, and more. Learn how easy it is to <a href="/host-with-cpanel">host with cPanel</a>.</p>
                         </div>
-                    {% endfor %}
+                        <a href="#" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/whm-logo.png" alt="web host manager logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>Web Host Manager (WHM) WebHost is an easy-to-use server control panel interface which is designed for server administrators and resellers. WHM Demo</p>
+                        </div>
+                        <a href="/softaculous" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/softaculous-logo.png" alt="softaculous logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>Softaculous is a 1-click application installer that allows for easy installation of over 280 applications which include Wordpress, Prestahop, WHMCS, and much, much more! <a href="/softaculous">Learn more &raquo;</a></p>
+                        </div>
+                    </div>
                 </div>
-            {% endfor %}
+                <!--  end span6  -->
+                <div class="span6">
+                    <h2 class="sht">E-Commerce</h2>
+                    <div class="media site-hosting-tool">
+                        <a href="#" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/magento-logo.png" alt="magento logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>Magento included for free with all web hosting accounts with one-click install through Softaculous.</p>
+                        </div>
+                        <a href="/prestashop-hosting" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/prestashop-logo.png" alt="prestashop logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>With over 275 dynamic features, PrestaShop has the tools to let you easily sell your products online. Learn more about <a href="/prestashop-hosting">PrestaShop hosting</a>.</p>
+                        </div>
+                        <a href="/opencart-hosting" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/opencart-logo.png" alt="opencart logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>OpenCart included for free with all web hosting accounts with one-click install through Softaculous. Learn more about <a href="/opencart-hosting">OpenCart hosting</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  end span6  -->
+                <div class="span6">
+                    <h2 class="sht">CMS &amp; Blog Software</h2>
+                    <div class="media site-hosting-tool">
+                        <a href="/wordpress-hosting" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/wordpress-logo.png" alt="wordpress logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>Wordpress is the most popular free and easy to use open source blogging tool and content management system (CMS). Learn more about <a href="/wordpress-hosting">Wordpress Hosting</a>.</p>
+                        </div>
+                        <a href="/joomla-hosting" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/joomla-logo.png" alt="joomla logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>Joomla is an award-winning content management system (CMS) which enables you to build websites and powerful online applications. Learn more about <a href="/joomla-hosting">Joomla Hosting</a>.</p>
+                        </div>
+                        <a href="/drupal-hosting" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/drupal-logo.png" alt="drupal logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>Use Drupal to build everything from personal blogs to enterprise applications. Thousands of add-on modules and designs let you build any site you can imagine. Learn more about <a href="/drupal-hosting">Drupal Hosting</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!--  end span6  -->
+
+                <div class="span6">
+                    <h2 class="sht">Security &amp; Performance</h2>
+                    <div class="media site-hosting-tool">
+                        <a href="#" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/spamassassin-logo.png" alt="spamAssassin logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>SpamAssassin is an automated email filtering system that identifies spam messages based on the content of the email's headers and body and blocks them.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  end span6  -->
+                <div class="span6">
+                    <h2 class="sht">Website Builders</h2>
+                    <div class="media site-hosting-tool">
+                        <a href="../../webbuilder" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/webbuilder-logo.png" alt="web builder logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>InMotion Hosting's premium web builder offers one of the easiest ways to create and publish a full featured, great looking website. Learn more about <a href="../../webbuilder">web builder</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  end span6  -->
+                <div class="span6">
+                    <h2 class="sht">Educational</h2>
+                    <div class="media site-hosting-tool">
+                        <a href="/moodle-hosting" class="pull-left sunken"><img class="media-object" src="{{ app.request.basepath }}/img/site-hosting-tools/moodle-logo.png" alt="moodle logo" /></a>
+                        <div class="media-body-sht raised">
+                            <p>A course management system providing online course creation by educators for students. Easily setup classes, grade students, schedule events and more! Learn more about <a href="/moodle-hosting">Moodle</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  end span6  -->
+            </div>
+            <!--  end row  -->
         </div>
+        <!--  end container  -->
     </div>
-</div>
+    <!--  end wrap  -->
 {% endblock %}
