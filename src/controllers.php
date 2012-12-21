@@ -153,6 +153,18 @@ $app->match('/contact', function() use ($app) {
         'contact.html.twig');
 })->bind('contact');
 
+// sales-faq
+$app->match('/sales-faqs', function() use ($app) {
+    return $app['twig']->render('/../sales-pages/sales-faq/sales-faqs.html.twig');
+})
+->bind('sales_page_sales_faq');
+
+// los angeles web hosting
+$app->match('/los-angeles-web-hosting', function() use ($app) {
+    return $app['twig']->render('/../sales-pages/la-web-hosting/la-web-hosting.html.twig');
+})
+->bind('sales_page_la_web_hosting');
+
 // vps and dedi longtail controller
 $app->match('/{product}/articles/{page}', function($product, $page) use ($app){
     return $app['twig']->render('/../longtail-pages/'.$product.'/'.$page.'.html.twig');
@@ -162,7 +174,8 @@ $app->match('/{product}/articles/{page}', function($product, $page) use ($app){
 // cpanel controller
 $app->match('/host-with-cpanel', function() use ($app) {
     return $app['twig']->render('/../longtail-pages/cpanel-hosting/host-with-cpanel.html.twig');
-})->bind('longtail_cpanel_landing_page');
+})
+->bind('longtail_cpanel_landing_page');
 
 $app->match('/cpanel-hosting/{page}', function($page) use ($app){
     return $app['twig']->render('/../longtail-pages/cpanel-hosting/'.$page.'.html.twig');
